@@ -80,76 +80,103 @@ export default function QuizInterativo() {
   };
 
   return (
-    <div className="p-4 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Quiz Interativo</h1>
+    <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center px-4 py-8 sm:px-6 md:px-10">
+      <div className="w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl p-4 sm:p-6 md:p-10 bg-slate-800 rounded-xl shadow-lg min-h-[85vh] flex flex-col justify-between">
+        <div>
+          <h1 className="text-3xl font-bold mb-6 text-center">Quiz Interativo</h1>
 
-      <input type="file" accept=".txt" onChange={handleFileUpload} className="mb-4" />
-
-      {!quizData.length && <p className="text-gray-500">Faça upload de um arquivo .txt com perguntas.</p>}
-
-      {quizData.length > 0 && !showResult && (
-        <div className="space-y-4">
-          <h2 className="text-xl font-semibold">Pergunta {current + 1} de {quizData.length}</h2>
-          <p className="text-lg font-medium">{quizData[current].question}</p>
-          <div className="grid gap-2">
-            {quizData[current].options.map((option, idx) => {
-              const isSelected = selected === option.charAt(0);
-              const isCorrect = quizData[current].answer === option.charAt(0);
-              const base = "p-2 rounded text-white";
-              let color = "bg-blue-500 hover:bg-blue-600";
-              if (showFeedback) {
-                if (isSelected && isCorrect) color = "bg-green-600";
-                else if (isSelected && !isCorrect) color = "bg-red-600";
-                else color = "bg-gray-400";
-              }
-              return (
-                <button
-                  key={idx}
-                  onClick={() => !showFeedback && handleOptionClick(option.charAt(0))}
-                  className={`${base} ${color}`}
-                  disabled={showFeedback}
-                >
-                  {option}
-                </button>
-              );
-            })}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+            <input type="file" accept=".txt" onChange={handleFileUpload} className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700" />
           </div>
-          {showFeedback && (
-            <div className="mt-4 space-y-2">
-              {selected === quizData[current].answer ? (
-                <p className="text-green-700">Resposta correta!</p>
-              ) : (
-                <p className="text-red-700">Você errou. A resposta correta é: {quizData[current].answer}</p>
+
+          {!quizData.length && <p className="text-gray-400 text-center">Faça upload de um arquivo .txt com perguntas.</p>}
+
+          {quizData.length > 0 && !showResult && (
+            <div className="space-y-4">
+              <h2 className="text-xl font-semibold">Pergunta {current + 1} de {quizData.length}</h2>
+              <p className="text-lg font-medium break-words whitespace-pre-wrap">{quizData[current].question}</p>
+
+              <div className="flex flex-col gap-3">
+                {quizData[current].options.map((option, idx) => {
+                  const isSelected = selected === option.charAt(0);
+                  const isCorrect = quizData[current].answer === option.charAt(0);
+                  const base = "p-3 rounded-md text-white text-left font-semibold transition-colors duration-200 break-words whitespace-pre-wrap";
+
+                  let color = "bg-blue-600 hover:bg-blue-700";
+                  if (showFeedback) {
+                    if (isCorrect && isSelected) {
+                      color = "bg-green-600";
+                    } else if (!isCorrect && isSelected) {
+                      color = "bg-red-600";
+                    } else if (isCorrect) {
+                      color = "bg-green-600";
+                    } else {
+                      color = "bg-slate-600";
+                    }
+                  }
+
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => !showFeedback && handleOptionClick(option.charAt(0))}
+                      className={`${base} ${color}`}
+                      disabled={showFeedback}
+                    >
+                      {option}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {showFeedback && (
+                <div className="mt-4 space-y-2">
+                  {selected === quizData[current].answer ? (
+                    <p className="text-green-400 font-semibold">Resposta correta!</p>
+                  ) : (
+                    <p className="text-red-400 font-semibold">Você errou. A resposta correta é: {quizData[current].answer}</p>
+                  )}
+                  <p className="text-sm text-slate-300 italic whitespace-pre-wrap">{quizData[current].explanation || 'Sem explicação disponível.'}</p>
+                </div>
               )}
-              <p className="text-sm text-gray-800 italic">{quizData[current].explanation || 'Sem explicação disponível.'}</p>
-              <button onClick={nextQuestion} className="mt-3 bg-gray-700 text-white p-2 rounded hover:bg-gray-800">
-                Próxima pergunta
-              </button>
+            </div>
+          )}
+
+          {showResult && (
+            <div className="space-y-4">
+              <h2 className="text-xl font-bold">Resultado</h2>
+              <ul className="list-disc ml-5">
+                {quizData.map((q, idx) => (
+                  <li key={idx} className="mb-2">
+                    <p className="font-medium break-words whitespace-pre-wrap">{q.question}</p>
+                    <p className={`text-sm ${answers[idx] === q.answer ? 'text-green-400' : 'text-red-400'}`}>
+                      Sua resposta: {answers[idx]} {answers[idx] === q.answer ? '(Correta)' : `(Errada - Correta: ${q.answer})`}
+                    </p>
+                    <p className="text-sm text-slate-300 italic whitespace-pre-wrap">{q.explanation || 'Sem explicação disponível.'}</p>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>
-      )}
 
-      {showResult && (
-        <div className="space-y-4">
-          <h2 className="text-xl font-bold">Resultado</h2>
-          <ul className="list-disc ml-5">
-            {quizData.map((q, idx) => (
-              <li key={idx} className="mb-2">
-                <p className="font-medium">{q.question}</p>
-                <p className={`text-sm ${answers[idx] === q.answer ? 'text-green-600' : 'text-red-600'}`}>
-                  Sua resposta: {answers[idx]} {answers[idx] === q.answer ? '(Correta)' : `(Errada - Correta: ${q.answer})`}
-                </p>
-                <p className="text-sm text-gray-700 italic">{q.explanation || 'Sem explicação disponível.'}</p>
-              </li>
-            ))}
-          </ul>
-          <div className="flex gap-2">
-            <button onClick={resetQuiz} className="bg-gray-700 text-white p-2 rounded hover:bg-gray-800">Reiniciar Quiz</button>
-            <button onClick={downloadGabarito} className="bg-green-700 text-white p-2 rounded hover:bg-green-800">Baixar Gabarito</button>
+        {(quizData.length > 0 && !showResult && showFeedback) && (
+          <div className="mt-6">
+            <button
+              onClick={nextQuestion}
+              className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-600"
+            >
+              Próxima pergunta
+            </button>
           </div>
-        </div>
-      )}
+        )}
+
+        {showResult && (
+          <div className="mt-6 flex flex-col sm:flex-row gap-2">
+            <button onClick={resetQuiz} className="w-full sm:w-auto bg-slate-700 text-white p-2 rounded hover:bg-slate-600">Reiniciar Quiz</button>
+            <button onClick={downloadGabarito} className="w-full sm:w-auto bg-green-700 text-white p-2 rounded hover:bg-green-800">Baixar Gabarito</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
