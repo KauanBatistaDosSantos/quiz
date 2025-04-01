@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function QuizInterativo() {
   const [quizData, setQuizData] = useState([]);
@@ -7,19 +7,27 @@ export default function QuizInterativo() {
   const [showResult, setShowResult] = useState(false);
   const [selected, setSelected] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [score, setScore] = useState(0);
+
+  const shuffleArray = (array) => {
+    return array.map(value => ({ value, sort: Math.random() }))
+                .sort((a, b) => a.sort - b.sort)
+                .map(({ value }) => value);
+  };
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
     reader.onload = (event) => {
       const text = event.target.result;
-      const parsed = parseQuiz(text);
+      const parsed = shuffleArray(parseQuiz(text));
       setQuizData(parsed);
       setCurrent(0);
       setAnswers([]);
       setSelected(null);
       setShowFeedback(false);
       setShowResult(false);
+      setScore(0);
     };
     reader.readAsText(file);
   };
@@ -29,7 +37,7 @@ export default function QuizInterativo() {
     return blocks.map((block) => {
       const lines = block.trim().split('\n');
       const question = lines[0].replace('P: ', '');
-      const options = lines.slice(1, 5).map((line) => line.trim());
+      const options = shuffleArray(lines.slice(1, 5).map((line) => line.trim()));
       const answer = lines[5]?.replace('R: ', '').trim();
       const explanation = lines[6]?.replace('E: ', '').trim();
       return { question, options, answer, explanation };
@@ -37,11 +45,16 @@ export default function QuizInterativo() {
   };
 
   const handleOptionClick = (option) => {
-    setSelected(option);
-    setShowFeedback(true);
-    const updated = [...answers];
-    updated[current] = option;
-    setAnswers(updated);
+    if (!showFeedback) {
+      setSelected(option);
+      setShowFeedback(true);
+      const updated = [...answers];
+      updated[current] = option;
+      setAnswers(updated);
+      if (option === quizData[current].answer) {
+        setScore((prev) => prev + 1);
+      }
+    }
   };
 
   const nextQuestion = () => {
@@ -60,6 +73,11 @@ export default function QuizInterativo() {
     setSelected(null);
     setShowFeedback(false);
     setShowResult(false);
+    setScore(0);
+    setQuizData(shuffleArray(quizData.map(q => ({
+      ...q,
+      options: shuffleArray(q.options)
+    }))));
   };
 
   const downloadGabarito = () => {
@@ -79,13 +97,21 @@ export default function QuizInterativo() {
     document.body.removeChild(link);
   };
 
-  return (
-    <div className="min-h-screen bg-slate-900 text-white flex items-center justify-center px-4 py-8 sm:px-6 md:px-10">
-      <div className="w-full max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl p-4 sm:p-6 md:p-10 bg-slate-800 rounded-xl shadow-lg min-h-[85vh] flex flex-col justify-between">
-        <div>
-          <h1 className="text-3xl font-bold mb-6 text-center">Quiz Interativo</h1>
+  const getFeedbackMessage = () => {
+    const total = quizData.length;
+    const ratio = score / total;
+    if (ratio < 0.4) return "💡 Você precisa estudar mais!";
+    if (ratio < 0.75) return "🔍 Está indo bem, continue praticando!";
+    return "🎉 Você está arrasando! Parabéns!";
+  };
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
+  return (
+    <div className="min-h-screen w-screen bg-slate-800 text-white flex items-center justify-center p-4">
+      <div className="w-full max-w-2xl bg-slate-900 p-6 rounded-lg shadow-xl min-h-[90vh] flex flex-col justify-between">
+        <div>
+          <h1 className="text-3xl font-bold mb-4 text-center">Quiz Interativo</h1>
+
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <input type="file" accept=".txt" onChange={handleFileUpload} className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700" />
           </div>
 
@@ -98,28 +124,21 @@ export default function QuizInterativo() {
 
               <div className="flex flex-col gap-3">
                 {quizData[current].options.map((option, idx) => {
-                  const isSelected = selected === option.charAt(0);
-                  const isCorrect = quizData[current].answer === option.charAt(0);
-                  const base = "p-3 rounded-md text-white text-left font-semibold transition-colors duration-200 break-words whitespace-pre-wrap";
+                  const letter = option.charAt(0);
+                  const isCorrect = quizData[current].answer === letter;
+                  const isSelected = selected === letter;
 
-                  let color = "bg-blue-600 hover:bg-blue-700";
-                  if (showFeedback) {
-                    if (isCorrect && isSelected) {
-                      color = "bg-green-600";
-                    } else if (!isCorrect && isSelected) {
-                      color = "bg-red-600";
-                    } else if (isCorrect) {
-                      color = "bg-green-600";
-                    } else {
-                      color = "bg-slate-600";
-                    }
-                  }
+                  const ringColor = isSelected
+                    ? selected === quizData[current].answer
+                      ? 'ring-green-500'
+                      : 'ring-red-500'
+                    : '';
 
                   return (
                     <button
                       key={idx}
-                      onClick={() => !showFeedback && handleOptionClick(option.charAt(0))}
-                      className={`${base} ${color}`}
+                      onClick={() => handleOptionClick(letter)}
+                      className={`p-3 rounded-md text-white text-left font-semibold transition-colors duration-200 break-words whitespace-pre-wrap border bg-slate-700 ${isSelected ? `ring-2 ${ringColor}` : ''}`}
                       disabled={showFeedback}
                     >
                       {option}
@@ -142,9 +161,11 @@ export default function QuizInterativo() {
           )}
 
           {showResult && (
-            <div className="space-y-4">
+            <div className="space-y-4 text-center">
               <h2 className="text-xl font-bold">Resultado</h2>
-              <ul className="list-disc ml-5">
+              <p className="text-lg">Pontuação final: {score} de {quizData.length}</p>
+              <p className="text-xl font-semibold mt-2">{getFeedbackMessage()}</p>
+              <ul className="list-disc text-left ml-5">
                 {quizData.map((q, idx) => (
                   <li key={idx} className="mb-2">
                     <p className="font-medium break-words whitespace-pre-wrap">{q.question}</p>
@@ -171,7 +192,7 @@ export default function QuizInterativo() {
         )}
 
         {showResult && (
-          <div className="mt-6 flex flex-col sm:flex-row gap-2">
+          <div className="mt-6 flex flex-col sm:flex-row gap-2 justify-center">
             <button onClick={resetQuiz} className="w-full sm:w-auto bg-slate-700 text-white p-2 rounded hover:bg-slate-600">Reiniciar Quiz</button>
             <button onClick={downloadGabarito} className="w-full sm:w-auto bg-green-700 text-white p-2 rounded hover:bg-green-800">Baixar Gabarito</button>
           </div>
