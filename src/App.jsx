@@ -28,6 +28,7 @@ export default function QuizInterativo() {
       setShowFeedback(false);
       setShowResult(false);
       setScore(0);
+      localStorage.removeItem("quizProgress");
     };
     reader.readAsText(file);
   };
@@ -36,13 +37,42 @@ export default function QuizInterativo() {
     const blocks = text.split(/\n(?=P: )/);
     return blocks.map((block) => {
       const lines = block.trim().split('\n');
-      const question = lines[0].replace('P: ', '');
-      const options = shuffleArray(lines.slice(1, 5).map((line) => line.trim()));
-      const answer = lines[5]?.replace('R: ', '').trim();
-      const explanation = lines[6]?.replace('E: ', '').trim();
+      const questionLines = [];
+      let i = 0;
+  
+      while (i < lines.length && !/^A\)/.test(lines[i])) {
+        questionLines.push(lines[i]);
+        i++;
+      }
+  
+      const question = questionLines.join('\n').replace('P: ', '').trim();
+      const options = shuffleArray(lines.slice(1).filter(line => /^[A-Z]\)/.test(line)));
+      const answerLine = lines.find(line => line.startsWith('R:'));
+      const explanationLine = lines.find(line => line.startsWith('E:'));
+      const answer = answerLine?.replace('R:', '').trim();
+      const explanation = explanationLine?.replace('E:', '').trim();
       return { question, options, answer, explanation };
     });
   };
+
+  useEffect(() => {
+    const saved = localStorage.getItem("quizProgress");
+    if (saved) {
+      const { current, answers, score, quizData } = JSON.parse(saved);
+      setCurrent(current);
+      setAnswers(answers);
+      setScore(score);
+      setQuizData(quizData);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (quizData.length > 0) {
+      localStorage.setItem("quizProgress", JSON.stringify({
+        current, answers, score, quizData
+      }));
+    }
+  }, [current, answers, score, quizData]);
 
   const handleOptionClick = (option) => {
     if (!showFeedback) {
@@ -64,6 +94,7 @@ export default function QuizInterativo() {
       setCurrent(current + 1);
     } else {
       setShowResult(true);
+      localStorage.removeItem("quizProgress");
     }
   };
 
@@ -74,6 +105,7 @@ export default function QuizInterativo() {
     setShowFeedback(false);
     setShowResult(false);
     setScore(0);
+    localStorage.removeItem("quizProgress");
     setQuizData(shuffleArray(quizData.map(q => ({
       ...q,
       options: shuffleArray(q.options)
