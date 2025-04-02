@@ -8,6 +8,7 @@ export default function QuizInterativo() {
   const [selected, setSelected] = useState(null);
   const [showFeedback, setShowFeedback] = useState(false);
   const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
 
   const shuffleArray = (array) => {
     return array.map(value => ({ value, sort: Math.random() }))
@@ -23,7 +24,7 @@ export default function QuizInterativo() {
       const parsed = shuffleArray(parseQuiz(text));
       setQuizData(parsed);
       setCurrent(0);
-      setAnswers([]);
+      setAnswers(new Array(parsed.length).fill(undefined));
       setSelected(null);
       setShowFeedback(false);
       setShowResult(false);
@@ -59,10 +60,16 @@ export default function QuizInterativo() {
     const saved = localStorage.getItem("quizProgress");
     if (saved) {
       const { current, answers, score, quizData } = JSON.parse(saved);
-      setCurrent(current);
-      setAnswers(answers);
+      setAnswers(answers.length === quizData.length ? answers : new Array(quizData.length).fill(undefined).map((_, i) => answers[i]));
       setScore(score);
       setQuizData(quizData);
+      const firstUnanswered = answers.findIndex(ans => ans === undefined);
+      setCurrent(firstUnanswered !== -1 ? firstUnanswered : current);
+
+      if (firstUnanswered !== -1) {
+        setCurrent(firstUnanswered);
+        setShowResult(false);
+      }
     }
   }, []);
 
@@ -94,13 +101,15 @@ export default function QuizInterativo() {
       setCurrent(current + 1);
     } else {
       setShowResult(true);
+      const hasUnanswered = answers.some(ans => ans === undefined);
+      setFinished(!hasUnanswered);
       localStorage.removeItem("quizProgress");
     }
   };
 
   const resetQuiz = () => {
     setCurrent(0);
-    setAnswers([]);
+    setAnswers(new Array(quizData.length).fill(undefined));
     setSelected(null);
     setShowFeedback(false);
     setShowResult(false);
@@ -115,6 +124,7 @@ export default function QuizInterativo() {
   const downloadGabarito = () => {
     const text = quizData.map((q, idx) => {
       const userAnswer = answers[idx];
+      if (userAnswer === undefined) return `Pergunta ${idx + 1}: ${q.question}\nNão respondida\n`;
       const correct = userAnswer === q.answer;
       return `Pergunta ${idx + 1}: ${q.question}\nResposta do usuário: ${userAnswer} ${correct ? '(Correta)' : `(Errada - Correta: ${q.answer})`}\nExplicação: ${q.explanation || 'Sem explicação disponível.'}\n`;
     }).join('\n');
@@ -130,8 +140,8 @@ export default function QuizInterativo() {
   };
 
   const getFeedbackMessage = () => {
-    const total = quizData.length;
-    const ratio = score / total;
+    const totalAnswered = answers.filter(ans => ans !== undefined).length;
+    const ratio = score / totalAnswered;
     if (ratio < 0.4) return "💡 Você precisa estudar mais!";
     if (ratio < 0.75) return "🔍 Está indo bem, continue praticando!";
     return "🎉 Você está arrasando! Parabéns!";
@@ -195,37 +205,87 @@ export default function QuizInterativo() {
           {showResult && (
             <div className="space-y-4 text-center">
               <h2 className="text-xl font-bold">Resultado</h2>
-              <p className="text-lg">Pontuação final: {score} de {quizData.length}</p>
+              <p className="text-lg">Pontuação: {score} de {answers.filter(ans => ans !== undefined).length} respondidas</p>
               <p className="text-xl font-semibold mt-2">{getFeedbackMessage()}</p>
               <ul className="list-disc text-left ml-5">
-                {quizData.map((q, idx) => (
-                  <li key={idx} className="mb-2">
-                    <p className="font-medium break-words whitespace-pre-wrap">{q.question}</p>
-                    <p className={`text-sm ${answers[idx] === q.answer ? 'text-green-400' : 'text-red-400'}`}>
-                      Sua resposta: {answers[idx]} {answers[idx] === q.answer ? '(Correta)' : `(Errada - Correta: ${q.answer})`}
-                    </p>
-                    <p className="text-sm text-slate-300 italic whitespace-pre-wrap">{q.explanation || 'Sem explicação disponível.'}</p>
-                  </li>
-                ))}
+                {quizData.map((q, idx) => {
+                  const userAnswer = answers[idx];
+                  const isCorrect = userAnswer === q.answer;
+                  const isUnanswered = userAnswer === undefined;
+                  return (
+                    <li key={idx} className="mb-2">
+                      <p className="font-medium break-words whitespace-pre-wrap">{q.question}</p>
+                      <p className={`text-sm ${isUnanswered ? 'text-orange-400' : isCorrect ? 'text-green-400' : 'text-red-400'}`}>Sua resposta: {userAnswer || 'Não respondida'} {!isUnanswered && (isCorrect ? '(Correta)' : `(Errada - Correta: ${q.answer})`)}</p>
+                      {!isUnanswered && (
+                        <p className="text-sm text-slate-300 italic whitespace-pre-wrap">{q.explanation || 'Sem explicação disponível.'}</p>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           )}
         </div>
 
         {(quizData.length > 0 && !showResult && showFeedback) && (
-          <div className="mt-6">
-            <button
-              onClick={nextQuestion}
-              className="w-full bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-600"
-            >
-              Próxima pergunta
-            </button>
+          <div className="mt-6 flex flex-col sm:flex-row gap-2 justify-between">
+            {current + 1 < quizData.length ? (
+              <>
+                <button
+                  onClick={nextQuestion}
+                  className="w-full sm:w-auto bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-600"
+                >
+                  Próxima pergunta
+                </button>
+                <button
+                  onClick={() => {
+                    const hasUnanswered = answers.some(ans => ans === undefined);
+                    setShowResult(true);
+                    setFinished(!hasUnanswered);
+                    localStorage.removeItem("quizProgress");
+                  }}
+                  className="w-full sm:w-auto bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+                >
+                  Finalizar Quiz Agora
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={() => {
+                  const hasUnanswered = answers.some(ans => ans === undefined);
+                  setShowResult(true);
+                  setFinished(!hasUnanswered);
+                  localStorage.removeItem("quizProgress");
+                }}
+                className="w-full sm:w-auto bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800"
+              >
+                Finalizar
+              </button>
+            )}
           </div>
         )}
 
         {showResult && (
           <div className="mt-6 flex flex-col sm:flex-row gap-2 justify-center">
-            <button onClick={resetQuiz} className="w-full sm:w-auto bg-slate-700 text-white p-2 rounded hover:bg-slate-600">Reiniciar Quiz</button>
+            {finished ? (
+              <button onClick={resetQuiz} className="w-full sm:w-auto bg-slate-700 text-white p-2 rounded hover:bg-slate-600">Reiniciar Quiz</button>
+            ) : (
+              <button
+              onClick={() => {
+                const firstUnanswered = answers.findIndex(ans => ans === undefined);
+                if (firstUnanswered !== -1) {
+                  setCurrent(firstUnanswered);
+                  setSelected(null);
+                  setShowResult(false);
+                  setShowFeedback(false);
+                  setFinished(false);
+                }
+              }}
+                className="w-full sm:w-auto bg-blue-700 text-white p-2 rounded hover:bg-blue-800"
+              >
+                Voltar e Responder Faltantes
+              </button>
+            )}
             <button onClick={downloadGabarito} className="w-full sm:w-auto bg-green-700 text-white p-2 rounded hover:bg-green-800">Baixar Gabarito</button>
           </div>
         )}
