@@ -250,6 +250,7 @@ export default function QuizInterativo() {
                 </button>
               </>
             ) : (
+              <div className="w-full flex justify-center">
               <button
                 onClick={() => {
                   const hasUnanswered = answers.some(ans => ans === undefined);
@@ -257,10 +258,11 @@ export default function QuizInterativo() {
                   setFinished(!hasUnanswered);
                   localStorage.removeItem("quizProgress");
                 }}
-                className="w-full sm:w-auto bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800"
+                className="w-full sm:w-3/3 bg-green-700 text-white px-4 py-3 rounded text-lg font-semibold hover:bg-green-800"
               >
                 Finalizar
               </button>
+              </div>
             )}
           </div>
         )}
