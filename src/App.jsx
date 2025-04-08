@@ -171,55 +171,58 @@ export default function QuizInterativo() {
       <div className="w-full max-w-2xl bg-slate-900 p-6 rounded-lg shadow-xl min-h-[90vh] flex flex-col justify-between">
         <div>
           <h1 className="text-3xl font-bold mb-4 text-center">Quiz Interativo</h1>
+
           {!quizData.length && (
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-          <input
-            type="file"
-            accept=".txt"
-            onChange={handleFileUpload}
-            className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700"
-          />
-        {!quizData.length && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {(quizList || []).map((file, idx) => (
-              <button
-                key={idx}
-                onClick={async () => {
-                  const res = await fetch(`/quizzes/${file}`);
-                  const text = await res.text();
-                  const parsed = shuffleArray(parseQuiz(text));
-                  setQuizData(parsed);
-                  setCurrent(0);
-                  setAnswers(new Array(parsed.length).fill(undefined));
-                  setSelected(null);
-                  setShowFeedback(false);
-                  setShowResult(false);
-                  setScore(0);
-                  localStorage.removeItem("quizProgress");
-                }}
-                className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
-              >
-                <strong>
-                  {file
-                    .replace(".txt", "")
-                    .replace(/[-_]/g, " ")
-                    .replace(/\b\w/g, (l) => l.toUpperCase())}
-                </strong>
-                <br />
-                <span className="text-sm text-slate-300">
-                  {quizLengths[file]
-                    ? `${quizLengths[file]} questõe${quizLengths[file] > 1 ? "s" : ""}`
-                    : "Carregando..."}
-                </span>
-              </button>
-            ))}
-          </div>
-          )}
+  <div className="flex flex-col items-center gap-6 mb-6">
+    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <input
+        type="file"
+        accept=".txt"
+        onChange={handleFileUpload}
+        className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700"
+      />
+    </div>
 
-        </div>
-        )}
+    <p className="text-gray-400 text-center">
+      Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.
+    </p>
 
-          {!quizData.length && <p className="text-gray-400 text-center">Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {quizList.map((file, idx) => (
+        <button
+          key={idx}
+          onClick={async () => {
+            const res = await fetch(`/quizzes/${file}`);
+            const text = await res.text();
+            const parsed = shuffleArray(parseQuiz(text));
+            setQuizData(parsed);
+            setCurrent(0);
+            setAnswers(new Array(parsed.length).fill(undefined));
+            setSelected(null);
+            setShowFeedback(false);
+            setShowResult(false);
+            setScore(0);
+            localStorage.removeItem("quizProgress");
+          }}
+          className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
+        >
+          <strong>
+            {file
+              .replace(".txt", "")
+              .replace(/[-_]/g, " ")
+              .replace(/\b\w/g, (l) => l.toUpperCase())}
+          </strong>
+          <br />
+          <span className="text-sm text-slate-300">
+            {quizLengths[file]
+              ? `${quizLengths[file]} questõe${quizLengths[file] > 1 ? "s" : ""}`
+              : "Carregando..."}
+          </span>
+        </button>
+      ))}
+    </div>
+  </div>
+)}
 
           {quizData.length > 0 && !showResult && (
             <>
