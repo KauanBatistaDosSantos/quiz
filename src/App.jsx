@@ -186,10 +186,11 @@ export default function QuizInterativo() {
 
     <div className="flex items-center justify-center gap-2 text-gray-400 text-center">
   <p>Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>
-  <div className="relative group"
-        onClick={() => setShowInfo(prev => !prev)}
-        onTouchStart={() => setShowInfo(prev => !prev)}>
-    <span className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined">info</span>
+  <div className="relative group">
+    <span className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined"
+            onClick={() => setShowInfo(prev => !prev)}
+            onTouchStart={() => setShowInfo(prev => !prev)}
+    >info</span>
     <div
           className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[320px] p-4 bg-slate-700 text-sm text-left text-white rounded shadow-lg z-10 transition-opacity duration-300
             ${showInfo ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
