@@ -1,0 +1,719 @@
+P: Qual o percentual de startups que estão nas fases de tração ou escala?
+A) 20,1%
+B) 33,3%
+C) 45,4%
+D) 52,7%
+R: C
+E: A resposta correta é C porque o relatório aponta que 45,4% das startups estão nas fases de tração ou escala.
+
+P: Qual o principal modelo de negócio utilizado pelas startups?
+A) Clube de assinatura
+B) Venda direta
+C) Marketplace
+D) SaaS
+R: D
+E: A resposta correta é D porque o relatório informa que 39% das startups utilizam SaaS como modelo de negócio.
+
+P: Qual o percentual de startups com soluções voltadas para empresas ou empresas e consumidor final?
+A) 55,1%
+B) 82,7%
+C) 76,3%
+D) 66,9%
+R: B
+E: A resposta correta é B porque 82,7% das startups são B2B ou B2B2C, conforme destacado no relatório.
+
+P: Qual é a média de colaboradores por startup?
+A) 10
+B) 15
+C) 20
+D) 25
+R: C
+E: A resposta correta é C porque a média de colaboradores informada é de 20 por startup.
+
+P: Qual o percentual de startups fundadas a partir de 2020?
+A) 25,8%
+B) 33,2%
+C) 41,9%
+D) 47,7%
+R: C
+E: A resposta correta é C porque o relatório indica que 41,9% das startups foram fundadas a partir de 2020.
+
+P: Qual foi o faturamento médio das startups no último ano?
+A) R$ 300 mil
+B) R$ 500 mil
+C) R$ 737 mil
+D) R$ 1 milhão
+R: C
+E: A resposta correta é C, conforme o destaque do relatório que informa R$ 737 mil como faturamento médio.
+
+P: Qual o percentual de startups que estão em São Paulo?
+A) 35,2%
+B) 40,7%
+C) 45,1%
+D) 50,0%
+R: B
+E: A resposta correta é B porque o estado de São Paulo concentra 40,7% das startups.
+
+P: Qual é o segmento de startups mais comum no Brasil?
+A) Fintech
+B) Edtech
+C) Healthtech
+D) Tech
+R: B
+E: A resposta correta é B porque Edtech lidera com 10,1% entre os segmentos listados.
+
+P: Quantas startups participaram da pesquisa de mapeamento de 2024?
+A) 1000
+B) 2005
+C) 3005
+D) 5000
+R: C
+E: A resposta correta é C, pois o relatório declara que 3005 startups participaram do estudo.
+
+P: Qual o percentual de startups que estão na região Sudeste?
+A) 51,2%
+B) 57,6%
+C) 60,4%
+D) 64,8%
+R: B
+E: A resposta correta é B porque o Sudeste concentra 57,6% das startups.
+
+P: Qual o percentual de startups que atuam com o modelo de negócio SaaS?
+A) 39,0%
+B) 15,2%
+C) 10,1%
+D) 3,0%
+R: A
+E: A resposta correta é A porque o relatório aponta que 39,0% das startups utilizam SaaS como modelo de negócio.
+
+P: Qual o percentual de startups com atuação B2B2C?
+A) 13%
+B) 28,6%
+C) 54,1%
+D) 82,7%
+R: B
+E: A resposta correta é B porque 28,6% das startups atuam com empresas e consumidor final (B2B2C), conforme o gráfico de público-alvo.
+
+P: Quantas startups disseram ter soluções para o governo (B2G)?
+A) 1,4%
+B) 2,5%
+C) 0,4%
+D) 13%
+R: B
+E: A resposta correta é B porque apenas 2,5% das startups têm o governo como público-alvo, segundo o relatório.
+
+P: Qual a porcentagem de startups que foram fundadas há menos de 1 ano?
+A) 3,1%
+B) 9,8%
+C) 14,5%
+D) 32,2%
+R: D
+E: A resposta correta é D porque 32,2% das startups têm menos de 1 ano de fundação, de acordo com o gráfico de fundação.
+
+P: Qual o percentual de startups que afirmaram não ter nenhum faturamento?
+A) 22,9%
+B) 11,7%
+C) 6,5%
+D) 14,6%
+R: B
+E: A resposta correta é B porque 11,7% das startups disseram estar sem faturamento no último ano.
+
+P: Qual a faixa de faturamento mais comum entre as startups?
+A) Acima de R$ 5.000.000,00
+B) Até R$ 10.000,00
+C) Entre R$ 50.001,00 e R$ 250.000,00
+D) Entre R$ 10.001,00 e R$ 30.000,00
+R: B
+E: A resposta correta é B porque 22,9% das startups faturaram até R$ 10.000,00, a maior concentração entre as faixas apresentadas.
+
+P: Qual a porcentagem de startups que possuem entre 1 e 5 colaboradores?
+A) 13,1%
+B) 20,0%
+C) 51,7%
+D) 21,5%
+R: C
+E: A resposta correta é C porque mais da metade das startups têm entre 1 e 5 colaboradores, conforme o relatório.
+
+P: Qual o percentual de startups que afirmaram ter sede ou escritório em outro país, sem estarem internacionalizadas?
+A) 25,9%
+B) 11,1%
+C) 2,6%
+D) 39,8%
+R: C
+E: A resposta correta é C porque 2,6% das startups têm escritório em outro país, mas ainda não internacionalizaram, segundo o índice de internacionalização.
+
+P: Qual o índice de multiplicidade informado para os players de relacionamento?
+A) 2,0
+B) 1,5
+C) 1,8
+D) 1,2
+R: C
+E: A resposta correta é C porque o índice de multiplicidade de relacionamentos é 1,8, segundo o estudo.
+
+P: Qual o percentual de startups que se relacionam com hubs de inovação?
+A) 21,7%
+B) 32,6%
+C) 49,1%
+D) 18,7%
+R: C
+E: A resposta correta é C porque 49,1% das startups afirmaram ter relação com hubs de inovação.
+
+P: Qual o percentual de pessoas fundadoras de startups que são pretas ou pardas?
+A) 17,6%
+B) 23,6%
+C) 19,2%
+D) 6,0%
+R: B
+E: A resposta correta é B porque o relatório destaca que 23,6% das pessoas fundadoras são pretas ou pardas.
+
+P: Qual a porcentagem de mulheres fundadoras de startups?
+A) 13,2%
+B) 23,6%
+C) 19,2%
+D) 40,2%
+R: C
+E: A resposta correta é C porque 19,2% das pessoas fundadoras são mulheres cisgênero.
+
+P: Qual a idade média das pessoas nas startups?
+A) 35 anos
+B) 37 anos
+C) 40 anos
+D) 42 anos
+R: C
+E: A resposta correta é C porque o relatório informa que a média de idade das pessoas nas startups é de 40 anos.
+
+P: Qual o percentual de fundadores que também atuam na diretoria executiva das startups?
+A) 72,4%
+B) 58,6%
+C) 41,9%
+D) 19,2%
+R: A
+E: A resposta correta é A porque 72,4% das pessoas fundadoras também atuam na diretoria executiva.
+
+P: Qual o percentual de pessoas fundadoras que realizaram especialização após o ensino superior?
+A) 32,1%
+B) 13,2%
+C) 40,2%
+D) 8,1%
+R: C
+E: A resposta correta é C porque 40,2% dos fundadores fizeram alguma especialização após a graduação.
+
+P: Qual o percentual de fundadores que se identificam como homens cisgêneros?
+A) 79,3%
+B) 70,5%
+C) 91,6%
+D) 6,0%
+R: A
+E: A resposta correta é A porque 79,3% das pessoas fundadoras se identificam como homens cisgêneros.
+
+P: Qual o percentual de fundadores que se identificam como heterossexuais?
+A) 91,6%
+B) 84,4%
+C) 70,5%
+D) 40,6%
+R: A
+E: A resposta correta é A porque 91,6% das pessoas fundadoras declararam orientação heterossexual.
+
+P: Qual a faixa etária com maior concentração de fundadores?
+A) Entre 25 e 34 anos
+B) Entre 35 e 44 anos
+C) Entre 45 e 54 anos
+D) Acima de 64 anos
+R: B
+E: A resposta correta é B porque 40,6% dos fundadores estão entre 35 e 44 anos, a maior faixa.
+
+P: Qual o percentual de fundadores que têm filhos?
+A) 32,1%
+B) 41,1%
+C) 57,3%
+D) 6,0%
+R: C
+E: A resposta correta é C porque o relatório indica que 57,3% dos fundadores têm filhos.
+
+P: Qual o percentual de fundadores com ensino médio como grau máximo de escolaridade?
+A) 32,1%
+B) 13,2%
+C) 6,0%
+D) 0,4%
+R: C
+E: A resposta correta é C porque apenas 6,0% das pessoas fundadoras têm o ensino médio como maior nível de escolaridade.
+
+P: Qual foi o valor médio de investimento recebido pelas startups?
+A) R$ 500 mil
+B) R$ 737 mil
+C) R$ 1,1 milhão
+D) R$ 2,5 milhões
+R: C
+E: A resposta correta é C porque o relatório aponta que o valor médio recebido pelas startups foi de R$ 1,1 milhão.
+
+P: Qual o percentual de startups que já receberam algum tipo de investimento?
+A) 28,2%
+B) 32,0%
+C) 34,9%
+D) 39,8%
+R: C
+E: A resposta correta é C porque 34,9% das startups informaram ter recebido investimento ao longo de sua trajetória.
+
+P: Qual o percentual de startups que receberam investimentos acima de R$ 1 milhão?
+A) 26,0%
+B) 28,2%
+C) 32,0%
+D) 34,9%
+R: B
+E: A resposta correta é B porque 28,2% das startups afirmaram ter recebido acima de R$ 1 milhão em investimentos.
+
+P: Qual tipo de investimento foi o mais comum entre as startups?
+A) Fomento público
+B) Programa de aceleração
+C) Investidor-anjo
+D) Crowdfunding
+R: C
+E: A resposta correta é C porque 39,8% das startups receberam investimento de investidores-anjo, liderando o ranking.
+
+P: Qual o percentual de startups que têm uma rodada de investimento aberta atualmente?
+A) 26,2%
+B) 28,2%
+C) 32,0%
+D) 34,9%
+R: C
+E: A resposta correta é C porque o relatório afirma que 32,0% das startups têm rodada de investimento aberta.
+
+P: Qual o percentual de startups que receberam investimento local (da cidade ou estado)?
+A) 68,1%
+B) 60,4%
+C) 35,1%
+D) 29,8%
+R: A
+E: A resposta correta é A porque 68,1% das startups receberam investimento da sua cidade ou estado, conforme o relatório.
+
+P: Qual o percentual de startups que receberam investimento da própria cidade?
+A) 35,1%
+B) 33,0%
+C) 29,8%
+D) 2,1%
+R: B
+E: A resposta correta é B porque 33,0% das startups receberam investimento de dentro da cidade onde estão.
+
+P: Qual faixa de valor recebeu o maior percentual de investimentos?
+A) Até R$ 10.000,00
+B) Entre R$ 10.001,00 a R$ 30.000,00
+C) Entre R$ 30.001,00 a R$ 50.000,00
+D) Entre R$ 50.001,00 a R$ 250.000,00
+R: D
+E: A resposta correta é D porque 29,6% das startups estão nessa faixa, o maior percentual entre as categorias de valor.
+
+P: Qual percentual de startups afirmou não buscar investimento?
+A) 34,9%
+B) 52,4%
+C) 47,6%
+D) 65,1%
+R: B
+E: A resposta correta é B porque 52,4% das startups disseram não estar buscando investimento atualmente.
+
+P: Qual o principal motivo apontado pelas startups para não ter recebido investimento?
+A) A startup está em fase inicial
+B) Não encontraram investidores
+C) Estão se preparando para buscar
+D) Já fazem bootstrapping
+R: C
+E: A resposta correta é C porque 36,1% das startups disseram estar se preparando para buscar investimentos agora, sendo o principal motivo entre as opções.
+
+P: Qual percentual de startups considera o apoio à diversidade como “muito importante”?
+A) 25,9%
+B) 59%
+C) 51%
+D) 17,6%
+R: C
+E: A resposta correta é C porque 51% das startups consideram o apoio à diversidade muito importante.
+
+P: Qual percentual de startups não realiza nenhuma ação ou processo seletivo voltado para diversidade?
+A) 31,9%
+B) 59%
+C) 9,1%
+D) 51%
+R: B
+E: A resposta correta é B porque 59% das startups afirmaram não ter ações ou processos seletivos voltados para diversidade.
+
+P: Qual é a média de mulheres no time das startups?
+A) 2
+B) 5
+C) 7
+D) 10
+R: C
+E: A resposta correta é C porque a média de mulheres nas equipes das startups é de 7 colaboradoras, conforme o relatório.
+
+P: Qual percentual das startups tem entre 1 e 5 mulheres em sua equipe?
+A) 74,8%
+B) 84,4%
+C) 91,8%
+D) 82,3%
+R: A
+E: A resposta correta é A porque 74,8% das startups possuem entre 1 e 5 mulheres em seu time.
+
+P: Qual é a média de pessoas pretas e pardas no time das startups?
+A) 2
+B) 5
+C) 7
+D) 10
+R: B
+E: A resposta correta é B porque a média de pessoas pretas e pardas nas equipes é de 5.
+
+P: Qual percentual de startups tem entre 1 e 5 pessoas pretas ou pardas na equipe?
+A) 82,8%
+B) 74,8%
+C) 90,3%
+D) 84,4%
+R: A
+E: A resposta correta é A porque 82,8% das startups têm entre 1 e 5 pessoas pretas ou pardas no time.
+
+P: Qual é a média de pessoas com deficiência por startup?
+A) 1
+B) 2
+C) 3
+D) 5
+R: D
+E: A resposta correta é D porque o relatório aponta que a média de pessoas com deficiência por startup é de 5.
+
+P: Qual percentual de startups tem entre 1 e 5 pessoas com deficiência na equipe?
+A) 74,8%
+B) 91,8%
+C) 82,8%
+D) 84,4%
+R: B
+E: A resposta correta é B porque 91,8% das startups contam com entre 1 e 5 pessoas com deficiência.
+
+P: Qual é a média de pessoas LGBTQIAPN+ por startup?
+A) 2
+B) 3
+C) 4
+D) 5
+R: C
+E: A resposta correta é C porque o relatório mostra que a média de pessoas LGBTQIAPN+ é de 4 por equipe.
+
+P: Qual percentual de startups tem entre 1 e 5 pessoas LGBTQIAPN+ no time?
+A) 74,8%
+B) 82,3%
+C) 84,4%
+D) 91,8%
+R: C
+E: A resposta correta é C porque 84,4% das startups têm entre 1 e 5 pessoas LGBTQIAPN+ em seus times.
+
+P: Qual foi a média de colaboradores contratados pelas startups no último ano?
+A) 2
+B) 4
+C) 6
+D) 10
+R: C
+E: A resposta correta é C porque o relatório informa que as startups contrataram em média 6 colaboradores no último ano.
+
+P: Qual percentual de startups contratou entre 1 e 5 colaboradores no último ano?
+A) 84,8%
+B) 73,5%
+C) 51,7%
+D) 43,4%
+R: B
+E: A resposta correta é B porque 73,5% das startups contrataram entre 1 e 5 colaboradores no último ano.
+
+P: Qual foi o principal motivo para não realizar contratações nas startups?
+A) Incompatibilidade cultural
+B) Fase de reestruturação
+C) Não encontraram pessoas com todas as skills necessárias
+D) Alta pretensão salarial dos candidatos
+R: C
+E: A resposta correta é C porque 43,4% das startups disseram que não contrataram por não encontrarem alguém com todas as skills.
+
+P: Qual foi o segundo motivo mais citado para não contratar?
+A) Priorização de diversidade
+B) Pretensão salarial alta
+C) Motivos internos
+D) Falta de tempo para seleção
+R: C
+E: A resposta correta é C porque 19,8% das startups mencionaram motivos internos para adiar ou cancelar vagas.
+
+P: Qual foi a média de colaboradores desligados nas startups no último ano?
+A) 1
+B) 2
+C) 4
+D) 6
+R: B
+E: A resposta correta é B porque a média de colaboradores desligados no ano foi de 2 por startup.
+
+P: Qual o principal motivo para os desligamentos nas startups?
+A) Mudanças imprevistas de colaboradores
+B) Reestruturação
+C) Necessidade de corte de gastos
+D) Incompatibilidade cultural e/ou de valores
+R: D
+E: A resposta correta é D porque 44,8% das startups apontaram incompatibilidade cultural/valores como o motivo principal.
+
+P: Qual percentual de startups afirmou que não contratou ninguém no último ano?
+A) 26,5%
+B) 43,4%
+C) 59%
+D) 13,2%
+R: A
+E: A resposta correta é A porque, se 73,5% contrataram entre 1 e 5 colaboradores, o restante (26,5%) não contratou ou contratou acima dessa faixa (valores muito menores).
+
+P: Qual percentual de startups possui modelo de trabalho totalmente remoto (home office)?
+A) 44,8%
+B) 44,1%
+C) 11,1%
+D) 58,6%
+R: A
+E: A resposta correta é A porque 44,8% das startups funcionam em modelo 100% remoto.
+
+P: Qual modelo de trabalho teve crescimento em relação a 2023?
+A) Remoto
+B) Presencial
+C) Semi presencial (híbrido)
+D) Nenhum modelo cresceu
+R: C
+E: A resposta correta é C porque o modelo híbrido subiu de 39,7% para 44,1%, segundo o relatório.
+
+P: Qual o percentual de startups que identificaram incompatibilidade cultural como principal motivo para desligamento?
+A) 27,9%
+B) 17,7%
+C) 44,8%
+D) 9,6%
+R: C
+E: A resposta correta é C porque esse é o motivo mais citado, com 44,8% das respostas.
+
+P: Qual percentual de startups não presta serviços para órgãos públicos?
+A) 60,9%
+B) 91,1%
+C) 8,9%
+D) 39,1%
+R: B
+E: A resposta correta é B porque o relatório informa que 91,1% das startups não prestam serviços ao setor público.
+
+P: Qual o percentual de startups que prestam serviços para algum órgão público?
+A) 6,2%
+B) 8,9%
+C) 12,4%
+D) 3,0%
+R: B
+E: A resposta correta é B porque 8,9% das startups afirmaram prestar serviços para órgãos públicos.
+
+P: Qual o percentual de startups que têm interesse em trabalhar com o setor público?
+A) 91,1%
+B) 60,9%
+C) 39,1%
+D) 29,2%
+R: B
+E: A resposta correta é B porque o relatório aponta que 60,9% das startups têm interesse em trabalhar com órgãos públicos.
+
+P: Qual o percentual de startups que não têm interesse em prestar serviços para o governo?
+A) 8,9%
+B) 91,1%
+C) 39,1%
+D) 60,9%
+R: C
+E: A resposta correta é C porque 39,1% das startups declararam não ter interesse em trabalhar com o setor público.
+
+P: Qual foi o principal motivo apontado pelas startups para não trabalhar com o setor público?
+A) Insegurança financeira
+B) Falta de oportunidade
+C) Excesso de burocracia
+D) Baixa demanda
+R: C
+E: A resposta correta é C porque 46,5% das startups citaram o excesso de burocracia como o maior empecilho.
+
+P: Qual percentual de startups não quer trabalhar com o setor público por insegurança jurídica?
+A) 11,9%
+B) 12,4%
+C) 29,2%
+D) 46,5%
+R: B
+E: A resposta correta é B porque o relatório indica que 12,4% das startups citaram insegurança jurídica como motivo para não atuar com o setor público.
+
+P: Qual percentual de startups apontou insegurança financeira como motivo para não atuar com governo?
+A) 12,4%
+B) 11,9%
+C) 29,2%
+D) 46,5%
+R: B
+E: A resposta correta é B porque 11,9% das startups mencionaram a insegurança financeira como barreira.
+
+P: Qual percentual de startups indicou “outros motivos” para não atuar com o setor público?
+A) 12,4%
+B) 11,9%
+C) 29,2%
+D) 46,5%
+R: C
+E: A resposta correta é C porque 29,2% das startups selecionaram a opção "outros" como justificativa.
+
+P: Qual o aumento percentual no número de startups que prestam serviços para o setor público entre 2023 e 2024?
+A) De 6,2% para 7,3%
+B) De 3% para 8,9%
+C) De 31,1% para 33%
+D) De 39,7% para 44,1%
+R: B
+E: A resposta correta é B porque o relatório indica que o número de startups que prestam serviços públicos aumentou de 3% para 8,9%.
+
+P: Qual o aumento percentual de startups sem interesse em atuar com governo entre os anos?
+A) De 6,2% para 7,3%
+B) De 3% para 8,9%
+C) De 23,7% para 39,1%
+D) De 39,7% para 44,1%
+R: C
+E: A resposta correta é C porque o relatório aponta que o desinteresse subiu de 23,7% para 39,1% entre um ano e outro.
+
+P: Quantos dos 19 segmentos avaliados apresentaram queda no Índice de Densidade Setorial em 2024?
+A) 2
+B) 13
+C) 7
+D) 5
+R: B
+E: A resposta correta é B porque o relatório afirma que 13 dos 19 setores avaliados tiveram queda na densidade de startups neste levantamento.
+
+P: Quantos setores que registraram alta em 2024 haviam tido queda no ano anterior?
+A) 2
+B) 3
+C) 5
+D) 7
+R: A
+E: A resposta correta é A porque o texto destaca que 2 dos 5 setores que subiram haviam caído no índice do ano anterior.
+
+P: Qual o índice médio base usado para o cálculo do Índice de Densidade Setorial?
+A) 0,5
+B) 1,0
+C) 1,5
+D) 2,0
+R: B
+E: A resposta correta é B porque o relatório informa que o índice é baseado em uma média base 1,00.
+
+P: Qual foi o crescimento percentual de operações com fintechs até outubro de 2024?
+A) 10%
+B) 12%
+C) 13%
+D) 15%
+R: C
+E: A resposta correta é C porque o relatório indica que as operações com fintechs cresceram 13% no período mencionado.
+
+P: Quantas edições do Índice de Densidade Setorial de Startups foram realizadas até 2024?
+A) 2
+B) 3
+C) 4
+D) 5
+R: C
+E: A resposta correta é C porque a edição de 2024 é a 4ª edição, conforme mencionado explicitamente no relatório.
+
+P: Qual o percentual de startups do mapeamento que atuam no B2B, B2B2C e B2G considerados para o índice?
+A) 87%
+B) 85%
+C) 82%
+D) 80%
+R: B
+E: A resposta correta é B porque o texto afirma que 85% das startups consideradas para o índice atuam nesses modelos.
+
+P: Qual foi a variação percentual do número de empresas brasileiras com 100 ou mais funcionários usadas como base no índice em relação à edição anterior?
+A) +1%
+B) -1,5%
+C) +0,5%
+D) Estável
+R: C
+E: A resposta correta é C porque o relatório indica que houve um crescimento de +0,5% na quantidade de empresas consideradas.
+
+P: Qual foi o número de empresas com 100 ou mais funcionários consideradas no índice de 2024?
+A) 48.000
+B) 52.757
+C) 50.020
+D) 55.100
+R: B
+E: A resposta correta é B porque foram utilizadas 52.757 empresas como base para o cálculo.
+
+P: Quais dois setores permanecem nas últimas posições do Índice de Densidade desde a 1ª edição?
+A) Agronegócio e Educação
+B) Papel e Celulose, Indústria Química
+C) Transporte e Veículos
+D) Siderurgia e Construção
+R: B
+E: A resposta correta é B porque Papel e Celulose e Indústria Química seguem nas últimas posições, conforme o relatório.
+
+P: Quais foram os dois primeiros colocados no ranking do índice desde a 1ª edição?
+A) Saúde e Energia
+B) Indústria e Comércio
+C) Educação e Atividades Financeiras
+D) TIC e Hotelaria
+R: C
+E: A resposta correta é C porque Educação e Atividades Financeiras lideram o ranking desde a 1ª edição, segundo o texto.
+
+P: Quantas startups foram mapeadas no estudo de 2024?
+A) 2005
+B) 3005
+C) 3700
+D) 14.000
+R: B
+E: A resposta correta é B porque o relatório declara que 3005 startups ativas participaram do mapeamento de 2024.
+
+P: Quantas cidades brasileiras participaram do estudo de mapeamento?
+A) 140
+B) 270
+C) 370
+D) 470
+R: C
+E: A resposta correta é C porque o relatório menciona que startups de 370 cidades participaram da pesquisa.
+
+P: Qual o tamanho da base de referência utilizada para o cálculo amostral?
+A) 3.005 startups
+B) 6.000 startups
+C) 14.000 startups
+D) 30.000 startups
+R: C
+E: A resposta correta é C porque a base referencial do estudo é de 14.000 startups, segundo a metodologia.
+
+P: Qual o nível de confiança estatística da amostra do mapeamento?
+A) 90%
+B) 92%
+C) 95%
+D) 99%
+R: C
+E: A resposta correta é C porque o estudo foi realizado com um nível de confiança de 95%.
+
+P: Qual a margem de erro da pesquisa do Mapeamento de Startups 2024?
+A) 1%
+B) 2%
+C) 3%
+D) 5%
+R: B
+E: A resposta correta é B porque a margem de erro estimada da pesquisa é de 2%, conforme indicado na seção de metodologia.
+
+P: Qual a abordagem da pesquisa realizada para o estudo?
+A) Qualitativa
+B) Exploratória
+C) Quantitativa
+D) Experimental
+R: C
+E: A resposta correta é C porque o estudo utilizou abordagem quantitativa, como descrito na metodologia.
+
+P: Qual o percentual de startups que afirmaram já terem internacionalizado suas operações?
+A) 2,6%
+B) 11,1%
+C) 25,9%
+D) 60,4%
+R: B
+E: A resposta correta é B porque 11,1% das startups afirmaram já terem internacionalizado, segundo o relatório.
+
+P: Qual o percentual de startups que pensam em internacionalizar em breve, mas ainda não o fizeram?
+A) 25,9%
+B) 11,1%
+C) 2,6%
+D) 60,4%
+R: A
+E: A resposta correta é A porque 25,9% das startups disseram que pensam em internacionalizar em breve.
+
+P: Qual o percentual de startups que afirmaram não ter interesse em internacionalizar?
+A) 25,9%
+B) 11,1%
+C) 2,6%
+D) 60,4%
+R: D
+E: A resposta correta é D porque 60,4% afirmaram que não têm intenção de internacionalizar suas startups.
+
+P: Qual foi a média de colaboradoras mães nas startups, segundo o relatório?
+A) 1
+B) 2
+C) 3
+D) 5
+R: B
+E: A resposta correta é B porque a média de colaboradoras mães é de 2 por startup, conforme indicado na seção de diversidade.

@@ -342,14 +342,6 @@ D) 25
 R: C
 E: A resposta correta é C porque o número médio informado no relatório é de 20 colaboradores por startup.
 
-P: Qual é o percentual de startups fundadas a partir de 2020?
-A) 38,2%
-B) 41,9%
-C) 45,4%
-D) 39,5%
-R: B
-E: A resposta correta é B porque 41,9% das startups participantes foram fundadas a partir de 2020.
-
 P: Qual dos modelos de receita aparece em menor proporção entre as startups brasileiras?
 A) API (Application Programming Interface)
 B) Licenciamento
@@ -373,14 +365,6 @@ C) Rio de Janeiro
 D) Santa Catarina
 R: B
 E: A resposta correta é B porque o estado de São Paulo representa 40,7% das startups mapeadas.
-
-P: Qual percentual das startups atua com o público B2B2C?
-A) 13%
-B) 28,6%
-C) 39%
-D) 82,7%
-R: B
-E: A resposta correta é B porque 28,6% das startups atendem tanto empresas quanto consumidores finais, ou seja, modelo B2B2C.
 
 P: Qual segmento perdeu a terceira posição no ranking de setores com mais startups para o segmento Tech em 2024?
 A) Agtech
@@ -406,14 +390,6 @@ D) 5 anos ou mais
 R: B
 E: A resposta correta é B porque 32,2% das startups foram fundadas há menos de 1 ano, segundo os dados.
 
-P: Qual percentual das startups declarou ter sede ou escritório no exterior, mas ainda não internacionalizou o negócio?
-A) 2,6%
-B) 25,9%
-C) 11,1%
-D) 60,4%
-R: A
-E: A resposta correta é A porque esse é o percentual de startups com sede internacional, mas que ainda não internacionalizaram.
-
 P: Qual das opções representa um dos principais canais de relacionamento das startups com o ecossistema?
 A) Tribunais de Justiça
 B) Hubs de inovação
@@ -438,14 +414,6 @@ D) 30 anos
 R: B
 E: A resposta correta é B porque o relatório indica que a média de idade das pessoas fundadoras é de 40 anos.
 
-P: Qual percentual de pessoas fundadoras são mulheres, de acordo com o levantamento?
-A) 19,2%
-B) 23,6%
-C) 40,2%
-D) 32,1%
-R: A
-E: A resposta correta é A porque apenas 19,2% das pessoas fundadoras são mulheres, segundo o relatório.
-
 P: Qual das opções abaixo representa a escolaridade mais comum entre as pessoas fundadoras de startups?
 A) Mestrado
 B) Ensino Superior (Graduação/Tecnólogo)
@@ -453,22 +421,6 @@ C) Doutorado
 D) Ensino Médio
 R: B
 E: A resposta correta é B porque 32,1% das pessoas fundadoras possuem ensino superior como nível de escolaridade.
-
-P: Quantos por cento das pessoas fundadoras também atuam na diretoria executiva de suas startups?
-A) 40,6%
-B) 57,3%
-C) 70,5%
-D) 72,4%
-R: D
-E: A resposta correta é D porque 72,4% dos fundadores também exercem funções de diretoria.
-
-P: Qual é a proporção de pessoas pretas e pardas entre os fundadores de startups?
-A) 6%
-B) 17,6%
-C) 23,6%
-D) 19,2%
-R: C
-E: A resposta correta é C porque 23,6% dos fundadores se identificam como pretos ou pardos.
 
 P: Qual faixa etária concentra o maior número de pessoas fundadoras?
 A) Entre 18 e 24 anos
@@ -478,54 +430,6 @@ D) Acima de 64 anos
 R: C
 E: A resposta correta é C porque 40,6% das pessoas fundadoras estão na faixa de 35 a 44 anos.
 
-P: Quantos por cento das pessoas fundadoras se identificam como homens cisgêneros?
-A) 79,3%
-B) 70,5%
-C) 91,6%
-D) 83,2%
-R: A
-E: A resposta correta é A porque o relatório indica que 79,3% dos fundadores são homens cis.
-
-P: Qual percentual de fundadores afirmam ter filhos?
-A) 41,1%
-B) 57,3%
-C) 72,4%
-D) 19,2%
-R: B
-E: A resposta correta é B porque 57,3% dos fundadores de startups declararam ter filhos.
-
-P: Em relação à orientação sexual, qual é a porcentagem de fundadores que se identificam como heterossexuais?
-A) 83,4%
-B) 91,6%
-C) 88,8%
-D) 79,3%
-R: B
-E: A resposta correta é B porque 91,6% dos fundadores se identificam como heterossexuais.
-
-P: Qual é o percentual de pessoas fundadoras que possuem pós-graduação ou especialização?
-A) 40,2%
-B) 32,1%
-C) 13,2%
-D) 8,1%
-R: A
-E: A resposta correta é A porque 40,2% das pessoas fundadoras realizaram algum tipo de especialização após o ensino superior.
-
-P: Qual é o percentual de pessoas fundadoras que se identificam como pessoas brancas?
-A) 70,5%
-B) 79,3%
-C) 40,6%
-D) 91,6%
-R: A
-E: A resposta correta é A porque 70,5% das pessoas fundadoras declararam ser brancas.
-
-P: Qual é o percentual de pessoas fundadoras que preferiram não declarar sua orientação sexual?
-A) 2,2%
-B) 3,4%
-C) 6,1%
-D) 1,1%
-R: B
-E: A resposta correta é B porque 3,4% dos respondentes preferiram não informar sua orientação sexual.
-
 P: Qual faixa etária representa a menor proporção de fundadores de startups, segundo o estudo?
 A) Entre 18 e 24 anos
 B) Entre 25 e 34 anos
@@ -533,22 +437,6 @@ C) Entre 45 e 54 anos
 D) Acima de 64 anos
 R: D
 E: A resposta correta é D porque apenas 1,4% dos fundadores estão acima de 64 anos.
-
-P: Qual é o percentual de pessoas fundadoras que possuem mestrado?
-A) 6,0%
-B) 13,2%
-C) 8,1%
-D) 40,2%
-R: B
-E: A resposta correta é B porque 13,2% dos fundadores declararam possuir mestrado completo.
-
-P: Qual é o percentual de pessoas fundadoras que se identificam como pessoas indígenas?
-A) 2%
-B) 1,1%
-C) 0,1%
-D) 3,8%
-R: C
-E: A resposta correta é C porque apenas 0,1% dos fundadores se autodeclararam indígenas no levantamento.
 
 P: Qual foi o valor médio de investimento recebido pelas startups brasileiras, segundo o mapeamento de 2024?
 A) R$ 500 mil
@@ -558,14 +446,6 @@ D) R$ 2 milhões
 R: C
 E: A resposta correta é C porque o valor médio informado no estudo foi de R$ 1,1 milhão.
 
-P: Qual percentual das startups declarou já ter recebido algum tipo de investimento?
-A) 47,6%
-B) 32%
-C) 65,1%
-D) 34,9%
-R: D
-E: A resposta correta é D porque 34,9% das startups afirmaram ter recebido investimento em algum momento da trajetória.
-
 P: Qual tipo de investimento é o mais comum entre as startups mapeadas?
 A) Corporate Venture Capital
 B) Crowdfunding
@@ -573,14 +453,6 @@ C) Investidor-Anjo
 D) Seed Capital
 R: C
 E: A resposta correta é C porque 39,8% das startups receberam investimento por meio de investidores-anjo, liderando o ranking.
-
-P: Qual percentual das startups afirmou ter uma rodada de investimento aberta no momento da pesquisa?
-A) 26%
-B) 32%
-C) 34,9%
-D) 47,6%
-R: B
-E: A resposta correta é B porque 32% das startups disseram estar com rodada de captação em andamento.
 
 P: A maioria dos investimentos recebidos pelas startups tem origem:
 A) De outros países
@@ -614,14 +486,6 @@ D) Estão se preparando para buscar investimento agora
 R: D
 E: A resposta correta é D porque 36,1% das startups que ainda não receberam investimento disseram estar se preparando para começar a busca.
 
-P: Qual é o percentual de startups que estão ativamente buscando investimento?
-A) 47,6%
-B) 68,0%
-C) 34,9%
-D) 26,2%
-R: A
-E: A resposta correta é A porque o relatório mostra que 47,6% das startups estão em processo ativo de busca por investimento.
-
 P: Qual das opções apresenta o maior percentual de valor de investimento recebido pelas startups?
 A) De R$ 500 mil a R$ 1 milhão
 B) De R$ 50 mil a R$ 250 mil
@@ -646,14 +510,6 @@ D) Atuam no modelo B2B2C
 R: C
 E: A resposta correta é C porque 65,1% das startups afirmaram nunca ter recebido nenhum tipo de investimento.
 
-P: O investimento tipo "Corporate Venture Capital" foi recebido por qual percentual de startups?
-A) 7,9%
-B) 2,2%
-C) 11,3%
-D) 17,1%
-R: C
-E: A resposta correta é C porque 11,3% das startups receberam investimento via Corporate Venture Capital.
-
 P: Qual dos seguintes tipos de investimento aparece com 8,1% de incidência entre as startups?
 A) Investidor-anjo
 B) Programa de aceleração
@@ -662,22 +518,6 @@ D) Seed capital
 R: B
 E: A resposta correta é B porque o mapeamento mostra que 8,1% das startups receberam investimento por meio de programas de aceleração.
 
-P: Qual percentual das startups recebeu investimento por meio de “Fundo de Investimento”?
-A) 9,2%
-B) 2,2%
-C) 6,8%
-D) 3,4%
-R: A
-E: A resposta correta é A porque 9,2% das startups relataram esse tipo de aporte.
-
-P: O tipo de investimento "Fomento público" foi indicado por qual porcentagem de startups?
-A) 3,4%
-B) 11,3%
-C) 6,8%
-D) 8,1%
-R: C
-E: A resposta correta é C porque 6,8% das startups foram apoiadas via fomento público, como editais e recursos governamentais.
-
 P: O relatório aponta que 26,2% das startups:
 A) Estão com rodada de captação em aberto
 B) Nunca buscaram investimento
@@ -685,134 +525,6 @@ C) Estão formalmente internacionalizadas
 D) Utilizam exclusivamente o modelo B2C
 R: B
 E: A resposta correta é B porque esse percentual corresponde às startups que nunca buscaram investimento até o momento da pesquisa.
-
-P: O percentual de startups que receberam investimentos entre R$ 250 mil e R$ 500 mil é:
-A) 29,6%
-B) 16,9%
-C) 22,2%
-D) 11,3%
-R: C
-E: A resposta correta é C porque 22,2% das startups receberam aportes dentro dessa faixa de valor.
-
-P: Segundo o mapeamento, qual é o percentual de startups que contam com ao menos uma mulher na sociedade?
-A) 32%
-B) 42,1%
-C) 50,5%
-D) 19,2%
-R: C
-E: A resposta correta é C porque 50,5% das startups têm ao menos uma mulher entre os sócios.
-
-P: Qual é o percentual de startups cuja equipe de sócios é exclusivamente formada por homens?
-A) 19,2%
-B) 34,9%
-C) 49,5%
-D) 57,3%
-R: C
-E: A resposta correta é C porque o relatório aponta que 49,5% das startups têm composição exclusivamente masculina entre os sócios.
-
-P: Qual é o percentual de startups com ao menos uma pessoa negra ou parda entre os sócios?
-A) 30,4%
-B) 45,1%
-C) 23,6%
-D) 16,5%
-R: A
-E: A resposta correta é A porque 30,4% das startups contam com sócios que se identificam como pretos ou pardos.
-
-P: A presença de pessoas LGBTQIAPN+ nas sociedades das startups foi registrada em:
-A) 8,9% das empresas
-B) 19,2% das empresas
-C) 13,2% das empresas
-D) 11,1% das empresas
-R: A
-E: A resposta correta é A porque 8,9% das startups indicaram ter sócios que se identificam como LGBTQIAPN+.
-
-P: Quantos por cento das startups possuem pelo menos uma pessoa com deficiência entre os sócios?
-A) 2,4%
-B) 6,1%
-C) 3,4%
-D) 4,7%
-R: C
-E: A resposta correta é C porque apenas 3,4% das startups relataram ter ao menos uma pessoa com deficiência na sociedade.
-
-P: Qual é a proporção de startups cujos fundadores têm formações acadêmicas distintas?
-A) 68%
-B) 56,4%
-C) 72,5%
-D) 49,5%
-R: B
-E: A resposta correta é B porque 56,4% das startups são compostas por sócios com formações acadêmicas diferentes.
-
-P: Em relação à diversidade geracional, quantas startups têm sócios com idades diferentes entre si?
-A) 83,4%
-B) 65,2%
-C) 70,5%
-D) 91,6%
-R: A
-E: A resposta correta é A porque 83,4% das startups afirmaram ter sócios com idades variadas.
-
-P: O percentual de startups que têm fundadores com experiências profissionais em áreas diferentes é de:
-A) 79,3%
-B) 91,6%
-C) 83,4%
-D) 65,1%
-R: B
-E: A resposta correta é B porque o relatório mostra que 91,6% das startups possuem fundadores com experiências profissionais diversas.
-
-P: Quantos por cento das startups contam com sócios que se autodeclaram indígenas?
-A) 0,1%
-B) 1,1%
-C) 2,2%
-D) 3,4%
-R: A
-E: A resposta correta é A porque o relatório aponta que apenas 0,1% dos fundadores se autodeclaram indígenas.
-
-P: Em relação à diversidade, qual é o percentual de startups que possuem sócios com diferentes origens geográficas?
-A) 56,4%
-B) 70,5%
-C) 61,8%
-D) 45,1%
-R: C
-E: A resposta correta é C porque o relatório aponta que 61,8% das startups têm sócios de diferentes regiões do país.
-
-P: Segundo o relatório, quantos por cento das startups contam com sócios de diferentes níveis de escolaridade?
-A) 45,1%
-B) 61,8%
-C) 56,4%
-D) 49,5%
-R: A
-E: A resposta correta é A porque 45,1% das startups possuem sócios com escolaridades distintas.
-
-P: Em relação à diversidade religiosa entre os fundadores, o mapeamento registrou:
-A) 25,2%
-B) 40,6%
-C) 19,2%
-D) 32%
-R: A
-E: A resposta correta é A porque 25,2% das startups declararam possuir diversidade religiosa entre os sócios.
-
-P: Qual percentual de startups possui diversidade racial entre os fundadores?
-A) 30,4%
-B) 45,1%
-C) 11,1%
-D) 19,2%
-R: B
-E: A resposta correta é B porque 45,1% das startups contam com diversidade racial entre os sócios.
-
-P: A diversidade de identidade de gênero entre sócios aparece em:
-A) 8,9% das startups
-B) 23,6% das startups
-C) 13,2% das startups
-D) 6,1% das startups
-R: C
-E: A resposta correta é C porque 13,2% das startups relataram ter diversidade de identidade de gênero entre os fundadores.
-
-P: A diversidade de orientação sexual entre os fundadores está presente em qual percentual de startups?
-A) 3,4%
-B) 6,1%
-C) 8,9%
-D) 11,1%
-R: D
-E: A resposta correta é D porque 11,1% das startups informaram ter diversidade quanto à orientação sexual entre os sócios.
 
 P: Qual das alternativas representa uma forma de diversidade com menor incidência nas sociedades das startups?
 A) Diversidade geracional
@@ -837,38 +549,6 @@ C) 10
 D) 25
 R: B
 E: A resposta correta é B porque o relatório aponta uma média de 20 colaboradores por startup.
-
-P: Qual é o percentual de startups com até 10 colaboradores?
-A) 45,4%
-B) 38,2%
-C) 50,5%
-D) 34,9%
-R: A
-E: A resposta correta é A porque 45,4% das startups possuem até 10 pessoas em sua equipe.
-
-P: Quantos por cento das startups têm entre 11 e 50 colaboradores?
-A) 25,2%
-B) 30,4%
-C) 34,5%
-D) 45,1%
-R: C
-E: A resposta correta é C porque 34,5% das startups possuem entre 11 e 50 colaboradores.
-
-P: Qual percentual das startups possui mais de 100 colaboradores?
-A) 2,1%
-B) 4,7%
-C) 6,1%
-D) 8,9%
-R: B
-E: A resposta correta é B porque apenas 4,7% das startups têm mais de 100 colaboradores.
-
-P: Segundo o relatório, 83,4% das startups afirmaram ter realizado:
-A) Processos seletivos com foco em diversidade racial
-B) Contratações nos últimos 12 meses
-C) Redução de pessoal devido à crise
-D) Treinamentos obrigatórios para toda a equipe
-R: B
-E: A resposta correta é B porque 83,4% das startups declararam ter contratado pelo menos uma pessoa no último ano.
 
 P: Qual é a principal área de contratação das startups, segundo o mapeamento?
 A) Recursos Humanos
@@ -902,38 +582,6 @@ D) Freelancers por demanda
 R: C
 E: A resposta correta é C porque o regime CLT foi o mais citado entre as formas de contratação pelas startups.
 
-P: Qual é o percentual de startups que contratam exclusivamente no regime CLT?
-A) 57,3%
-B) 49,5%
-C) 40,2%
-D) 61,8%
-R: A
-E: A resposta correta é A porque 57,3% das startups contratam exclusivamente via CLT, segundo o relatório.
-
-P: O percentual de startups que contratam via CLT e também como PJ é de:
-A) 13,2%
-B) 25,2%
-C) 8,1%
-D) 19,2%
-R: B
-E: A resposta correta é B porque 25,2% das startups adotam ambos os regimes de contratação (CLT + PJ).
-
-P: Quantos por cento das startups utilizam exclusivamente o modelo de contratação PJ?
-A) 4,7%
-B) 8,1%
-C) 6,1%
-D) 2,2%
-R: C
-E: A resposta correta é C porque apenas 6,1% das startups contrataram exclusivamente no modelo Pessoa Jurídica.
-
-P: Qual é o percentual de startups que atuam com colaboradores voluntários?
-A) 1,1%
-B) 2,4%
-C) 3,4%
-D) 4,2%
-R: A
-E: A resposta correta é A porque apenas 1,1% das startups declararam trabalhar com voluntariado.
-
 P: Segundo o mapeamento, o modelo de trabalho mais adotado pelas startups é:
 A) Totalmente remoto
 B) Híbrido
@@ -950,14 +598,6 @@ D) Exigência dos clientes
 R: C
 E: A resposta correta é C porque muitas startups destacaram que o modelo híbrido melhora o engajamento e a produtividade da equipe.
 
-P: Qual percentual de startups afirmou já ter se relacionado com algum ente público ou governo?
-A) 26,2%
-B) 47,6%
-C) 68,0%
-D) 34,9%
-R: C
-E: A resposta correta é C porque 68% das startups declararam já ter estabelecido algum tipo de relação com o setor público.
-
 P: Dentre as startups que se relacionaram com o governo, qual a forma mais comum de vínculo?
 A) Parceria para inovação
 B) Venda de produtos e serviços
@@ -966,14 +606,6 @@ D) Doação de soluções para uso social
 R: B
 E: A resposta correta é B porque a maioria das startups que se relacionaram com o governo o fizeram vendendo produtos ou serviços.
 
-P: Qual a porcentagem de startups que se relacionaram com o governo via programas de aceleração pública?
-A) 13,2%
-B) 25,2%
-C) 8,1%
-D) 19,2%
-R: D
-E: A resposta correta é D porque 19,2% das startups se envolveram com programas de aceleração promovidos por instituições públicas.
-
 P: Um dos principais desafios enfrentados pelas startups ao lidar com o setor público é:
 A) Falta de mão de obra qualificada
 B) Burocracia nos processos de contratação
@@ -981,30 +613,6 @@ C) Instabilidade das ferramentas tecnológicas
 D) Baixa qualificação das equipes internas
 R: B
 E: A resposta correta é B porque a burocracia foi apontada como uma das maiores dificuldades para startups que lidam com o setor público.
-
-P: Quantas startups relataram nunca ter tido qualquer tipo de relação com o setor público?
-A) 32%
-B) 45,1%
-C) 52%
-D) 60,4%
-R: D
-E: A resposta correta é D porque 60,4% das startups afirmaram nunca ter tido relação com o setor público.
-
-P: Segundo o relatório, o percentual de startups que participaram de editais públicos é:
-A) 26,2%
-B) 34,9%
-C) 13,2%
-D) 19,2%
-R: A
-E: A resposta correta é A porque 26,2% das startups participaram de editais como forma de interação com o setor público.
-
-P: Qual é o percentual de startups que receberam fomento público, como recursos financeiros ou incentivos fiscais?
-A) 19,2%
-B) 26,2%
-C) 11,3%
-D) 6,8%
-R: D
-E: A resposta correta é D porque apenas 6,8% das startups indicaram ter recebido algum tipo de fomento público direto.
 
 P: Em relação aos níveis de governo, as startups se relacionam mais com:
 A) Governo federal

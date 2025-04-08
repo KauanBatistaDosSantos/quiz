@@ -1,11 +1,3 @@
-P: A participação das startups em eventos promovidos por entes públicos foi indicada por qual percentual?
-A) 13,2%
-B) 6,1%
-C) 11,1%
-D) 8,9%
-R: A
-E: A resposta correta é A porque 13,2% das startups afirmaram ter participado de eventos públicos, como feiras e encontros de inovação.
-
 P: O mapeamento destaca que startups que se relacionam com o governo tendem a:
 A) Aumentar seus custos operacionais
 B) Reduzir sua equipe de desenvolvimento
@@ -141,14 +133,6 @@ C) Monitorar exclusivamente startups de base universitária
 D) Identificar startups com potencial para exportação
 R: B
 E: A resposta correta é B porque o mapeamento busca munir governos, investidores, incubadoras e as próprias startups com dados estratégicos.
-
-P: Quantas startups participaram do mapeamento de 2024?
-A) 1.152
-B) 2.100
-C) 2.745
-D) 3.219
-R: C
-E: A resposta correta é C porque o relatório indica que 2.745 startups responderam à pesquisa.
 
 P: Qual instituição é responsável pela organização e publicação do mapeamento?
 A) Ministério da Ciência e Tecnologia
