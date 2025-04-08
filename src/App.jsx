@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function QuizInterativo() {
   const [quizList, setQuizList] = useState([]);
@@ -12,6 +12,7 @@ export default function QuizInterativo() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
+  const tooltipRef = useRef(null);
 
   const shuffleArray = (array) => {
     return array.map(value => ({ value, sort: Math.random() }))
@@ -99,7 +100,18 @@ export default function QuizInterativo() {
         setQuizLengths(lengths);
       });
   }, []);
-  
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (tooltipRef.current && !tooltipRef.current.contains(event.target)) {
+        setShowInfo(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleOptionClick = (option) => {
     if (!showFeedback) {
@@ -185,11 +197,12 @@ export default function QuizInterativo() {
     </div>
 
     <div className="flex items-center justify-center gap-2 text-gray-400 text-center">
-  <p>Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>
-  <div className="relative group">
-    <span className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined"
-            onClick={() => setShowInfo(prev => !prev)}
-            onTouchStart={() => setShowInfo(prev => !prev)}
+      <p>Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>
+      <div className="relative group" ref={tooltipRef}>
+        <span 
+          className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined"
+          onClick={() => setShowInfo(prev => !prev)}
+          onTouchStart={() => setShowInfo(prev => !prev)}
     >info</span>
     <div
           className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[320px] p-4 bg-slate-700 text-sm text-left text-white rounded shadow-lg z-10 transition-opacity duration-300
