@@ -14,6 +14,7 @@ export default function QuizInterativo() {
   const [showInfo, setShowInfo] = useState(false);
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const tooltipRef = useRef(null);
+  const [quizTitle, setQuizTitle] = useState('');
 
   const shuffleArray = (array) => {
     return array.map(value => ({ value, sort: Math.random() }))
@@ -28,6 +29,7 @@ export default function QuizInterativo() {
       const text = event.target.result;
       const parsed = shuffleArray(parseQuiz(text));
       setQuizData(parsed);
+      setQuizTitle(file.name.replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase()));
       setCurrent(0);
       setAnswers(new Array(parsed.length).fill(undefined));
       setSelected(null);
@@ -262,6 +264,7 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
             const text = await res.text();
             const parsed = shuffleArray(parseQuiz(text));
             setQuizData(parsed);
+            setQuizTitle(file.replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase()));
             setCurrent(0);
             setAnswers(new Array(parsed.length).fill(undefined));
             setSelected(null);
@@ -308,7 +311,10 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
               Começar novo quiz
             </button>
             <div className="space-y-4">
-              <h2 className="text-xl font-semibold">Pergunta {current + 1} de {quizData.length}</h2>
+            <h2 className="text-xl font-semibold">
+              Pergunta {current + 1} de {quizData.length}{" "}
+              <span className="text-blue-400">(Quiz {quizTitle})</span>
+            </h2>
               <p className="text-lg font-medium break-words whitespace-pre-wrap">{quizData[current].question}</p>
 
               <div className="flex flex-col gap-3">
