@@ -314,6 +314,7 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
               <div className="flex flex-col gap-3">
                 {quizData[current].options.map((option, idx) => {
                   const letter = option.charAt(0);
+                  const textOnly = option.substring(2).trim();
                   const isCorrect = quizData[current].answer === letter;
                   const isSelected = selected === letter;
 
@@ -330,7 +331,7 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                       className={`p-3 rounded-md text-white text-left font-semibold transition-colors duration-200 break-words whitespace-pre-wrap border bg-slate-700 ${isSelected ? `ring-2 ${ringColor}` : ''}`}
                       disabled={showFeedback}
                     >
-                      {option}
+                      {textOnly}
                     </button>
                   );
                 })}
