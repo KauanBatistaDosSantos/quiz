@@ -12,6 +12,7 @@ export default function QuizInterativo() {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const tooltipRef = useRef(null);
 
   const shuffleArray = (array) => {
@@ -114,15 +115,17 @@ export default function QuizInterativo() {
   }, []);
 
   useEffect(() => {
+    setIsTouchDevice(window.matchMedia('(pointer: coarse)').matches);
+  }, []);
+
+  useEffect(() => {
     function handleClickOutside(event) {
       if (tooltipRef.current && !tooltipRef.current.contains(event.target)) {
         setShowInfo(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const handleOptionClick = (option) => {
@@ -212,11 +215,11 @@ export default function QuizInterativo() {
       <p>Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>
       <div className="relative group" ref={tooltipRef}>
         <span 
-          className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined"
-          onClick={() => setShowInfo(prev => !prev)}
-          onTouchStart={() => setShowInfo(prev => !prev)}
-          onMouseEnter={() => setShowInfo(true)}
-          onMouseLeave={() => setShowInfo(false)}
+          className="cursor-pointer text-blue-400 font-bold material-symbols-outlined"
+          onClick={isTouchDevice ? () => setShowInfo(prev => !prev) : undefined}
+          onTouchStart={isTouchDevice ? () => setShowInfo(prev => !prev) : undefined}
+          onMouseEnter={!isTouchDevice ? () => setShowInfo(true) : undefined}
+          onMouseLeave={!isTouchDevice ? () => setShowInfo(false) : undefined}
     >info</span>
     <div
           className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[320px] p-4 bg-slate-700 text-sm text-left text-white rounded shadow-lg z-10 transition-opacity duration-300
