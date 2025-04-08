@@ -113,6 +113,18 @@ export default function QuizInterativo() {
     };
   }, []);
 
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (tooltipRef.current && !tooltipRef.current.contains(event.target)) {
+        setShowInfo(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   const handleOptionClick = (option) => {
     if (!showFeedback) {
       setSelected(option);
@@ -203,12 +215,14 @@ export default function QuizInterativo() {
           className="cursor-pointer text-blue-400 font-bold" class="material-symbols-outlined"
           onClick={() => setShowInfo(prev => !prev)}
           onTouchStart={() => setShowInfo(prev => !prev)}
+          onMouseEnter={() => setShowInfo(true)}
+          onMouseLeave={() => setShowInfo(false)}
     >info</span>
     <div
           className={`absolute left-1/2 -translate-x-1/2 mt-2 w-[320px] p-4 bg-slate-700 text-sm text-left text-white rounded shadow-lg z-10 transition-opacity duration-300
-            ${showInfo ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}
+            ${showInfo ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
           `}
-          onClick={(e) => e.stopPropagation()}>
+        >
       <p className="font-semibold mb-2">Formato esperado das perguntas:</p>
       <pre className="whitespace-pre-wrap font-mono text-xs">
 P: Qual elemento define um jogo?<br/>
