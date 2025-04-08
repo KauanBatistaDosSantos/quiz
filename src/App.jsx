@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 export default function QuizInterativo() {
+  const [quizList, setQuizList] = useState([]);
+  const [quizLengths, setQuizLengths] = useState({});  
   const [quizData, setQuizData] = useState([]);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState([]);
@@ -81,6 +83,23 @@ export default function QuizInterativo() {
     }
   }, [current, answers, score, quizData]);
 
+  useEffect(() => {
+    fetch("/quizzes/index.json")
+      .then((res) => res.json())
+      .then(async (list) => {
+        setQuizList(list);
+        const lengths = {};
+        for (const file of list) {
+          const res = await fetch(`/quizzes/${file}`);
+          const text = await res.text();
+          const parsed = parseQuiz(text);
+          lengths[file] = parsed.length;
+        }
+        setQuizLengths(lengths);
+      });
+  }, []);
+  
+
   const handleOptionClick = (option) => {
     if (!showFeedback) {
       setSelected(option);
@@ -152,14 +171,73 @@ export default function QuizInterativo() {
       <div className="w-full max-w-2xl bg-slate-900 p-6 rounded-lg shadow-xl min-h-[90vh] flex flex-col justify-between">
         <div>
           <h1 className="text-3xl font-bold mb-4 text-center">Quiz Interativo</h1>
-
+          {!quizData.length && (
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-            <input type="file" accept=".txt" onChange={handleFileUpload} className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700" />
+          <input
+            type="file"
+            accept=".txt"
+            onChange={handleFileUpload}
+            className="block text-sm text-white file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700"
+          />
+        {!quizData.length && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {(quizList || []).map((file, idx) => (
+              <button
+                key={idx}
+                onClick={async () => {
+                  const res = await fetch(`/quizzes/${file}`);
+                  const text = await res.text();
+                  const parsed = shuffleArray(parseQuiz(text));
+                  setQuizData(parsed);
+                  setCurrent(0);
+                  setAnswers(new Array(parsed.length).fill(undefined));
+                  setSelected(null);
+                  setShowFeedback(false);
+                  setShowResult(false);
+                  setScore(0);
+                  localStorage.removeItem("quizProgress");
+                }}
+                className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
+              >
+                <strong>
+                  {file
+                    .replace(".txt", "")
+                    .replace(/[-_]/g, " ")
+                    .replace(/\b\w/g, (l) => l.toUpperCase())}
+                </strong>
+                <br />
+                <span className="text-sm text-slate-300">
+                  {quizLengths[file]
+                    ? `${quizLengths[file]} questõe${quizLengths[file] > 1 ? "s" : ""}`
+                    : "Carregando..."}
+                </span>
+              </button>
+            ))}
           </div>
+          )}
 
-          {!quizData.length && <p className="text-gray-400 text-center">Faça upload de um arquivo .txt com perguntas.</p>}
+        </div>
+        )}
+
+          {!quizData.length && <p className="text-gray-400 text-center">Faça upload de um arquivo .txt com perguntas ou selecione um quiz pronto.</p>}
 
           {quizData.length > 0 && !showResult && (
+            <>
+              <button
+              onClick={() => {
+                setQuizData([]);
+                setAnswers([]);
+                setSelected(null);
+                setShowFeedback(false);
+                setShowResult(false);
+                setCurrent(0);
+                setFinished(false);
+                localStorage.removeItem("quizProgress");
+              }}
+              className="mb-6 bg-blue-700 px-4 py-2 rounded hover:bg-blue-800"
+            >
+              Começar novo quiz
+            </button>
             <div className="space-y-4">
               <h2 className="text-xl font-semibold">Pergunta {current + 1} de {quizData.length}</h2>
               <p className="text-lg font-medium break-words whitespace-pre-wrap">{quizData[current].question}</p>
@@ -200,13 +278,32 @@ export default function QuizInterativo() {
                 </div>
               )}
             </div>
+            </>
           )}
+          
 
           {showResult && (
             <div className="space-y-4 text-center">
               <h2 className="text-xl font-bold">Resultado</h2>
               <p className="text-lg">Pontuação: {score} de {answers.filter(ans => ans !== undefined).length} respondidas</p>
               <p className="text-xl font-semibold mt-2">{getFeedbackMessage()}</p>
+              <div className="mt-4 flex justify-center">
+                <button
+                  onClick={() => {
+                    setQuizData([]);
+                    setAnswers([]);
+                    setSelected(null);
+                    setShowFeedback(false);
+                    setShowResult(false);
+                    setCurrent(0);
+                    setFinished(false);
+                    localStorage.removeItem("quizProgress");
+                  }}
+                  className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
+                >
+                  Começar novo quiz
+                </button>
+              </div>
               <ul className="list-disc text-left ml-5">
                 {quizData.map((q, idx) => {
                   const userAnswer = answers[idx];
