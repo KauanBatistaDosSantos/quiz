@@ -324,6 +324,9 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                       : 'ring-red-500'
                     : '';
 
+                  const displayText = showFeedback ? `${letter}) ${textOnly}` : textOnly;
+
+
                   return (
                     <button
                       key={idx}
@@ -331,7 +334,7 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                       className={`p-3 rounded-md text-white text-left font-semibold transition-colors duration-200 break-words whitespace-pre-wrap border bg-slate-700 ${isSelected ? `ring-2 ${ringColor}` : ''}`}
                       disabled={showFeedback}
                     >
-                      {textOnly}
+                      {displayText}
                     </button>
                   );
                 })}
