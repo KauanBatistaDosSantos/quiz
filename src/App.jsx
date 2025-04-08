@@ -461,6 +461,11 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
             <button onClick={downloadGabarito} className="w-full sm:w-auto bg-green-700 text-white p-2 rounded hover:bg-green-800">Baixar Gabarito</button>
           </div>
         )}
+        {(!quizData.length || showResult) && (
+          <footer className="mt-8 text-center text-sm text-gray-500">
+            Idealizado por <span className="text-white font-medium">Kauan B.</span>
+          </footer>
+        )}
       </div>
     </div>
   );
