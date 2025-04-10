@@ -56,9 +56,10 @@ export default function QuizInterativo() {
       const question = questionLines.join('\n').replace('P: ', '').trim();
       const options = shuffleArray(lines.slice(1).filter(line => /^[A-Z]\)/.test(line)));
       const answerLine = lines.find(line => line.startsWith('R:'));
-      const explanationLine = lines.find(line => line.startsWith('E:'));
+      const explanationIndex = lines.findIndex(line => line.startsWith('E:'));
+      const explanationLines = explanationIndex !== -1 ? lines.slice(explanationIndex) : [];
+      const explanation = explanationLines.map(line => line.replace(/^E:\s?/, '')).join('\n').trim();      
       const answer = answerLine?.replace('R:', '').trim();
-      const explanation = explanationLine?.replace('E:', '').trim();
       return { question, options, answer, explanation };
     });
   };
