@@ -1,0 +1,231 @@
+P: O que é o Jest no contexto de testes de software frontend?
+A) Um framework para criação de APIs RESTful.
+B) Uma ferramenta de estilização de componentes.
+C) Um framework de testes JavaScript focado em frontend.
+D) Um banco de dados para armazenamento local.
+R: C
+E: A resposta correta é C. O Jest é um framework de testes desenvolvido pelo Facebook, muito utilizado em projetos frontend (como React), pois oferece estrutura completa para testes unitários, mock de funções, cobertura de código, e testes assíncronos.
+
+P: Qual comando é utilizado para instalar o Jest como dependência de desenvolvimento em um projeto?
+A) npm install jest
+B) npm start jest
+C) npm test jest
+D) npm install --save-dev jest
+R: D
+E: A resposta correta é D. A instalação do Jest como dependência de desenvolvimento (ou seja, não necessária em produção) é feita com npm install --save-dev jest, permitindo que ele seja utilizado apenas no ambiente de testes do projeto.
+
+P: O que é necessário configurar para usar o Jest de forma básica em um projeto?
+A) Um banco de dados de testes.
+B) Um arquivo .babelrc.
+C) Um script de teste no package.json.
+D) Um middleware de autenticação.
+R: C
+E: A resposta correta é C. Para utilizar o Jest, basta criar um script de teste no package.json, como "test": "jest", permitindo que os testes sejam executados com o comando npm test.
+
+P: Qual é uma das principais vantagens de utilizar o Jest em projetos frontend?
+A) Aumentar o tempo de execução do código.
+B) Automatizar fluxos de CI/CD com Firebase.
+C) Rodar testes rápidos e completos, com suporte a mocks e cobertura de código.
+D) Substituir frameworks CSS como Tailwind ou Bootstrap.
+R: C
+E: A resposta correta é C. O Jest é conhecido pela velocidade na execução dos testes, suporte a simulações (mocks), testes assíncronos e cobertura de código, sendo uma solução muito completa e fácil de integrar em projetos frontend.
+
+P: Após instalar e configurar o Jest no package.json, qual comando é usado para executar os testes?
+A) npm run jest
+B) jest start
+C) npm test
+D) test run
+R: C
+E: A resposta correta é C. Com o script "test": "jest" no package.json, o comando padrão para executar os testes é npm test, que ativa o Jest e procura pelos arquivos de teste no projeto.
+
+P: Qual das seguintes opções representa uma convenção aceita para nomear arquivos de teste no Jest?
+A) app.js.test
+B) *.example.js
+C) *.test.js ou *.spec.js
+D) test.app.js
+R: C
+E: A resposta correta é C. O Jest reconhece arquivos de teste nomeados como *.test.js ou *.spec.js, que são convenções amplamente utilizadas para facilitar a identificação e execução automatizada dos testes.
+
+P: Qual é a estrutura básica de um teste em Jest?
+A) run(test, function)
+B) defineTest("descrição", resultado)
+C) test("descrição", () => { /* código */ })
+D) executeTest(() => console.log("OK"))
+R: C
+E: A resposta correta é C. A estrutura básica de um teste com Jest segue o padrão:
+test("descrição do teste", () => {
+  // código do teste
+});
+Essa estrutura define um bloco de teste com nome e lógica, e pode ser substituída por it() como alternativa semântica.
+
+P: Qual é a função principal do método expect() nos testes com Jest?
+A) Criar objetos de teste em tempo de execução.
+B) Definir um valor esperado para uma comparação.
+C) Gerar logs de depuração.
+D) Monitorar uso de CPU durante os testes.
+R: B
+E: A resposta correta é B. O método expect() é usado para definir o valor que se espera de um teste. Ele é geralmente seguido por matchers como .toBe(), .toEqual(), .toHaveLength() etc., para comparar os resultados reais com os esperados.
+
+P: Onde os arquivos de teste devem ser localizados dentro de um projeto que usa Jest?
+A) Sempre dentro da pasta src/assets.
+B) Em qualquer lugar do projeto, desde que sigam o padrão *.test.js ou *.spec.js.
+C) Apenas dentro da pasta config/tests.
+D) Na raiz do projeto, obrigatoriamente.
+R: B
+E: A resposta correta é B. O Jest é flexível quanto à localização dos arquivos de teste, e identifica automaticamente qualquer arquivo que siga as convenções de nome como *.test.js ou *.spec.js, independentemente da pasta em que esteja.
+
+P: Qual é uma boa prática ao organizar os arquivos de teste em um projeto frontend?
+A) Colocar todos os testes no mesmo arquivo main.test.js.
+B) Criar um arquivo de teste separado para cada componente ou funcionalidade.
+C) Escrever os testes direto no arquivo do componente.
+D) Criar uma pasta tests dentro de node_modules.
+R: B
+E: A resposta correta é B. A melhor prática é separar os testes por componente ou funcionalidade, criando um arquivo específico para cada um, o que facilita a manutenção, a leitura e a execução segmentada dos testes.
+
+P: Qual função pode ser usada no lugar de test() em Jest com a mesma funcionalidade?
+A) check()
+B) runTest()
+C) it()
+D) verify()
+R: C
+E: A resposta correta é C. O Jest permite usar tanto test() quanto it() para definir blocos de teste. Ambos são equivalentes, com a diferença de que it() é preferido por alguns por permitir a escrita de frases mais fluídas:
+it("should return true when user is authenticated", () => { ... });
+
+P: Qual é o objetivo principal do arquivo jest.config.js?
+A) Criar temas personalizados para a interface do Jest.
+B) Automatizar deploys do frontend.
+C) Configurar o comportamento do Jest durante a execução dos testes.
+D) Controlar permissões de acesso ao repositório.
+R: C
+E: A resposta correta é C. O jest.config.js é um arquivo de configuração onde definimos opções que alteram o comportamento padrão do Jest, como localização dos testes, geração de cobertura, limiares de falha e muito mais.
+
+P: Qual propriedade deve ser definida como true em jest.config.js para ativar a coleta de cobertura de código?
+A) enableCoverage
+B) collectCoverage
+C) coverageStart
+D) coverageReport
+R: B
+E: A resposta correta é B. Ao definir collectCoverage: true, o Jest começa a gerar relatórios de cobertura, informando quantas linhas, funções e arquivos foram efetivamente testados, auxiliando no controle de qualidade.
+
+P: Para que serve a propriedade coverageThreshold no jest.config.js?
+A) Definir o tamanho máximo dos testes.
+B) Estabelecer limites mínimos de cobertura exigida para que os testes passem.
+C) Registrar falhas encontradas em arquivos de log.
+D) Especificar os arquivos que serão ignorados no teste.
+R: B
+E: A resposta correta é B. O coverageThreshold permite que você defina um nível mínimo de cobertura (em %) para que a execução dos testes seja considerada bem-sucedida, como 80% de linhas ou funções cobertas, por exemplo.
+
+P: Qual das seguintes é uma configuração válida de coverageThreshold?
+A) { enable: 80 }
+B) { files: 80% }
+C) { global: { lines: 80, functions: 85 } }
+D) { limit: { full: true } }
+R: C
+E: A resposta correta é C. A sintaxe correta é:
+coverageThreshold: {
+  global: {
+    lines: 80,
+    functions: 85
+  }
+}
+Esse trecho indica que, globalmente, ao menos 80% das linhas e 85% das funções devem ser cobertas pelos testes.
+
+P: O que é configurado com a propriedade testMatch no jest.config.js?
+A) O tempo máximo de execução para cada teste.
+B) Os arquivos onde o Jest irá procurar os testes.
+C) O tipo de relatório visual gerado.
+D) A linguagem usada nos testes.
+R: B
+E: A resposta correta é B. O testMatch define padrões glob (como expressões) que dizem ao Jest onde encontrar os arquivos de teste, como por exemplo:
+testMatch: ["**/__tests__/**/*.js?(x)", "**/?(*.)+(spec|test).js?(x)"]
+
+P: Qual benefício se obtém ao combinar collectCoverage, coverageThreshold e testMatch no jest.config.js?
+A) Otimização da velocidade do código de produção.
+B) Automatização do deploy no servidor remoto.
+C) Garantia de qualidade com rastreabilidade e controle de critérios mínimos de cobertura.
+D) Criação de logs em tempo real no console do navegador.
+R: C
+E: A resposta correta é C. Ao usar collectCoverage, coverageThreshold e testMatch, o Jest fornece relatórios completos e impõe padrões mínimos de qualidade, promovendo rastreabilidade e confiança no processo de testes.
+
+P: O que significa “mockar” uma função ou módulo durante os testes com Jest?
+A) Esconder partes do código durante a execução.
+B) Criar uma cópia exata do banco de dados real.
+C) Substituir uma função real por uma versão simulada.
+D) Alterar dinamicamente o nome de variáveis de teste.
+R: C
+E: A resposta correta é C. O mocking permite simular o comportamento de funções reais, especialmente aquelas que fazem chamadas externas (como APIs), para testar funcionalidades isoladamente, sem depender de fatores externos.
+
+P: Quando o uso de mocks é especialmente recomendado em testes?
+A) Quando o código depende de funções visuais.
+B) Quando se testa o desempenho de imagens.
+C) Quando uma função depende de respostas externas como APIs.
+D) Quando se quer medir o uso de memória do sistema.
+R: C
+E: A resposta correta é C. Mocks são recomendados quando o código interage com serviços externos, como APIs, bancos de dados ou módulos complexos, e queremos testar o comportamento da aplicação sem depender dessas integrações reais.
+
+P: Como o Jest permite lidar com testes assíncronos baseados em async/await?
+A) Impede que testes assíncronos rodem.
+B) Exige instalação de bibliotecas externas.
+C) Suporta async/await nativamente dentro dos blocos de teste.
+D) Converte testes assíncronos em promessas automáticas.
+R: C
+E: A resposta correta é C. O Jest possui suporte nativo a async/await, o que significa que é possível escrever testes assíncronos como:
+test("exemplo async", async () => {
+  const data = await fetchData();
+  expect(data).toBeDefined();
+});
+Isso torna os testes mais legíveis e modernos.
+
+P: Como o Jest lida com testes assíncronos que utilizam callbacks?
+A) Usa a palavra-chave done para indicar o fim do teste.
+B) Não suporta callbacks.
+C) Requer setInterval para execução.
+D) Usa throw para terminar o teste manualmente.
+R: A
+E: A resposta correta é A. Para testar funções assíncronas baseadas em callbacks, o Jest permite o uso do parâmetro done, que informa quando o teste terminou, como neste exemplo:
+test("callback test", (done) => {
+  asyncCallback(() => {
+    expect(true).toBe(true);
+    done();
+  });
+});
+
+P: Qual é a principal diferença entre usar mocks e funções reais em testes?
+A) Mocks aumentam a performance, mas não funcionam com Jest.
+B) Funções reais sempre geram melhores resultados.
+C) Mocks permitem controlar o comportamento e isolar dependências externas.
+D) Não há diferença prática.
+R: C
+E: A resposta correta é C. Ao usar mocks, você pode controlar o retorno de funções externas e isolar o teste do ambiente, garantindo consistência e previsibilidade, diferente das funções reais, que podem ter comportamento variável (ex: tempo de resposta de uma API).
+
+P: Qual é a finalidade do bloco describe() nos testes com Jest?
+A) Importar módulos externos de teste.
+B) Organizar casos de teste relacionados sob um mesmo contexto.
+C) Adicionar comentários ao relatório de cobertura.
+D) Criar testes visuais para o navegador.
+R: B
+E: A resposta correta é B. O bloco describe() permite agrupar testes que compartilham um contexto ou pertencem a uma mesma funcionalidade, facilitando a organização, a leitura e o controle dos testes no código.
+
+P: Quando utilizamos a função beforeEach() nos testes com Jest?
+A) Para verificar a cobertura de código antes dos testes.
+B) Para definir o valor de variáveis globais do projeto.
+C) Para executar uma ação sempre antes de cada teste individual.
+D) Para simular interações do usuário.
+R: C
+E: A resposta correta é C. O beforeEach() é executado antes de cada teste do bloco em que está inserido, geralmente usado para inicializar dados ou resetar configurações para garantir que os testes sejam isolados uns dos outros.
+
+P: Qual é o papel da função afterEach() no contexto de testes com Jest?
+A) Encerrar a aplicação após o último teste.
+B) Executar ações de limpeza após cada teste.
+C) Atualizar automaticamente o package.json.
+D) Armazenar os resultados dos testes em banco de dados.
+R: B
+E: A resposta correta é B. A função afterEach() é usada para realizar tarefas de limpeza após cada teste, como resetar mocks, desalocar variáveis ou limpar o ambiente, evitando que um teste interfira em outro.
+
+P: Qual é o principal benefício de usar beforeEach() e afterEach() no Jest?
+A) Reduzir o tempo de execução dos testes em produção.
+B) Permitir que testes dependam uns dos outros.
+C) Garantir isolamento e previsibilidade entre os testes.
+D) Aumentar a cobertura automaticamente.
+R: C
+E: A resposta correta é C. Usar beforeEach() e afterEach() garante que cada teste comece em um estado limpo e previsível, evitando efeitos colaterais e garantindo confiabilidade nos resultados.

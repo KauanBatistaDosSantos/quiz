@@ -15,6 +15,8 @@ export default function QuizInterativo() {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
   const tooltipRef = useRef(null);
   const [quizTitle, setQuizTitle] = useState('');
+  const [categories, setCategories] = useState({});
+  const [selectedCategory, setSelectedCategory] = useState('');
 
   const shuffleArray = (array) => {
     return array.map(value => ({ value, sort: Math.random() }))
@@ -92,14 +94,16 @@ export default function QuizInterativo() {
   useEffect(() => {
     fetch("/quizzes/index.json")
       .then((res) => res.json())
-      .then(async (list) => {
-        setQuizList(list);
+      .then(async (data) => {
+        setCategories(data);
         const lengths = {};
-        for (const file of list) {
-          const res = await fetch(`/quizzes/${file}`);
-          const text = await res.text();
-          const parsed = parseQuiz(text);
-          lengths[file] = parsed.length;
+        for (const quizzes of Object.values(data)) {
+          for (const file of quizzes) {
+            const res = await fetch(`/quizzes/${file}`);
+            const text = await res.text();
+            const parsed = parseQuiz(text);
+            lengths[file] = parsed.length;
+          }
         }
         setQuizLengths(lengths);
       });
@@ -256,41 +260,59 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
   </div>
 </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      {quizList.map((file, idx) => (
-        <button
-          key={idx}
-          onClick={async () => {
-            const res = await fetch(`/quizzes/${file}`);
-            const text = await res.text();
-            const parsed = shuffleArray(parseQuiz(text));
-            setQuizData(parsed);
-            setQuizTitle(file.replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase()));
-            setCurrent(0);
-            setAnswers(new Array(parsed.length).fill(undefined));
-            setSelected(null);
-            setShowFeedback(false);
-            setShowResult(false);
-            setScore(0);
-            localStorage.removeItem("quizProgress");
-          }}
-          className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
-        >
-          <strong>
-            {file
-              .replace(".txt", "")
-              .replace(/[-_]/g, " ")
-              .replace(/\b\w/g, (l) => l.toUpperCase())}
-          </strong>
-          <br />
-          <span className="text-sm text-slate-300">
-            {quizLengths[file]
-              ? `${quizLengths[file]} questõe${quizLengths[file] > 1 ? "s" : ""}`
-              : "Carregando..."}
-          </span>
-        </button>
+{!quizData.length && (
+  <>
+    <select
+      className="mb-6 p-2 rounded bg-slate-700 text-white"
+      value={selectedCategory}
+      onChange={(e) => setSelectedCategory(e.target.value)}
+    >
+      <option value="">Selecione uma matéria</option>
+      {Object.keys(categories).map((category) => (
+        <option key={category} value={category}>{category}</option>
       ))}
-    </div>
+    </select>
+  </>
+)}
+
+{selectedCategory && (
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {categories[selectedCategory].map((file, idx) => (
+      <button
+        key={idx}
+        onClick={async () => {
+          const res = await fetch(`/quizzes/${file}`);
+          const text = await res.text();
+          const parsed = shuffleArray(parseQuiz(text));
+          setQuizData(parsed);
+          setQuizTitle(file.split('/').pop().replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase()));
+          setCurrent(0);
+          setAnswers(new Array(parsed.length).fill(undefined));
+          setSelected(null);
+          setShowFeedback(false);
+          setShowResult(false);
+          setScore(0);
+          localStorage.removeItem("quizProgress");
+        }}
+        className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
+      >
+        <strong>
+          {file
+            .split('/').pop()
+            .replace(".txt", "")
+            .replace(/[-_]/g, " ")
+            .replace(/\b\w/g, (l) => l.toUpperCase())}
+        </strong>
+        <br />
+        <span className="text-sm text-slate-300">
+          {quizLengths[file]
+            ? `${quizLengths[file]} questõe${quizLengths[file] > 1 ? "s" : ""}`
+            : "Carregando..."}
+        </span>
+      </button>
+    ))}
+  </div>
+  )}
   </div>
 )}
 

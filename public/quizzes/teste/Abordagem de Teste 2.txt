@@ -1,0 +1,421 @@
+P: Qual das alternativas representa corretamente um dos objetivos dos testes de software apresentados na aula?
+A) Garantir que os desenvolvedores saibam programar corretamente.
+B) Medir a produtividade dos testadores.
+C) Verificar se as especificações estão em conformidade com os requisitos.
+D) Identificar o melhor sistema operacional para o software.
+R: C
+E: A resposta correta é C. Segundo o slide, um dos objetivos centrais dos testes de software é verificar se as especificações estão de acordo com os requisitos definidos no início do projeto. Isso garante que o sistema desenvolvido atenda às expectativas do cliente ou usuário. As demais alternativas não são mencionadas no conteúdo e desviam do foco dos testes.
+
+P: Um dos objetivos dos testes de software é garantir:
+A) Que o app funcione apenas nos dispositivos da equipe de desenvolvimento.
+B) Que tudo funcione corretamente no ambiente de destino.
+C) Que os dados do banco sejam criptografados.
+D) Que as telas estejam visualmente agradáveis.
+R: B
+E: A resposta correta é B. Conforme o conteúdo, os testes devem assegurar que tudo funcione corretamente no ambiente de destino, ou seja, o ambiente real em que o software será utilizado pelo usuário final. Isso inclui compatibilidade com hardware, sistemas operacionais e configurações reais.
+
+P: De acordo com a aula, qual alternativa representa corretamente as terminologias que podem ser consideradas equivalentes em contexto de software?
+A) Aplicativo e algoritmo.
+B) Sistema, aplicação, app e software.
+C) Tester, cliente e operador.
+D) Interface, servidor e lógica.
+R: B
+E: A resposta correta é B. O slide destaca que os termos “software”, “sistema”, “aplicação” e “app” podem ser tratados como equivalentes, principalmente no contexto de testes, pois todos representam o produto a ser validado. As demais opções agrupam termos com funções diferentes ou incorretas.
+
+P: Segundo a apresentação, quais títulos profissionais podem ser considerados equivalentes para a função de quem realiza testes?
+A) Designer, gerente de produto e scrum master.
+B) Desenvolvedor, cliente e usuário.
+C) Testador, tester, engenheiro de software e analista de sistemas.
+D) Arquiteto de software, gerente financeiro e programador.
+R: C
+E: A resposta correta é C. O conteúdo apresenta que as funções de testador, tester, engenheiro de software e analista de sistemas podem se sobrepor, dependendo do contexto. Em testes, todos podem estar envolvidos em alguma etapa de validação. As demais opções misturam papéis não relacionados à atividade de teste.
+
+P: O teste de caixa branca também pode ser conhecido como:
+A) Teste de interface e teste funcional.
+B) Teste de design visual e teste de usabilidade.
+C) Teste estrutural ou teste de caixa de vidro.
+D) Teste de regressão ou teste exploratório.
+R: C
+E: A resposta correta é C. Conforme descrito no material, o teste de caixa branca também é chamado de teste estrutural ou teste de caixa de vidro, justamente por permitir ao testador observar a “estrutura interna” do código. As outras opções se referem a abordagens completamente diferentes.
+
+P: Para executar corretamente o teste de caixa branca, o testador precisa:
+A) Ter acesso apenas às telas do sistema.
+B) Ter acesso ao código-fonte do sistema.
+C) Estar com o cliente final durante o teste.
+D) Utilizar apenas ferramentas de simulação gráfica.
+R: B
+E: A resposta correta é B. O slide enfatiza que o testador precisa ter acesso total ao código-fonte, pois esse tipo de teste analisa a lógica e estrutura interna da aplicação. Isso permite escolher adequadamente a massa de dados e avaliar se o código está bem escrito. As demais opções dizem respeito a testes de interface ou são irrelevantes nesse contexto.
+
+P: Qual dos exemplos a seguir representa corretamente uma prática de teste de caixa branca?
+A) Inserir uma data inválida em um campo da interface.
+B) Verificar a aparência visual dos botões.
+C) Somar dois números no código e conferir o resultado via saída direta, sem interface.
+D) Checar se o layout responde bem em diferentes dispositivos.
+R: C
+E: A resposta correta é C. Segundo o slide, o exemplo dado para teste de caixa branca é somar dois números no código e verificar diretamente a saída, sem utilizar a interface, pois esse teste analisa o comportamento interno da lógica implementada. As outras opções são mais relacionadas a testes de caixa preta ou usabilidade.
+
+P: O que deve ser feito toda vez que uma parte do código é alterada em um sistema que utiliza testes de caixa branca?
+A) Apenas testar a interface novamente.
+B) Rodar somente o teste de segurança.
+C) Reexecutar os testes, preferencialmente todos.
+D) Atualizar os requisitos com o cliente.
+R: C
+E: A resposta correta é C. O conteúdo diz que toda vez que há uma mudança no código, o ideal é refazer os testes, se possível por completo. Isso porque qualquer alteração pode impactar o funcionamento de partes diferentes do sistema, e o teste de caixa branca precisa garantir que a lógica continua funcionando corretamente.
+
+P: Por que o teste de caixa branca costuma gerar mais custo no processo de testes?
+A) Porque depende exclusivamente do cliente.
+B) Porque exige uso de software proprietário.
+C) Porque é feito por profissionais mais experientes e detalhistas.
+D) Porque não pode ser realizado em ambiente de desenvolvimento.
+R: C
+E: A resposta correta é C. O slide menciona que o teste de caixa branca gera mais custo porque é feito por pessoas mais experientes, já que exige compreensão aprofundada da lógica do código-fonte. Isso implica em maior especialização e tempo, aumentando o custo envolvido.
+
+P: O que está incluso na verificação de estruturas de condição durante o teste de caixa branca?
+A) Testar o tamanho dos botões na interface.
+B) Avaliar o comportamento do sistema diante de diferentes fluxos de decisão no código.
+C) Testar a compatibilidade com dispositivos móveis.
+D) Verificar se o usuário consegue preencher todos os campos de um formulário.
+R: B
+E: A resposta correta é B. O conteúdo mostra que verificar estruturas de condição significa avaliar se os fluxos de decisão no código (ex: if, else, switch) estão funcionando corretamente, assegurando que todos os caminhos possíveis sejam executados adequadamente. As demais alternativas envolvem testes visuais e de interface, não internos.
+
+P: Por que o acesso ao código permite ao testador escolher melhor a massa de dados no teste de caixa branca?
+A) Porque o código exibe os resultados visualmente.
+B) Porque o código revela os fluxos lógicos que precisam ser testados com diferentes dados.
+C) Porque o código contém os nomes dos desenvolvedores.
+D) Porque é possível evitar o uso de banco de dados.
+R: B
+E: A resposta correta é B. Como o testador conhece o funcionamento interno do sistema, ele pode selecionar massa de dados específicas para validar cada caminho lógico, aumentando a eficácia do teste. Isso não seria possível apenas com a visualização da interface.
+
+P: Qual dos seguintes problemas pode ser identificado por um teste de caixa branca?
+A) Um botão que não muda de cor ao passar o mouse.
+B) Um texto com erro ortográfico no manual do usuário.
+C) Uma estrutura lógica incorreta no código que leva a um resultado de cálculo errado.
+D) Um formulário sem responsividade em celulares.
+R: C
+E: A resposta correta é C. O slide destaca que erros como estruturas lógicas mal elaboradas ou cálculos incorretos são detectáveis por testes de caixa branca, pois eles analisam diretamente o funcionamento interno do código. Os demais erros são visuais ou documentais.
+
+P: O que diferencia o teste de caixa branca de outros tipos de teste?
+A) Ele se concentra exclusivamente na experiência do usuário.
+B) Ele é feito por clientes em ambiente de produção.
+C) Ele analisa o código-fonte internamente, incluindo estruturas e lógica.
+D) Ele avalia apenas o design visual da aplicação.
+R: C
+E: A resposta correta é C. O diferencial do teste de caixa branca é ter como foco a análise interna do sistema, incluindo lógica de programação, condições e fluxos, diferentemente dos testes de caixa preta, que avaliam somente a funcionalidade visível ao usuário.
+
+P: De acordo com o material, o teste de caixa branca é capaz de:
+A) Identificar todos os problemas do sistema com base apenas no design.
+B) Garantir sozinho que a aplicação foi elaborada 100% corretamente.
+C) Testar interfaces com múltiplos dispositivos simultaneamente.
+D) Avaliar o comportamento do usuário durante a navegação.
+R: B
+E: A resposta correta é B, pois o conteúdo afirma que, em geral, o teste de caixa branca consegue identificar se a aplicação foi elaborada 100% corretamente, já que cobre toda a lógica do sistema, desde a execução de laços até tratamento de erros e estruturas não utilizadas.
+
+P: Qual das alternativas representa corretamente algo que deve ser verificado durante o teste de unidade?
+A) Se os botões estão posicionados corretamente na tela.
+B) Se o sistema responde bem a múltiplos cliques simultâneos.
+C) Se os dados inseridos pela interface chegam corretamente ao banco de dados.
+D) Se os menus se adaptam a diferentes idiomas.
+R: C
+E: A resposta correta é C. O slide afirma que o teste de unidade verifica se os dados enviados pela interface (tela) chegam corretamente ao banco, além de outras checagens como tratamento de erros, integridade de arquivos temporários e execução de cada parte do código. As demais opções referem-se a testes de interface, não unitários.
+
+P: Qual é o foco principal do teste de caminho básico, dentro do teste de caixa branca?
+A) Analisar o design visual do sistema.
+B) Dividir e analisar a lógica complexa do código em caminhos mais simples.
+C) Medir o tempo de carregamento da aplicação.
+D) Testar a escalabilidade da infraestrutura.
+R: B
+E: A resposta correta é B. Segundo o material, o teste de caminho básico tem como objetivo dividir a lógica complexa do código em caminhos básicos, ou seja, estruturas que podem ser testadas individualmente para garantir que cada fluxo de execução funcione corretamente.
+
+P: No teste de contexto aplicado à orientação a objetos (POO), o que é analisado?
+A) Somente os atributos gráficos das interfaces.
+B) Apenas as interações do usuário com os botões.
+C) O comportamento de objetos, classes e suas interações no código.
+D) O tempo de execução das animações.
+R: C
+E: A resposta correta é C. Embora o slide mencione o teste de contexto em orientação a objetos de forma breve, o foco está em analisar como os objetos e classes interagem, se suas estruturas são bem utilizadas e se os métodos e atributos se comportam corretamente em diferentes contextos de execução.
+
+P: Qual é o outro nome comumente utilizado para o teste de caixa preta?
+A) Teste de regressão
+B) Teste exploratório
+C) Teste funcional
+D) Teste de instalação
+R: C
+E: A resposta correta é C. O conteúdo deixa claro que o teste de caixa preta também é chamado de teste funcional, pois avalia se o software realiza corretamente suas funções a partir da interface, sem considerar o código-fonte.
+
+P: Durante o teste de caixa preta, o testador deve ter acesso ao código-fonte?
+A) Sim, para verificar os laços de repetição.
+B) Não, pois o teste é feito somente pela interface.
+C) Apenas quando houver erro de compilação.
+D) Sim, se o teste envolver banco de dados.
+R: B
+E: A resposta correta é B. O teste de caixa preta não exige acesso ao código-fonte, pois o foco é verificar as funcionalidades visíveis ao usuário, como entradas e saídas pela interface, independentemente de como o código foi implementado internamente.
+
+P: O que é necessário para realizar corretamente um teste de caixa preta?
+A) Acesso à documentação do código.
+B) Conhecimento profundo em estruturas lógicas.
+C) Criação de casos de teste baseados nas atividades que o software deve realizar.
+D) Teste de variáveis diretamente no banco de dados.
+R: C
+E: A resposta correta é C. Segundo o conteúdo, o teste de caixa preta exige a criação de casos de teste que provem se o sistema realiza corretamente as atividades esperadas, com base no comportamento funcional observado pela interface, não na estrutura interna.
+
+P: Qual dos seguintes erros pode ser identificado por um teste de caixa preta?
+A) Comparações incorretas entre tipos de dados.
+B) Interface permitindo que o usuário deixe campos obrigatórios em branco.
+C) Estrutura de código duplicada.
+D) Laço de repetição mal implementado.
+R: B
+E: A resposta correta é B. O slide fornece exemplos claros de erros que o teste de caixa preta pode identificar, como permitir que o usuário deixe campos obrigatórios em branco, aceitar datas inválidas, ou não executar ações corretas nos botões — todos visíveis pela interface.
+
+P: Qual é uma das principais dificuldades associadas à aplicação de testes de caixa preta?
+A) Exige conhecimento profundo de estruturas condicionais.
+B) Depende exclusivamente de testes unitários.
+C) A automação é difícil porque cada aplicação tem telas e requisitos próprios.
+D) Não é possível usar banco de dados no processo.
+R: C
+E: A resposta correta é C. O conteúdo destaca que um dos grandes desafios na automação do teste de caixa preta é que cada aplicação tem suas próprias telas, regras e requisitos, tornando difícil padronizar testes automatizados para diferentes interfaces.
+
+P: O que o teste de caixa preta procura verificar por meio da interface?
+A) A qualidade do código-fonte.
+B) A eficiência dos algoritmos internos.
+C) Se os dados inseridos resultam nas saídas esperadas.
+D) O número de commits feitos no repositório.
+R: C
+E: A resposta correta é C. No teste de caixa preta, o foco é testar se as entradas de dados fornecidas pelo usuário geram as saídas corretas, conforme o comportamento esperado, sem avaliar a lógica interna do sistema.
+
+P: No teste de caixa preta, onde ocorre a verificação do funcionamento do sistema?
+A) No código-fonte, linha por linha.
+B) No servidor de produção.
+C) Através da interface do software.
+D) No console de desenvolvimento.
+R: C
+E: A resposta correta é C. O conteúdo deixa claro que o teste de caixa preta é feito por meio da interface, ou seja, o testador analisa as funcionalidades visíveis, testando a entrada e saída de dados, sem considerar como o código foi desenvolvido internamente.
+
+P: Qual tipo de problema o teste de caixa preta geralmente não é capaz de identificar?
+A) Erros de digitação em botões.
+B) Estruturas lógicas incorretas no código.
+C) Falhas visuais em menus.
+D) Botões que não executam ações.
+R: B
+E: A resposta correta é B. Como o teste de caixa preta não tem acesso ao código-fonte, ele não consegue identificar erros de lógica interna, como estruturas de decisão mal implementadas. Ele detecta apenas o que pode ser percebido através da interface e do comportamento do sistema.
+
+P: Qual das situações a seguir pode ser detectada por um teste de caixa preta?
+A) O sistema aceita uma data final anterior à data inicial.
+B) O sistema possui funções duplicadas no código.
+C) A variável booleana não é inicializada.
+D) O loop de repetição termina prematuramente.
+R: A
+E: A resposta correta é A. O slide lista essa situação como um exemplo de erro detectável pela interface: permitir que o usuário insira um período com a data final menor que a data inicial, o que fere regras básicas de lógica de negócio e pode ser validado diretamente pela interface.
+
+P: O que é o particionamento de equivalência no teste de caixa preta?
+A) Testar valores inválidos propositalmente.
+B) Ignorar os fluxos alternativos do sistema.
+C) Categorização das áreas a serem testadas, selecionando os testes mais representativos.
+D) Análise das estruturas de controle no código.
+R: C
+E: A resposta correta é C. O slide explica que o particionamento de equivalência consiste em dividir o sistema em partes e escolher os testes mais representativos, como, por exemplo, verificar se há ausência de mensagem de confirmação ao excluir registros. Essa técnica ajuda a reduzir o número de testes sem perder eficácia.
+
+P: O que é testado na análise de valor limite, dentro da abordagem de caixa preta?
+A) A qualidade da indentação no código.
+B) O comportamento da aplicação frente a valores fora dos limites esperados.
+C) A performance do sistema em diferentes navegadores.
+D) O número de classes e objetos no código.
+R: B
+E: A resposta correta é B. A análise de valor limite testa valores nas extremidades dos intervalos definidos como válidos e também valores fora desses limites, como forma de verificar se o sistema está tratando corretamente dados críticos ou extremos.
+
+P: O que o teste de caixa preta não é capaz de avaliar diretamente?
+A) Se a tela responde a cliques.
+B) Se há tratamento de erros no código.
+C) Se o botão realiza a ação correta.
+D) Se o sistema impede que campos obrigatórios fiquem em branco.
+R: B
+E: A resposta correta é B. Como o teste de caixa preta não tem acesso ao código-fonte, ele não verifica se há ou não tratamento interno de erros. Ele apenas avalia o comportamento visível — se o sistema funciona corretamente ou não a partir da perspectiva do usuário.
+
+P: O teste de caixa cinza pode ser entendido como:
+A) Um tipo de teste visual.
+B) Uma técnica de otimização gráfica.
+C) Uma junção entre o teste de caixa branca e o de caixa preta.
+D) Um teste exclusivo para dispositivos móveis.
+R: C
+E: A resposta correta é C. O slide afirma que muitos autores consideram o teste de caixa cinza uma abordagem híbrida, unindo a lógica do teste estrutural (caixa branca) com a observação funcional via interface (caixa preta). Isso permite ampliar a cobertura de testes mesmo sem acesso completo ao código.
+
+P: O testador no teste de caixa cinza:
+A) Precisa ter acesso à interface e ao código.
+B) Não precisa ter acesso ao código-fonte, mas conhece os requisitos e a lógica do sistema.
+C) Trabalha apenas com ferramentas de design gráfico.
+D) Avalia apenas a documentação técnica do sistema.
+R: B
+E: A resposta correta é B. Segundo o conteúdo, o testador não precisa ter acesso ao código-fonte, mas deve conhecer como o algoritmo foi construído e os requisitos, pois isso permite criar consultas SQL ou outros métodos indiretos para validar entradas e saídas.
+
+P: Uma das formas comuns de realizar teste de caixa cinza é utilizando:
+A) Captura de tela.
+B) Simulação de cliques.
+C) Consultas SQL para verificar entradas e saídas.
+D) Testes com múltiplos navegadores.
+R: C
+E: A resposta correta é C. O conteúdo diz que o teste de caixa cinza costuma usar SQL para analisar as entradas e saídas, mesmo sem acesso direto à interface ou ao código, o que amplia o entendimento sobre como o sistema está se comportando internamente.
+
+P: Qual dos seguintes problemas pode ser identificado por um teste de caixa cinza?
+A) Interface desatualizada visualmente.
+B) Erro de alinhamento em botões.
+C) Paralisação do sistema sem mensagem de aviso.
+D) Falha na tradução de textos.
+R: C
+E: A resposta correta é C. O slide exemplifica que o teste de caixa cinza pode identificar paralisações do sistema sem mensagem de erro, além de saídas incorretas que não causam falha visível. Isso é possível porque o testador conhece a lógica esperada e valida resultados por fora do código ou da interface.
+
+P: Qual das alternativas mostra corretamente os dois modos híbridos do teste de caixa cinza descritos no material?
+A) Caixa verde e caixa laranja.
+B) Caixa lógica e caixa visual.
+C) Híbrido de caixa branca (sem interface, mas com acesso à API) e híbrido de caixa preta (sem interface, com SQL).
+D) Caixa física e caixa digital.
+R: C
+E: A resposta correta é C. O conteúdo apresenta que existem duas variações híbridas no teste de caixa cinza: Híbrido de caixa branca: não tem acesso à interface, mas usa API ou métodos indiretos e híbrido de caixa preta: não tem acesso à interface, mas utiliza SQL para verificar dados de entrada e saída.
+
+P: Mesmo sem acesso ao código-fonte, o que o testador deve saber no teste de caixa cinza?
+A) Como as interfaces foram desenhadas.
+B) Como o algoritmo foi construído para montar consultas SQL.
+C) A identidade dos desenvolvedores.
+D) A ferramenta de design usada no projeto.
+R: B
+E: A resposta correta é B. O material afirma que o testador precisa saber como o algoritmo foi construído, mesmo sem ver o código, para conseguir estruturar corretamente as consultas SQL e avaliar se as entradas e saídas estão de acordo com os requisitos do sistema.
+
+P: Por que é essencial conhecer os requisitos no teste de caixa cinza?
+A) Para refazer o código caso encontre erros.
+B) Para criar scripts de automação para a interface.
+C) Porque os requisitos indicam o comportamento esperado do sistema, guiando os testes.
+D) Porque os requisitos permitem acesso root ao banco de dados.
+R: C
+E: A resposta correta é C. O conteúdo destaca que o testador precisa conhecer os requisitos do sistema para entender o que deve ser validado nas saídas e nas estruturas lógicas internas, mesmo sem acesso direto ao código ou interface. Esse conhecimento guia a construção de testes eficazes via SQL ou APIs.
+
+P: Qual é uma diferença importante entre o teste de caixa preta e o teste de caixa cinza?
+A) O teste de caixa preta é mais técnico que o cinza.
+B) O teste de caixa cinza exige conhecimento do algoritmo, enquanto o de caixa preta não.
+C) O teste de caixa cinza é feito com usuários finais.
+D) Ambos exigem acesso ao código-fonte.
+R: B
+E: A resposta correta é B. O slide aponta que o teste de caixa preta não exige conhecimento sobre a lógica interna do sistema, apenas testa a interface. Já o caixa cinza exige que o testador entenda como o algoritmo funciona, mesmo sem ter acesso direto ao código, para montar suas análises.
+
+P: Qual é uma vantagem do teste de caixa cinza em relação aos outros tipos?
+A) Pode ser feito sem acesso ao banco de dados nem à lógica do sistema.
+B) Permite uma verificação mais ampla combinando análise de entrada/saída com conhecimento interno do sistema.
+C) Substitui o trabalho do desenvolvedor.
+D) É o único tipo de teste que avalia design visual.
+R: B
+E: A resposta correta é B. O teste de caixa cinza permite unir o melhor dos dois mundos: verificar entradas e saídas como no teste de caixa preta, e ainda considerar os caminhos lógicos esperados, mesmo sem acesso ao código. Isso o torna uma abordagem mais completa em muitos cenários.
+
+P: Qual é a principal diferença entre o teste de caixa branca e o teste de caixa preta?
+A) A caixa branca testa o design gráfico, e a preta, a performance do sistema.
+B) A caixa branca requer conhecimento técnico do código, enquanto a preta analisa apenas a interface.
+C) Ambas analisam exclusivamente o comportamento visual do sistema.
+D) A caixa preta exige acesso root ao banco, enquanto a branca não.
+R: B
+E: A resposta correta é B. O conteúdo mostra que a principal diferença está no acesso ao código: o teste de caixa branca analisa internamente a lógica do código-fonte, enquanto o de caixa preta foca no comportamento funcional da interface, sem acessar o código.
+
+P: Qual tipo de teste, segundo os slides, é capaz de garantir sozinho que a aplicação foi elaborada 100% corretamente?
+A) Caixa preta
+B) Caixa cinza
+C) Caixa branca
+D) Nenhum, somente o cliente pode garantir isso
+R: C
+E: A resposta correta é C. O material afirma que, em geral, o teste de caixa branca é o único que consegue verificar se a aplicação foi 100% corretamente elaborada, justamente porque ele acessa toda a lógica do código, detectando falhas profundas que outros testes podem não alcançar.
+
+P: Qual teste não depende da interface e trabalha diretamente com a lógica do sistema?
+A) Teste de caixa preta
+B) Teste de usabilidade
+C) Teste de caixa branca
+D) Teste de instalação
+R: C
+E: A resposta correta é C. O teste de caixa branca é realizado diretamente sobre o código-fonte, sem utilizar a interface, sendo ideal para detectar falhas de lógica, laços incorretos, estruturas duplicadas e problemas internos invisíveis ao usuário.
+
+P: Em qual abordagem o testador não precisa ter acesso ao código-fonte, mas deve conhecer os requisitos e a lógica do sistema?
+A) Teste de caixa branca
+B) Teste de caixa preta
+C) Teste de instalação
+D) Teste de caixa cinza
+R: D
+E: A resposta correta é D. De acordo com os slides, no teste de caixa cinza o testador não acessa o código-fonte diretamente, mas deve compreender os requisitos e a lógica do sistema, permitindo que ele monte consultas (como SQL) e analise corretamente os resultados.
+
+P: O que o teste de unidade verifica em relação aos arquivos temporários usados durante a execução do código?
+A) Se os arquivos possuem imagens otimizadas.
+B) Se os arquivos estão nomeados corretamente.
+C) Se os arquivos temporários permanecem íntegros até o final da execução.
+D) Se os arquivos podem ser enviados por e-mail.
+R: C
+E: A resposta correta é C. O conteúdo explica que o teste de unidade verifica a integridade dos arquivos temporários, ou seja, se eles não são corrompidos ou excluídos antes do fim da execução do código — algo essencial para evitar falhas silenciosas no sistema.
+
+P: Um erro que o teste de unidade pode identificar é:
+A) Falha de tradução nos textos da interface.
+B) Loop que não termina corretamente.
+C) Imagem desalinhada no menu.
+D) Falta de responsividade em dispositivos móveis.
+R: B
+E: A resposta correta é B. O slide menciona que loops (laços de repetição) mal construídos são um dos erros que podem ser identificados com testes de unidade, pois esse tipo de teste inspeciona diretamente o funcionamento de blocos específicos do código.
+
+P: Por que o tratamento de erros é importante em testes de unidade?
+A) Para impedir que o app seja usado em horários fora do expediente.
+B) Para fazer o app parar imediatamente quando ocorre um erro.
+C) Para que o sistema possa continuar funcionando mesmo após um erro.
+D) Para gerar arquivos PDF automaticamente.
+R: C
+E: A resposta correta é C. O conteúdo destaca que o tratamento adequado de erros evita que o sistema “crashe” e obrigue o usuário a recomeçar do zero, preservando dados e melhorando a experiência do usuário.
+
+P: O que se pretende com a técnica de particionamento de equivalência no teste de caixa preta?
+A) Criar diferentes ambientes de teste.
+B) Dividir os usuários por faixa etária.
+C) Categorização das partes do sistema para testar apenas os casos representativos.
+D) Agrupar telas de mesmo layout.
+R: C
+E: A resposta correta é C. O slide explica que o particionamento de equivalência ajuda a reduzir o número de testes, ao identificar grupos de valores ou comportamentos equivalentes, possibilitando testar apenas os mais representativos de cada grupo.
+
+P: Qual dos seguintes testes se encaixa na técnica de análise de valor limite?
+A) Verificar se a senha tem o tamanho mínimo de 8 caracteres.
+B) Testar se o botão muda de cor ao passar o mouse.
+C) Validar a existência de animações na interface.
+D) Verificar o nome do desenvolvedor no código.
+R: A
+E: A resposta correta é A. A análise de valor limite testa os extremos, como o mínimo e o máximo permitido de entrada. Se o sistema exige no mínimo 8 caracteres, testar senhas com 7, 8 e 9 é um exemplo clássico dessa técnica.
+
+P: Qual preocupação é levantada sobre o que foi testado no teste de caixa preta?
+A) Se o layout está compatível com o design aprovado.
+B) Se o que foi testado realmente é o mais importante para o cliente.
+C) Se o programador entendeu os requisitos corretamente.
+D) Se o botão “voltar” leva à tela certa.
+R: B
+E: A resposta correta é B. O material destaca que uma dificuldade do teste de caixa preta é o testador decidir o que será analisado, e nem sempre o que é testado é o mais relevante para o cliente, o que pode gerar lacunas importantes na entrega do produto.
+
+P: Em qual tipo de teste o testador pode não ter acesso nem à interface nem ao código, mas sim apenas aos dados?
+A) Caixa branca
+B) Caixa cinza – híbrido de caixa preta
+C) Teste funcional simples
+D) Teste de instalação
+R: B
+E: A resposta correta é B. O conteúdo chama atenção para uma variação do teste de caixa cinza (híbrido de caixa preta), em que o testador não tem acesso à interface, mas usa dados (ex: SQL) para validar entradas e saídas, mantendo uma abordagem técnica mesmo sem ver o front-end.
+
+P: O teste de caixa cinza pode detectar situações como:
+A) Falhas no alinhamento de texto.
+B) Erros de código que causam travamentos apenas em dispositivos móveis.
+C) Saídas de dados erradas que não interrompem o sistema.
+D) Bugs visuais em menus suspensos.
+R: C
+E: A resposta correta é C. O slide cita como exemplo situações em que o sistema continua funcionando, mas com resultados errados, que podem passar despercebidos no caixa preta e só serem capturados com análise indireta, como no caixa cinza.
+
+P: Qual das alternativas mostra corretamente o tipo de acesso necessário em cada abordagem de teste?
+A) Caixa branca: interface | Caixa preta: código | Caixa cinza: nenhum
+B) Caixa branca: código-fonte | Caixa preta: interface | Caixa cinza: acesso indireto a dados (ex: SQL ou APIs)
+C) Caixa branca: gráfico | Caixa preta: banco de dados | Caixa cinza: firewall
+D) Caixa branca: requisitos | Caixa preta: laços de repetição | Caixa cinza: design visual
+R: B
+E: A resposta correta é B. A aula detalha que:
+
+Caixa branca requer acesso ao código-fonte,
+
+Caixa preta testa via interface,
+
+Caixa cinza atua entre os dois, com acesso indireto a dados e lógica, mesmo sem acessar interface ou código diretamente.
+
+P: O que se espera do testador em um teste de caixa cinza, mesmo que ele não veja o código-fonte?
+A) Que ele conheça a equipe de desenvolvimento.
+B) Que ele entenda os requisitos e como o sistema foi construído.
+C) Que ele corrija os bugs encontrados no código.
+D) Que ele revise o design visual.
+R: B
+E: A resposta correta é B. A aula enfatiza que, no teste de caixa cinza, o testador precisa entender o funcionamento lógico do sistema, mesmo que não tenha acesso direto ao código, para montar testes eficientes, como consultas em banco de dados ou chamadas à API.

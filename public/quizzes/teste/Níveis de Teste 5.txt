@@ -1,0 +1,239 @@
+P: O que são os níveis de teste no contexto do desenvolvimento de software?
+A) Métodos para substituir a codificação manual.
+B) Etapas que definem diferentes focos e profundidades nos testes do software.
+C) Tipos de linguagem de programação utilizados para testes.
+D) Formas de medir a qualidade do design gráfico.
+R: B
+E: A resposta correta é B. Os níveis de teste representam etapas distintas no processo de verificação e validação do software, onde cada uma foca em aspectos específicos: desde testes em unidades isoladas até validações completas feitas pelo cliente. Eles organizam e aprofundam o processo de testes.
+
+P: Qual é a principal vantagem de utilizar diferentes níveis de teste durante o ciclo de desenvolvimento?
+A) Reduzir o tempo de homologação.
+B) Permitir que o software seja testado apenas ao final do projeto.
+C) Detectar problemas em diferentes estágios, de forma mais controlada e eficiente.
+D) Eliminar a necessidade de testes automatizados.
+R: C
+E: A resposta correta é C. Utilizar vários níveis de teste garante que erros possam ser encontrados em diferentes momentos do projeto, o que melhora a qualidade do produto final e reduz o custo de correções tardias.
+
+P: Qual é a ordem mais comum de aplicação dos níveis de teste durante o ciclo de desenvolvimento de software?
+A) Teste de sistema → Teste de regressão → Teste de unidade → Teste de aceitação
+B) Teste de unidade → Teste de integração → Teste de sistema → Teste de aceitação
+C) Teste de regressão → Teste de aceitação → Teste de unidade
+D) Teste de aceitação → Teste de integração → Teste de sistema
+R: B
+E: A resposta correta é B. A sequência tradicional segue do mais interno para o mais externo, começando com o teste de unidade, passando por integração, depois sistema e finalizando com o teste de aceitação, realizado pelo cliente ou usuário.
+
+P: Qual é o objetivo principal do teste de unidade?
+A) Avaliar a interação entre diferentes módulos do sistema.
+B) Verificar a integração entre o software e o banco de dados.
+C) Validar partes individuais do software isoladamente, identificando problemas específicos.
+D) Simular a experiência final do usuário com o sistema completo.
+R: C
+E: A resposta correta é C. O teste de unidade foca em componentes individuais do software, como funções, métodos ou classes, permitindo identificar erros pontuais de forma precoce, antes que afetem o sistema como um todo.
+
+P: Em que contexto o teste de unidade é geralmente aplicado?
+A) Em sistemas integrados com múltiplos serviços simultâneos.
+B) Em módulos que já passaram por testes de aceitação.
+C) Em unidades isoladas, sem dependência de outras partes do sistema.
+D) Em interfaces gráficas com múltiplos fluxos.
+R: C
+E: A resposta correta é C. O teste de unidade é aplicado a partes isoladas do código, para que os erros possam ser localizados com facilidade, sem interferência de outras funcionalidades ou dependências externas.
+
+P: Quem geralmente é responsável por realizar os testes de unidade em projetos de software?
+A) O usuário final.
+B) O analista de negócios.
+C) O programador que desenvolveu a unidade.
+D) O gerente de projeto.
+R: C
+E: A resposta correta é C. Testes de unidade são normalmente realizados pelo próprio desenvolvedor, logo após codificar o componente, como parte das boas práticas de codificação e garantia da qualidade desde o início do ciclo.
+
+P: Qual dos benefícios está associado ao uso consistente de testes de unidade?
+A) Redução do tempo total de execução do sistema.
+B) Eliminação de falhas humanas durante a análise de requisitos.
+C) Identificação precoce de erros e maior facilidade de manutenção.
+D) Substituição da documentação técnica.
+R: C
+E: A resposta correta é C. O teste de unidade ajuda a detectar erros logo na fase de desenvolvimento, tornando a manutenção mais simples e econômica, além de servir como documentação viva do comportamento do componente testado.
+
+P: Qual é o principal foco do teste de integração?
+A) Validar o comportamento do sistema com o usuário final.
+B) Avaliar a estética da interface gráfica.
+C) Verificar se os módulos individuais funcionam corretamente quando combinados.
+D) Testar o desempenho sob carga pesada.
+R: C
+E: A resposta correta é C. O teste de integração busca avaliar se diferentes componentes do sistema interagem corretamente entre si, mesmo que individualmente eles já tenham sido validados com testes de unidade.
+
+P: Em qual etapa do desenvolvimento o teste de integração é geralmente realizado?
+A) Após os testes de regressão.
+B) Antes dos testes de unidade.
+C) Logo após os testes de unidade, quando os módulos são combinados.
+D) Somente na fase de homologação do sistema.
+R: C
+E: A resposta correta é C. O teste de integração ocorre depois do teste de unidade, quando os módulos já estão funcionando individualmente e é necessário verificar sua interação e comunicação conjunta.
+
+P: Qual tipo de erro é mais provável de ser identificado no teste de integração?
+A) Falha de autenticação com o sistema operacional.
+B) Problemas de layout em dispositivos móveis.
+C) Falhas de comunicação entre componentes ou troca de dados incorreta.
+D) Erros de tradução nas mensagens do sistema.
+R: C
+E: A resposta correta é C. O teste de integração é essencial para identificar problemas na troca de dados entre módulos, como parâmetros incorretos, ausência de validação ou falhas na integração de APIs ou bancos de dados.
+
+P: Qual é o principal objetivo do teste de sistema?
+A) Avaliar o desempenho individual de cada função.
+B) Verificar se o sistema como um todo atende aos requisitos especificados.
+C) Substituir os testes de unidade e de integração.
+D) Validar apenas o layout da interface gráfica.
+R: B
+E: A resposta correta é B. O teste de sistema avalia o comportamento do sistema completo, em seu ambiente final ou simulado, verificando se ele atende a todos os requisitos funcionais e não funcionais especificados.
+
+P: Em que momento do ciclo de testes o teste de sistema é aplicado?
+A) Antes do teste de unidade.
+B) Após a homologação com o cliente.
+C) Após os testes de unidade e de integração, quando o sistema está completo.
+D) Durante o planejamento de requisitos.
+R: C
+E: A resposta correta é C. O teste de sistema é realizado quando o software já está completamente integrado, sendo a etapa que verifica o comportamento do sistema como um todo, pronto para testes de aceitação.
+
+P: Que tipos de requisitos podem ser avaliados durante o teste de sistema?
+A) Apenas requisitos estéticos.
+B) Somente funcionalidades visuais.
+C) Requisitos funcionais e não funcionais, como usabilidade e desempenho.
+D) Apenas regras de negócio relacionadas a relatórios.
+R: C
+E: A resposta correta é C. O teste de sistema valida requisitos funcionais (como funcionalidades esperadas) e não funcionais (como performance, segurança, compatibilidade e usabilidade), sendo uma etapa ampla e crítica.
+
+P: Qual é o principal objetivo do teste de aceitação em um projeto de software?
+A) Verificar se o banco de dados está bem estruturado.
+B) Garantir que o sistema esteja pronto para ser usado pelo cliente, validando se atende aos seus requisitos.
+C) Avaliar a qualidade do código-fonte dos desenvolvedores.
+D) Corrigir falhas encontradas nas fases anteriores.
+R: B
+E: A resposta correta é B. O teste de aceitação é a etapa em que o cliente ou usuário final avalia o sistema, verificando se ele está de acordo com os requisitos acordados, funcionando como validação final antes da entrega oficial.
+
+P: Quem normalmente realiza o teste de aceitação?
+A) O programador principal.
+B) O gerente de projetos.
+C) O cliente ou usuário final.
+D) O testador responsável pela integração.
+R: C
+E: A resposta correta é C. O teste de aceitação é executado pelo cliente ou pelos usuários finais, pois são eles que irão verificar se o produto atende às suas expectativas e necessidades reais, de acordo com os requisitos estabelecidos.
+
+P: Qual é a consequência da aprovação do teste de aceitação?
+A) O sistema retorna para a fase de codificação.
+B) A equipe de testes é substituída.
+C) O sistema pode ser entregue oficialmente ao cliente.
+D) Os testes de regressão são cancelados.
+R: C
+E: A resposta correta é C. Após a aprovação no teste de aceitação, o sistema está apto para ser entregue formalmente, marcando o fim do ciclo de testes funcionais e a validação final por parte do cliente.
+
+P: Qual é o objetivo principal do teste de regressão?
+A) Testar exclusivamente novas funcionalidades.
+B) Confirmar que alterações recentes não comprometeram funcionalidades já existentes.
+C) Avaliar o desempenho em ambientes móveis.
+D) Testar o sistema apenas após a entrega ao cliente.
+R: B
+E: A resposta correta é B. O teste de regressão é realizado após modificações no sistema, com o objetivo de verificar se funcionalidades que já estavam funcionando corretamente continuam operando após mudanças no código.
+
+P: Quando é recomendável aplicar o teste de regressão em um projeto de software?
+A) Apenas na entrega final.
+B) Antes dos testes de unidade.
+C) Sempre que houver alteração no código-fonte, como correções ou melhorias.
+D) Após a aprovação do cliente.
+R: C
+E: A resposta correta é C. O teste de regressão deve ser aplicado sempre que houver modificações no código, para garantir que essas mudanças não afetaram negativamente partes que já estavam funcionando corretamente.
+
+P: O que pode acontecer se um sistema não passar por testes de regressão após atualizações?
+A) O sistema será mais leve.
+B) O código será automaticamente otimizado.
+C) Funcionalidades antigas podem deixar de funcionar, sem que a equipe perceba.
+D) O cliente terá acesso antecipado ao sistema.
+R: C
+E: A resposta correta é C. Sem o teste de regressão, há o risco de falhas ocultas em funcionalidades já entregues, pois alterações em uma parte do sistema podem causar impactos inesperados em outras partes.
+
+P: Qual é o principal objetivo da metodologia Extreme Programming (XP)?
+A) Substituir o papel dos analistas de requisitos.
+B) Criar interfaces gráficas mais intuitivas.
+C) Melhorar a qualidade do software e a capacidade de resposta às mudanças.
+D) Eliminar a necessidade de testes manuais.
+R: C
+E: A resposta correta é C. A XP (Extreme Programming) é uma metodologia ágil que busca elevar a qualidade do software e aumentar a capacidade de adaptação às mudanças nos requisitos do cliente, sendo muito útil em projetos com necessidades em constante evolução.
+
+P: Em que tipo de projeto o uso do XP é mais recomendado?
+A) Projetos com requisitos fixos e imutáveis.
+B) Projetos com foco exclusivo em design gráfico.
+C) Projetos com requisitos vagos ou que mudam frequentemente.
+D) Projetos que não envolvem programação.
+R: C
+E: A resposta correta é C. A XP é recomendada para contextos em que os requisitos são instáveis, ou seja, projetos que exigem flexibilidade e adaptação constante às mudanças solicitadas pelo cliente ao longo do desenvolvimento.
+
+P: Qual prática é fortemente enfatizada pela metodologia XP no contexto de testes?
+A) Elaboração de diagramas UML detalhados.
+B) Testes feitos exclusivamente pelo cliente.
+C) Escrita de testes antes da codificação (TDD).
+D) Testes somente ao fim do projeto.
+R: C
+E: A resposta correta é C. Uma das práticas centrais da XP é o TDD (Test Driven Development), que propõe escrever os testes antes mesmo da implementação do código, o que ajuda a garantir que cada funcionalidade seja pensada e validada desde o início.
+
+P: Qual é o principal objetivo do modelo de desenvolvimento ágil?
+A) Centralizar todas as decisões no gerente de projeto.
+B) Eliminar a documentação técnica.
+C) Entregar valor continuamente ao cliente por meio de ciclos incrementais.
+D) Realizar todos os testes apenas no final do projeto.
+R: C
+E: A resposta correta é C. O modelo ágil foca na entrega contínua e incremental de funcionalidades, permitindo respostas rápidas a mudanças e maior envolvimento do cliente, além de aumentar a flexibilidade do processo de desenvolvimento.
+
+P: O que significa dizer que um projeto ágil possui “entrega incremental”?
+A) Que o projeto cresce apenas em termos de equipe.
+B) Que o código é escrito de forma aleatória.
+C) Que as funcionalidades são entregues aos poucos, em versões parciais mas utilizáveis.
+D) Que o sistema será liberado apenas quando estiver 100% completo.
+R: C
+E: A resposta correta é C. Entrega incremental significa que o sistema é construído e entregue em partes funcionais ao longo do tempo, de forma que o cliente já possa utilizar e avaliar essas partes, possibilitando ajustes antes da entrega final completa.
+
+P: O que ocorre na etapa de preparação para os testes de software?
+A) O cliente realiza testes em produção.
+B) O sistema é automaticamente validado.
+C) São definidos os recursos, ambientes e dados necessários para a execução dos testes.
+D) As funcionalidades do sistema são ocultadas para revisão.
+R: C
+E: A resposta correta é C. A etapa de preparação consiste em definir o ambiente de testes, os dados que serão usados, as ferramentas e os recursos necessários, garantindo que tudo esteja pronto antes do início da execução dos testes.
+
+P: O que acontece durante a fase de execução dos testes?
+A) Os testes são substituídos por inspeções visuais.
+B) O código-fonte é alterado para se adequar aos resultados.
+C) Os testes são aplicados conforme o planejado e os resultados são coletados.
+D) Os requisitos são descartados temporariamente.
+R: C
+E: A resposta correta é C. Durante a execução dos testes, o sistema é testado de acordo com os planos e casos de teste definidos previamente, e os resultados são registrados para análise posterior.
+
+P: Por que é importante documentar os testes realizados?
+A) Para cumprir exigência legal do contrato.
+B) Para que os desenvolvedores saibam quem errou.
+C) Para permitir análise futura, rastreamento de falhas e auditorias.
+D) Para facilitar a exportação do sistema.
+R: C
+E: A resposta correta é C. A documentação permite revisar o que foi testado, o que passou ou falhou, além de ser essencial para rastrear problemas, justificar decisões e permitir auditorias técnicas no futuro.
+
+P: O que deve ser feito na etapa de avaliação dos testes?
+A) Avaliar se os testes foram feitos em tempo recorde.
+B) Verificar se o design da aplicação está moderno.
+C) Comparar os resultados obtidos com os resultados esperados e analisar as falhas.
+D) Ajustar automaticamente o código do sistema.
+R: C
+E: A resposta correta é C. A avaliação compara os resultados reais com os resultados esperados, analisa as falhas e inconsistências, e verifica se os critérios de aceitação foram cumpridos, servindo como base para decisões de correção ou aprovação.
+
+P: Qual é a finalidade da gestão de configuração no contexto dos testes de software?
+A) Atualizar o layout do sistema após os testes.
+B) Controlar versões, artefatos e ambientes de teste utilizados.
+C) Limpar o banco de dados antes da entrega.
+D) Armazenar imagens e ícones usados na interface.
+R: B
+E: A resposta correta é B. A gestão de configuração é responsável por controlar e registrar quais versões do sistema, ambientes e artefatos foram utilizados nos testes, garantindo rastreabilidade, organização e repetibilidade no processo de testes.
+
+P: O que pode ocorrer se não houver gestão de configuração adequada durante os testes?
+A) O sistema ficará mais rápido.
+B) Os testes serão automaticamente reaproveitados.
+C) Perda de controle sobre o que foi testado, em qual versão, e dificuldade para reproduzir erros.
+D) O projeto será concluído mais rapidamente.
+R: C
+E: A resposta correta é C. Sem uma gestão de configuração adequada, fica difícil saber qual versão do software foi testada, reproduzir falhas identificadas e garantir que os testes estejam sendo aplicados corretamente em cada atualização do sistema.

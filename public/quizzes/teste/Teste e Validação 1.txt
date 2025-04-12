@@ -1,0 +1,503 @@
+P: Qual é o principal objetivo dos testes de software?
+A) Aumentar o lucro da empresa.
+B) Garantir a estética das interfaces.
+C) Encontrar e corrigir falhas antes que cheguem ao usuário final.
+D) Testar apenas após a entrega do produto.
+R: C
+E: A resposta correta é C porque, conforme o material, o objetivo principal dos testes é identificar falhas no software antes que ele seja entregue ao usuário final (produção). Essa prática evita que erros afetem a experiência do usuário, reduzindo retrabalho e protegendo a reputação da empresa. As demais alternativas desviam do foco técnico do teste.
+
+P: Após identificar uma falha no software, o que deve ser feito antes de corrigi-la?
+A) Ignorar o erro se ele for pequeno.
+B) Reiniciar o sistema.
+C) Documentar e enviar para a equipe de correção.
+D) Corrigir imediatamente e não comunicar ninguém.
+R: C
+E: A resposta correta é C porque, de acordo com os slides, as falhas devem ser documentadas e encaminhadas para a equipe de correção, garantindo rastreabilidade e controle do processo de qualidade. Corrigir sem documentar, como nas opções A e D, compromete a integridade do processo.
+
+P: O que pode acontecer se falhas não forem identificadas durante os testes?
+A) O usuário poderá contribuir com melhorias.
+B) O sistema se tornará mais rápido.
+C) As falhas irão para a produção, afetando o usuário final.
+D) O código será automaticamente corrigido pelo sistema.
+R: C
+E: A resposta correta é C porque o conteúdo destaca que o objetivo dos testes é justamente evitar que falhas cheguem ao usuário final. Se não forem detectadas, essas falhas impactam diretamente a experiência do cliente e a imagem da empresa.
+
+P: Segundo Pezzè e Young, qual é a principal causa de bugs em projetos de software?
+A) Falta de testes automatizados.
+B) Má comunicação entre os membros da equipe.
+C) Falta de conhecimento em programação.
+D) Uso de tecnologias ultrapassadas.
+R: B
+E: A resposta correta é B porque, conforme o slide, a má comunicação entre os integrantes da equipe é apontada por Pezzè e Young como a principal causa dos bugs. Isso acontece porque os membros muitas vezes interpretam o mesmo objetivo de forma diferente, preferindo abordagens mais fáceis ao invés de buscar uma solução unificada.
+
+P: Qual das opções abaixo representa uma vantagem real da prática de testes de software, segundo o conteúdo da apresentação?
+A) Aumento do número de erros descobertos pelos usuários.
+B) Maior retrabalho para a equipe de desenvolvimento.
+C) Melhoria da reputação da empresa de desenvolvimento.
+D) Redução do tempo dedicado ao planejamento do projeto.
+R: C
+E: A resposta correta é C. O material afirma que a aplicação adequada de testes melhora a reputação da empresa, uma vez que entrega softwares mais confiáveis e com menos falhas. As opções A e B são consequências negativas, e a D é incorreta, pois o planejamento é parte essencial e não deve ser reduzido.
+
+P: Quando uma empresa já possui um processo de produção padronizado, qual estratégia de teste pode ser usada para economizar tempo e dinheiro?
+A) Eliminar testes automatizados.
+B) Usar testes apenas no ambiente de produção.
+C) Realizar testes por amostragem.
+D) Fazer apenas testes de caixa branca.
+R: C
+E: A resposta correta é C porque o slide explica que, em empresas com produção padronizada e repetição de projetos, os testes podem ser realizados por amostragem para economizar recursos, sem comprometer a confiabilidade. As demais opções negligenciam parte do processo de testes necessário.
+
+P: Segundo os autores citados, qual comportamento comum entre os membros das equipes pode contribuir para o surgimento de bugs?
+A) Preferência por resolver problemas complexos primeiro.
+B) Foco em tarefas de maior responsabilidade.
+C) Escolher o caminho mais fácil para cumprir o mesmo objetivo.
+D) Realizar múltiplos testes antes de codar.
+R: C
+E: A resposta correta é C porque, conforme o slide, as pessoas tendem a fazer o trabalho mais fácil, mesmo que o objetivo final seja o mesmo. Essa escolha por atalhos pode gerar inconsistências, erros de interpretação e falhas que se acumulam ao longo do projeto, culminando em bugs. As demais alternativas não são mencionadas ou não refletem essa tendência.
+
+P: Qual é a razão mais citada por Pezzè e Young para a ocorrência de falhas no desenvolvimento de software?
+A) Falta de testes de usabilidade.
+B) Inexistência de planejamento.
+C) Uso de linguagens de programação ineficientes.
+D) Problemas de comunicação entre os membros da equipe.
+R: D
+E: A resposta correta é D, pois os autores Pezzè e Young afirmam que a principal causa para bugs é a comunicação deficiente entre os integrantes da equipe. Quando a comunicação não é clara, cada membro pode entender algo diferente, o que afeta diretamente a qualidade do produto final. Nenhuma das outras opções reflete o conteúdo citado.
+
+P: Mesmo quando todos os membros da equipe compartilham um objetivo comum, por que ainda assim ocorrem falhas?
+A) Porque a equipe sempre comete os mesmos erros.
+B) Porque o código é muito difícil de revisar.
+C) Porque cada pessoa pode interpretar o objetivo de forma diferente ao buscar soluções mais fáceis.
+D) Porque o cliente muda constantemente de ideia.
+R: C
+E: A resposta correta é C, já que o slide destaca que mesmo com um objetivo comum, as pessoas tendem a fazer o trabalho de maneira mais fácil para si, o que pode causar falhas. Isso mostra como decisões individuais, ainda que bem-intencionadas, podem resultar em bugs se não houver alinhamento e comunicação adequados.
+
+P: O que deve ser analisado inicialmente para definir as atividades de teste de software?
+A) O valor estimado de vendas do produto final.
+B) O tamanho e a complexidade do projeto.
+C) A equipe de marketing envolvida no projeto.
+D) O tempo que o projeto já está em andamento.
+R: B
+E: A resposta correta é B porque o material aponta que deve haver uma análise do tamanho do projeto para se definir quais atividades de teste serão realizadas. Essa análise permite dimensionar o esforço necessário e alocar corretamente os recursos. As demais opções não estão presentes nos slides e não são critérios relevantes para essa fase.
+
+P: Quando é indicado o uso de testes por amostragem em projetos de software?
+A) Quando o projeto é único e personalizado.
+B) Quando os requisitos ainda não estão definidos.
+C) Quando a empresa trabalha com produção em série e projetos repetitivos.
+D) Quando não há equipe de testes disponível.
+R: C
+E: A resposta correta é C, pois os slides explicam que em empresas que produzem software em série, com muitos projetos semelhantes, é possível aplicar testes por amostragem para economizar tempo e dinheiro, mantendo a confiança nos resultados devido à padronização.
+
+P: Qual é o papel dos requisitos de qualidade na definição das atividades de teste?
+A) Substituir a etapa de documentação.
+B) Eliminar a necessidade de testes automatizados.
+C) Servir como base para escolha das atividades de teste.
+D) Determinar quais membros da equipe serão desligados.
+R: C
+E: A resposta correta é C. O slide informa que é necessário listar os requisitos de qualidade como parte essencial para escolher o conjunto de atividades de teste. Esses requisitos orientam as estratégias de teste e ajudam a alinhar os testes às necessidades do projeto. As demais opções são irrelevantes ou incorretas.
+
+P: Como as atividades de teste devem se relacionar com a complexidade do projeto?
+A) Devem ser iguais em todos os projetos, para padronização.
+B) Devem acompanhar e se ajustar à complexidade de cada projeto.
+C) Devem ser reduzidas se o prazo for curto.
+D) Devem ser definidas antes de entender o projeto.
+R: B
+E: A resposta correta é B porque o conteúdo deixa claro que as atividades de teste devem acompanhar a complexidade de cada projeto. Isso significa que quanto mais complexo o projeto, mais robusta precisa ser a estratégia de testes. Definir atividades genéricas ou sem considerar a complexidade pode comprometer a eficácia do processo.
+
+P: Por que tentar destruir a confiabilidade do software nos testes é considerado benéfico?
+A) Porque isso elimina a necessidade de revisão.
+B) Porque mostra que o sistema está falhando.
+C) Porque é uma forma de garantir maior confiabilidade do sistema.
+D) Porque acelera o processo de homologação.
+R: C
+E: A resposta correta é C. Os slides mencionam que a tentativa de destruição da confiabilidade é o que traz mais confiabilidade, pois os testes devem forçar o sistema ao limite, simulando falhas reais para garantir que o software resista a elas. Esse processo torna o sistema mais robusto e confiável.
+
+P: O que ocorre na etapa de planejamento da elaboração de testes de software?
+A) Geração de relatórios de resultados.
+B) Preparação do ambiente de testes.
+C) Elaboração e revisão da estratégia e do plano de testes.
+D) Definição do cronograma de entrega ao cliente.
+R: C
+E: A resposta correta é C, pois os slides explicam que a etapa de planejamento envolve a elaboração e revisão da estratégia e do plano de testes, ou seja, é o momento de traçar o caminho que os testes irão seguir, antes mesmo de configurar ambientes ou executar testes.
+
+P: Qual é o foco da etapa de preparação nos testes de software?
+A) Elaborar os roteiros manuais.
+B) Criar a estratégia de testes.
+C) Preparar o ambiente, como equipamentos e ferramentas.
+D) Validar o produto com o cliente.
+R: C
+E: A resposta correta é C. Conforme o material, na etapa de preparação, organiza-se o ambiente de testes, incluindo equipamentos, softwares, rede, pessoal e ferramentas. Essa preparação é fundamental para que a execução ocorra sem imprevistos.
+
+P: Qual é o objetivo dos procedimentos iniciais na elaboração de testes?
+A) Criar protótipos de interface.
+B) Simular o comportamento do usuário.
+C) Estabelecer um documento com o acordo entre as partes envolvidas.
+D) Reduzir a quantidade de falhas encontradas.
+R: C
+E: A resposta correta é C, pois essa etapa refere-se à elaboração de um documento formalizando os objetivos, responsabilidades, equipe envolvida e outros pontos do teste, garantindo alinhamento entre todas as partes. Isso antecede qualquer execução prática.
+
+P: O que é produzido na etapa de especificação durante a elaboração de testes?
+A) Estratégias de marketing do software.
+B) Casos de teste manuais e automáticos.
+C) Relatórios de produção.
+D) Scripts de instalação.
+R: B
+E: A resposta correta é B, já que na etapa de especificação são elaborados os casos de teste manuais (roteiros) e os automáticos (scripts), que guiarão a execução dos testes. Essas definições são cruciais para garantir que o que for testado esteja em conformidade com os requisitos.
+
+P: O que ocorre na fase de execução dos testes?
+A) Elaboração da documentação de aceitação.
+B) Execução dos testes conforme casos elaborados e geração dos resultados.
+C) Criação do design de interface.
+D) Elaboração de novas histórias de usuário.
+R: B
+E: A resposta correta é B porque a execução envolve colocar em prática os testes planejados e registrar os resultados em relatórios. Essa fase é onde se testa efetivamente o sistema para identificar comportamentos esperados e anomalias.
+
+P: O que caracteriza a etapa de entrega na elaboração de testes?
+A) Encerramento do processo com a entrega de parte ou todo o sistema testado.
+B) Envio do relatório final para o cliente.
+C) Liberação de novas funcionalidades para testes.
+D) Abertura de novos casos de teste.
+R: A
+E: A resposta correta é A, pois o slide afirma que a entrega marca a conclusão do processo de testes com a entrega do sistema — parcial ou total. Essa etapa é o ponto final das fases de teste e antecede a validação do cliente.
+
+P: Qual é uma das principais mudanças na aplicação dos testes de software nos modelos modernos de desenvolvimento?
+A) Testes são aplicados apenas após o lançamento do software.
+B) Testes são feitos somente ao final do projeto, como antigamente.
+C) Testes são aplicados ao fim de cada ciclo (sprint) no processo atual.
+D) Testes são dispensáveis em projetos ágeis.
+R: C
+E: A resposta correta é C porque o slide menciona que nos modelos modernos (como em sprints), os testes são realizados a cada fim de ciclo, diferente do modelo antigo, em que os testes só ocorriam ao final da produção. Essa mudança permite detectar falhas mais cedo e corrigir problemas rapidamente.
+
+P: O que é analisado na etapa de verificação durante o processo de teste de software?
+A) Se o software atende às expectativas subjetivas do usuário.
+B) Se os requisitos funcionais e não funcionais estão implementados corretamente.
+C) Se o cliente está satisfeito com o layout visual.
+D) Se a documentação foi entregue.
+R: B
+E: A resposta correta é B, pois segundo o conteúdo, a verificação avalia se os requisitos funcionais (como telas) e não funcionais (como carga de dados) estão funcionando conforme especificado, garantindo que o software siga o que foi planejado tecnicamente. Não se trata de validar a experiência do usuário, mas a conformidade técnica.
+
+P: Qual é o objetivo da etapa de validação nos testes de software?
+A) Verificar se o código está otimizado para desempenho.
+B) Testar o consumo de memória da aplicação.
+C) Avaliar se o software atende às expectativas e necessidades do usuário.
+D) Medir a taxa de acessos simultâneos.
+R: C
+E: A resposta correta é C, pois a validação busca entender se o software realmente atende às expectativas do usuário, ou seja, se o que foi implementado resolve o problema ou necessidade para o qual foi projetado. Isso diferencia a validação (foco no usuário) da verificação (foco técnico).
+
+P: Apesar de diferentes, qual é o objetivo comum entre verificação e validação no processo de testes?
+A) Garantir que o cliente aprove o orçamento do projeto.
+B) Garantir que o software atenda ao que foi acordado com o cliente.
+C) Validar somente as funcionalidades visuais do sistema.
+D) Reduzir o número de usuários ativos na aplicação.
+R: B
+E: A resposta correta é B. Os slides indicam que verificação e validação têm como objetivo garantir que o software esteja de acordo com o que foi proposto junto ao cliente, ainda que cada uma atue em uma dimensão diferente: a verificação na técnica e a validação na experiência do usuário.
+
+P: O que deve ser avaliado antes mesmo de iniciar o desenvolvimento de um projeto de software?
+A) Se os testes unitários já estão prontos.
+B) Se o cronograma de marketing está finalizado.
+C) Se a equipe possui habilidades e competências necessárias para o projeto.
+D) Se a plataforma de produção foi escolhida.
+R: C
+E: A resposta correta é C porque o conteúdo destaca que o estudo de viabilidade é a primeira etapa do processo, e nele os gestores devem verificar se a equipe está capacitada para realizar o projeto. Isso evita começar algo que a equipe não conseguirá concluir com qualidade.
+
+P: Por que o estudo de viabilidade é considerado o primeiro passo para um produto satisfatório?
+A) Porque define o orçamento e o lucro esperado.
+B) Porque determina as cores da interface.
+C) Porque verifica a capacidade da equipe e inicia o ciclo de verificação e validação.
+D) Porque elimina a necessidade de testes posteriores.
+R: C
+E: A resposta correta é C, já que o slide explica que a partir do estudo de viabilidade, inicia-se o ciclo de verificação e validação. Isso mostra que o estudo é essencial para dar base a todo o processo subsequente, garantindo uma entrega mais alinhada com os objetivos e expectativas.
+
+P: Após o estudo de viabilidade, o que deve ser definido antes de realizar os testes?
+A) O número de desenvolvedores necessários.
+B) O tipo de banco de dados usado.
+C) O conjunto de técnicas de teste baseado em qualidade, custo, prazo e recursos disponíveis.
+D) O design da aplicação.
+R: C
+E: A resposta correta é C, pois os slides orientam que é preciso definir o conjunto de técnicas de teste com base em diversos fatores como nível de qualidade esperado, custo, prazo e recursos disponíveis. Isso garante que a abordagem de teste seja compatível com a realidade do projeto.
+
+P: Por que é importante combinar diferentes técnicas de teste ao longo do desenvolvimento de um software?
+A) Para substituir a documentação.
+B) Porque nenhuma técnica funciona sozinha.
+C) Porque diferentes técnicas são eficazes para diferentes classes de erro.
+D) Para agradar ao cliente com variedade.
+R: C
+E: A resposta correta é C. De acordo com o conteúdo, a combinação de técnicas busca a eficácia ao tratar diferentes tipos de erros, otimizando os resultados de teste e evitando que falhas passem despercebidas. Não se trata de agradar ou substituir processos, e sim de melhorar a cobertura de teste.
+
+P: Qual das alternativas abaixo é uma pergunta que os gestores devem considerar ao escolher técnicas de teste?
+A) Qual será o nome da aplicação?
+B) Qual a quantidade de falhas esperadas?
+C) Qual o nível de qualidade esperado?
+D) Quem será o diretor de marketing?
+R: C
+E: A resposta correta é C, pois entre as perguntas a serem feitas estão: "qual o nível de qualidade esperado?", "qual o custo?", "qual o prazo?" e "quais recursos estão disponíveis?". Essas perguntas guiam a escolha da melhor abordagem de teste. As demais alternativas não são mencionadas no slide.
+
+P: Por que combinar diferentes técnicas de teste pode trazer maior eficácia?
+A) Porque todas as técnicas são iguais.
+B) Porque permite ignorar erros simples.
+C) Porque diferentes técnicas são eficazes para diferentes classes de erros.
+D) Porque reduz a quantidade de testes necessários.
+R: C
+E: A resposta correta é C. O slide afirma que essa abordagem permite estudar cada caso e escolher o melhor teste para cada cenário, buscando maior eficácia na detecção de falhas. Isso evita o uso de uma única abordagem que possa deixar passar erros específicos.
+
+P: Qual é uma vantagem de aplicar diferentes técnicas de teste nas diversas etapas de um projeto?
+A) Reduz a quantidade de documentação necessária.
+B) Evita a contratação de testadores externos.
+C) Permite adaptar os testes às necessidades específicas de cada fase do desenvolvimento.
+D) Substitui a equipe de desenvolvimento.
+R: C
+E: A resposta correta é C, pois os slides explicam que diferentes fases do projeto demandam diferentes abordagens de teste. Por exemplo, inspeções manuais são úteis no início, quando o design ainda é abstrato, enquanto outras técnicas são mais apropriadas depois. Isso torna o processo mais adaptado e eficiente.
+
+P: Por que inspeções manuais são úteis no início de um projeto, como na fase de prototipação (ex: Figma)?
+A) Porque já é possível rodar testes automatizados.
+B) Porque os requisitos ainda são abstratos e não podem ser analisados por ferramentas automáticas.
+C) Porque a equipe de testes ainda não foi contratada.
+D) Porque o cliente ainda não está envolvido.
+R: B
+E: A resposta correta é B, pois o conteúdo destaca que nessa fase os requisitos ainda são abstratos, como no Figma, e não são adequados para testes automáticos. Assim, inspeções manuais se tornam fundamentais para validar a lógica inicial do projeto.
+
+P: Qual a principal diferença entre teste sistemático e teste estatístico, segundo o conteúdo apresentado?
+A) O teste estatístico ignora erros de código.
+B) O teste sistemático é melhor para avaliar a confiabilidade geral.
+C) O teste sistemático foca em falhas específicas, enquanto o estatístico avalia a confiabilidade geral.
+D) O teste sistemático é sempre manual.
+R: C
+E: A resposta correta é C, pois conforme os slides, o teste sistemático é mais eficaz na identificação de falhas específicas, enquanto o teste estatístico avalia a confiabilidade geral do sistema. Cada um tem um propósito diferente dentro da estratégia global de testes.
+
+P: Qual é a função de se fazer um compromisso entre custo e garantias na combinação de técnicas de teste?
+A) Evitar a contratação de testadores especializados.
+B) Direcionar os recursos financeiros para os testes mais importantes.
+C) Escolher apenas testes manuais para reduzir gastos.
+D) Eliminar a necessidade de testes de desempenho.
+R: B
+E: A resposta correta é B, pois o material afirma que esse compromisso serve para direcionar os recursos financeiros para os testes mais importantes, otimizando o uso do orçamento sem comprometer a qualidade. As demais alternativas representam decisões que podem comprometer o resultado final.
+
+P: Quem deve participar da elaboração da lista de requisitos para os testes de software?
+A) Somente o cliente.
+B) Apenas o gerente de projeto.
+C) Desenvolvedores e testadores.
+D) Equipe de marketing e usuários finais.
+R: C
+E: A resposta correta é C, pois o slide afirma que a lista de requisitos deve ser feita em conjunto com desenvolvedores e testadores, permitindo alinhar as necessidades do sistema com as estratégias de teste. A participação de quem implementa e de quem testa garante maior precisão e cobertura.
+
+P: A lista de requisitos de um projeto pode ter como base:
+A) Estimativas financeiras da empresa.
+B) Projetos anteriores.
+C) Pesquisas de mercado.
+D) Sugestões de usuários não envolvidos.
+R: B
+E: A resposta correta é B, pois os slides indicam que a lista de requisitos pode ter como base projetos anteriores, utilizando a experiência acumulada como referência para novas implementações e estratégias de teste. Isso ajuda a prever desafios recorrentes.
+
+P: Qual a diferença entre validação estática e dinâmica de requisitos?
+A) A estática é feita com testes manuais, enquanto a dinâmica usa estatísticas.
+B) A estática é automática, e a dinâmica é feita de forma manual, analisando cada parte do software.
+C) A dinâmica não verifica requisitos.
+D) Ambas são feitas com uso de ferramentas gráficas.
+R: B
+E: A resposta correta é B, pois o slide explica que a validação estática é feita de forma automática, enquanto a dinâmica é manual e considera cada parte do software. Essa distinção é importante para saber quando aplicar cada tipo de abordagem no ciclo de testes.
+
+P: Qual documentação pode e deve ser usada durante os testes de software?
+A) A documentação jurídica da empresa.
+B) Documentação disponível, como diagramas e protótipos.
+C) Apenas contratos de prestação de serviço.
+D) Orçamentos e propostas comerciais.
+R: B
+E: A resposta correta é B, pois o conteúdo orienta que se deve utilizar a documentação disponível, como diagramas e protótipos, durante os testes. Esses documentos ajudam a entender o que era esperado da aplicação e onde podem estar as divergências durante a validação.
+
+P: Qual é o objetivo principal dos testes de interface realizados nas etapas iniciais do processo de testes?
+A) Testar a infraestrutura de rede da aplicação.
+B) Avaliar a compatibilidade com sistemas operacionais.
+C) Verificar o funcionamento das telas e elementos visuais.
+D) Medir o tempo de resposta do servidor.
+R: C
+E: A resposta correta é C. O conteúdo do slide menciona os testes de interface (telas) como parte dos testes iniciais, com o propósito de verificar se as interfaces do sistema estão funcionando corretamente, tanto visualmente quanto em sua lógica de interação. Não se trata de performance ou compatibilidade nesse momento.
+
+P: O que os testes de integração têm como principal foco?
+A) Testar as funcionalidades do hardware.
+B) Avaliar se os módulos do sistema funcionam corretamente quando combinados.
+C) Verificar se a instalação ocorreu com sucesso.
+D) Analisar os requisitos de marketing.
+R: B
+E: A resposta correta é B, pois os testes de integração visam verificar se diferentes partes (ou módulos) do sistema interagem corretamente entre si. Essa etapa identifica falhas na comunicação entre componentes que, individualmente, podem ter funcionado bem.
+
+P: Quem é normalmente responsável pelos testes de interface e de integração mencionados na apresentação?
+A) O cliente final.
+B) O gerente de projeto.
+C) A equipe de qualidade.
+D) A equipe de marketing.
+R: C
+E: A resposta correta é C. O slide afirma que a equipe de qualidade é quem realiza os testes iniciais, como os de interface e integração. Essa equipe é especializada em aplicar metodologias e ferramentas de verificação para garantir que os elementos básicos do software funcionem corretamente desde o início.
+
+P: Segundo o conteúdo apresentado, o que caracteriza um erro no contexto de testes de software?
+A) Um problema causado por falha no código-fonte.
+B) Um bug que surge na tela de login.
+C) O uso incorreto do software por parte do usuário.
+D) Um defeito causado pela instalação errada do sistema.
+R: C
+E: A resposta correta é C, porque o slide define erro como uma situação em que o usuário utiliza o software de forma incorreta. Ou seja, não é necessariamente um problema no sistema em si, mas no modo como ele está sendo operado.
+
+P: O que define um defeito em uma linha de código, de acordo com o material apresentado?
+A) Uma sugestão estética do usuário.
+B) Um erro cometido na instalação do sistema.
+C) Uma linha de código escrita de forma incorreta, que pode ou não gerar falha.
+D) Um atraso no cronograma de desenvolvimento.
+R: C
+E: A resposta correta é C. O slide informa que um defeito ocorre quando uma linha de código é feita de maneira errada, podendo inclusive não ser executada. Isso mostra que nem todo defeito resulta imediatamente em uma falha, mas ele representa um erro na construção do código.
+
+P: O que caracteriza uma falha no sistema, segundo a classificação apresentada?
+A) A execução incorreta de uma funcionalidade causada por um comportamento inesperado do sistema.
+B) A execução normal e bem-sucedida de um código mal escrito.
+C) Um problema de design gráfico na interface.
+D) Um relatório incompleto gerado intencionalmente.
+R: A
+E: A resposta correta é A, pois o conteúdo explica que falha é o comportamento inesperado do sistema, que geralmente é o resultado final de um defeito no código ou mesmo de uso incorreto (erro). A falha se manifesta de forma visível para o usuário, o que a torna crítica para testes e correções.
+
+P: Quem é o principal responsável por realizar os testes unitários em um projeto de software?
+A) O gerente de projetos.
+B) A equipe de marketing.
+C) O programador que desenvolveu o código.
+D) O cliente final.
+R: C
+E: A resposta correta é C, pois o conteúdo afirma que o teste unitário é feito pelo próprio programador, sendo a primeira verificação de que a parte “codada” (implementada) está funcionando corretamente. É uma prática comum e essencial no processo de desenvolvimento.
+
+P: Qual é o foco do teste de caixa branca?
+A) Avaliar a aparência do sistema.
+B) Validar as funções com base no comportamento do usuário.
+C) Analisar o código fonte, verificando lógica, laços e segurança.
+D) Medir o tempo de resposta da aplicação.
+R: C
+E: A resposta correta é C. O teste de caixa branca verifica diretamente o código-fonte, focando na lógica de programação, fluxos de controle (como laços e condições) e questões de segurança interna do código. É um teste técnico voltado ao funcionamento interno da aplicação.
+
+P: Qual é o objetivo do teste de caixa preta?
+A) Avaliar a estrutura do banco de dados.
+B) Testar o código diretamente.
+C) Validar se as entradas geram as saídas esperadas, sem analisar o código.
+D) Testar o desempenho da equipe de desenvolvimento.
+R: C
+E: A resposta correta é C, pois o teste de caixa preta verifica se o comportamento externo do software está conforme o esperado, sem considerar como o código foi implementado internamente. Ou seja, ele testa entradas e saídas, focando na funcionalidade e não na lógica interna.
+
+P: Qual é a principal diferença entre o teste de caixa branca e o teste de caixa preta?
+A) O teste de caixa branca é feito por usuários finais.
+B) O teste de caixa preta é feito antes da codificação.
+C) O teste de caixa branca analisa o código; o de caixa preta analisa as funcionalidades externas.
+D) Ambos testam exclusivamente a aparência do software.
+R: C
+E: A resposta correta é C, pois o teste de caixa branca foca no funcionamento interno do código (como ele foi escrito), enquanto o teste de caixa preta se concentra no que o sistema faz externamente, sem ver o código. Essa distinção é essencial na escolha da abordagem de teste.
+
+P: O que caracteriza o teste de caixa cinza?
+A) A ausência de qualquer conhecimento sobre o sistema.
+B) A aplicação de técnicas estatísticas.
+C) A união entre os testes de caixa preta e caixa branca.
+D) O foco exclusivo em testes de interface.
+R: C
+E: A resposta correta é C, já que o conteúdo define o teste de caixa cinza como a unificação das abordagens de caixa preta e branca, ou seja, combina testes externos com algum conhecimento interno do sistema. Essa estratégia permite maior cobertura de análise.
+
+P: Em qual situação seria mais adequado aplicar o teste de caixa preta ao invés do de caixa branca?
+A) Quando se quer entender o fluxo interno do código.
+B) Quando se deseja verificar a lógica de segurança da aplicação.
+C) Quando se quer avaliar se a entrada de dados gera a saída correta, sem olhar o código.
+D) Quando se quer otimizar a estrutura de repetição.
+R: C
+E: A resposta correta é C, pois o teste de caixa preta é indicado quando o objetivo é testar o sistema como um todo, do ponto de vista do usuário, ou seja, se os dados inseridos produzem as saídas corretas, independentemente de como o código foi construído. Isso é útil em validações funcionais.
+
+P: Qual é o principal objetivo do teste de regressão em projetos de software?
+A) Corrigir falhas gráficas da interface.
+B) Garantir que novas versões não tenham afetado funcionalidades antigas.
+C) Testar a compatibilidade com sistemas operacionais antigos.
+D) Verificar a quantidade de usuários conectados simultaneamente.
+R: B
+E: A resposta correta é B, pois o teste de regressão serve para garantir que, ao adicionar ou modificar funcionalidades, nenhuma funcionalidade antiga tenha sido comprometida. Ele é essencial em cada nova versão para preservar o bom funcionamento do que já existia no sistema.
+
+P: O que se busca avaliar com o teste de volume em um software?
+A) A quantidade de desenvolvedores que contribuíram com o código.
+B) O tempo necessário para instalar o sistema.
+C) O limite de tráfego de dados que o sistema suporta.
+D) A performance de testes automatizados.
+R: C
+E: A resposta correta é C, pois o conteúdo define o teste de volume como aquele que verifica os limites de tráfego de dados, ou seja, até onde o sistema aguenta grandes volumes de informação sem apresentar falhas ou degradação no desempenho.
+
+P: Qual a diferença entre o teste de carga e o teste de stress, conforme apresentado?
+A) Ambos testam a velocidade da internet.
+B) O teste de carga avalia o tempo de resposta com múltiplos usuários, enquanto o de stress verifica os limites de dados trafegados.
+C) O teste de stress é feito somente em hardware.
+D) O teste de carga analisa a estética do sistema sob pressão.
+R: B
+E: A resposta correta é B. O slide indica que o teste de carga verifica o tempo de resposta e quantas pessoas podem estar conectadas simultaneamente, enquanto o teste de stress usa o teste de volume para avaliar os limites extremos de dados que o sistema pode suportar. Cada um tem um foco diferente dentro da performance.
+
+P: O que o teste de estabilidade tem como objetivo avaliar?
+A) O quanto o código está atualizado.
+B) Se o sistema permanece funcional após uso prolongado.
+C) Se a aparência da interface é coerente em todos os dispositivos.
+D) Se o sistema é compatível com múltiplos idiomas.
+R: B
+E: A resposta correta é B, pois, de acordo com o material, o teste de estabilidade verifica se o software continua funcionando adequadamente após ser utilizado por um longo período. É especialmente importante para aplicações que ficam ativas constantemente, como sistemas de servidores ou caixas eletrônicos.
+
+P: Quais dos seguintes testes são comumente usados para avaliar o desempenho (performance) de um sistema?
+A) Teste de caixa preta, funcional e regressão.
+B) Teste de estabilidade, volume, carga e stress.
+C) Teste de usabilidade, instalação e regressão.
+D) Teste de segurança, funcional e unitário.
+R: B
+E: A resposta correta é B, pois os testes de estabilidade, volume, carga e stress são todos focados em performance, cada um observando um aspecto diferente, como limite de dados, quantidade de usuários, duração contínua de uso e respostas em situações extremas.
+
+P: Qual é o objetivo do teste funcional em um software?
+A) Testar a performance da equipe de desenvolvimento.
+B) Verificar se o software cumpre o que foi definido nos requisitos.
+C) Avaliar se o sistema consome muita memória.
+D) Simular ataques maliciosos.
+R: B
+E: A resposta correta é B. O slide afirma que o teste funcional serve para verificar se o software está fazendo exatamente o que foi descrito nos requisitos. Ele assegura que cada funcionalidade implementada corresponde ao esperado pelo cliente ou pela equipe de projeto.
+
+P: Qual aspecto é avaliado durante um teste de segurança em software?
+A) Se o usuário consegue acessar apenas o que lhe é permitido.
+B) Se a interface está adequada a dispositivos móveis.
+C) Se a senha do desenvolvedor é fácil de lembrar.
+D) Se o sistema tem um design atrativo.
+R: A
+E: A resposta correta é A. O teste de segurança tem como função verificar se os usuários só têm acesso ao que lhes é permitido, ou seja, se há controle e restrição de acesso adequados. Isso impede vazamento de informações e invasões indevidas.
+
+P: Qual é o objetivo principal do teste de usabilidade?
+A) Testar a segurança da rede utilizada pelo sistema.
+B) Avaliar o número de cliques necessários para instalar o software.
+C) Verificar onde há dificuldade de uso e se o sistema satisfaz o usuário.
+D) Garantir que a interface utilize as cores padrão da marca.
+R: C
+E: A resposta correta é C. O teste de usabilidade, conforme o conteúdo, é feito por um usuário real e serve para identificar dificuldades no uso da aplicação, além de verificar se ela realmente satisfaz suas necessidades. Também pode resultar em sugestões documentadas por um analista.
+
+P: Durante o teste de usabilidade, qual é a função do analista?
+A) Realizar os testes técnicos de segurança.
+B) Avaliar o desempenho de hardware do sistema.
+C) Documentar as sugestões feitas pelos usuários.
+D) Escrever as linhas de código da interface.
+R: C
+E: A resposta correta é C. O slide informa que um analista é responsável por documentar as sugestões surgidas durante o teste de usabilidade. Esse feedback é essencial para ajustes no sistema com base na experiência real do usuário.
+
+P: Qual é o objetivo do teste de aceitação em um projeto de software?
+A) Verificar se o software pode ser usado por crianças.
+B) Validar se o sistema está pronto para ser entregue ao cliente.
+C) Medir o número de usuários ativos em tempo real.
+D) Confirmar se o manual do usuário está em formato PDF.
+R: B
+E: A resposta correta é B. O slide afirma que o teste de aceitação serve para validar se o software está pronto para ser entregue ao cliente. Ele representa uma avaliação final, geralmente realizada com o envolvimento do cliente, para garantir que os requisitos foram cumpridos satisfatoriamente.
+
+P: O que é avaliado no teste de instalação?
+A) Se o software utiliza corretamente os dados de localização do usuário.
+B) Se o sistema pode ser instalado em diferentes cenários de hardware e sistemas operacionais.
+C) Se a linguagem de programação está atualizada.
+D) Se a instalação foi feita por um técnico certificado.
+R: B
+E: A resposta correta é B, pois o teste de instalação verifica a capacidade do software de ser instalado em diversos tipos de hardware e com diferentes sistemas operacionais, garantindo sua portabilidade e compatibilidade em ambientes variados.
+
+P: Qual é o foco do teste de configuração de software?
+A) Validar a consistência gráfica entre páginas do sistema.
+B) Avaliar a compatibilidade com redes sociais.
+C) Verificar se o sistema funciona corretamente no hardware para o qual foi projetado.
+D) Confirmar se o logotipo da empresa aparece corretamente.
+R: C
+E: A resposta correta é C. O teste de configuração, segundo o slide, valida se o software opera de forma adequada no hardware específico para o qual ele foi projetado e será instalado, garantindo estabilidade e desempenho nas condições reais de uso.
+
+P: Qual é o objetivo do teste de manutenção em um sistema de software?
+A) Avaliar se a interface precisa de melhorias visuais.
+B) Verificar se a adição ou alteração de algum aspecto causou falhas no funcionamento geral do sistema.
+C) Garantir que os usuários mantenham o sistema sempre atualizado.
+D) Identificar se a instalação do sistema foi feita corretamente.
+R: B
+E: A resposta correta é B, pois o teste de manutenção tem como foco avaliar se uma mudança realizada em qualquer aspecto do software (como código, configuração ou ambiente) provocou falhas em seu funcionamento como um todo. É uma etapa crítica para manter a estabilidade do sistema ao longo do tempo.

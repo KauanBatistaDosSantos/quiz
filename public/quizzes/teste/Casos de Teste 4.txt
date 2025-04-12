@@ -1,0 +1,367 @@
+P: Qual é o principal objetivo da UML no contexto da engenharia de software?
+A) Substituir linguagens de programação tradicionais.
+B) Criar interfaces gráficas para aplicações móveis.
+C) Modelar e documentar sistemas, com foco em orientação a objetos.
+D) Executar testes automatizados de código.
+R: C
+E: A resposta correta é C. A UML (Unified Modeling Language) é uma linguagem padronizada usada para modelar, documentar e compreender sistemas, especialmente os orientados a objetos. Ela não substitui linguagens de programação nem serve para testes automatizados ou criação direta de interfaces.
+
+P: O diagrama de caso de uso descreve o sistema a partir de qual ponto de vista?
+A) Do desenvolvedor.
+B) Do analista de testes.
+C) Do usuário.
+D) Do banco de dados.
+R: C
+E: A resposta correta é C. O diagrama de caso de uso representa o sistema a partir da perspectiva do usuário, ou seja, o que o sistema faz para ele, sem detalhar a implementação técnica. É uma forma de capturar funcionalidades e interações de forma acessível.
+
+P: Qual é a principal vantagem de usar UML durante o desenvolvimento de um sistema?
+A) Evita a necessidade de documentação.
+B) Elimina a codificação manual.
+C) Auxilia na modelagem, documentação e compreensão das funcionalidades.
+D) Substitui os testes automatizados.
+R: C
+E: A resposta correta é C. A UML ajuda analistas e desenvolvedores a representarem visualmente a estrutura e os comportamentos do sistema, o que facilita a comunicação entre as partes envolvidas, a documentação e o alinhamento com os requisitos.
+
+P: Segundo a aula, muitos problemas nos sistemas estão ligados a:
+A) Falta de desenvolvedores na equipe.
+B) Falta de testes de segurança.
+C) Modelagens inadequadas durante o desenvolvimento.
+D) Uso de bancos de dados não relacionais.
+R: C
+E: A resposta correta é C. O conteúdo destaca que a negligência na fase de modelagem — especialmente o uso incorreto da UML — pode resultar em falhas graves no sistema, pois essa etapa é fundamental para definir corretamente as funcionalidades e comportamentos esperados.
+
+P: Qual é a relação entre os diagramas de caso de uso e os requisitos do sistema?
+A) Os diagramas substituem a etapa de levantamento de requisitos.
+B) Os diagramas representam os resultados dos testes de integração.
+C) Os diagramas ajudam a definir e especificar os requisitos do sistema.
+D) Os diagramas documentam erros encontrados durante o desenvolvimento.
+R: C
+E: A resposta correta é C. Os diagramas de caso de uso são construídos com base nos requisitos do sistema, mas também ajudam a analisá-los e representá-los graficamente, tornando a documentação mais clara e útil para desenvolvedores e testadores.
+
+P: Qual é uma das razões pelas quais analistas utilizam a UML durante o desenvolvimento de sistemas?
+A) Para definir regras de programação para linguagens específicas.
+B) Para configurar servidores de banco de dados.
+C) Para facilitar a modelagem, entendimento e documentação dos requisitos.
+D) Para substituir o manual de usuário do sistema.
+R: C
+E: A resposta correta é C. A UML é usada por analistas para compreender melhor o sistema, documentar funcionalidades e comunicar as interações esperadas entre usuários e o sistema, de forma visual e padronizada.
+
+P: Em um diagrama de caso de uso da UML, como os atores são representados?
+A) Por elipses com o nome do usuário.
+B) Por figuras em forma de boneco de palito.
+C) Por retângulos com rótulos técnicos.
+D) Por caixas ligadas a bancos de dados.
+R: B
+E: A resposta correta é B. Conforme apresentado no slide, atores são representados por figuras que lembram bonecos de palito, simbolizando os usuários do sistema ou outros sistemas externos que interagem com ele.
+
+P: O que os atores representam nos diagramas de caso de uso?
+A) Processos internos do sistema.
+B) Códigos que automatizam funcionalidades.
+C) Usuários ou sistemas externos que interagem com o sistema modelado.
+D) Componentes de hardware.
+R: C
+E: A resposta correta é C. Os atores não fazem parte do sistema, mas interagem com ele, representando usuários humanos ou outros sistemas que acionam ou recebem informações dos casos de uso.
+
+P: Como são representados os casos de uso em um diagrama da UML?
+A) Por triângulos que indicam decisão.
+B) Por retângulos com setas.
+C) Por elipses (óvalos) com o nome da funcionalidade.
+D) Por caixas com código-fonte resumido.
+R: C
+E: A resposta correta é C. Os casos de uso são representados por elipses (ou óvalos) e descrevem as funcionalidades que o sistema realiza, sempre do ponto de vista do usuário.
+
+P: O que significam as linhas simples que ligam os atores aos casos de uso nos diagramas?
+A) São conexões com o banco de dados.
+B) Indicam que o ator interage com aquele caso de uso.
+C) Representam testes automatizados.
+D) Ligam diferentes sistemas operacionais.
+R: B
+E: A resposta correta é B. As linhas de associação indicam que o ator participa do caso de uso ou interage com ele, sendo uma conexão direta entre o usuário e a funcionalidade representada.
+
+P: Qual é o propósito do relacionamento «extend» em um diagrama de caso de uso?
+A) Mostrar uma funcionalidade que substitui outra.
+B) Representar um comportamento opcional que ocorre em certas condições.
+C) Indicar que um ator foi removido do sistema.
+D) Unir dois diagramas distintos.
+R: B
+E: A resposta correta é B. O relacionamento «extend» indica que um caso de uso pode ser estendido por outro, ou seja, um comportamento adicional pode ocorrer se uma condição for satisfeita ou se o usuário optar por isso — como no exemplo de “Gerar Cupom de Desconto” durante um pagamento.
+
+P: Quando se deve utilizar o relacionamento «include» em um diagrama de caso de uso?
+A) Quando uma funcionalidade é opcional.
+B) Quando se deseja excluir um caso de uso.
+C) Quando uma funcionalidade é obrigatória e deve ser reutilizada em outros casos.
+D) Quando o ator interage diretamente com o banco de dados.
+R: C
+E: A resposta correta é C. O relacionamento «include» representa uma funcionalidade obrigatória, que será reutilizada por outros casos de uso. Por exemplo, “Calcular Impostos” pode ser um caso de uso incluído em todos os pagamentos, pois sempre será executado.
+
+P: Qual é a principal diferença entre os relacionamentos «include» e «extend»?
+A) «Include» representa algo visual e «extend» algo técnico.
+B) «Include» é opcional e «extend» obrigatório.
+C) «Include» representa inclusão obrigatória, enquanto «extend» representa comportamento condicional ou opcional.
+D) Ambos são usados apenas com atores, não com casos de uso.
+R: C
+E: A resposta correta é C. A distinção principal é que o «include» representa funcionalidades obrigatórias e reutilizáveis, enquanto o «extend» representa comportamentos opcionais ou que dependem de condições específicas para acontecerem.
+
+P: O que a generalização representa em diagramas de caso de uso ou de classes?
+A) Repetição de funcionalidades em vários sistemas.
+B) Compartilhamento de dados entre atores.
+C) Herança, onde uma subclasse ou ator herda comportamentos de uma superclasse.
+D) Interação entre banco de dados e interface.
+R: C
+E: A resposta correta é C. A generalização representa a herança, permitindo que uma subclasse ou ator herde comportamentos e características de outra entidade mais genérica, como no conceito de orientação a objetos.
+
+P: Quais são os atores corretamente identificados no sistema de agendamento odontológico apresentado na aula?
+A) Médico, atendente e desenvolvedor.
+B) Paciente, atendente e médico.
+C) Paciente, servidor e médico.
+D) Clínica, banco de dados e paciente.
+R: B
+E: A resposta correta é B. No exemplo da clínica odontológica, os atores identificados são paciente, atendente e médico, pois são os usuários ou agentes externos que interagem diretamente com o sistema para realizar ações como agendar, cancelar e atender consultas.
+
+P: Segundo o exemplo da clínica odontológica, como ocorre o processo de agendamento de uma consulta?
+A) O médico agenda diretamente com o paciente.
+B) O paciente insere a consulta no sistema sem mediação.
+C) O paciente contata a clínica, e o atendente busca data e horário disponíveis.
+D) O sistema seleciona automaticamente uma data aleatória.
+R: C
+E: A resposta correta é C. O fluxo descrito nos slides mostra que o paciente entra em contato com a clínica, e o atendente verifica a disponibilidade para agendar a consulta, o que demonstra claramente a interação entre atores e o sistema.
+
+P: Qual das funções a seguir é desempenhada exclusivamente pelo médico, de acordo com o caso de uso apresentado?
+A) Agendar consulta.
+B) Cancelar consulta.
+C) Realizar a consulta e receitar medicamentos.
+D) Informar horários disponíveis.
+R: C
+E: A resposta correta é C. O médico, conforme apresentado no exemplo, realiza a consulta e pode receitar medicamentos. As demais ações são atribuídas ao paciente ou ao atendente.
+
+P: Em qual situação o paciente pode cancelar uma consulta sem custos?
+A) Quando já estiver na clínica.
+B) Quando a consulta for agendada para o mesmo dia.
+C) Quando o cancelamento ocorre com 3 ou mais dias de antecedência.
+D) Quando o sistema estiver offline.
+R: C
+E: A resposta correta é C. O slide especifica que o cancelamento sem custos só pode ser feito com 3 ou mais dias de antecedência, caso contrário, o valor da consulta deve ser pago integralmente.
+
+P: Qual das seguintes ações é atribuída ao atendente, segundo o diagrama de caso de uso?
+A) Consultar com o paciente.
+B) Cancelar consulta a pedido do paciente.
+C) Prescrever medicamentos.
+D) Pagar a consulta.
+R: B
+E: A resposta correta é B. O atendente realiza agendamentos, verifica datas disponíveis e também é responsável por cancelar consultas quando solicitado pelo paciente, conforme descrito nos slides.
+
+P: Quais ações o paciente pode realizar no sistema odontológico?
+A) Apenas marcar consulta.
+B) Consultar com o médico, receitar medicamentos e alterar o cadastro.
+C) Agendar, realizar e cancelar consultas.
+D) Criar relatórios médicos e atualizar o sistema.
+R: C
+E: A resposta correta é C. O paciente agenda consultas, comparece às consultas com o médico e pode cancelar consultas previamente agendadas, sendo um ator ativo em várias funcionalidades do sistema.
+
+P: Qual condição impede o cancelamento gratuito de uma consulta odontológica?
+A) O médico estar ausente.
+B) O paciente não ter CPF no cadastro.
+C) O cancelamento ocorrer com menos de 3 dias de antecedência.
+D) A consulta estar marcada no fim de semana.
+R: C
+E: A resposta correta é C. O sistema define que cancelamentos feitos com menos de 3 dias de antecedência implicam pagamento integral, sendo essa uma exceção importante no fluxo de cancelamento.
+
+P: Qual é o papel do plano de teste dentro do planejamento de testes de software?
+A) Substituir os diagramas de caso de uso.
+B) Criar interfaces visuais para os usuários.
+C) Definir escopo, critérios, funcionalidades e responsáveis pelas atividades de teste.
+D) Relatar as falhas encontradas durante os testes.
+R: C
+E: A resposta correta é C. O plano de teste é o documento que organiza e direciona as atividades de teste, especificando quais funcionalidades serão avaliadas, os critérios de aceitação, o escopo dos testes e os responsáveis pela execução. É o ponto de partida formal.
+
+P: Para que serve o roteiro de teste no planejamento de testes?
+A) Para registrar as decisões de design gráfico.
+B) Para controlar a entrada de dados nos formulários.
+C) Para descrever os procedimentos passo a passo da execução dos testes.
+D) Para identificar os atores do sistema.
+R: C
+E: A resposta correta é C. O roteiro de teste detalha os procedimentos necessários para executar os testes com precisão, funcionando como um guia prático para o testador, baseado nos casos de teste previamente planejados.
+
+P: O que é um caso de teste, conforme apresentado nos slides?
+A) Uma simulação visual de uma interface.
+B) Um modelo de codificação para cada funcionalidade.
+C) Uma descrição precisa de testes para funcionalidades específicas do sistema.
+D) Um relatório estatístico dos erros encontrados.
+R: C
+E: A resposta correta é C. O caso de teste descreve exatamente o que será testado, incluindo condições iniciais, entradas, ações e resultados esperados, com o objetivo de verificar se o comportamento do sistema atende aos requisitos definidos.
+
+P: Qual é o principal objetivo dos casos de teste no planejamento de qualidade?
+A) Garantir que o projeto tenha boa estética visual.
+B) Substituir a homologação do cliente.
+C) Verificar se os requisitos solicitados foram corretamente implementados no software.
+D) Documentar o trabalho dos desenvolvedores.
+R: C
+E: A resposta correta é C. Os casos de teste são construídos para confirmar que o sistema implementa corretamente os requisitos levantados, sendo cruciais para validar a aderência funcional e detectar falhas em tempo hábil.
+
+P: O que deve ser descrito no resumo de um caso de teste?
+A) O número de usuários impactados.
+B) O objetivo, o escopo e a parte específica do software a ser testada.
+C) A quantidade de linhas de código utilizadas.
+D) O valor investido no sistema testado.
+R: B
+E: A resposta correta é B. O resumo é a introdução do caso de teste, explicando qual parte do sistema será testada, seu objetivo e qual é o escopo dessa verificação, permitindo que o leitor compreenda o contexto antes de examinar os detalhes.
+
+P: Para que servem as pré-condições em um caso de teste?
+A) Informar os custos de manutenção.
+B) Especificar os resultados esperados.
+C) Descrever as condições que precisam estar satisfeitas antes de iniciar o teste.
+D) Indicar os responsáveis por aprovar o software.
+R: C
+E: A resposta correta é C. As pré-condições garantem que o sistema esteja no estado correto para que o teste tenha validade, como por exemplo: "usuário deve estar logado" ou "o cadastro do cliente precisa estar ativo".
+
+P: O que deve ser descrito na seção de resultados esperados de um caso de teste?
+A) As opiniões dos testadores sobre o sistema.
+B) As regras de negócio utilizadas na codificação.
+C) O comportamento ideal do sistema para que o teste seja considerado bem-sucedido.
+D) O código-fonte responsável por cada funcionalidade.
+R: C
+E: A resposta correta é C. Os resultados esperados são essenciais para validar se o sistema está se comportando como deveria, definindo critérios claros e objetivos que o testador deve observar para classificar o teste como “passou” ou “falhou”.
+
+P: Qual é o papel dos casos de uso no processo de planejamento de testes?
+A) Substituir os diagramas de classe.
+B) Ajudar os desenvolvedores a escolher tecnologias de banco de dados.
+C) Facilitar a geração de casos de teste e garantir maior confiabilidade.
+D) Criar gráficos estatísticos sobre falhas.
+R: C
+E: A resposta correta é C. Os casos de uso são extremamente úteis no planejamento de testes porque ajudam a identificar funcionalidades reais do sistema e permitem criar casos de teste com foco em cenários significativos, aumentando a confiabilidade dos testes.
+
+P: Como a UML contribui para o planejamento de testes, segundo o conteúdo?
+A) Reduz o tempo de desenvolvimento do back-end.
+B) Permite substituir os testes manuais.
+C) Proporciona exatidão na representação das funcionalidades e facilita a compreensão.
+D) Automatiza todos os testes com base em fluxogramas.
+R: C
+E: A resposta correta é C. A UML fornece uma representação precisa e visual das funcionalidades, o que ajuda tanto no entendimento do sistema quanto na elaboração de testes mais completos e direcionados, facilitando a comunicação entre equipe de testes e desenvolvimento.
+
+P: Por que os casos de uso são considerados estratégicos na etapa de especificação de testes?
+A) Porque substituem o código do sistema.
+B) Porque permitem excluir funcionalidades menos utilizadas.
+C) Porque direcionam os testadores a cobrir o escopo completo com testes eficazes.
+D) Porque ajudam a reduzir o tamanho do banco de dados.
+R: C
+E: A resposta correta é C. O conteúdo destaca que os casos de uso orientam os testadores sobre o que deve ser testado e como, permitindo abranger todas as funcionalidades previstas nos requisitos de forma eficaz e estratégica.
+
+P: Qual é uma característica de um planejamento de testes eficaz?
+A) Substituir todos os documentos por entrevistas.
+B) Excluir o cliente do processo de validação.
+C) Alinhar atividades, ferramentas, prazos e resultados esperados com os requisitos funcionais e casos de uso.
+D) Realizar testes sem base nos requisitos.
+R: C
+E: A resposta correta é C. Um planejamento eficaz considera todas as etapas do projeto de forma estruturada, alinhando as atividades de teste com os requisitos definidos e com os cenários previstos nos casos de uso. Isso garante foco e rastreabilidade no processo.
+
+P: De que forma os casos de uso beneficiam desenvolvedores, testadores e usuários?
+A) Reduzem o número de reuniões necessárias.
+B) Permitem que testadores criem código diretamente.
+C) Esclarecem os requisitos e ajudam a compreender o escopo funcional do sistema.
+D) Facilitam o treinamento em bancos de dados relacionais.
+R: C
+E: A resposta correta é C. Os casos de uso ajudam todas as partes envolvidas no projeto a entender claramente o que o sistema deve fazer, servindo como uma ponte entre os requisitos e as funcionalidades esperadas, o que melhora a comunicação e a produtividade da equipe.
+
+P: Por que o uso de casos de uso aumenta a produtividade no processo de testes?
+A) Porque permite ignorar funcionalidades secundárias.
+B) Porque permite copiar casos de testes de outros projetos.
+C) Porque garante que todo o escopo relevante seja testado de forma objetiva e clara.
+D) Porque elimina a necessidade de validação dos resultados.
+R: C
+E: A resposta correta é C. Ao guiar a criação de casos de teste com base nos fluxos principais e alternativos previstos nos casos de uso, o processo se torna mais direto, claro e eficaz, aumentando a cobertura e reduzindo retrabalho.
+
+P: Por que o planejamento detalhado dos testes é considerado essencial atualmente?
+A) Porque os testes são feitos apenas na fase final do projeto.
+B) Porque substitui o papel do analista de requisitos.
+C) Porque os testes são realizados em todas as fases do projeto e precisam estar bem definidos.
+D) Porque permite pular a etapa de homologação.
+R: C
+E: A resposta correta é C. O conteúdo explica que, com a evolução dos processos de desenvolvimento, os testes agora ocorrem em várias etapas, exigindo um planejamento claro que defina atividades, prazos, ferramentas e expectativas de resultado, garantindo eficiência em cada fase.
+
+P: O que representa o fluxo básico em um caso de uso?
+A) O caminho mais curto entre dois sistemas externos.
+B) O fluxo mais simples, direto e esperado de uma funcionalidade.
+C) O caminho alternativo ativado por erros do usuário.
+D) O código-fonte por trás da funcionalidade.
+R: B
+E: A resposta correta é B. O fluxo básico representa o caminho mais direto e comum seguido pelo usuário para atingir um objetivo no sistema, sendo o principal cenário a ser validado antes dos fluxos alternativos.
+
+P: O que caracteriza um fluxo alternativo dentro de um caso de uso?
+A) Um atalho para reduzir o número de cliques do usuário.
+B) Uma situação onde o usuário realiza uma ação não prevista, causando erro.
+C) Um desvio do fluxo básico, que ocorre em condições específicas.
+D) Uma visualização estética alternativa da interface.
+R: C
+E: A resposta correta é C. Fluxos alternativos ocorrem quando o usuário ou o sistema segue por um caminho diferente do previsto no fluxo básico, por motivos como validações extras, permissões, exceções, entre outros.
+
+P: O que cada cenário de teste deve representar dentro de um caso de uso?
+A) Apenas os testes do fluxo alternativo.
+B) Um conjunto específico de fluxos básicos e alternativos combinados.
+C) Todos os requisitos não funcionais.
+D) O código-fonte por trás da lógica do sistema.
+R: B
+E: A resposta correta é B. Um cenário de teste combina o fluxo básico com diferentes fluxos alternativos, representando uma situação real e específica a ser testada, conforme demonstrado na listagem de cenários 1 a 8.
+
+P: O que representa um cenário como “fluxo básico + fluxo alternado 1 + fluxo alternado 2”?
+A) Uma sequência inválida de ações do usuário.
+B) Uma combinação de desvios que o sistema precisa processar em cadeia.
+C) Uma tentativa de recuperar fluxos de erro anteriores.
+D) Um teste exclusivo para casos negativos.
+R: B
+E: A resposta correta é B. Essa composição indica uma sequência específica onde o sistema deve lidar com múltiplos fluxos alternativos em conjunto, testando sua capacidade de manter a lógica e funcionalidade ao lidar com essas variações.
+
+P: Por que é importante testar todos os cenários possíveis combinando fluxos básicos e alternativos?
+A) Para cumprir uma exigência visual do cliente.
+B) Para garantir que a interface esteja atrativa.
+C) Para assegurar que o sistema reaja corretamente a todas as combinações funcionais possíveis.
+D) Para reduzir o tempo de treinamento da equipe.
+R: C
+E: A resposta correta é C. Ao testar todos os cenários possíveis — combinando fluxos básicos e alternativos —, asseguramos que o sistema funcione corretamente em situações reais e complexas, o que aumenta a confiabilidade e qualidade do software.
+
+P: O que pode acontecer ao final de um fluxo alternativo em um caso de uso?
+A) Apenas erro fatal.
+B) Encerramento do sistema.
+C) Retorno ao fluxo básico, transição para outro alternativo ou conclusão do processo.
+D) Reinstalação automática do aplicativo.
+R: C
+E: A resposta correta é C. Os fluxos alternativos podem retornar ao fluxo principal, seguir para outros fluxos alternativos ou encerrar o caso de uso, dependendo do comportamento esperado do sistema frente à situação descrita.
+
+P: Qual é o objetivo de um caso de teste do tipo positivo?
+A) Simular ações incorretas e forçar o sistema a falhar.
+B) Confirmar que a funcionalidade atende aos requisitos e opera corretamente.
+C) Explorar limitações do sistema que ainda não foram documentadas.
+D) Testar falhas em componentes externos como impressoras.
+R: B
+E: A resposta correta é B. Um caso de teste positivo verifica se o sistema funciona como esperado em condições normais de uso, confirmando o atendimento ao requisito e validando a funcionalidade principal.
+
+P: Qual é a principal finalidade de um caso de teste negativo?
+A) Avaliar a estética visual da aplicação.
+B) Testar se o sistema impede ações inesperadas ou inválidas.
+C) Executar a funcionalidade de forma correta.
+D) Reduzir a quantidade de casos de uso documentados.
+R: B
+E: A resposta correta é B. Casos de teste negativos são elaborados para verificar como o sistema se comporta diante de entradas ou ações inválidas, testando suas limitações e seu tratamento de exceções — parte essencial para garantir robustez.
+
+P: Qual é a relação entre casos de teste e validação de requisitos?
+A) Os testes substituem a etapa de levantamento de requisitos.
+B) Os testes ajudam a verificar se os requisitos foram corretamente implementados.
+C) Os requisitos são úteis apenas para testes negativos.
+D) Os casos de teste servem apenas para treinar novos usuários.
+R: B
+E: A resposta correta é B. Os casos de teste são construídos com base nos requisitos e validam se o sistema implementa corretamente o que foi solicitado, sendo uma ferramenta fundamental na verificação da aderência funcional do produto ao que foi definido inicialmente.
+
+P: O que diferencia a validação automatizada da manual nos testes de software?
+A) A manual é usada apenas em dispositivos móveis.
+B) A automatizada sempre falha em fluxos alternativos.
+C) A automatizada testa requisitos objetivos e repetitivos; a manual é usada para critérios mais subjetivos ou complexos.
+D) Ambas executam os mesmos testes, mas com nomes diferentes.
+R: C
+E: A resposta correta é C. Os slides explicam que validações automatizadas são ideais para aspectos funcionais previsíveis e repetitivos, enquanto a validação manual é mais adequada para testes subjetivos, não funcionais ou com múltiplas variações.
+
+P: Por que é importante priorizar funcionalidades críticas no desenvolvimento de casos de teste?
+A) Para reduzir o número de relatórios gerados.
+B) Para economizar no processo de codificação.
+C) Para equilibrar necessidade, custo e risco, garantindo eficiência.
+D) Para poder excluir a fase de testes exploratórios.
+R: C
+E: A resposta correta é C. O conteúdo destaca que testar todas as funcionalidades igualmente pode não ser viável, então é fundamental priorizar o que é mais crítico para o sistema, equilibrando a necessidade de cobertura com o custo e os riscos envolvidos.
