@@ -1,0 +1,255 @@
+P: Como podemos adicionar a idade de clientes com base na data de nascimento no Power BI?
+A) Criando uma medida DAX com a função COUNT
+B) Criando uma coluna personalizada com NOW()
+C) Adicionando uma coluna na aba "Adicionar Coluna" > Data > Idade
+D) Criando uma nova tabela derivada da data de nascimento
+R: C
+E: A resposta correta é C porque o Power BI tem uma funcionalidade automática para calcular idade diretamente pela interface do Power Query: Adicionar Coluna > Data > Idade. As outras opções estão erradas porque: A) COUNT não calcula idade; B) NOW() retorna data/hora e não serve sozinho para calcular idade; D) criar nova tabela seria desnecessário.
+
+P: Após adicionar a idade no Power BI via Power Query, o formato da coluna é exibido como:
+A) Número inteiro de anos
+B) Data e hora
+C) Texto formatado
+D) Duração (time span)
+R: D
+E: A resposta correta é D porque, ao adicionar a idade no Power Query, o resultado inicial é exibido no formato de duração (tipo 29.12345:00:00), e é necessário convertê-la para anos inteiros manualmente. Esse é um passo essencial que muitos esquecem, levando a valores incorretos nos relatórios.
+
+P: Para transformar os valores "F" e "M" da coluna gênero em "Feminino" e "Masculino", usamos:
+A) Dividir coluna
+B) Substituir valores
+C) Nova medida com SWITCH
+D) Coluna condicional
+R: B
+E: A resposta correta é B porque o recurso "Substituir valores" permite trocar um valor literal por outro diretamente na coluna, sem lógica condicional. A alternativa D (coluna condicional) também poderia funcionar, mas é mais complexa para algo tão simples. A e C estão incorretas: dividir coluna não ajuda nesse caso, e SWITCH é usada em DAX, não no editor de consultas.
+
+P: No cadastro de produtos, qual das alternativas representa corretamente as ações feitas segundo o documento?
+A) Foram criadas faixas de preço usando colunas condicionais
+B) Foi adicionada uma nova coluna com categorias de produto
+C) Nenhuma ação foi aplicada à tabela de produtos
+D) Os produtos foram unidos a outras tabelas com relacionamentos
+R: C
+E: A resposta correta é C, pois o documento afirma explicitamente que "nenhum" passo foi feito na tabela de produtos. Essa pergunta serve tanto para verificar atenção quanto para ensinar que nem toda tabela precisa de transformação.
+
+P: Para criar relacionamentos entre tabelas no Power BI, devemos:
+A) Adicionar colunas com o mesmo nome em todas as tabelas
+B) Criar medidas DAX que combinem os IDs
+C) Ir para a visualização de modelo e conectar os campos com o mesmo identificador
+D) Aplicar filtros cruzados entre os dados
+R: C
+E: A resposta correta é C porque no Power BI, o relacionamento entre tabelas é feito através da visualização de modelo, onde o usuário conecta colunas (como IDs) entre as tabelas, formando relacionamentos. Essa etapa é crucial para que os visuais e medidas funcionem corretamente. A, B e D não estabelecem relacionamentos formais no modelo de dados.
+
+P: Para classificar clientes em faixas etárias como “Criança”, “Jovem”, “Adulto” ou “Sênior”, você deve:
+A) Criar uma nova medida e usar IFs aninhados
+B) Adicionar uma nova tabela com os intervalos
+C) Usar a opção “Coluna Condicional” na aba Adicionar Coluna
+D) Substituir os valores na coluna de idade
+R: C
+E: A resposta correta é C. A opção “Coluna Condicional” no Power Query permite definir regras baseadas em valores da própria tabela, como “Se idade <= 12, então ‘Criança’...”. Isso é ideal para categorizações. A opção A está errada porque medidas DAX não funcionam como colunas visuais. B envolve uma modelagem mais complexa, desnecessária aqui. D apenas troca valores fixos, sem lógica.
+
+P: Na criação de uma coluna condicional no Power BI, é essencial que:
+A) Os valores sejam únicos na coluna analisada
+B) As condições sejam aplicadas com base em colunas existentes
+C) O tipo de dados seja texto obrigatoriamente
+D) O Power BI crie uma medida automaticamente após a condicional
+R: B
+E: A resposta correta é B. Para que a coluna condicional funcione, você precisa usar colunas que já existem na sua tabela como base para as regras. A e C são irrelevantes, pois você pode usar qualquer tipo de dado. D está errada porque coluna condicional gera uma nova coluna, não uma medida DAX.
+
+P: Quando o nome de um cliente aparece como “S., Carlos”, o jeito mais prático de transformá-lo em “Carlos S.” é:
+A) Substituir vírgulas por espaço
+B) Criar uma coluna personalizada usando funções DAX
+C) Dividir a coluna e inverter manualmente os valores
+D) Usar “Coluna de Exemplos” e digitar o resultado desejado em duas linhas
+R: D
+E: A resposta correta é D. A opção "Coluna de Exemplos" permite que você digite como você quer que os dados apareçam (ex: “Carlos S.”), e o Power BI deduz automaticamente o padrão, aplicando para toda a coluna. Isso é ideal quando o padrão é consistente. A e C são mais trabalhosos e manuais. B é incorreta porque esse tipo de tratamento textual deve ser feito no Power Query, não com DAX.
+
+P: Ao usar a opção “Coluna de Exemplos” no Power BI, o que ocorre internamente?
+A) O Power BI executa código DAX automaticamente
+B) O Power BI gera uma transformação com base no padrão de entrada fornecido
+C) Os valores são substituídos diretamente, sem salvar o histórico
+D) O Power BI agrupa os dados conforme os exemplos digitados
+R: B
+E: A resposta correta é B. Ao usar "Coluna de Exemplos", o Power BI analisa os dados que você digita como exemplo e tenta reconhecer um padrão (como inverter nomes, remover partes, concatenar). Ele então aplica esse padrão ao restante dos dados. A está errada porque não envolve DAX, e C/D não refletem a real função dessa ferramenta.
+
+P: Para separar informações como “Rua, Número” em colunas diferentes, utilizamos:
+A) Adicionar Coluna > Duplicar Coluna
+B) Transformar > Substituir Valores
+C) Transformar > Dividir Coluna por Delimitador
+D) Modelagem > Criar Nova Tabela
+R: C
+E: A resposta correta é C. “Dividir Coluna por Delimitador” permite separar dados contidos em uma mesma célula com base em um caractere, como vírgula, espaço ou ponto. A é usada para duplicar, B apenas troca valores e D cria tabelas do zero — nenhuma dessas serve para esse tipo de quebra de texto.
+
+P: Para unir duas colunas, como “Nome” e “Sobrenome”, em uma só no Power BI (Power Query), o caminho mais prático é:
+A) Transformar > Mesclar Colunas
+B) Adicionar Coluna > Coluna Personalizada com &
+C) Modelagem > Nova Medida
+D) Inserir coluna DAX com CONCATENATE
+R: A
+E: A resposta correta é A. No Power Query, você pode mesclar colunas selecionando as desejadas, indo em Transformar > Mesclar Colunas, escolhendo um delimitador (como espaço) e renomeando o resultado. Essa abordagem é simples, visual e não requer escrever fórmulas. As alternativas B e D exigem escrever fórmulas, e C está fora de contexto, pois trata-se da área de modelagem e não serve para manipulação de dados de visualização.
+
+P: Para juntar as tabelas “Vendas 2022”, “Vendas 2023” e “Vendas 2024” em uma só no Power BI, usamos:
+A) Transformar > Mesclar Consultas
+B) Inserir Coluna > Agrupar
+C) Combinar > Acrescentar Consultas como Novas
+D) DAX > UNION
+R: C
+E: A resposta correta é C. A ação “Acrescentar Consultas como Novas” (Append Queries as New) é usada quando queremos unir linhas de diferentes tabelas com a mesma estrutura. Isso cria uma nova tabela combinada com todos os dados. A está errada porque Mesclar une colunas com base em chaves comuns. D funciona com DAX, mas não foi o método usado no contexto do documento. B está incorreta, pois “Agrupar” serve para sumarizar, não unir.
+
+P: Após combinar as tabelas anuais no Power BI, a coluna “Preço Unitário” teve que ser dividida por 100. O motivo disso foi:
+A) Os dados estavam em reais e precisavam ser convertidos para dólares
+B) O valor original estava em centavos e precisava ser ajustado para reais
+C) Era necessário reduzir os valores por exigência do gráfico
+D) A coluna tinha valores negativos que precisavam ser corrigidos
+R: B
+E: A resposta correta é B. A operação de dividir por 100 foi necessária porque os valores estavam em centavos, ou seja, 1999 significava R$ 19,99. Esse tipo de ajuste é comum quando os dados vêm de sistemas que registram valores monetários como inteiros. A alternativa A é incorreta porque não há conversão de moeda mencionada. C e D não refletem o conteúdo do documento.
+
+P: Para ocultar as tabelas “2022”, “2023” e “2024” da tela principal no Power BI, devemos:
+A) Excluir as tabelas depois de combiná-las
+B) Alterar o tipo de dado da tabela para invisível
+C) Desabilitar a carga da tabela no editor de consultas
+D) Alterar a visibilidade no painel de visualizações
+R: C
+E: A resposta correta é C. No Power BI, ao clicar com o botão direito em uma tabela no Power Query, é possível desabilitar a carga (Disable Load). Isso faz com que a tabela não apareça no painel de campos após o carregamento, sem ser excluída. A está errada porque excluir apagaria os dados. B não existe como opção, e D só altera visualizações de gráficos, não de tabelas no modelo.
+
+P: Qual das afirmações sobre relacionamentos entre tabelas no Power BI é verdadeira?
+A) Só podem ser criados automaticamente pelo sistema
+B) Relacionamentos exigem que os nomes das colunas sejam idênticos
+C) Um relacionamento só pode existir entre colunas do tipo texto
+D) Os relacionamentos são criados manualmente na exibição de modelo, conectando colunas com IDs correspondentes
+R: D
+E: A resposta correta é D. O Power BI permite que você crie relacionamentos manualmente na visualização de modelo, conectando colunas com valores compatíveis (como chaves primárias e estrangeiras). A é falsa porque relacionamentos podem ser criados manualmente. B é incorreta — os nomes das colunas não precisam ser iguais, só os dados. C está errada porque relacionamentos podem ser feitos com qualquer tipo de dado compatível, como número, texto ou data.
+
+P: No Power BI, para evitar que um gráfico interfira nos valores exibidos em outro ao ser clicado, usamos:
+A) Substituir valores na aba de transformação
+B) Criar uma medida que ignore filtros
+C) Ativar “Editar Interações” e escolher a opção de nenhuma interação no visual afetado
+D) Esconder o gráfico da tela de visualização
+R: C
+E: A resposta correta é C. Ao selecionar um gráfico e ativar a opção “Editar Interações”, você pode configurar como ele afeta os outros visuais da página. Ao clicar no ícone de “nenhuma interação” (círculo com traço), você garante que aquele visual específico não seja afetado por seleções feitas em outros. A, B e D não resolvem esse tipo de controle de interação.
+
+P: Após calcular a idade usando “Adicionar Coluna > Data > Idade”, para exibi-la corretamente em anos inteiros, é necessário:
+A) Transformar a coluna para tipo Texto
+B) Arredondar para cima e mudar tipo para número decimal
+C) Mudar o tipo de dados para Total de Anos e aplicar arredondamento para baixo
+D) Usar uma medida com DATEDIFF para gerar um número inteiro
+R: C
+E: A resposta correta é C. Quando você cria a idade no Power Query, ela vem como duração. Para que o valor apareça como anos inteiros, você deve ir em Transformar > Duração > Total de Anos e depois aplicar arredondamento para baixo (ex: idade real de 29.7 vira 29). A e B aplicam tipos de dados incorretos. D é válido em DAX, mas não se aplica aqui porque estamos falando do Power Query, não da modelagem.
+
+P: Uma coluna condicional foi criada com base na idade para classificar pessoas em faixas etárias. Qual das opções abaixo representa uma estrutura lógica adequada para essa categorização?
+A) Se idade <= 12 então “Jovem”, senão “Adulto”
+B) Se idade <= 12 então “Criança”, senão se <= 17 então “Jovem”, senão se <= 59 então “Adulto”, senão “Sênior”
+C) Se idade < 18 então “Adulto”, senão “Criança”
+D) Se idade > 60 então “Criança”, senão “Sênior”
+R: B
+E: A resposta correta é B. Essa estrutura representa uma categorização mais completa e realista das faixas etárias com base em valores numéricos. A alternativa A é confusa pois chama crianças de jovens. C e D estão incorretas e sem lógica coerente. O uso de encadeamento de condições é típico em colunas condicionais, e essa é a abordagem correta para resolver problemas como esse.
+
+P: Ao mesclar colunas no Power Query, o que acontece se nenhum delimitador for escolhido na operação?
+A) As colunas serão unidas com espaço entre os valores
+B) Os valores serão concatenados sem separador algum
+C) O Power BI gera um erro e cancela a operação
+D) Um delimitador padrão “;” será aplicado automaticamente
+R: B
+E: A resposta correta é B. Ao usar a funcionalidade Mesclar Colunas no Power Query e não escolher um delimitador, os valores são simplesmente unidos (concatenados) sem qualquer separador. Exemplo: “Maria” e “Silva” viram “MariaSilva”. A está errada, pois o espaço só aparece se você selecionar “espaço” como delimitador. C não ocorre — o Power BI não gera erro. D também está incorreta — não há delimitador automático aplicado.
+
+P: Suponha que a coluna “Endereço” tenha valores como “Rua das Flores, 234”. Para separar o nome da rua do número, devemos usar:
+A) Transformar > Agrupar Colunas
+B) Transformar > Dividir Coluna por Delimitador > Vírgula
+C) Adicionar Coluna > Coluna Condicional
+D) Substituir Valores usando delimitador
+R: B
+E: A resposta correta é B. A função Dividir Coluna por Delimitador permite separar strings de texto com base em um caractere específico — neste caso, a vírgula. Isso geraria duas colunas: uma com o nome da rua, outra com o número. A está errada porque “Agrupar” tem outra função. C não se aplica porque não há lógica condicional envolvida. D apenas troca valores, não separa campos.
+
+P: No Power BI, ao clicar em um gráfico, ele afeta outros gráficos da página. Para configurar a interação entre os visuais, o que podemos fazer?
+A) Usar a ferramenta “Editar Interações” e escolher como o gráfico vai afetar os outros (filtrando, realçando ou sem interação)
+B) Substituir os valores dos gráficos para cada nova seleção
+C) Criar uma medida DAX que desabilite qualquer interação entre os gráficos
+D) Excluir o gráfico de destino para evitar alterações de interatividade
+R: A
+E: A resposta correta é A. A funcionalidade “Editar Interações” permite configurar como cada gráfico vai interagir com os outros visuais da página (por exemplo, se ele vai filtrar, realçar ou não afetar outros gráficos). A alternativa B não é uma abordagem prática. C não é válida, pois DAX não controla interações entre visuais dessa forma. D não é uma solução, pois excluir gráficos pode prejudicar a visualização dos dados.
+
+P: Quando você aplica um arredondamento para baixo ao calcular a idade no Power BI, qual é o resultado esperado?
+A) A idade será calculada considerando valores decimais, com arredondamento para cima
+B) A idade será convertida para meses, mas arredondada para o número inteiro inferior
+C) A idade será arredondada para o número inteiro mais próximo
+D) A idade será convertida para um formato de texto
+R: B
+E: A resposta correta é B. Quando você usa arredondamento para baixo, você faz com que a idade em formato de duração seja convertida para anos inteiros, desprezando as casas decimais. Isso é fundamental para que a idade apareça de forma mais precisa em anos completos. A está errada, pois arredondar para cima não foi mencionado. C fala de arredondamento padrão (para o número mais próximo), e D não é aplicável ao formato de idade.
+
+P: O que acontece se você não aplicar nenhum delimitador ao mesclar duas colunas de texto no Power BI?
+A) O Power BI irá gerar um erro e pedir para você selecionar um delimitador
+B) Os valores serão concatenados diretamente, sem espaço ou separador
+C) O Power BI cria automaticamente um delimitador padrão, como espaço
+D) As colunas serão divididas em duas partes iguais
+R: B
+E: A resposta correta é B. Quando você mescla colunas sem escolher um delimitador, o Power BI simplesmente junta os valores sem nenhum separador entre eles. Exemplo: “Carlos” e “Silva” viram “CarlosSilva”. A está errada porque não há erro ao não selecionar delimitador. C é incorreta porque não há delimitador automático. D não é verdade, pois não há divisão involuntária de dados.
+
+P: Em um cenário de cadastro de produtos, ao precisar combinar os dados de três anos (2022, 2023 e 2024), qual abordagem seria ideal para mesclar as tabelas no Power BI?
+A) Criar uma medida DAX unificada para todos os anos
+B) Criar uma nova tabela unindo as três tabelas por relacionamento
+C) Usar a funcionalidade "Acrescentar Consultas" para combinar as tabelas em uma nova consulta
+D) Excluir os dados dos anos anteriores e adicionar os mais recentes manualmente
+R: C
+E: A resposta correta é C. Quando você precisa combinar dados de várias tabelas (que possuem a mesma estrutura), a opção “Acrescentar Consultas” é a maneira mais eficiente de unir as tabelas em uma só sem perder informações. A alternativa A está errada porque não se faz isso por medida. B não resolve a união de tabelas de forma eficiente (relacionamento é para dados conectados, não para junção). D não é uma boa prática, pois você perderia dados importantes.
+
+P: Quando você cria uma nova tabela combinada (por exemplo, triênio), o que deve ser feito caso você não queira que as tabelas individuais (2022, 2023, 2024) apareçam no painel de campos?
+A) Deletar as tabelas do Power Query
+B) Desabilitar a carga das tabelas no Editor de Consultas
+C) Renomear as tabelas para ocultá-las
+D) Excluir as tabelas depois de combinar os dados
+R: B
+E: A resposta correta é B. Para ocultar as tabelas da tela principal e manter apenas a tabela combinada, basta desabilitar a carga das tabelas no Power Query. Isso impede que as tabelas apareçam na área de campos, sem perder os dados. A está errada porque deletar as tabelas apaga os dados. C é uma abordagem incorreta, pois não faz sentido renomear para ocultar. D não resolve, pois excluir os dados pode afetar os relacionamentos.
+
+P: O que acontece quando você desabilita a carga de uma tabela no Power BI?
+A) A tabela fica disponível apenas para cálculos DAX, mas não aparece nos relatórios
+B) A tabela será removida permanentemente do Power BI
+C) A tabela continuará visível para todos os visuais, mas não será carregada no modelo de dados
+D) Nenhuma das alternativas anteriores
+R: A
+E: A resposta correta é A. Quando você desabilita a carga de uma tabela, ela não será carregada no modelo de dados e, portanto, não aparecerá nos visuais, mas os dados podem ser usados para cálculos DAX e outros processos internos. A tabela não é deletada permanentemente, o que torna essa opção a mais adequada. B e C estão incorretas porque a tabela não é excluída nem fica visível. D está errada, porque A é a resposta correta.
+
+P: Após ativar “Editar Interações”, você nota que ao clicar em um gráfico, outro visual está sendo “realçado”. O que isso significa?
+A) Os dados do segundo gráfico são substituídos completamente
+B) Os valores do gráfico são removidos, mas os eixos permanecem
+C) Os dados originais permanecem visíveis, mas os relacionados à seleção são destacados
+D) O gráfico é ocultado para exibir apenas o gráfico selecionado
+R: C
+E: A resposta correta é C. Quando um gráfico é realçado, ele mantém todos os dados visíveis, mas dá destaque visual aos valores relacionados à seleção feita em outro gráfico. Esse comportamento é útil para comparar os dados filtrados com o todo. A representa o comportamento de “filtro”. B e D estão incorretos — o gráfico nunca desaparece ou remove eixos dessa forma.
+
+P: Um aluno deseja aplicar lógica para categorizar clientes com base em idade. Ele decide fazer isso no editor de consultas usando DAX. Qual o erro aqui?
+A) DAX não permite cálculos com colunas numéricas
+B) O local correto para usar DAX é apenas no Power Query
+C) DAX não está disponível no Power BI
+D) DAX deve ser usado na modelagem, e não no editor de consultas
+R: D
+E: A resposta correta é D. DAX (Data Analysis Expressions) é a linguagem usada na modelagem de dados e criação de medidas/colunas calculadas no Power BI Desktop, não no Power Query. O aluno comete o erro de tentar usar DAX no lugar errado. A, B e C estão incorretas — DAX é poderoso e amplamente utilizado, mas não no editor de consultas.
+
+P: Durante a mesclagem de colunas no Power Query, um aluno usou o delimitador “espaço” mas reclamou que o resultado ficou com dois espaços entre os nomes. Qual a provável causa?
+A) A mesclagem duplicou os dados por padrão
+B) As colunas tinham espaços ao final ou início dos textos
+C) O delimitador “espaço” não pode ser usado com texto
+D) O tipo de dado da coluna não era compatível
+R: B
+E: A resposta correta é B. Muitas vezes, valores textuais importados contêm espaços extras no início ou no final (ex: “ Maria”, “Silva ”). Ao mesclar colunas com delimitador “espaço”, esses espaços somam ao delimitador e criam espaçamento indesejado. A solução é usar Transformar > Formatar > Limpar para remover os espaços antes da mesclagem. As outras opções estão incorretas — nenhuma reflete o comportamento real do Power BI.
+
+P: Um aluno deseja inverter nomes no formato “L., Ana” para “Ana L.”. Ao digitar dois exemplos manualmente e usar a função “Coluna de Exemplos”, o que acontece?
+A) O Power BI não aceita exemplos manuais
+B) A transformação será aplicada automaticamente a toda a coluna com base nos exemplos
+C) Apenas os dois exemplos digitados serão substituídos
+D) Os exemplos precisam ser aplicados com fórmulas DAX
+R: B
+E: A resposta correta é B. A funcionalidade “Coluna de Exemplos” permite que o usuário digite 2 ou mais exemplos esperados, e o Power BI deduz um padrão de transformação para aplicar automaticamente ao restante da coluna. É uma ferramenta muito útil para evitar fórmulas manuais em casos previsíveis. A, C e D estão incorretas — essa função não requer DAX, nem se limita aos exemplos.
+
+P: Qual a diferença principal entre uma coluna criada no Power Query e uma criada com DAX no Power BI?
+A) As colunas criadas no Power Query não são carregadas no modelo
+B) As colunas DAX são temporárias e não podem ser usadas em visuais
+C) O Power Query transforma os dados na origem, enquanto DAX atua no modelo
+D) DAX só pode ser usado em gráficos e painéis
+R: C
+E: A resposta correta é C. O Power Query é usado para fazer transformações antes dos dados serem carregados para o modelo, enquanto DAX é usado depois que os dados já estão no modelo, para criar cálculos dinâmicos, colunas e medidas. A está errada porque o Power Query carrega sim os dados transformados. B está errada porque colunas DAX podem ser usadas normalmente em visuais. D também é incorreta — DAX é aplicado no nível de dados.
+
+P: Em um painel no Power BI, um gráfico de barras influencia outro gráfico automaticamente ao ser clicado. Esse comportamento padrão é chamado de:
+A) Agrupamento automático
+B) Filtragem cruzada
+C) Visualização global
+D) Controle de medida
+R: B
+E: A resposta correta é B. No Power BI, a interação entre visuais se chama filtragem cruzada (cross-filtering). Por padrão, ao clicar em um visual, os outros são filtrados ou realçados de acordo com o dado selecionado. Esse comportamento pode ser ajustado com a ferramenta “Editar Interações”, como visto em perguntas anteriores. As demais alternativas não representam comportamentos reais do Power BI.

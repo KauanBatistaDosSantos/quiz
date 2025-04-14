@@ -1,4 +1,5 @@
 {
   "Startup": ["startup/startup.txt", "startup/startup 2.txt", "startup/startup 3.txt", "startup/startup 4 percentuais.txt"],
-  "Teste e Validação de Software": ["teste/Teste e Validação 1.txt", "teste/Abordagem de Teste 2.txt", "teste/Planejamento de Testes 3.txt", "teste/Casos de Teste 4.txt", "teste/Níveis de Teste 5.txt", "teste/Teste de Frontend 6.txt"]
+  "Teste e Validação de Software": ["teste/Teste e Validação 1.txt", "teste/Abordagem de Teste 2.txt", "teste/Planejamento de Testes 3.txt", "teste/Casos de Teste 4.txt", "teste/Níveis de Teste 5.txt", "teste/Teste de Frontend 6.txt"],
+  "Power BI": ["power bi/Power BI.txt"]
 }
