@@ -1,0 +1,351 @@
+P: Qual é a principal funcionalidade do aplicativo Sorteador?
+A) Calcular médias de números
+B) Gerar um número aleatório ao clicar em um botão
+C) Exibir imagens aleatórias
+D) Sortear nomes de uma lista
+R: B
+E: A resposta correta é B). O app gera um número aleatório entre 1 e 1000 sempre que o botão “Sortear” é clicado, exibindo o valor em uma TextView.
+
+P: Qual é o ID do botão usado para realizar o sorteio no layout XML?
+A) botaoSorteio
+B) btnSorteio
+C) botaoSortear
+D) sortearBtn
+R: C
+E: A resposta correta é C). No activity_main.xml, o botão responsável por acionar a lógica de sorteio possui o ID @+id/botaoSortear.
+
+P: Qual valor inicial é exibido na TextView antes de o botão ser clicado?
+A) “Clique para sortear”
+B) “0”
+C) “...”
+D) “aguardando clique...”
+R: D
+E: A resposta correta é D). O texto inicial é definido por @string/aguardando, que no strings.xml possui o valor "aguardando clique...".
+
+P: Qual biblioteca é usada para gerar o número aleatório?
+A) java.util.Random
+B) kotlin.math
+C) kotlin.random.Random
+D) androidx.random
+R: C
+E: A resposta correta é C). A linha Random.nextInt(1000) + 1 utiliza a biblioteca kotlin.random.Random, incluída por padrão no Kotlin.
+
+P: O número sorteado pode assumir qual faixa de valores?
+A) De 1 a 100
+B) De 1 a 999
+C) De 1 a 1000
+D) De 0 a 1000
+R: C
+E: A resposta correta é C). A função Random.nextInt(1000) gera valores de 0 até 999. Ao somar 1, o intervalo final fica entre 1 e 1000.
+
+P: Qual componente Android exibe o número sorteado na tela?
+A) EditText
+B) TextView
+C) ListView
+D) Spinner
+R: B
+E: A resposta correta é B). O número sorteado é atribuído ao componente TextView com ID sorteador, via sorteador.text = numeroSorteado.toString().
+
+P: Qual cor é usada no botão de sorteio?
+A) Preto (@color/black)
+B) Branco (@color/white)
+C) Azul (@color/azulButton)
+D) Vermelho
+R: C
+E: A resposta correta é C). O botão recebe a cor azul com android:backgroundTint="@color/azulButton", e essa cor é definida como #0063DC no colors.xml.
+
+P: Qual é o tamanho do texto exibido após o sorteio?
+A) 24sp
+B) 38sp
+C) 80sp
+D) Depende do dispositivo
+R: C
+E: A resposta correta é C). No evento de clique do botão, o app define explicitamente sorteador.textSize = 80.0f, ajustando dinamicamente o tamanho do número sorteado.
+
+P: O layout principal do app é qual tipo de container?
+A) RelativeLayout
+B) LinearLayout
+C) ConstraintLayout
+D) FrameLayout
+R: B
+E: A resposta correta é B). O arquivo activity_main.xml define o layout com <LinearLayout> e orientação vertical.
+
+P: Qual biblioteca é usada para aplicar WindowInsets corretamente na tela principal?
+A) android.view.InsetsManager
+B) androidx.core.view.ViewCompat
+C) android.graphics.DisplayInsets
+D) android.window.WindowInfo
+R: B
+E: A resposta correta é B). O código usa ViewCompat.setOnApplyWindowInsetsListener(...), que faz parte da biblioteca androidx.core.view, para ajustar margens conforme as barras do sistema.
+
+P: Por que numeroSorteado.toString() é necessário antes de atribuir o valor à TextView?
+A) Porque o método setText() só aceita números
+B) Porque TextView só aceita valores booleanos
+C) Porque TextView.text exige um tipo CharSequence, e toString() converte o Int para String
+D) Porque é uma exigência da linguagem XML
+R: C
+E: A resposta correta é C). O método text da TextView aceita apenas CharSequence (como String). Como numeroSorteado é um Int, é necessário convertê-lo usando .toString().
+
+P: Qual é a função do método enableEdgeToEdge() presente no onCreate()?
+A) Desabilitar notificações
+B) Estender o conteúdo da tela para usar todo o espaço disponível, inclusive atrás da status bar e navigation bar
+C) Aplicar sombras nas bordas
+D) Definir o tema escuro
+R: B
+E: A resposta correta é B). enableEdgeToEdge() é uma função do Android que permite que o conteúdo da tela ocupe toda a área disponível do display, inclusive sob áreas reservadas do sistema (como a status bar).
+
+P: O que acontece com a TextView quando o botão “Sortear” é clicado?
+A) A fonte do texto diminui
+B) O texto permanece o mesmo
+C) O número é sorteado, exibido, e o tamanho da fonte é alterado para 80.0f
+D) O texto fica em negrito
+R: C
+E: A resposta correta é C). O botão aciona um setOnClickListener que sorteia um número, converte para string, altera o texto da TextView, e define textSize = 80.0f.
+
+P: O que define a cor preta usada no texto da TextView?
+A) android:textColor="#000000" diretamente no XML
+B) A cor padrão do Android
+C) A string @color/black definida no colors.xml
+D) Um arquivo externo JSON
+R: C
+E: A resposta correta é C). O atributo android:textColor="@color/black" define a cor da TextView, e @color/black é declarado no colors.xml com o valor #FF000000.
+
+P: Qual recurso visual do layout garante que os componentes fiquem centralizados vertical e horizontalmente?
+A) layout_gravity="center"
+B) android:gravity="center" no LinearLayout
+C) Uso de ConstraintLayout com bias
+D) Atributo textAlignment="center"
+R: B
+E: A resposta correta é B). O atributo android:gravity="center" no LinearLayout centraliza todos os componentes dentro dele tanto na vertical quanto na horizontal.
+
+P: Qual consequência prática de se usar Random.nextInt(1000) + 1 ao invés de Random.nextInt(1, 1000)?
+A) Nenhuma, ambas geram o mesmo intervalo
+B) A segunda opção gera de 1 a 999
+C) A primeira é mais precisa
+D) A primeira gera de 0 a 1000
+R: A
+E: A resposta correta é A). Ambas geram um valor entre 1 e 1000 (inclusive o 1 e até 1000 exclusivo no segundo caso). A diferença está apenas na forma escrita: a segunda usa intervalo fechado-aberto.
+
+P: Por que foi utilizado ViewCompat.setOnApplyWindowInsetsListener(...) no final do onCreate()?
+A) Para ajustar a visibilidade do botão
+B) Para compatibilidade com gestos e interfaces edge-to-edge, respeitando as áreas ocupadas pelo sistema (status bar, barra de navegação)
+C) Para adicionar padding interno à TextView
+D) Para mover o botão dinamicamente
+R: B
+E: A resposta correta é B). ViewCompat.setOnApplyWindowInsetsListener permite lidar com margens e espaços reservados do sistema, evitando que o conteúdo fique escondido por barras do Android.
+
+P: Qual recurso XML está sendo referenciado na linha android:text="@string/aguardando"?
+A) Um tema de cor
+B) Um identificador de layout
+C) Uma string definida em strings.xml
+D) Um atributo interno do sistema
+R: C
+E: A resposta correta é C). O valor @string/aguardando refere-se a uma string declarada no strings.xml, que contém o texto exibido antes do sorteio.
+
+P: Se o botão “Sortear” fosse clicado 5 vezes, quantos números diferentes seriam obrigatoriamente exibidos?
+A) Sempre 5 números diferentes
+B) Pode repetir, pois o sorteio é aleatório
+C) Um número fixo será exibido
+D) Apenas os pares são escolhidos
+R: B
+E: A resposta correta é B). Como a função Random.nextInt() gera números aleatoriamente, pode haver repetições mesmo com múltiplos sorteios.
+
+P: Qual é o tipo de layout usado e sua orientação definida em activity_main.xml?
+A) LinearLayout com orientação vertical
+B) ConstraintLayout com orientação horizontal
+C) RelativeLayout com centramento absoluto
+D) FrameLayout com orientação dinâmica
+R: A
+E: A resposta correta é A). O layout é LinearLayout com android:orientation="vertical", o que posiciona os elementos um embaixo do outro.
+
+P: Qual seria a consequência de remover o android:id="@+id/main" do LinearLayout principal?
+A) O app funcionaria normalmente
+B) A função ViewCompat.setOnApplyWindowInsetsListener não encontraria o elemento alvo, e o padding não seria aplicado
+C) A cor do botão mudaria
+D) O app fecharia automaticamente
+R: B
+E: A resposta correta é B). O setOnApplyWindowInsetsListener depende de encontrar o layout principal com o ID main. Se esse ID for removido, a função não saberá em qual elemento aplicar os insets.
+
+P: Qual seria uma forma mais idiomática e segura de lidar com findViewById no projeto atual?
+A) Usar lateinit var para todos os componentes
+B) Migrar para ViewBinding ou Kotlin Synthetic para evitar chamadas manuais
+C) Utilizar var global para cada componente
+D) Remover o ID do XML
+R: B
+E: A resposta correta é B). O uso de ViewBinding torna o código mais seguro e limpo, eliminando a necessidade de findViewById e prevenindo erros em tempo de execução relacionados a IDs incorretos ou null.
+
+P: Se o valor Random.nextInt(1000) + 1 fosse substituído por Random.nextInt(1, 1001), qual seria o impacto?
+A) Aumentaria o risco de números duplicados
+B) O app passaria a sortear números de 0 a 1000
+C) Não haveria impacto prático, pois o intervalo continuaria de 1 a 1000
+D) O app geraria apenas números ímpares
+R: C
+E: A resposta correta é C). Ambos os métodos geram valores de 1 a 1000, a diferença está apenas na forma de escrita. Random.nextInt(1, 1001) usa intervalo fechado-aberto.
+
+P: Qual prática não recomendada está presente ao definir sorteador.textSize = 80.0f diretamente no código?
+A) Uso de val em vez de var
+B) Aplicação de estilos em tempo de execução em vez de recursos de estilo ou dimensões
+C) Conversão de texto em tempo real
+D) Uso de LinearLayout em vez de ConstraintLayout
+R: B
+E: A resposta correta é B). Estilizar elementos diretamente no código reduz a manutenibilidade e dificulta adaptações para diferentes tamanhos de tela. O ideal seria usar recursos como dimens.xml.
+
+P: Como o app se comportaria se a TextView tivesse largura fixa de 200dp e fosse exibido um número de 4 dígitos com textSize = 80f?
+A) O número se ajustaria automaticamente
+B) A TextView poderia cortar visualmente parte do número
+C) O texto mudaria de cor
+D) O número não apareceria
+R: B
+E: A resposta correta é B). Com fonte grande e largura fixa, há risco de overflow visual, fazendo com que parte do número fique invisível. O ideal seria usar wrap_content ou autoSizeTextType.
+
+P: Qual seria uma alternativa arquitetural para separar a lógica de sorteio da Activity e facilitar testes futuros?
+A) Criar uma função sorteio() dentro do layout XML
+B) Mover a lógica para um ViewModel ou classe de utilidade
+C) Usar setOnClickListener dentro do botão
+D) Declarar um Intent
+R: B
+E: A resposta correta é B). Separar a lógica de negócios da interface (como em um ViewModel) torna o código modular, testável e reutilizável, facilitando a manutenção do projeto.
+
+P: Em um cenário com múltiplos sorteios simultâneos, qual problema poderia surgir usando Random.nextInt() sem restrições adicionais?
+A) Geração de números negativos
+B) Números fora do intervalo
+C) Números repetidos ou colisões, caso a unicidade fosse necessária
+D) Números com letras
+R: C
+E: A resposta correta é C). O método Random.nextInt() não garante unicidade. Em sorteios que exigem que o número não se repita, seria necessário controlar um histórico dos números já gerados.
+
+P: Qual vantagem o uso de ViewCompat.setOnApplyWindowInsetsListener oferece em relação a ajustes manuais de padding no layout?
+A) Reduz o número de arquivos XML
+B) Permite que o layout se adapte dinamicamente aos insets do sistema, como barras de navegação e status
+C) Remove automaticamente as bordas
+D) Adiciona sombra aos componentes
+R: B
+E: A resposta correta é B). Essa abordagem permite que o app se adapte a diferentes dispositivos, respeitando áreas reservadas pelo sistema (como notch, barra de gestos, etc.), especialmente útil para layouts edge-to-edge.
+
+P: Suponha que seja necessário internacionalizar o texto “aguardando clique...”. Qual alteração não é adequada para isso?
+A) Criar versões diferentes do strings.xml com sufixo de idioma (ex: strings-en.xml)
+B) Alterar diretamente o texto no TextView do XML para “Waiting click...”
+C) Usar @string/aguardando como chave no XML
+D) Traduzir a chave “aguardando” nos arquivos de idioma apropriados
+R: B
+E: A resposta correta é B). Escrever o texto diretamente no layout viola o princípio da internacionalização. O correto é sempre usar referências a strings localizadas.
+
+P: Como uma abordagem responsiva poderia ser implementada para ajustar o textSize dinamicamente com base no tamanho da tela?
+A) Usar TextView.textSize = 80.0f
+B) Criar estilos diferentes manualmente para cada dispositivo
+C) Declarar valores em dimens.xml com qualifiers como values-sw600dp, values-sw720dp
+D) Converter texto em imagem
+R: C
+E: A resposta correta é C). O Android permite múltiplas versões de dimens.xml para adaptar o tamanho da fonte com base na largura da tela (sw = smallest width), melhorando a responsividade da interface.
+
+P: Suponha que o app seja usado por crianças com dificuldades de leitura. Qual seria uma melhoria importante para acessibilidade?
+A) Reduzir o tamanho da fonte para não assustar
+B) Adicionar áudio que leia o número sorteado em voz alta
+C) Diminuir o intervalo de sorteio para até 10
+D) Exibir o número com letras ao lado (ex: “Vinte e três”)
+R: B
+E: A resposta correta é B). Para tornar o app mais inclusivo, especialmente para crianças ou pessoas com deficiência visual, uma funcionalidade de leitura em voz alta do número sorteado (usando TextToSpeech, por exemplo) melhora significativamente a acessibilidade e a experiência do usuário.
+
+P: Se você quisesse transformar o sorteador em um jogo de adivinhação, qual modificação seria essencial?
+A) Trocar o botão por uma imagem
+B) Adicionar um campo EditText para o usuário inserir palpites e comparar com o número sorteado
+C) Reduzir a fonte da TextView
+D) Diminuir o intervalo de sorteio para 1 a 10
+R: B
+E: A resposta correta é B). Um jogo de adivinhação exige interatividade com o usuário. Incluir um EditText para receber o palpite e uma lógica de comparação com o número sorteado é essencial para implementar essa funcionalidade.
+
+P: Se o app fosse executado continuamente por várias horas em background realizando sorteios automáticos, qual risco poderia surgir?
+A) Interrupção automática pela Play Store
+B) Consumo excessivo de bateria e processamento, afetando a performance do dispositivo
+C) O texto da TextView desapareceria
+D) O layout ficaria corrompido
+R: B
+E: A resposta correta é B). Executar processos em background sem controle pode causar consumo elevado de recursos, levando a aquecimento do aparelho, descarregamento rápido da bateria e travamentos.
+
+P: Pensando em escalabilidade, como o app poderia permitir ao usuário escolher o intervalo (ex: de 1 a 1000 ou de 1 a 10)?
+A) Criar botões separados para cada faixa
+B) Alterar manualmente o código Kotlin
+C) Adicionar campos de entrada para valores mínimo e máximo do sorteio
+D) Fixar os valores no strings.xml
+R: C
+E: A resposta correta é C). Para tornar o app mais flexível e personalizável, é ideal permitir que o usuário defina os limites inferior e superior do sorteio por meio de campos de entrada (EditText), usando esses valores para gerar o número com Random.nextInt(min, max).
+
+P: Em um app real de sorteios para eventos com prêmios, qual funcionalidade adicional seria essencial para garantir transparência?
+A) Gerar números em ordem
+B) Exibir um histórico com todos os números sorteados e evitar repetições
+C) Mostrar uma imagem com cada sorteio
+D) Sortear apenas pares
+R: B
+E: A resposta correta é B). Para eventos reais com prêmios, evitar repetições e exibir um histórico transparente dos sorteios é fundamental. Isso pode ser feito armazenando os números sorteados em uma lista e mostrando ao usuário.
+
+P: O botão responsável por sortear um número no app deve:
+A) Iniciar um áudio
+B) Alterar a cor do fundo
+C) Gerar um número aleatório e atualizar a tela
+D) Encerrar o aplicativo
+R: C
+E: A resposta correta é C). A funcionalidade principal do botão é iniciar a geração de um número aleatório e atualizar a interface exibindo esse número ao usuário, o que representa a principal função do app.
+
+P: Para adaptar o layout às áreas do sistema (como notch e barras), qual recurso do Android é utilizado?
+A) LayoutInflater
+B) ViewCompat com insets
+C) IntentBuilder
+D) SharedPreferences
+R: B
+E: A resposta correta é B). ViewCompat.setOnApplyWindowInsetsListener é usado para ajustar dinamicamente o conteúdo da interface, respeitando as margens reservadas por barras do sistema (status bar, navigation bar), especialmente em dispositivos modernos com layout edge-to-edge.
+
+P: A cor do texto de um elemento visual no Android pode ser controlada com:
+A) Código Java apenas
+B) Um recurso de cor no XML (colors.xml)
+C) Nome de variável
+D) Animações
+R: B
+E: A resposta correta é B). O Android permite que cores sejam definidas em arquivos XML de recursos (como colors.xml), facilitando a reutilização, manutenção e internacionalização de estilos visuais em todo o app.
+
+P: Para centralizar todos os elementos dentro de um layout vertical no Android, deve-se usar:
+A) android:gravity="center"
+B) layout_alignParentCenter="true"
+C) android:padding="16dp"
+D) textAlignment="center"
+R: A
+E: A resposta correta é A). O atributo android:gravity="center" define o alinhamento do conteúdo dentro de um container como LinearLayout, centralizando todos os elementos horizontal e verticalmente no espaço disponível.
+
+P: Em layouts que ocupam toda a tela, qual técnica ajuda a evitar que o conteúdo fique sob a barra de status ou de navegação?
+A) Inserir uma FrameLayout
+B) Aplicar padding automático com ViewCompat
+C) Adicionar EditText flutuante
+D) Colocar tudo em ScrollView
+R: B
+E: A resposta correta é B). Usar ViewCompat.setOnApplyWindowInsetsListener permite aplicar dinamicamente margens internas (insets) ao layout, adaptando-o para que o conteúdo não fique escondido sob áreas do sistema como barras superiores ou inferiores.
+
+P: O que pode acontecer se o layout principal de um app Android não tiver um ID quando ele precisa ser referenciado no código?
+A) Nada muda
+B) A referência no código falhará, impedindo operações como padding dinâmico
+C) O texto desaparecerá
+D) O app muda de tema
+R: B
+E: A resposta correta é B). Para que um layout possa ser manipulado programaticamente (por exemplo, aplicar margens com base nos insets do sistema), ele precisa ser acessível por um ID. Sem isso, métodos como findViewById ou ViewCompat não funcionarão corretamente.
+
+P: Qual técnica moderna pode substituir findViewById para tornar o código mais seguro e legível?
+A) ToastBinding
+B) ViewBinding
+C) LateBinding
+D) EditBinding
+R: B
+E: A resposta correta é B). ViewBinding é uma funcionalidade do Android que gera classes automaticamente para cada layout XML, permitindo acessar componentes da interface diretamente com segurança de tipo, eliminando a necessidade de findViewById.
+
+P: Por que é recomendado definir tamanhos de texto via recursos como dimens.xml e não diretamente no código?
+A) Para melhorar a performance
+B) Para facilitar responsividade e manutenção
+C) Para impedir animações
+D) Para usar em bancos de dados
+R: B
+E: A resposta correta é B). Definir estilos como tamanhos de texto em recursos externos (dimens.xml) torna o código mais organizado e permite que os valores sejam adaptados facilmente para diferentes tamanhos de tela ou temas, aumentando a manutenção e escalabilidade.
+
+P: Se o texto tiver fonte grande e a área da tela for pequena, qual o possível problema visual?
+A) Texto borrado
+B) Texto cortado ou escondido
+C) Texto animado
+D) Texto fica azul
+R: B
+E: A resposta correta é B). Um texto com fonte muito grande pode ultrapassar os limites visuais do componente (TextView) e ser parcialmente exibido ou cortado, afetando a legibilidade. Para evitar isso, recomenda-se o uso de autoSizeTextType ou layout adaptativo.

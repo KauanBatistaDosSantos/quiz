@@ -1,0 +1,351 @@
+P: Qual é o nome da classe principal usada no código Kotlin?
+A) StopwatchActivity
+B) TimerMain
+C) MainActivity
+D) StartActivity
+R: C
+E: A resposta correta é C) porque o código declara class MainActivity : AppCompatActivity(), que é a classe principal da aplicação Android.
+
+P: Qual componente da interface é utilizado para exibir o tempo decorrido?
+A) TextView
+B) Chronometer
+C) ProgressBar
+D) TimeDisplay
+R: B
+E: A resposta correta é B) porque o componente Chronometer é projetado especificamente para exibir contagens de tempo, e é isso que vemos no XML: <Chronometer android:id="@+id/stopwatch" ... />.
+
+P: O que acontece ao clicar no botão de "Start"?
+A) O cronômetro zera
+B) O cronômetro inicia, se não estiver em execução
+C) O app fecha
+D) O cronômetro mostra a hora atual
+R: B
+E: A resposta correta é B). O botão “Start” chama stopwatch.start() apenas se running for false, evitando reinícios acidentais.
+
+P: Qual ID é usado para o botão de iniciar?
+A) @id/start
+B) @id/start_button
+C) @id/b_start
+D) @string/start_button
+R: B
+E: A resposta correta é B) porque o botão no XML é definido como android:id="@+id/start_button" e esse ID é usado no Kotlin com findViewById.
+
+P: Qual arquivo define os textos “Start”, “Pause” e “Reset”?
+A) activity_main.xml
+B) colors.xml
+C) strings.xml
+D) MainActivity.kt
+R: C
+E: A resposta correta é C). Esses textos são armazenados como recursos em strings.xml, sendo referenciados no layout com @string/start, @string/pause e @string/reset.
+
+P: Qual é o nome do layout que define os botões e o cronômetro na interface?
+A) stopwatch.xml
+B) interface.xml
+C) activity_main.xml
+D) layout_main.kt
+R: C
+E: A resposta correta é C) porque setContentView(R.layout.activity_main) indica que a interface gráfica usada é definida no arquivo activity_main.xml.
+
+P: Qual é o valor de texto inicial do componente Chronometer?
+A) 0
+B) 00:00
+C) Depende do momento em que a activity foi criada
+D) Não é definido diretamente
+R: D
+E: A resposta correta é D). O Chronometer não tem um valor de texto definido no XML. Ele calcula o tempo com base no base e no tempo do sistema.
+
+P: Qual componente Android armazena valores temporários ao salvar o estado da activity?
+A) Intent
+B) Context
+C) Bundle
+D) Handler
+R: C
+E: A resposta correta é C). O Bundle é utilizado em onSaveInstanceState() para salvar variáveis como offset, base e running, que podem ser restauradas após recriação da activity.
+
+P: O que representa a variável offset no código?
+A) A posição do botão
+B) O tempo decorrido antes de uma pausa
+C) O tempo total da contagem
+D) A quantidade de memória usada
+R: B
+E: A resposta correta é B). A variável offset armazena a diferença entre o tempo atual e o tempo de base do cronômetro, ou seja, o tempo decorrido quando ele foi pausado.
+
+P: Qual função inicia o cronômetro?
+A) startChronometer()
+B) chronometer.begin()
+C) stopwatch.start()
+D) start()
+R: C
+E: A resposta correta é C). O objeto stopwatch é um Chronometer, e sua função nativa para iniciar a contagem é start() — usada como stopwatch.start().
+
+P: Qual método de ciclo de vida é chamado quando o app volta a ser exibido na tela?
+A) onPause()
+B) onResume()
+C) onRestart()
+D) onDestroy()
+R: B
+E: A resposta correta é B). O método onResume() é chamado sempre que a activity volta ao foco, sendo o lugar ideal para retomar o cronômetro, como o código já implementa.
+
+P: O botão de reset executa qual ação principal?
+A) Pausa o cronômetro e fecha o app
+B) Zera a contagem do cronômetro
+C) Remove o componente da tela
+D) Salva o tempo final no banco de dados
+R: B
+E: A resposta correta é B). O botão de reset define offset = 0 e chama setBaseTime(), o que reinicia o cronômetro para 00:00 sem iniciá-lo automaticamente.
+
+P: Qual é o papel da função saveOffset() no código?
+A) Iniciar o cronômetro
+B) Gravar o tempo atual em um arquivo
+C) Calcular quanto tempo já passou desde que o cronômetro foi iniciado
+D) Reiniciar o aplicativo
+R: C
+E: A resposta correta é C). A função saveOffset() armazena quanto tempo já se passou desde que o cronômetro começou (SystemClock.elapsedRealtime() - stopwatch.base). Esse valor é usado posteriormente para restaurar a contagem corretamente após uma pausa ou reinício.
+
+P: A função setBaseTime() define a base do cronômetro considerando qual informação?
+A) O horário do sistema
+B) O tempo gasto anteriormente salvo na variável offset
+C) A data atual do dispositivo
+D) Um número aleatório para cada execução
+R: B
+E: A resposta correta é B). O método setBaseTime() define stopwatch.base como o tempo atual menos o offset, garantindo que a contagem do cronômetro retome do ponto correto.
+
+P: Qual valor está associado à chave OFFSET_KEY no método onSaveInstanceState()?
+A) O tempo base do cronômetro
+B) A variável offset
+C) Um booleano indicando se o cronômetro está visível
+D) A cor do botão
+R: B
+E: A resposta correta é B). O OFFSET_KEY é utilizado para salvar o valor da variável offset, que representa o tempo já contado antes de uma pausa.
+
+P: O que acontece quando o botão “Pause” é clicado e o cronômetro está rodando?
+A) A base do cronômetro é redefinida
+B) A activity é reiniciada
+C) O cronômetro para e o tempo decorrido é salvo em offset
+D) Nada, pois só o botão Start tem efeito
+R: C
+E: A resposta correta é C). O botão de pausa chama saveOffset() para salvar o tempo que já passou, e em seguida chama stopwatch.stop() e define running = false.
+
+P: Qual tipo de estrutura é usada para recuperar dados salvos após a rotação da tela?
+A) SharedPreferences
+B) Room Database
+C) Bundle via onSaveInstanceState()
+D) Arquivo externo .txt
+R: C
+E: A resposta correta é C). O Bundle passado para onCreate() contém os dados salvos em onSaveInstanceState(), permitindo que variáveis como offset, running e base sejam restauradas após uma rotação.
+
+P: O que impede que o cronômetro seja iniciado múltiplas vezes consecutivas ao clicar no botão de "Start"?
+A) Um bloqueio de tela
+B) A função onPause()
+C) A variável running, usada como verificação
+D) O sistema Android
+R: C
+E: A resposta correta é C). Antes de iniciar o cronômetro, há uma verificação if (!running) para garantir que ele só será iniciado se não estiver em execução, prevenindo sobreposições de contagem.
+
+P: Qual linha de código altera o tempo inicial da contagem do cronômetro com base no tempo decorrido?
+A) stopwatch.start()
+B) offset = 0
+C) stopwatch.base = SystemClock.elapsedRealtime() - offset
+D) stopwatch.stop()
+R: C
+E: A resposta correta é C). Essa linha, presente em setBaseTime(), redefine o tempo base do cronômetro levando em conta o quanto já foi contado, o que permite retomar a contagem corretamente.
+
+P: Por que a variável stopwatch é declarada como lateinit?
+A) Porque é uma variável constante
+B) Porque precisa ser inicializada no construtor
+C) Porque será inicializada apenas após o setContentView()
+D) Porque ela contém múltiplos valores
+R: C
+E: A resposta correta é C). Como findViewById só pode ser chamado após setContentView(), a variável stopwatch não pode ser inicializada na declaração. lateinit permite isso, sem precisar usar nullable e ?.
+
+P: Se offset não fosse restaurado corretamente após a rotação da tela, qual seria o efeito no cronômetro?
+A) O tempo continuaria corretamente
+B) O cronômetro mostraria o tempo desde o início do dia
+C) O cronômetro reiniciaria do zero ou mostraria um valor errado
+D) O aplicativo exibiria uma caixa de diálogo
+R: C
+E: A resposta correta é C). Sem restaurar offset, o tempo já contado antes da rotação seria perdido, e a contagem recomeçaria como se fosse a primeira execução, causando inconsistência.
+
+P: Qual é o valor da base do cronômetro (stopwatch.base) quando ele é pausado?
+A) O horário atual
+B) Sempre 0
+C) O tempo de início da contagem
+D) Não se altera ao pausar
+R: D
+E: A resposta correta é D). A base (base) só é atualizada quando se chama setBaseTime(). Ao pausar, o cronômetro para, mas o valor da base é mantido.
+
+P: Como o código determina se deve iniciar ou restaurar o cronômetro na criação da tela?
+A) Verifica o horário atual
+B) Pergunta ao usuário
+C) Verifica se o savedInstanceState é diferente de null
+D) Verifica o valor de Chronometer.text
+R: C
+E: A resposta correta é C). Logo no onCreate(), o código executa if (savedInstanceState != null) para saber se deve restaurar os valores anteriores, como offset, running e base.
+
+P: Se o cronômetro estiver em execução e o usuário mudar de tela, o que o método onPause() fará?
+A) Reiniciará o app
+B) Ignorará o cronômetro
+C) Chamará saveOffset() e stop()
+D) Pausará o sistema operacional
+R: C
+E: A resposta correta é C). O onPause() verifica se running é true, e nesse caso salva o tempo decorrido com saveOffset() e para o cronômetro com stopwatch.stop().
+
+P: Qual seria uma desvantagem de não usar offset nesse app?
+A) A contagem nunca iniciaria
+B) O cronômetro funcionaria normalmente, mas não mostraria horas
+C) O cronômetro zeraria ao pausar ou rotacionar a tela
+D) O botão “Start” não teria efeito
+R: C
+E: A resposta correta é C). Sem a variável offset, o app não teria como lembrar o tempo decorrido antes da pausa, então o cronômetro reiniciaria da base do sistema toda vez, perdendo a continuidade.
+
+P: Qual seria o principal problema se o método onPause() não chamasse saveOffset() antes de parar o cronômetro?
+A) O cronômetro não pararia corretamente
+B) O valor de offset seria nulo, travando o app
+C) O tempo decorrido desde o último início seria perdido
+D) O cronômetro rodaria em segundo plano
+R: C
+E: A resposta correta é C). O offset registra quanto tempo já passou até o momento em que a activity é pausada. Se ele não for salvo, ao retomar, o cronômetro perderia o tempo anterior e reiniciaria incorretamente.
+
+P: Por que a base do Chronometer deve ser ajustada com SystemClock.elapsedRealtime() - offset e não com System.currentTimeMillis()?
+A) Porque System.currentTimeMillis() retorna valores em segundos
+B) Porque SystemClock.elapsedRealtime() é relativo ao uptime do sistema e ignora ajustes de relógio
+C) Porque é mais rápido de executar
+D) Porque é obrigatório pelo Android Studio
+R: B
+E: A resposta correta é B). O Chronometer opera com base no tempo desde que o dispositivo foi iniciado. SystemClock.elapsedRealtime() fornece esse valor, imune a alterações manuais no relógio do sistema, ao contrário de System.currentTimeMillis().
+
+P: Como o código garante que a contagem do cronômetro seja contínua mesmo após mudanças no ciclo de vida da activity (como rotação da tela)?
+A) Salvando o estado da interface em um arquivo
+B) Reinicializando o aplicativo
+C) Utilizando onSaveInstanceState() para guardar offset, base e running
+D) Utilizando uma Thread separada para o cronômetro
+R: C
+E: A resposta correta é C). O código utiliza onSaveInstanceState() para salvar os dados necessários para que o cronômetro continue do ponto onde parou. Esses dados são restaurados no onCreate().
+
+P: Em termos de boas práticas, qual seria uma melhoria no código para evitar repetição de lógica em múltiplos lugares como onCreate() e onResume()?
+A) Consolidar toda a lógica no método main()
+B) Criar funções auxiliares como resumeStopwatch() e pauseStopwatch()
+C) Mover todo o código para o XML
+D) Eliminar onResume()
+R: B
+E: A resposta correta é B). Criar funções como resumeStopwatch() e pauseStopwatch() tornaria o código mais limpo, reutilizável e menos propenso a erros por duplicação de lógica.
+
+P: Qual das opções abaixo explica por que offset é redefinido para zero em onResume()?
+A) Para reiniciar o cronômetro completamente
+B) Para evitar contagens duplicadas de tempo anterior
+C) Porque a variável running será redefinida
+D) Porque o cronômetro não suporta pausas
+R: B
+E: A resposta correta é B). Após restaurar a base e iniciar o cronômetro novamente, não é mais necessário manter o valor anterior de offset, pois ele já foi aplicado à base. Se não fosse zerado, causaria distorções futuras.
+
+P: Em um app mais complexo com múltiplas activities, qual seria o risco de depender apenas de onSaveInstanceState() para salvar o estado do cronômetro?
+A) Nenhum, pois ele salva tudo automaticamente
+B) O offset pode ser sobrescrito por outro app
+C) O sistema pode descartar o Bundle se a activity for destruída por falta de memória
+D) O Chronometer para de funcionar se estiver fora da tela
+R: C
+E: A resposta correta é C). O Android pode destruir a activity sem necessariamente chamar onSaveInstanceState() em condições extremas. Por isso, em apps críticos, o ideal é salvar o estado também em SharedPreferences ou banco local.
+
+P: Por que running precisa ser salvo no Bundle?
+A) Para controlar se o usuário pausou o app
+B) Para exibir uma mensagem no botão
+C) Para saber se o cronômetro deve continuar rodando ao restaurar a activity
+D) Para contar quantos segundos faltam para o cronômetro parar
+R: C
+E: A resposta correta é C). O app precisa saber se o cronômetro estava em execução antes da mudança de estado, como rotação. Se running não for salvo, não será possível determinar se o cronômetro deve continuar rodando ao restaurar a tela.
+
+P: Se quiséssemos adicionar uma notificação ao usuário quando o cronômetro atinge 1 minuto, onde seria mais apropriado implementar isso?
+A) Dentro de setBaseTime()
+B) Em um OnChronometerTickListener
+C) No método onCreate()
+D) No XML
+R: B
+E: A resposta correta é B). O Chronometer permite um OnChronometerTickListener que é chamado a cada segundo. Esse é o local ideal para verificar se o tempo decorrido atingiu um valor e, então, disparar uma notificação.
+
+P: Qual seria a consequência se o método onResume() não chamasse setBaseTime() antes de iniciar o cronômetro?
+A) O cronômetro não iniciaria
+B) O cronômetro continuaria do tempo anterior com atraso
+C) O cronômetro mostraria um tempo incorreto (adiantado)
+D) O app travaria
+R: C
+E: A resposta correta é C). Sem setBaseTime(), o cronômetro usaria a mesma base de antes da pausa, sem considerar o tempo parado, o que causaria um adiantamento do tempo mostrado.
+
+P: Em qual cenário real de uso o comportamento atual do botão "Reset" pode ser confuso para o usuário?
+A) Quando o usuário pausa e depois reseta, mas espera que o tempo comece automaticamente
+B) Quando o cronômetro reinicia após 10 segundos
+C) Quando o botão reseta a fonte do texto
+D) Quando ele altera a cor do botão
+R: A
+E: A resposta correta é A). O botão “Reset” redefine o offset e a base do cronômetro, mas não o inicia automaticamente. Se o usuário esperasse que o reset também iniciasse a contagem, isso poderia parecer que o botão não funcionou.
+
+P: Suponha que você deseje transformar este cronômetro simples em um app de treino, que deve contar em ciclos de 2 minutos e emitir um som no final de cada ciclo. Qual das abordagens abaixo seria mais apropriada para essa funcionalidade?
+A) Usar System.currentTimeMillis() com Thread.sleep() para controlar o tempo
+B) Criar um serviço em segundo plano com Handler ou CountDownTimer e usar Chronometer apenas para visualização
+C) Usar Chronometer e verificar o tempo a cada clique do botão “Pause”
+D) Adicionar mais botões para o usuário contar manualmente os 2 minutos
+R: B
+E: A resposta correta é B). Embora o Chronometer sirva bem para exibir o tempo, ele não foi projetado para ações programadas como alertas cíclicos. Um serviço com Handler, CountDownTimer ou AlarmManager seria mais apropriado para disparar eventos a cada 2 minutos, mantendo o Chronometer apenas como indicador visual.
+
+P: Se você decidisse implementar esse mesmo app em Compose (Jetpack Compose), o que mudaria fundamentalmente em relação à estrutura atual?
+A) Os arquivos XML seriam substituídos por funções de composição
+B) O código Kotlin deixaria de ser usado
+C) O uso de Chronometer seria impossível
+D) O uso de Bundle seria automático
+R: A
+E: A resposta correta é A). Em Jetpack Compose, a interface do usuário é declarada diretamente no Kotlin por meio de funções composables. Arquivos XML como activity_main.xml seriam substituídos por funções como Column { Button(...) }, mantendo a lógica principal em Kotlin, mas reorganizada de forma reativa.
+
+P: Pensando em acessibilidade, qual melhoria importante poderia ser aplicada neste app de cronômetro para torná-lo mais acessível a pessoas com deficiência visual?
+A) Mudar a cor do botão para azul
+B) Exibir os milissegundos no cronômetro
+C) Adicionar suporte a leitura de tela com contentDescription nos botões e Chronometer
+D) Usar apenas textos maiores
+R: C
+E: A resposta correta é C). A leitura de tela (como TalkBack no Android) depende de contentDescription para interpretar e anunciar o conteúdo dos componentes visuais. Adicionar essas descrições aos botões e ao cronômetro torna o app utilizável por pessoas com deficiência visual.
+
+P: Um usuário deseja que o botão “Reset” zere o cronômetro e o inicie automaticamente. Qual modificação você precisaria fazer no setOnClickListener do botão de reset para implementar esse comportamento?
+A) Adicionar offset = 0 após stopwatch.start()
+B) Chamar setBaseTime() e em seguida stopwatch.start()
+C) Remover a linha que chama setBaseTime()
+D) Colocar System.exit(0) após o reset
+R: B
+E: A resposta correta é B). O comportamento atual apenas redefine a base (offset = 0 e setBaseTime()), mas não inicia o cronômetro. Para que ele inicie após resetar, basta adicionar stopwatch.start() logo após setBaseTime() no listener do botão de reset.
+
+P: Em um cronômetro com botão “Start”, qual é a responsabilidade esperada desse botão no funcionamento da aplicação?
+A) Apenas exibir um texto
+B) Iniciar a contagem se ela ainda não estiver em execução
+C) Finalizar a aplicação
+D) Atualizar a hora atual no sistema
+R: B
+E: O botão “Start” deve iniciar a contagem do cronômetro apenas se ele ainda não estiver rodando, evitando múltiplos disparos acidentais.
+
+P: Em uma aplicação de cronômetro, qual comando é mais adequado para iniciar a contagem do tempo?
+A) reset()
+B) start()
+C) pause()
+D) elapsed()
+R: B
+E: A função padrão para iniciar a contagem de um Chronometer no Android é start(). Ela começa a exibir o tempo com base em um tempo de base definido anteriormente.
+
+P: Qual é o motivo de adiar a inicialização de variáveis como a que representa o cronômetro em uma Activity Android?
+A) Porque ela nunca será usada
+B) Porque depende de um layout carregado dinamicamente
+C) Porque deve ser imutável
+D) Porque ela precisa ser declarada fora do XML
+R: B
+E: A variável stopwatch precisa ser inicializada apenas depois que o layout foi inflado via setContentView(), o que justifica o uso de lateinit para evitar o uso de tipos anuláveis.
+
+P: Em um cronômetro que pode ser pausado e retomado, como é possível manter a continuidade da contagem após uma pausa?
+A) Ajustando a hora atual manualmente
+B) Reiniciando a contagem do zero
+C) Recalculando a base do cronômetro subtraindo o tempo já passado
+D) Zerando todas as variáveis
+R: C
+E: Para retomar a contagem de onde parou, o cronômetro precisa ter seu tempo base recalculado subtraindo o tempo já passado (offset) do tempo atual do sistema.
+
+P: O que acontece com o tempo base de um cronômetro ao ser pausado?
+A) Ele é atualizado com o tempo atual
+B) Ele é resetado
+C) Ele permanece inalterado
+D) Ele é convertido para milissegundos
+R: C
+E: O valor de base não muda ao pausar; ele permanece o mesmo até que seja redefinido, permitindo que a contagem seja retomada corretamente ao reiniciar o cronômetro.

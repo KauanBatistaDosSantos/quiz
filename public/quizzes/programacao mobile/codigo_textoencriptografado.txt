@@ -1,0 +1,383 @@
+P: Qual é o nome do layout principal carregado pela MainActivity em ambos os projetos?
+A) main_fragment.xml
+B) activity_main.xml
+C) layout_welcome.xml
+D) nav_graph.xml
+R: B
+E: A resposta correta é B). No método onCreate() de MainActivity, o código usa setContentView(R.layout.activity_main) para carregar o layout principal da tela, que contém o NavHostFragment.
+
+P: Qual é o componente usado para inserir o texto da mensagem secreta?
+A) TextView
+B) EditText
+C) SearchView
+D) TextInputLayout
+R: B
+E: A resposta correta é B). O componente EditText com o ID @+id/message é usado no fragment_message.xml para permitir que o usuário digite sua mensagem.
+
+P: O botão “Start” está localizado em qual fragment?
+A) EncryptFragment
+B) MainActivity
+C) WelcomeFragment
+D) MessageFragment
+R: C
+E: A resposta correta é C). O botão com ID start está no WelcomeFragment, e ao ser clicado, navega para o próximo fragment (Message).
+
+P: O que acontece quando o botão “Start” é clicado?
+A) Nada acontece
+B) Fecha o app
+C) Navega do WelcomeFragment para o MessageFragment
+D) Cria um arquivo de texto
+R: C
+E: A resposta correta é C). O clique no botão chama findNavController().navigate(...), levando o usuário para o próximo fragment definido no nav_graph.xml.
+
+P: Qual é o startDestination do nav_graph.xml nos dois projetos?
+A) MainActivity
+B) MessageFragment
+C) EncryptFragment
+D) WelcomeFragment
+R: D
+E: A resposta correta é D). O atributo app:startDestination="@id/welcomeFragment" define que o primeiro fragment exibido será o WelcomeFragment.
+
+P: Qual recurso XML define os textos como “Start”, “Next” e as mensagens de boas-vindas?
+A) layout.xml
+B) colors.xml
+C) strings.xml
+D) main.xml
+R: C
+E: A resposta correta é C). O arquivo strings.xml contém os textos utilizados em vários componentes, como botões e TextView, permitindo reutilização e internacionalização.
+
+P: O que representa o arquivo nav_graph.xml?
+A) Um conjunto de botões
+B) Um banco de dados local
+C) Um gráfico de navegação entre fragments
+D) Um layout visual
+R: C
+E: A resposta correta é C). O nav_graph.xml define o fluxo de navegação entre os fragments, incluindo os destinos e as ações de navegação entre eles.
+
+P: O que acontece ao clicar no botão “Next” no primeiro código (codigo_textoencriptografado.pdf)?
+A) Navega para o EncryptFragment
+B) Salva a mensagem digitada
+C) Nada (ação ainda não implementada)
+D) Finaliza o app
+R: C
+E: A resposta correta é C). No primeiro código, o botão “Next” não possui lógica de navegação ou tratamento da mensagem, ou seja, está incompleto.
+
+P: No segundo código, o botão “Next” envia a mensagem digitada para qual fragment?
+A) MainActivity
+B) WelcomeFragment
+C) EncryptFragment
+D) TextFragment
+R: C
+E: A resposta correta é C). O botão captura a mensagem digitada e navega para EncryptFragment, passando o texto como argumento com SafeArgs.
+
+P: Qual método é utilizado para “inflar” um layout XML dentro de um fragment?
+A) inflateView()
+B) setContentView()
+C) setLayoutInflater()
+D) inflater.inflate(...)
+R: D
+E: A resposta correta é D). Nos métodos onCreateView() dos fragments, o layout é carregado com inflater.inflate(R.layout.nome_do_layout, container, false).
+
+P: No EncryptFragment, qual método é usado para acessar os argumentos recebidos do MessageFragment?
+A) getIntent().getExtras()
+B) arguments["message"]
+C) EncryptFragmentArgs.fromBundle(requireArguments()).message
+D) getArguments().message
+R: C
+E: A resposta correta é C). Com o uso do plugin SafeArgs, os argumentos são acessados com segurança usando classes geradas automaticamente, como EncryptFragmentArgs.
+
+P: Qual é o efeito da linha encryptedView.text = message.reversed() no segundo código?
+A) Envia a mensagem para o email
+B) Criptografa a mensagem aplicando ROT13
+C) Exibe a mensagem ao contrário
+D) Remove espaços em branco
+R: C
+E: A resposta correta é C). A função reversed() inverte a ordem dos caracteres da string, o que representa uma forma simples de criptografia nesse exemplo didático.
+
+P: Qual fragment possui o botão que dispara a navegação usando SafeArgs no segundo código?
+A) EncryptFragment
+B) WelcomeFragment
+C) MainActivity
+D) MessageFragment
+R: D
+E: A resposta correta é D). No MessageFragment, o botão “Next” é configurado para capturar a mensagem do usuário e iniciar a navegação com argumentos usando MessageFragmentDirections.
+
+P: O que aconteceria se a propriedade app:navGraph não estivesse definida no activity_main.xml?
+A) O aplicativo não funcionaria corretamente, pois não saberia qual gráfico de navegação carregar
+B) O botão “Start” funcionaria normalmente
+C) O MainActivity funcionaria como fragment
+D) O fragmento de destino seria o EncryptFragment
+R: A
+E: A resposta correta é A). O atributo app:navGraph="@navigation/nav_graph" conecta o NavHostFragment ao grafo de navegação definido, essencial para a funcionalidade de navegação entre fragments.
+
+P: O que significa a linha app:defaultNavHost="true" no activity_main.xml?
+A) Define o fragmento que será exibido após um clique no botão
+B) Garante que o NavHostFragment intercepte eventos de navegação do sistema, como o botão “Voltar”
+C) Indica o fragmento visível atual
+D) Declara o nome do aplicativo
+R: B
+E: A resposta correta é B). Ao marcar como defaultNavHost, o fragmento se torna o ponto padrão de navegação, responsável por tratar eventos como o botão "voltar" do sistema.
+
+P: Qual é a vantagem de utilizar SafeArgs ao passar argumentos entre fragments?
+A) Permite armazenar dados permanentemente
+B) Elimina a necessidade de XML
+C) Garante segurança de tipo e evita erros em tempo de execução
+D) Reduz a quantidade de arquivos do projeto
+R: C
+E: A resposta correta é C). O SafeArgs gera classes que fornecem métodos fortemente tipados para acessar e passar argumentos entre fragments, reduzindo o risco de erros por nomes incorretos ou tipos incompatíveis.
+
+P: Em qual fragment o texto criptografado é exibido?
+A) WelcomeFragment
+B) EncryptFragment
+C) MainActivity
+D) MessageFragment
+R: B
+E: A resposta correta é B). O EncryptFragment recebe o argumento message e utiliza .reversed() para mostrar o texto invertido na tela.
+
+P: Qual é o tipo do argumento definido no nav_graph.xml entre MessageFragment e EncryptFragment?
+A) Boolean
+B) Int
+C) Object
+D) String
+R: D
+E: A resposta correta é D). No segundo código, o EncryptFragment define um argumento com app:argType="string", que é o tipo da mensagem passada.
+
+P: Considerando a arquitetura do app, por que usar vários fragments em vez de várias activities?
+A) Reduz o número de arquivos XML
+B) Melhora a performance do layout
+C) Facilita a navegação e o reaproveitamento de interface
+D) Elimina a necessidade de ViewModel
+R: C
+E: A resposta correta é C). Usar fragments permite organizar diferentes partes da interface de forma modular e facilita a navegação com o Navigation Component, além de melhorar o reaproveitamento de código.
+
+P: O que diferencia a navegação do botão “Next” no primeiro e no segundo código?
+A) O primeiro utiliza startActivity, o segundo não
+B) O segundo código implementa navegação com passagem de dados, o primeiro não
+C) Ambos utilizam startActivityForResult()
+D) O primeiro código usa SafeArgs
+R: B
+E: A resposta correta é B). No primeiro código, o botão "Next" não possui navegação funcional. Já no segundo, ele realiza a navegação passando a mensagem digitada como argumento.
+
+P: Se o campo de mensagem estiver vazio, o que acontecerá ao clicar em “Next” no segundo código?
+A) A mensagem “null” será exibida
+B) Nada será exibido
+C) Um erro impedirá a navegação
+D) A mensagem criptografada será uma string vazia
+R: D
+E: A resposta correta é D). O valor do EditText será "" (string vazia) e, quando invertido, continuará vazio. A navegação ocorrerá normalmente, mas sem conteúdo visível.
+
+P: O que significa tools:context=".WelcomeFragment" nos arquivos XML?
+A) Determina o nome do layout
+B) Define a activity principal
+C) Fornece contexto de edição para ferramentas como Android Studio
+D) Cria automaticamente o fragment
+R: C
+E: A resposta correta é C). Esse atributo é ignorado em tempo de execução, mas permite que o editor visualize corretamente o layout dentro do Android Studio.
+
+P: Por que é necessário usar requireArguments() dentro do EncryptFragment para acessar a mensagem?
+A) Porque arguments é null até a activity ser destruída
+B) Porque EncryptFragment precisa acessar argumentos do Bundle de forma segura
+C) Porque o message está em colors.xml
+D) Porque requireArguments() inicializa o layout
+R: B
+E: A resposta correta é B). O método requireArguments() acessa o Bundle associado ao fragment com segurança, e é necessário para o SafeArgs funcionar corretamente.
+
+P: Qual é a função principal do FragmentContainerView no layout activity_main.xml?
+A) Mostrar os botões
+B) Substituir o RecyclerView
+C) Atuar como área de navegação entre fragments
+D) Renderizar o texto digitado pelo usuário
+R: C
+E: A resposta correta é C). O FragmentContainerView serve como área dinâmica que carrega os fragments à medida que a navegação acontece via NavController.
+
+P: Onde é definida a relação de navegação entre messageFragment e encryptFragment?
+A) Dentro de MainActivity.kt
+B) Dentro de fragment_message.xml
+C) Dentro do arquivo nav_graph.xml
+D) Dentro de EncryptFragment.kt
+R: C
+E: A resposta correta é C). As ações de navegação são declaradas no nav_graph.xml, que define qual fragment será carregado ao executar determinada ação.
+
+P: O que aconteceria se EncryptFragmentArgs.fromBundle(requireArguments()).message fosse chamado antes do onCreateView()?
+A) Nada, funcionaria normalmente
+B) O app exibiria o texto invertido
+C) Uma exceção seria lançada, pois os argumentos ainda não estariam disponíveis
+D) O método seria ignorado pelo sistema
+R: C
+E: A resposta correta é C). O requireArguments() só deve ser acessado após o fragment estar associado à sua Bundle. Antes do onCreateView() (como em onAttach()), isso pode lançar exceção, pois os argumentos ainda não estão prontos.
+
+P: Qual problema de segurança pode ocorrer se o texto digitado for diretamente exibido em uma TextView, sem validação ou tratamento, como ocorre em EncryptFragment?
+A) O app trava por excesso de texto
+B) Pode permitir injeção de código malicioso, como scripts HTML (caso haja renderização Web)
+C) O texto é automaticamente encriptado com ROT13
+D) A inversão falha com strings longas
+R: B
+E: A resposta correta é B). Embora TextView seja seguro por padrão, em apps que futuramente renderizem conteúdo em WebView ou usem bibliotecas de formatação rica, exibir entradas do usuário sem tratamento pode permitir injeção de scripts ou tags perigosas.
+
+P: Qual seria uma alternativa mais segura e estruturada à função .reversed() para encriptação real de mensagens?
+A) .toUpperCase()
+B) .encrypt() nativa do Kotlin
+C) Algoritmo simétrico com AES ou biblioteca como javax.crypto
+D) Substituir caracteres por emojis
+R: C
+E: A resposta correta é C). A função .reversed() é puramente demonstrativa. Em uma aplicação real, usar algoritmos de criptografia como AES com chaves seguras garantiria confidencialidade e integridade do conteúdo.
+
+P: Qual vantagem o Navigation Component oferece em relação à navegação manual entre fragments usando FragmentManager?
+A) Reduz o tamanho do app
+B) Evita a necessidade de ViewModel
+C) Permite navegação declarativa, controle do backstack e uso de SafeArgs
+D) Impede que o usuário use o botão “Voltar”
+R: C
+E: A resposta correta é C). O Navigation Component organiza visualmente as rotas no nav_graph.xml, oferece controle sobre a pilha de navegação, transições, animações e transmissão segura de dados com SafeArgs.
+
+P: O que significaria adicionar popUpToInclusive="true" no nav_graph.xml na ação entre MessageFragment e EncryptFragment?
+A) A ação se tornaria opcional
+B) O botão “Voltar” levaria o usuário de volta ao WelcomeFragment
+C) Removeria todos os fragments anteriores da pilha até o destino especificado
+D) A navegação seria desativada
+R: C
+E: A resposta correta é C). Com popUpToInclusive="true" e popUpTo="@id/welcomeFragment", ao navegar para o EncryptFragment, todos os fragments anteriores (inclusive o Welcome) seriam removidos da pilha, impedindo que o usuário volte para eles.
+
+P: Em termos de usabilidade, qual seria um problema se o campo EditText não tivesse um hint, como @string/message_hint?
+A) O app carregaria mais lentamente
+B) O botão “Start” deixaria de funcionar
+C) O usuário não entenderia o que deve digitar
+D) O EditText se tornaria somente leitura
+R: C
+E: A resposta correta é C). O hint orienta o usuário sobre o que deve ser inserido no campo. Sua ausência pode comprometer a clareza da interface.
+
+P: Qual a principal função da linha val message = messageView.text.toString() no MessageFragment?
+A) Apagar o conteúdo do campo de texto
+B) Inicializar o fragment
+C) Capturar e converter o texto digitado pelo usuário em uma string comum
+D) Reiniciar o app
+R: C
+E: A resposta correta é C). O EditText armazena o texto como Editable. Para manipular esse valor, ele precisa ser convertido para String com .toString().
+
+P: Por que o botão “Next” não pode acessar diretamente os métodos de EncryptFragment?
+A) Porque o Android não permite interações entre fragments
+B) Porque os fragments estão em arquivos diferentes
+C) Porque os fragments não compartilham contexto diretamente e devem se comunicar por argumentos, ViewModel ou Navigation
+D) Porque o botão só aceita comandos em XML
+R: C
+E: A resposta correta é C). No Android, fragments devem manter acoplamento fraco. Interações diretas entre fragments não são recomendadas; a comunicação deve acontecer por meio de argumentos, ViewModels compartilhados ou callbacks.
+
+P: O que aconteceria se você alterasse o tipo do argumento no nav_graph.xml de string para int, mas continuasse enviando um texto?
+A) O texto seria convertido automaticamente
+B) A navegação falharia em tempo de execução com ClassCastException
+C) O app compilaria normalmente
+D) O fragmento exibiria o valor “0”
+R: B
+E: A resposta correta é B). O SafeArgs exige que o tipo definido no nav_graph.xml corresponda exatamente ao valor enviado. Passar uma String para um argumento int causaria erro em tempo de execução.
+
+P: Qual melhoria técnica poderia ser aplicada para tornar a lógica de encriptação mais flexível e reutilizável?
+A) Mover a lógica .reversed() para uma função utilitária externa ou um ViewModel
+B) Inverter a mensagem diretamente no XML
+C) Salvar o resultado em SharedPreferences
+D) Executar a lógica no MainActivity
+R: A
+E: A resposta correta é A). Separar a lógica de encriptação em uma função de utilidade ou ViewModel favorece reutilização, testes unitários e melhor organização do código.
+
+P: Em um projeto real, qual medida adicional poderia ser implementada para proteger a mensagem digitada do usuário?
+A) Desativar o botão “Next”
+B) Limitar o campo a 10 caracteres
+C) Criptografar a mensagem antes de enviá-la entre fragments, e não apenas visualmente
+D) Deixar o campo sem inputType definido
+R: C
+E: A resposta correta é C). A reversão da string é apenas estética. Em um app real, a mensagem deveria ser criptografada antes de ser transferida, para garantir privacidade mesmo em dispositivos comprometidos.
+
+P: Se o app fosse usado para troca de mensagens reais entre usuários, qual seria uma estratégia mais segura e escalável para transmitir e armazenar os dados?
+A) Armazenar a string invertida em um TextView local
+B) Usar um banco de dados local como Room
+C) Enviar os dados por SafeArgs e armazená-los em um array
+D) Utilizar criptografia com AES e transmitir via HTTPS para um backend seguro
+R: D
+E: A resposta correta é D). Para garantir confidencialidade e integridade em comunicações reais, é necessário criptografar os dados com algoritmos robustos (como AES ou RSA) e usar conexões seguras (HTTPS). O uso local de SafeArgs ou TextView não oferece proteção adequada contra acessos maliciosos.
+
+P: Um usuário cego usa TalkBack no Android. Qual melhoria tornaria este app mais acessível a ele?
+A) Aumentar o tamanho da fonte para 30sp
+B) Adicionar contentDescription para os botões e componentes visuais
+C) Usar apenas cores vivas para contraste
+D) Reduzir os textos para ocupar menos espaço
+R: B
+E: A resposta correta é B). contentDescription permite que leitores de tela anunciem corretamente o que cada botão ou campo faz. É um recurso essencial para acessibilidade e inclusão.
+
+P: Em um cenário real, qual seria uma melhoria de usabilidade ao apresentar o texto criptografado?
+A) Mostrar o texto como imagem para não ser copiado
+B) Reduzir a fonte para caber mais caracteres
+C) Incluir botão de “Copiar para área de transferência”
+D) Remover espaços do texto para segurança
+R: C
+E: A resposta correta é C). A possibilidade de copiar o conteúdo criptografado facilita sua reutilização fora do app. Isso aumenta a praticidade e a satisfação do usuário.
+
+P: Qual seria a vantagem de adicionar um ViewModel compartilhado entre os fragments?
+A) Melhorar o desempenho visual
+B) Permitir que o mesmo objeto de dados seja compartilhado entre telas sem o uso de argumentos explícitos
+C) Evitar o uso de layout XML
+D) Armazenar o texto no arquivo colors.xml
+R: B
+E: A resposta correta é B). Um ViewModel compartilhado entre fragments permite que os dados persistam entre navegações e sejam acessados por múltiplos fragments sem precisar ser passados diretamente via SafeArgs.
+
+P: Se o app evoluísse para armazenar um histórico de mensagens encriptadas, qual componente do Android seria ideal para isso?
+A) IntentService
+B) SharedPreferences
+C) Room Database
+D) NavHostFragment
+R: C
+E: A resposta correta é C). O Room é a solução recomendada para persistência de dados relacionais no Android. Ele permite criar tabelas, consultar histórico, deletar e filtrar registros com segurança e desempenho.
+
+P: Um programador deseja alterar o tipo de criptografia no EncryptFragment para um sistema de substituição por cifra de César (deslocamento de caracteres). O que ele deveria fazer?
+A) Substituir .reversed() por uma função que itere por cada caractere e aplique deslocamento
+B) Adicionar uma constante REVERSED = true no XML
+C) Usar .replace() e passar os valores em ordem alfabética
+D) Alterar o tipo do argumento no nav_graph.xml para int
+R: A
+E: A resposta correta é A). A cifra de César exige que cada caractere da string seja convertido individualmente, deslocando sua posição no alfabeto. Isso deve ser feito com uma função personalizada de encriptação no Kotlin.
+
+P: Em um app Android que usa Navigation Component, qual é o propósito do layout principal carregado pela MainActivity?
+A) Atuar como banco de dados
+B) Exibir diretamente a tela inicial
+C) Conter o container onde fragments serão exibidos
+D) Reunir todos os botões da interface
+R: C
+E: A MainActivity normalmente carrega um layout que contém um NavHostFragment, responsável por carregar dinamicamente os fragments do app com base na navegação definida.
+
+P: Qual tipo de componente da interface é comumente utilizado para permitir que o usuário digite uma mensagem?
+A) TextView
+B) EditText
+C) Button
+D) ImageView
+R: B
+E: O EditText é o componente padrão para entrada de dados do tipo texto no Android. Ele é usado sempre que o usuário precisa digitar algo, como uma mensagem ou nome.
+
+P: Ao criar a interface de um fragment no Android, qual método é usado para transformar o XML em uma interface funcional?
+A) setContentView()
+B) inflate()
+C) onCreate()
+D) createLayout()
+R: B
+E: Em um fragment, o layout é “inflado” com o método inflate() dentro de onCreateView(), permitindo que o XML seja transformado em uma visualização interativa.
+
+P: Como acessar com segurança argumentos enviados de um fragment para outro usando SafeArgs?
+A) arguments["arg"]
+B) requireArguments().getString("arg")
+C) Usar uma classe gerada automaticamente, como FragmentArgs.fromBundle()
+D) getIntent().getExtras()
+R: C
+E: O SafeArgs gera uma classe específica para cada fragment com argumentos. A forma segura é usar NomeDoFragmentArgs.fromBundle(requireArguments()), garantindo tipo e evitando erros em tempo de execução.
+
+P: Para que serve o atributo tools:context no Android Studio ao definir layouts XML?
+A) Define o nome da classe de estilo
+B) Determina a versão mínima do SDK
+C) Ajuda o Android Studio a mostrar uma prévia do layout
+D) Controla se o layout é inflado automaticamente
+R: C
+E: tools:context é usado apenas em tempo de desenvolvimento. Ele informa ao Android Studio qual classe usará aquele layout, permitindo que a visualização em tempo real seja mais precisa.
+
+P: Ao usar o SafeArgs, o que acontece se o tipo definido no nav_graph.xml não corresponder ao tipo do valor passado?
+A) O valor é convertido automaticamente
+B) O app falha em tempo de execução
+C) O tipo é ignorado
+D) O app exibe “null” como valor padrão
+R: B
+E: O SafeArgs exige que o tipo do dado enviado e o tipo definido no XML sejam idênticos. Caso contrário, ocorre uma exceção (ClassCastException) em tempo de execução, impedindo a navegação.

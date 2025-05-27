@@ -1,0 +1,338 @@
+P: Qual é o nome da classe principal usada no arquivo MainActivity.kt?
+A) MainScreen
+B) BeerActivity
+C) MainActivity
+D) BeerMain
+R: C
+E: A resposta correta é C) MainActivity porque o nome da classe definida com class MainActivity : AppCompatActivity() é justamente esse. Ele representa a tela principal do aplicativo.
+
+P: Qual função é usada para associar um layout XML à Activity no onCreate()?
+A) onCreateView()
+B) linkLayout()
+C) attachLayout()
+D) setContentView()
+R: D
+E: A resposta correta é D) setContentView(), pois é a função do Android usada para carregar e exibir um layout XML, conectando a interface visual ao código da Activity.
+
+P: O que acontece ao clicar no botão find_beer?
+A) A cor selecionada no Spinner é apagada
+B) O app fecha
+C) Uma lista de cervejas é exibida
+D) Nada acontece
+R: C
+E: A resposta correta é C) Uma lista de cervejas é exibida, pois o botão está programado com um setOnClickListener que pega a cor selecionada e usa essa informação para buscar uma lista de cervejas e exibi-la no TextView brands.
+
+P: Qual componente do layout é usado para selecionar a cor da cerveja?
+A) Button
+B) Spinner
+C) CheckBox
+D) TextField
+R: B
+E: A resposta correta é B) Spinner, pois no arquivo activity_main.xml vemos que o componente com id="beer_color" é um Spinner, ideal para seleções em lista suspensa.
+
+P: Qual método da linguagem Kotlin é usado para transformar uma lista de cervejas em uma única String com quebras de linha?
+A) map()
+B) filter()
+C) reduce()
+D) split()
+R: C
+E: A resposta correta é C) reduce(), pois ele é utilizado para acumular os elementos da lista em uma única String, separando cada item com uma quebra de linha.
+
+P: Em que arquivo está definido o texto “Find Beer”?
+A) activity_main.xml
+B) colors.xml
+C) strings.xml
+D) MainActivity.kt
+R: C
+E: A resposta correta é C) strings.xml, pois esse é o local onde strings reutilizáveis como find_beer são armazenadas. No XML, ela é referenciada com @string/find_beer.
+
+P: Qual valor inicial aparece no TextView de marcas de cerveja, antes da seleção?
+A) “Selecione uma cor”
+B) “Escolha sua cerveja”
+C) “No beer selected”
+D) “Cerveja não encontrada”
+R: C
+E: A resposta correta é C) "No beer selected", conforme definido em strings.xml, na string com nome brands.
+
+P: Em qual arquivo está definido o layout visual com LinearLayout, Spinner, Button e TextView?
+A) strings.xml
+B) MainActivity.kt
+C) colors.xml
+D) activity_main.xml
+R: D
+E: A resposta correta é D) activity_main.xml, pois esse é o arquivo de layout onde os componentes visuais do app foram organizados em uma estrutura vertical.
+
+P: Qual valor será retornado por getBeers("Amber")?
+A) listOf("Jack Amber", "Red Moose")
+B) listOf("Jail Pale Ale", "Lager Lite")
+C) listOf("Brown Bear Beer", "Bock Brownie")
+D) listOf("Gout Stout", "Dark Daniel")
+R: A
+E: A resposta correta é A) porque, conforme a lógica do método getBeers(), ao receber “Amber” ele retorna uma lista com “Jack Amber” e “Red Moose”.
+
+P: Qual dos arquivos define as cores como purple_200, teal_700 e white?
+A) strings.xml
+B) MainActivity.kt
+C) colors.xml
+D) activity_main.xml
+R: C
+E: A resposta correta é C) colors.xml, pois é onde os recursos de cores do app são definidos com seus nomes e códigos hexadecimais.
+
+P: Qual é a principal função da linha val color = beerColor.selectedItem dentro do listener do botão?
+A) Exibir a lista de cervejas no Spinner
+B) Converter o Spinner em uma lista
+C) Obter o item atualmente selecionado pelo usuário
+D) Atualizar o layout visual do Spinner
+R: C
+E: A resposta correta é C) porque selectedItem retorna o valor escolhido atualmente no Spinner, que é essencial para determinar qual lista de cervejas será exibida.
+
+P: O que significa val beers = beerList.reduce { str, item -> str + '\n' + item } no Kotlin?
+A) Aplica um filtro na lista para mostrar apenas a primeira cerveja
+B) Cria uma string única com os itens da lista separados por vírgula
+C) Reduz a lista de strings em uma única string, separando os itens por quebras de linha
+D) Remove elementos repetidos da lista
+R: C
+E: A resposta correta é C) porque reduce aplica uma operação acumulativa que, neste caso, concatena todos os itens da lista com \n (quebra de linha) entre eles, criando uma única String.
+
+P: No arquivo activity_main.xml, qual propriedade organiza os elementos verticalmente?
+A) android:layout_gravity
+B) android:layout_margin
+C) android:orientation="vertical"
+D) tools:context
+R: C
+E: A resposta correta é C) porque android:orientation="vertical" dentro do LinearLayout define que os elementos filhos serão organizados um abaixo do outro, em coluna.
+
+P: Para que serve o atributo tools:context=".MainActivity" no XML?
+A) Define a classe principal que será executada no build
+B) Identifica a activity que será usada em ferramentas de design
+C) Declara uma variável de contexto para o app
+D) Aponta para o arquivo de strings usado pela activity
+R: B
+E: A resposta correta é B) porque tools:context é usado apenas em tempo de desenvolvimento para associar o layout visual à Activity correspondente no editor do Android Studio, sem efeito em tempo de execução.
+
+P: No XML, o que significa android:entries="@array/beer_colors"?
+A) Define os valores que serão exibidos no Spinner a partir de uma string-array
+B) Altera a cor de fundo do Spinner
+C) Define uma função de clique no Spinner
+D) Aponta para uma cor definida no colors.xml
+R: A
+E: A resposta correta é A) pois android:entries é usado para vincular uma lista de valores definida em um string-array (no strings.xml) ao componente Spinner.
+
+P: O que acontece quando o valor selecionado no Spinner não é “Light”, “Amber” ou “Brown”?
+A) O app trava
+B) Nenhuma cerveja é mostrada
+C) A função getBeers() retorna uma lista padrão com duas cervejas escuras
+D) Um erro é lançado
+R: C
+E: A resposta correta é C) porque a cláusula else na função getBeers() garante um valor de retorno padrão: listOf("Gout Stout", "Dark Daniel"), mesmo que a entrada não esteja prevista.
+
+P: Por que beerColor.selectedItem.toString() é necessário?
+A) Para converter o Spinner inteiro em texto
+B) Para garantir que o valor obtido do Spinner seja compatível com o tipo String
+C) Para armazenar o Spinner na variável
+D) Para traduzir o valor para outra linguagem
+R: B
+E: A resposta correta é B) porque selectedItem retorna um Object, e .toString() converte esse objeto para String, o tipo exigido pela função getBeers().
+
+P: Qual desses trechos pertence ao strings.xml?
+A) <string name="brands">No beer selected</string>
+B) <Button android:text="Find Beer" />
+C) val brands = findViewById<TextView>(R.id.brands)
+D) tools:context=".MainActivity"
+R: A
+E: A resposta correta é A) porque é uma declaração de string no arquivo strings.xml, associando uma chave (brands) a um valor de texto ("No beer selected").
+
+P: Qual das opções descreve corretamente o papel de findViewById<TextView>(R.id.brands)?
+A) Cria um novo TextView no código
+B) Substitui o conteúdo de outro TextView
+C) Recupera um componente já existente no layout, com ID brands
+D) Exclui o TextView do layout
+R: C
+E: A resposta correta é C) porque findViewById busca um elemento da interface gráfica que já foi definido no XML e permite que ele seja manipulado diretamente no código Kotlin.
+
+P: O que indica o uso de @string/find_beer no botão no XML?
+A) O texto do botão está escrito diretamente no layout
+B) A string usada será aleatória
+C) O texto será buscado no arquivo strings.xml com a chave find_beer
+D) O botão não exibirá nenhum texto
+R: C
+E: A resposta correta é C) porque @string/find_beer referencia uma string definida externamente no arquivo strings.xml, promovendo organização e facilidade de tradução.
+
+P: Qual seria uma consequência se o atributo android:id="@+id/beer_color" não existisse no Spinner?
+A) O app não poderia rodar
+B) O componente apareceria duplicado
+C) O findViewById no Kotlin lançaria erro
+D) Nada aconteceria
+R: C
+E: A resposta correta é C) porque sem o id, o código findViewById<Spinner>(R.id.beer_color) não encontraria o componente e resultaria em erro de execução por null reference.
+
+P: O botão usa qual tipo de listener para responder ao clique do usuário?
+A) onClickListener()
+B) setOnClickListener { ... }
+C) attachClickEvent()
+D) whenClick()
+R: B
+E: A resposta correta é B) porque o Kotlin usa setOnClickListener { ... } como forma funcional para reagir ao clique em botões, utilizando uma expressão lambda como bloco de execução.
+
+P: A lista retornada por getBeers("Light") contém quais cervejas?
+A) "Jack Amber", "Red Moose"
+B) "Gout Stout", "Dark Daniel"
+C) "Jail Pale Ale", "Lager Lite"
+D) "Brown Bear Beer", "Bock Brownie"
+R: C
+E: A resposta correta é C) pois a função getBeers() usa a estrutura when para verificar o parâmetro, e no caso de "Light", retorna listOf("Jail Pale Ale", "Lager Lite").
+
+P: O que aconteceria se o método getBeers() fosse chamado com o parâmetro "light" (minúsculo), e não "Light"?
+A) Retornaria a lista correta
+B) Geraria um erro de compilação
+C) Cairia no bloco else
+D) Exibiria valores nulos
+R: C
+E: A resposta correta é C) porque a função getBeers() usa a estrutura when(color) sem ignorar maiúsculas/minúsculas. Como "light" (com “l” minúsculo) não corresponde exatamente a "Light", a cláusula else é acionada, retornando "Gout Stout" e "Dark Daniel".
+
+P: Qual é a principal limitação de escalabilidade da função getBeers() no formato atual?
+A) Não permite múltiplas seleções
+B) Aumenta o consumo de memória com o uso de listas
+C) Exige alteração manual no código toda vez que uma nova cor ou marca for adicionada
+D) Gera um erro se a lista estiver vazia
+R: C
+E: A resposta correta é C) porque a lógica da função getBeers() está “engessada” no código com when, o que significa que qualquer modificação futura exigirá alteração direta no código-fonte. Uma abordagem mais escalável usaria um Map ou carregamento de dados externo.
+
+P: Qual seria uma melhoria no trecho val beers = beerList.reduce { str, item -> str + '\n' + item } para evitar possíveis erros com listas vazias?
+A) Usar joinToString("\n")
+B) Substituir por filter { it.isNotEmpty() }
+C) Inverter os elementos
+D) Aplicar map ao invés de reduce
+R: A
+E: A resposta correta é A). reduce lança exceção se aplicado em uma lista vazia. joinToString("\n") é uma alternativa segura e idiomática para juntar elementos com separador, além de lidar com listas vazias sem erro.
+
+P: O trecho val findBeer = findViewById<Button>(R.id.find_beer) pode ser melhorado com qual recurso do Kotlin para maior legibilidade e segurança?
+A) Variáveis estáticas
+B) Data classes
+C) View Binding ou Kotlin Synthetic
+D) Ciclo de vida personalizado
+R: C
+E: A resposta correta é C) porque o uso de View Binding ou Kotlin Synthetic elimina a necessidade de findViewById, tornando o código mais limpo, seguro contra NullPointerException, e com melhor legibilidade.
+
+P: Suponha que um usuário clique no botão sem selecionar nenhuma cor. Qual será o comportamento do app?
+A) Gera erro e fecha
+B) Exibe a lista da cláusula else
+C) Permanece vazio
+D) Mostra um alerta
+R: B
+E: A resposta correta é B). O Spinner inicia com um valor pré-selecionado, e se o valor não corresponder a "Light", "Amber" ou "Brown", a cláusula else será usada, retornando "Gout Stout" e "Dark Daniel".
+
+P: O valor "@+id/find_beer" indica que:
+A) O botão deve ser declarado duas vezes
+B) Esse ID está sendo chamado no Kotlin
+C) O ID será criado e referenciado pela primeira vez
+D) O botão é temporário
+R: C
+E: A resposta correta é C). O prefixo @+id/ no XML informa ao compilador para criar um novo ID se ele ainda não existir no projeto, permitindo que seja usado depois no Kotlin com R.id.find_beer.
+
+P: No contexto do Android, qual é o papel de AppCompatActivity na definição da classe MainActivity?
+A) Executar o método main()
+B) Acessar bibliotecas externas
+C) Permitir compatibilidade com versões antigas do Android usando funcionalidades de Activity
+D) Estender layouts para múltiplas telas
+R: C
+E: A resposta correta é C). AppCompatActivity pertence à biblioteca de suporte e permite usar recursos mais modernos com compatibilidade retroativa, garantindo que o app funcione em versões mais antigas do Android.
+
+P: Qual recurso de internacionalização está sendo aplicado ao usar @string/brands e similares no XML?
+A) Tradução automática
+B) Separação de lógica e visual
+C) Suporte a múltiplos idiomas e reutilização de strings em locais diferentes do app
+D) Criação dinâmica de texto por IA
+R: C
+E: A resposta correta é C) porque strings externas em strings.xml permitem que o app seja facilmente traduzido para diferentes idiomas, além de manter um ponto central de manutenção e evitar repetições.
+
+P: Se quisermos que o app utilize um banco de dados externo para carregar a lista de cervejas ao invés de manter os dados no código, qual das opções abaixo seria uma abordagem mais adequada?
+A) Substituir o Spinner por um EditText
+B) Criar um arquivo XML com todas as cervejas
+C) Utilizar uma API ou banco local como Room para carregar dinamicamente os dados
+D) Mover a função getBeers() para o arquivo colors.xml
+R: C
+E: A resposta correta é C). O uso de um banco de dados local (como Room) ou remoto via API é o caminho mais apropriado para manter os dados dinâmicos e escaláveis. Isso evita hardcoding e torna o app mais adaptável a mudanças sem necessidade de recompilar.
+
+P: Suponha que você queira adicionar uma nova cor de cerveja chamada “Red” e associá-la às marcas “Crimson Craft” e “Red Roar”. Quais arquivos e trechos de código você precisaria modificar para implementar corretamente essa funcionalidade?
+A) Apenas getBeers()
+B) getBeers(), strings.xml e activity_main.xml
+C) strings.xml (string-array), getBeers() e nenhuma alteração em activity_main.xml
+D) colors.xml, MainActivity.kt e strings.xml
+R: C
+E: A resposta correta é C). Para adicionar uma nova cor, você deve:
+1. Inserir “Red” no string-array beer_colors do strings.xml;
+2. Adicionar um novo caso no when da função getBeers() em MainActivity.kt.
+   O activity_main.xml não precisa de alterações se o Spinner estiver usando @array/beer_colors.
+
+P: Analise a função getBeers(). Qual seria uma alternativa mais elegante, escalável e legível para essa função caso o número de cores e cervejas cresça bastante?
+A) Usar um switch/case com if dentro
+B) Trocar o when por vários if-else
+C) Utilizar um Map<String, List<String>> para armazenar as combinações de cor e cerveja
+D) Dividir a função em múltiplas funções com nomes fixos
+R: C
+E: A resposta correta é C). Um Map permite associar cada cor a uma lista de cervejas de forma limpa, sem precisar modificar a lógica da função toda vez que uma nova cor for adicionada. Isso melhora a organização, a manutenção e a performance do app em projetos maiores.
+
+P: Um colega deseja modificar o app para que, ao clicar no botão, as marcas de cerveja apareçam em ordem alfabética. Qual seria a forma correta de modificar o código atual para isso?
+A) Trocar o Spinner por um campo de busca
+B) Adicionar .sort() à função getBeers()
+C) Aplicar .sorted() na beerList antes de usar reduce()
+D) Substituir reduce por map
+R: C
+E: A resposta correta é C). O ideal é modificar o trecho val beerList = getBeers(...) para val beerList = getBeers(...).sorted(), o que garante que os nomes estejam em ordem alfabética antes de serem concatenados. O método sorted() do Kotlin retorna uma nova lista ordenada sem modificar a original.
+
+P: Em apps Android, qual o nome comum da classe que representa a tela inicial e geralmente controla a navegação entre fragments?
+A) MainScreen
+B) BeerActivity
+C) MainActivity
+D) FragmentMain
+R: C
+E: A resposta correta é C). É prática comum nomear a classe de entrada principal de MainActivity, especialmente em projetos que usam AppCompatActivity para controlar a navegação.
+
+P: Qual função do Kotlin pode ser usada para transformar uma lista de Strings em uma única String, separando os itens por linha?
+A) map()
+B) joinToString("\n")
+C) filter()
+D) sort()
+R: B
+E: A resposta correta é B). joinToString("\n") é mais segura que reduce, pois evita erros com listas vazias e é a forma idiomática para unir itens de uma lista em Kotlin.
+
+P: Em Android, onde é recomendável armazenar textos reutilizáveis como rótulos de botões, para facilitar a manutenção e tradução?
+A) Diretamente no XML
+B) Em arquivos .kt
+C) No arquivo strings.xml
+D) No banco de dados
+R: C
+E: A resposta correta é C). O strings.xml permite centralizar textos e facilita a internacionalização e manutenção.
+
+P: Qual o efeito de transformar uma lista de Strings em uma única string com quebras de linha entre os itens?
+A) Mostra apenas o primeiro item
+B) Cria uma string separada por linhas
+C) Aplica um filtro
+D) Gera uma lista com duplicados
+R: B
+E: A resposta correta é B). Concatenar itens com \n é uma forma comum de exibir listas em forma de texto, linha por linha.
+
+P: Em um app Android, qual é o propósito da função findViewById?
+A) Criar novos componentes
+B) Editar XML diretamente
+C) Acessar elementos da interface definidos no layout XML
+D) Excluir componentes
+R: C
+E: A resposta correta é C). findViewById permite acessar componentes visuais programaticamente no Kotlin, desde que eles tenham um ID definido no XML.
+
+P: Qual o impacto de não atribuir um ID a um componente visual no Android?
+A) Nada muda
+B) O código não consegue acessá-lo com findViewById
+C) O app fecha automaticamente
+D) O componente desaparece
+R: B
+E: A resposta correta é B). Sem ID, o componente não pode ser acessado pelo código Kotlin, o que pode causar erros se houver tentativa de manipulação.
+
+P: Qual abordagem moderna do Android substitui findViewById para tornar o código mais seguro e legível?
+A) Variáveis globais
+B) TextViewBinding
+C) ViewBinding
+D) Static Injection
+R: C
+E: A resposta correta é C). ViewBinding é uma ferramenta moderna que elimina o uso manual de findViewById, reduz erros e melhora a legibilidade do código.
