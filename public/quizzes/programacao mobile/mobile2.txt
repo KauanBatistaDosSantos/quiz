@@ -17,210 +17,210 @@ A) LinearLayout organiza os elementos em linha ou coluna, enquanto ConstraintLay
 B) ConstraintLayout só pode ser usado para aplicações Web, enquanto LinearLayout é exclusivo para aplicativos mobile.
 C) LinearLayout não pode conter mais de três elementos por linha, enquanto ConstraintLayout suporta qualquer quantidade.
 D) ConstraintLayout só pode ser usado com XML, enquanto LinearLayout aceita apenas programação em Java.
-Resposta: A
+R: A
 
 P: O que é a hierarquia de layouts e como ela afeta a performance de um aplicativo?
 A) A organização dos layouts em camadas dentro da interface do app, que pode afetar o desempenho devido ao processamento excessivo.
 B) Um método de armazenamento de dados internos no aplicativo para melhorar a velocidade.
 C) Uma técnica usada para esconder elementos visuais de forma automática.
 D) O uso de tabelas para organizar informações dentro do código XML.
-Resposta: A
+R: A
 
 P: Como o XML é utilizado para definir layouts em aplicativos mobile?
 A) Como uma linguagem de marcação que descreve a estrutura visual da interface do usuário.
 B) Como um compilador que traduz código Java para código nativo.
 C) Como um banco de dados para armazenar informações sobre usuários.
 D) Como uma linguagem para programar funcionalidades de backend.
-Resposta: A
+R: A
 
 P: Explique o conceito de design responsivo em desenvolvimento mobile.
 A) Um design que se adapta automaticamente a diferentes tamanhos de tela.
 B) Um layout fixo que não permite mudanças de tamanho ou orientação.
 C) Um tipo de design usado apenas em dispositivos com tela AMOLED.
 D) Um conceito utilizado exclusivamente para aplicações desktop.
-Resposta: A
+R: A
 
 P: Quais são as boas práticas ao criar layouts para diferentes tamanhos de tela?
 A) Utilizar unidades flexíveis como dp e sp, evitar tamanhos fixos e testar em diferentes resoluções.
 B) Usar apenas pixels fixos para garantir que o design não mude.
 C) Criar um layout único e desconsiderar variações de dispositivos.
 D) Usar imagens em alta resolução sem compressão para evitar distorção.
-Resposta: A
+R: A
 
 P: Qual é a função do RecyclerView e como ele difere de um ListView ?
 A) RecyclerView é mais eficiente, permitindo a reutilização de itens de lista, enquanto ListView carrega todos os itens de uma vez.
 B) ListView permite rolagem infinita, enquanto RecyclerView é estático.
 C) RecyclerView só pode ser usado em aplicações híbridas, enquanto ListView é nativo.
 D) ListView não suporta elementos gráficos, enquanto RecyclerView só trabalha com texto.
-Resposta: A
+R: A
 
 P: O que é um Fragment e como ele influencia no design de um aplicativo mobile?
 A) Um componente que permite dividir a interface do usuário em partes reutilizáveis.
 B) Uma função usada para armazenar imagens dentro do código XML.
 C) Um método de animação de botões dentro da interface do usuário.
 D) Um formato de arquivo específico para layout responsivo.
-Resposta: A
+R: A
 
 P: Como evitar problemas de desempenho ao trabalhar com layouts complexos em aplicativos mobile?
 A) Reduzindo a profundidade da hierarquia de layouts, reutilizando componentes e otimizando recursos visuais.
 B) Utilizando o máximo de elementos gráficos para garantir uma interface rica.
 C) Carregando todas as imagens e animações na memória ao iniciar o aplicativo.
 D) Criando múltiplos layouts sobrepostos sem otimização.
-Resposta: A
+R: A
 
 P: O que é um ScrollView e qual sua função?
 A) Um contêiner que permite rolagem quando o conteúdo excede o tamanho da tela.
 B) Um tipo de botão que simula rolagem automática.
 C) Um layout que impede que elementos sejam rolados na tela.
 D) Uma ferramenta para debug de layouts em XML.
-Resposta: A
+R: A
 
 P: Qual é a principal vantagem do ConstraintLayout em relação ao RelativeLayout?
 A) O ConstraintLayout permite criar interfaces mais otimizadas com menos aninhamentos.
 B) O RelativeLayout é mais moderno e rápido que o ConstraintLayout.
 C) O ConstraintLayout só pode ser usado em aplicativos para iOS.
 D) O RelativeLayout não suporta widgets personalizados.
-Resposta: A
+R: A
 
 P: O que são weight e gravity no LinearLayout?
 A) Weight define a proporção de espaço que um elemento ocupa, enquanto gravity alinha o conteúdo dentro do elemento.
 B) Gravity ajusta o tamanho do layout, enquanto Weight define sua rotação.
 C) Ambos são atributos usados apenas em RelativeLayout.
 D) Weight define o alinhamento do texto dentro do LinearLayout.
-Resposta: A
+R: A
 
 P: Qual a principal função do TableLayout?
 A) Organizar elementos em linhas e colunas de forma semelhante a uma tabela.
 B) Criar animações dentro de layouts dinâmicos.
 C) Estabelecer um banco de dados interno para armazenar layouts.
 D) Garantir que todos os elementos tenham o mesmo tamanho na interface.
-Resposta: A
+R: A
 
 P: Para que serve o FrameLayout?
 A) Para empilhar elementos sobrepostos na interface.
 B) Para criar animações dentro de aplicativos Android.
 C) Para formatar o layout de formulários automaticamente.
 D) Para definir a estrutura de menus suspensos.
-Resposta: A
+R: A
 
 P: O que é um GridLayout?
 A) Um layout que organiza elementos em uma grade de linhas e colunas.
 B) Um layout usado apenas para criar menus suspensos.
 C) Um formato de arquivo para armazenar layouts.
 D) Um método de transição entre diferentes telas de um aplicativo.
-Resposta: A
+R: A
 
 P: Qual a principal vantagem do RelativeLayout?
 A) Permite posicionar elementos em relação a outros, criando interfaces flexíveis.
 B) Sempre organiza os elementos em formato de tabela.
 C) É mais eficiente que todos os outros tipos de layout.
 D) Não suporta a sobreposição de elementos.
-Resposta: A
+R: A
 
 P: O que é um CardView e qual sua principal finalidade?
 A) Um componente usado para exibir informações agrupadas com sombra e bordas arredondadas.
 B) Um layout exclusivo para formulários em aplicativos móveis.
 C) Um elemento usado apenas para armazenar imagens dentro de um aplicativo.
 D) Um tipo de banco de dados usado em aplicações Android.
-Resposta: A
+R: A
 
 P: Qual a diferença entre match_parent e wrap_content em atributos de layout?
 A) match_parent faz o elemento ocupar todo o espaço disponível, enquanto wrap_content ajusta o tamanho ao conteúdo.
 B) match_parent ajusta o tamanho ao conteúdo, enquanto wrap_content preenche a tela.
 C) Ambos têm a mesma função, sendo usados alternadamente.
 D) wrap_content é exclusivo para botões, enquanto match_parent só é utilizado em layouts.
-Resposta: A
+R: A
 
 P: Para que serve o Padding em um layout?
 A) Criar um espaçamento interno dentro do elemento.
 B) Criar um espaçamento externo ao redor do elemento.
 C) Definir a posição do elemento dentro do layout.
 D) Redimensionar imagens dentro de um aplicativo.
-Resposta: A
+R: A
 
 P: Como o Margin difere do Padding em layouts?
 A) Margin cria espaçamento externo, enquanto Padding cria espaçamento interno.
 B) Margin altera o tamanho da fonte do texto, enquanto Padding ajusta as bordas do botão.
 C) Padding define a largura do layout, enquanto Margin posiciona os elementos no código.
 D) Ambos possuem a mesma função e podem ser usados indistintamente.
-Resposta: A
+R: A
 
 P: O que é um Floating Action Button (FAB)?
 A) Um botão flutuante geralmente usado para ações principais no app.
 B) Um layout de rolagem automática para melhorar a navegação.
 C) Uma ferramenta para criar tabelas dentro de um aplicativo.
 D) Um componente utilizado apenas para capturar vídeos.
-Resposta: A
+R: A
 
 P: Como o RelativeLayout organiza os elementos dentro de um layout?
 A) Permite posicionar elementos em relação a outros componentes dentro do layout.
 B) Apenas organiza elementos em colunas e linhas fixas.
 C) Permite apenas a exibição de um item por vez na interface.
 D) Utiliza rotação automática para organizar os elementos.
-Resposta: A
+R: A
 
 P: O que é um ViewGroup em Android?
 A) Um contêiner que pode conter múltiplas Views e definir sua organização na tela.
 B) Um componente usado apenas para armazenar imagens.
 C) Um tipo especial de banco de dados para aplicativos móveis.
 D) Uma ferramenta usada para depurar interfaces gráficas.
-Resposta: A
+R: A
 
 P: Qual a função do GridLayout em um layout de aplicativo?
 A) Organizar elementos em uma grade com colunas e linhas flexíveis.
 B) Criar menus suspensos dentro da aplicação.
 C) Configurar botões dinâmicos dentro de formulários.
 D) Exibir imagens de forma sequencial dentro de uma galeria.
-Resposta: A
+R: A
 
 P: O que acontece ao definir android:visibility="gone" em um elemento?
 A) O elemento desaparece completamente e não ocupa espaço na tela.
 B) O elemento é oculto, mas ainda ocupa espaço na interface.
 C) O aplicativo exibe um erro de layout.
 D) O elemento se torna interativo, mas invisível para o usuário.
-Resposta: A
+R: A
 
 P: Para que serve o atributo android:orientation em um LinearLayout?
 A) Definir se os elementos serão organizados em linha ou coluna.
 B) Determinar a rotação da tela em dispositivos móveis.
 C) Criar um layout responsivo para diferentes resoluções.
 D) Permitir animações dentro da interface gráfica.
-Resposta: A
+R: A
 
 P: Qual a função do CoordinatorLayout em um aplicativo mobile?
 A) Criar interações entre diferentes elementos da interface, como AppBarLayout e FloatingActionButton.
 B) Criar um layout responsivo para tablets.
 C) Exibir listas dinâmicas com rolagem infinita.
 D) Gerenciar animações entre diferentes telas de um aplicativo.
-Resposta: A
+R: A
 
 P: Como o ConstraintLayout melhora o desempenho do aplicativo?
 A) Reduzindo a necessidade de múltiplos ViewGroups, tornando a hierarquia do layout mais eficiente.
 B) Eliminando a necessidade de elementos gráficos.
 C) Carregando todas as imagens no início da execução do aplicativo.
 D) Utilizando apenas códigos Java para definir layouts.
-Resposta: A
+R: A
 
 P: O que é um Spinner em Android?
 A) Um componente que exibe uma lista suspensa para seleção de opções.
 B) Um botão de rotação automática para rolagem de páginas.
 C) Um layout para organizar tabelas dentro de aplicativos móveis.
 D) Um widget exclusivo para capturar senhas do usuário.
-Resposta: A
+R: A
 
 P: Para que serve o Navigation Drawer em aplicativos móveis?
 A) Criar um menu lateral deslizante para navegação entre telas.
 B) Criar botões dinâmicos dentro de um formulário.
 C) Exibir mensagens de erro dentro do aplicativo.
 D) Definir estilos gráficos para interfaces responsivas.
-Resposta: A
+R: A
 
 P: Qual a principal função do ViewPager?
 A) Criar transições entre telas de forma deslizante.
 B) Gerenciar animações de botões dentro do aplicativo.
 C) Exibir gráficos em tempo real dentro da interface.
 D) Criar menus suspensos com ícones interativos.
-Resposta: A
+R: A
 
 P: O que é um Toolbar em um aplicativo mobile?
 A) Um componente que funciona como uma barra de navegação ou cabeçalho de um app.
@@ -232,417 +232,417 @@ A) Evita erros de NullPointerException e melhora a performance.
 B) Permite criar layouts sem precisar do XML.
 C) Substitui completamente a necessidade de Java/Kotlin no desenvolvimento.
 D) Faz com que os layouts se adaptem automaticamente a qualquer tela.
-Resposta: A
+R: A
 
 P: O que o Match_Parent faz quando aplicado a um componente no XML?
 A) Faz com que o componente ocupe toda a largura ou altura do contêiner pai.
 B) Centraliza automaticamente o componente na tela.
 C) Redimensiona o componente com base no conteúdo dentro dele.
 D) Garante que o componente fique oculto na interface.
-Resposta: A
+R: A
 
 P: Qual é a função do atributo wrap_content em um layout XML?
 A) Faz com que o componente se ajuste ao tamanho do seu conteúdo.
 B) Expande o componente até o tamanho máximo disponível.
 C) Oculta o componente caso a tela seja pequena.
 D) Redimensiona todos os componentes para o mesmo tamanho.
-Resposta: A
+R: A
 
 P: Para que serve o atributo android:gravity em layouts do Android?
 A) Define o alinhamento do conteúdo dentro de um componente.
 B) Controla a posição do componente dentro do layout pai.
 C) Modifica a rotação do texto dentro de um botão.
 D) Configura o espaço entre os elementos em um LinearLayout.
-Resposta: A
+R: A
 
 P: Como funciona o android:orientation em um LinearLayout?
 A) Define se os elementos serão organizados vertical ou horizontalmente.
 B) Controla a transparência dos elementos dentro do layout.
 C) Alterna automaticamente o layout entre escuro e claro.
 D) Configura o espaçamento entre os elementos de um RecyclerView.
-Resposta: A
+R: A
 
 P: Qual a vantagem de usar um GridLayout em comparação a um LinearLayout?
 A) Permite organizar elementos em uma grade com mais flexibilidade.
 B) Substitui completamente a necessidade de XML.
 C) Elimina a necessidade de definir tamanhos para os componentes.
 D) Só pode ser usado para exibir imagens.
-Resposta: A
+R: A
 
 P: O que acontece se um ConstraintLayout não tiver restrições definidas corretamente?
 A) Alguns elementos podem não aparecer na tela.
 B) O aplicativo não compilará.
 C) Todos os elementos serão centralizados automaticamente.
 D) O layout será convertido em um LinearLayout.
-Resposta: A
+R: A
 
 P: Como evitar Overdraw ao criar layouts em um aplicativo Android?
 A) Reduzindo sobreposição de elementos desnecessários.
 B) Adicionando mais camadas de layouts para otimizar a renderização.
 C) Carregando todos os elementos gráficos de uma vez.
 D) Usando apenas imagens em alta definição.
-Resposta: A
+R: A
 
 P: O que é um CoordinatorLayout?
 A) Um layout avançado que permite comportamentos como scroll e animações complexas.
 B) Um layout que substitui completamente o ConstraintLayout.
 C) Um sistema para organizar botões de navegação em um app.
 D) Uma biblioteca externa para manipulação de imagens.
-Resposta: A
+R: A
 
 P: O que é um BottomNavigationView?
 A) Um componente que exibe uma barra de navegação na parte inferior do app.
 B) Um layout específico para telas pequenas.
 C) Um método de transição de telas no Android.
 D) Um widget usado apenas para formulários.
-Resposta: A
+R: A
 
 P: Qual a diferença entre merge e include no XML do Android?
 A) O merge combina layouts sem criar uma nova ViewGroup, enquanto include adiciona um layout dentro de outro.
 B) Ambos servem para substituir layouts ConstraintLayout.
 C) Include pode ser usado apenas dentro de um RelativeLayout.
 D) Merge serve para transformar um layout em um arquivo JSON.
-Resposta: A
+R: A
 
 P: O que significa android:layout_weight em um LinearLayout?
 A) Define a proporção de espaço que um elemento ocupará dentro do layout.
 B) Controla o peso de animações aplicadas ao layout.
 C) Ajusta automaticamente a largura do componente para 100% da tela.
 D) Define a cor de fundo do layout.
-Resposta: A
+R: A
 
 P: Qual componente permite alternar entre diferentes telas dentro do mesmo layout?
 A) ViewPager
 B) TextView
 C) Button
 D) LinearLayout
-Resposta: A
+R: A
 
 P: Como o FragmentContainerView facilita o uso de fragments no Android?
 A) Ele substitui o uso do FragmentManager e melhora a performance.
 B) Ele permite criar menus suspensos dentro do app.
 C) Ele converte automaticamente fragments para views dinâmicas.
 D) Ele remove a necessidade de XML na criação de layouts.
-Resposta: A
+R: A
 
 P: Qual é a principal função do MotionLayout?
 A) Criar animações e transições complexas em um layout.
 B) Substituir completamente os outros tipos de layouts.
 C) Ajustar automaticamente os tamanhos dos elementos.
 D) Criar layouts apenas para aplicativos de realidade aumentada.
-Resposta: A
+R: A
 
 P: O que acontece se um RecyclerView não tiver um LayoutManager definido?
 A) Ele não exibirá os itens corretamente.
 B) Ele organizará os itens automaticamente em uma grade.
 C) Ele usará um ListView como padrão.
 D) Ele criará uma barra de rolagem invisível.
-Resposta: A
+R: A
 
 P: Qual o papel do AppBarLayout em um aplicativo Android?
 A) Criar um cabeçalho com suporte a rolagem e animações.
 B) Controlar a exibição de imagens na tela.
 C) Substituir completamente o uso de fragments.
 D) Definir a estrutura do banco de dados do app.
-Resposta: A
+R: A
 
 P: O que diferencia um DrawerLayout de um BottomNavigationView?
 A) O DrawerLayout cria um menu lateral deslizante, enquanto o BottomNavigationView exibe abas na parte inferior da tela.
 B) Ambos são usados apenas para navegação em aplicativos híbridos.
 C) O BottomNavigationView só pode ser usado em tablets.
 D) O DrawerLayout sempre exige um banco de dados para funcionar.
-Resposta: A
+R: A
 
 P: O que faz o atributo android:clipChildren="false"?
 A) Permite que elementos ultrapassem os limites do layout pai.
 B) Impede a rotação de elementos no layout.
 C) Redimensiona automaticamente os elementos para caber na tela.
 D) Define a opacidade de um layout.
-Resposta: A
+R: A
 
 P: O que é um SwipeRefreshLayout?
 A) Um layout que adiciona a funcionalidade de atualizar conteúdo ao arrastar a tela para baixo.
 B) Um layout específico para exibir mapas interativos.
 C) Um método de segurança para impedir a rolagem do usuário.
 D) Uma ferramenta que permite editar layouts dinamicamente.
-Resposta: A
+R: A
 
 P: Qual a principal função do android:padding em um layout?
 A) Define um espaçamento interno entre o conteúdo e a borda do componente.
 B) Ajusta a largura e altura de um elemento automaticamente.
 C) Garante que os elementos fiquem fixos no topo da tela.
 D) Permite modificar a cor de fundo do layout.
-Resposta: A
+R: A
 
 P: O que faz o atributo android:margin?
 A) Define o espaço externo entre um componente e os outros elementos ao seu redor.
 B) Controla o alinhamento do texto dentro de um TextView.
 C) Redimensiona automaticamente os elementos para caberem na tela.
 D) Ajusta a opacidade de um layout.
-Resposta: A
+R: A
 
 P: Qual a diferença entre ViewGroup e View no Android?
 A) ViewGroup é um contêiner que organiza outras Views, enquanto View representa um único elemento na interface.
 B) View é usada apenas para exibir imagens, enquanto ViewGroup controla botões.
 C) ViewGroup é uma classe abstrata e não pode ser usada em XML.
 D) View sempre precisa de um ViewGroup para funcionar corretamente.
-Resposta: A
+R: A
 
 P: Para que serve o android:visibility em um componente de layout?
 A) Controla se o elemento será visível, invisível ou removido da tela.
 B) Define a transparência do componente.
 C) Garante que o elemento sempre fique fixo no layout.
 D) Modifica a cor do fundo de um botão.
-Resposta: A
+R: A
 
 P: O que significa GONE no atributo android:visibility?
 A) Remove completamente o elemento da tela e do fluxo de layout.
 B) Deixa o elemento invisível, mas mantendo o espaço reservado.
 C) Faz com que o elemento apareça piscando na interface.
 D) Define a rotação do elemento na tela.
-Resposta: A
+R: A
 
 P: Qual a principal vantagem de usar android:layerType="hardware"?
 A) Melhora o desempenho de renderização da interface ao utilizar aceleração por GPU.
 B) Impede que o layout seja redimensionado automaticamente.
 C) Substitui a necessidade de usar ConstraintLayout.
 D) Define um tema escuro para o aplicativo.
-Resposta: A
+R: A
 
 P: O que acontece se um NestedScrollView não for usado corretamente?
 A) Pode causar problemas de desempenho ao carregar muitos elementos dentro dele.
 B) Faz com que os botões parem de funcionar corretamente.
 C) Impede a rolagem da tela completamente.
 D) Remove automaticamente a barra de status do Android.
-Resposta: A
+R: A
 
 P: Para que serve o android:layout_gravity?
 A) Alinha o elemento dentro do seu ViewGroup pai.
 B) Define o alinhamento do texto dentro de um botão.
 C) Modifica a posição da barra de status do sistema.
 D) Ajusta automaticamente o tamanho do layout.
-Resposta: A
+R: A
 
 P: O que acontece quando usamos android:elevation em um elemento?
 A) Cria um efeito de sombra para destacar o componente.
 B) Ajusta o nível de opacidade do layout.
 C) Aumenta o tamanho do elemento automaticamente.
 D) Deixa o componente invisível.
-Resposta: A
+R: A
 
 P: Como o PercentRelativeLayout ajuda na construção de layouts responsivos?
 A) Permite definir tamanhos baseados em porcentagens da tela.
 B) Ajusta automaticamente a posição dos elementos sem precisar de XML.
 C) Funciona apenas para aplicativos em modo paisagem.
 D) Substitui completamente o uso de LinearLayout.
-Resposta: A
+R: A
 
 P: Qual a principal diferença entre android:minWidth e android:maxWidth?
 A) minWidth define a largura mínima de um elemento, enquanto maxWidth define a largura máxima.
 B) Ambos definem a altura do layout, mas de formas diferentes.
 C) minWidth é obrigatório para todos os elementos, enquanto maxWidth é opcional.
 D) Nenhum dos dois afeta o tamanho do layout na prática.
-Resposta: A
+R: A
 
 P: O que acontece se um CardView não tiver cornerRadius definido?
 A) Ele será exibido com bordas retangulares padrão.
 B) O aplicativo não compilará corretamente.
 C) Ele ficará invisível na tela.
 D) Seu conteúdo será ocultado.
-Resposta: A
+R: A
 
 P: Qual a principal vantagem do uso de android:clipToPadding?
 A) Define se os filhos de um ViewGroup podem ser desenhados fora da área de padding.
 B) Remove o espaçamento entre os elementos dentro do layout.
 C) Substitui a necessidade de definir margin nos elementos.
 D) Faz com que os layouts sejam convertidos automaticamente em RecyclerView.
-Resposta: A
+R: A
 
 P: O que acontece se um TextView ultrapassar o espaço disponível no layout?
 A) O texto pode ser cortado, quebrado em várias linhas ou exibido como "…" dependendo da configuração.
 B) Ele se ajustará automaticamente à largura do layout pai.
 C) O aplicativo será encerrado com erro.
 D) O texto ficará invisível até que o usuário interaja com ele.
-Resposta: A
+R: A
 
 P: O que é um ViewStub e para que ele é usado?
 A) Um layout invisível usado para carregar views dinamicamente e melhorar performance.
 B) Um componente usado para depuração de layouts em XML.
 C) Uma classe usada apenas em aplicativos de streaming de vídeo.
 D) Um tipo de ListView avançado para grandes quantidades de dados.
-Resposta: A
+R: A
 
 P: Qual é a função do android:animateLayoutChanges?
 A) Ativar animações automáticas para mudanças no layout.
 B) Modificar a cor do fundo do layout dinamicamente.
 C) Criar efeitos de rolagem entre elementos.
 D) Garantir que os botões fiquem fixos na tela.
-Resposta: A
+R: A
 
 P: Qual a função do android:fitsSystemWindows?
 A) Ajusta o layout para levar em conta elementos do sistema, como barra de status e botões de navegação.
 B) Remove automaticamente a barra de status ao iniciar o aplicativo.
 C) Impede a rolagem do conteúdo dentro do aplicativo.
 D) Configura a transparência dos elementos dentro do LinearLayout.
-Resposta: A
+R: A
 
 P: Qual a vantagem de usar GridView em vez de RecyclerView?
 A) Ele é mais simples de implementar para exibir listas em formato de grade.
 B) RecyclerView não suporta layouts em grade.
 C) GridView consome menos memória do que um RecyclerView.
 D) Ambos são equivalentes e podem ser usados da mesma forma.
-Resposta: A
+R: A
 
 P: Para que serve o android:scaleType em um ImageView?
 A) Define como a imagem será ajustada dentro do ImageView.
 B) Modifica o alinhamento do texto dentro de um TextView.
 C) Controla a velocidade de animações no layout.
 D) Garante que a imagem fique sempre centralizada.
-Resposta: A
+R: A
 
 P: O que acontece quando definimos android:focusable="true" em um elemento?
 A) Ele pode receber foco ao ser selecionado pelo usuário.
 B) Ele se torna invisível até ser tocado.
 C) Ele se ajusta automaticamente à largura da tela.
 D) Ele impede que outros elementos sejam exibidos no layout.
-Resposta: A
+R: A
 
 P: Qual a principal diferença entre wrap_content e match_parent?
 A) wrap_content ajusta o tamanho ao conteúdo do elemento, enquanto match_parent ocupa todo o espaço disponível no pai.
 B) wrap_content preenche a tela inteira, e match_parent adapta-se ao menor tamanho possível.
 C) Ambos são equivalentes e podem ser usados alternadamente.
 D) match_parent só funciona em RelativeLayout.
-Resposta: A
+R: A
 
 P: O que significa android:orientation="vertical" em um LinearLayout?
 A) Define que os elementos serão organizados de cima para baixo.
 B) Faz com que os componentes se alinhem horizontalmente.
 C) Garante que os textos fiquem centralizados.
 D) Impede que os elementos sejam redimensionados automaticamente.
-Resposta: A
+R: A
 
 P: Qual a finalidade do android:layout_weight em um LinearLayout?
 A) Distribuir o espaço disponível entre os elementos proporcionalmente.
 B) Definir a opacidade do elemento dentro do layout.
 C) Ajustar automaticamente a cor do componente com base no fundo.
 D) Definir a posição do elemento na tela.
-Resposta: A
+R: A
 
 P: Para que serve o atributo android:baselineAligned em um LinearLayout?
 A) Alinha os elementos de forma que suas bases fiquem niveladas.
 B) Ajusta automaticamente a largura dos componentes.
 C) Permite que os elementos sejam arrastados na interface.
 D) Garante que a tela fique sempre centralizada no dispositivo.
-Resposta: A
+R: A
 
 P: O que ocorre se android:clipChildren for definido como false?
 A) Os elementos filhos podem ultrapassar os limites do ViewGroup pai.
 B) Os elementos serão automaticamente redimensionados para caber na tela.
 C) Os componentes ficarão invisíveis até que o usuário interaja com eles.
 D) O layout será redimensionado para ocupar toda a tela.
-Resposta: A
+R: A
 
 P: Como funciona o android:scrollbars em um layout?
 A) Define a exibição das barras de rolagem, permitindo rolar o conteúdo quando necessário.
 B) Cria uma animação automática para mover os elementos na tela.
 C) Modifica a opacidade do layout quando há muita informação.
 D) Permite alterar o tamanho das margens de um TextView.
-Resposta: A
+R: A
 
 P: Qual a principal função do android:gravity em um layout?
 A) Define o alinhamento do conteúdo dentro de um componente.
 B) Modifica a altura do elemento automaticamente.
 C) Ajusta a cor do fundo de um botão dinamicamente.
 D) Controla o efeito de transição entre telas.
-Resposta: A
+R: A
 
 P: O que significa android:layout_alignParentRight="true" em um RelativeLayout?
 A) O elemento será alinhado à direita do ViewGroup pai.
 B) O componente será fixado no topo da tela.
 C) O elemento ocupará todo o espaço da tela horizontalmente.
 D) O botão se tornará invisível quando pressionado.
-Resposta: A
+R: A
 
 P: Como o GridLayout organiza seus elementos?
 A) Em uma grade de linhas e colunas.
 B) Sempre em uma única coluna.
 C) Somente em formato de lista vertical.
 D) De forma totalmente aleatória.
-Resposta: A
+R: A
 
 P: O que faz o android:stretchColumns em um TableLayout?
 A) Faz com que as colunas especificadas se expandam para ocupar o espaço disponível.
 B) Redimensiona as linhas para que fiquem do mesmo tamanho.
 C) Aumenta o espaçamento entre os elementos do layout.
 D) Garante que os botões fiquem sempre centralizados na tabela.
-Resposta: A
+R: A
 
 P: Qual a função do CoordinatorLayout?
 A) Fornecer um contêiner para comportamentos complexos, como animações e scrolls.
 B) Criar tabelas dinâmicas dentro do layout.
 C) Alterar a orientação do layout automaticamente.
 D) Garantir que os botões sempre fiquem fixos na tela.
-Resposta: A
+R: A
 
 P: O que acontece se um RelativeLayout contiver elementos conflitantes sem restrições?
 A) O layout pode apresentar comportamento inesperado ou sobreposição de componentes.
 B) Os elementos serão organizados automaticamente em formato de lista.
 C) O aplicativo será encerrado com erro imediatamente.
 D) O layout será reorganizado em ordem alfabética.
-Resposta: A
+R: A
 
 P: Para que serve o android:stackFromEnd em um RecyclerView?
 A) Faz com que os itens sejam adicionados no final da lista, útil para conversas e chats.
 B) Define o espaçamento mínimo entre os itens da lista.
 C) Transforma um RecyclerView em uma tabela automática.
 D) Remove os elementos visíveis do layout.
-Resposta: A
+R: A
 
 P: Qual a diferença entre paddingStart e paddingLeft?
 A) paddingStart respeita a direção do layout (esquerda para direita ou direita para esquerda), enquanto paddingLeft é fixo.
 B) paddingStart só pode ser usado em RelativeLayout.
 C) paddingLeft define a altura de um elemento, enquanto paddingStart define a largura.
 D) Não há diferença entre eles.
-Resposta: A
+R: A
 
 P: Para que serve o android:fitsSystemWindows?
 A) Ajustar o layout para não sobrepor elementos do sistema, como a barra de status.
 B) Criar efeitos de rolagem automática dentro do ScrollView.
 C) Impedir que o aplicativo seja fechado pelo usuário.
 D) Garantir que os botões fiquem sempre visíveis na tela.
-Resposta: A
+R: A
 
 P: O que é um ViewBinding?
 A) Um recurso que permite acessar elementos do layout diretamente no código sem precisar de findViewById.
 B) Uma ferramenta para criar animações automáticas dentro do layout.
 C) Um tipo de layout que adapta o aplicativo automaticamente a diferentes telas.
 D) Uma funcionalidade usada apenas para aplicativos em modo noturno.
-Resposta: A
+R: A
 
 P: Qual a função do android:saveEnabled em um EditText?
 A) Define se o campo de entrada deve salvar automaticamente o valor digitado.
 B) Modifica a fonte do texto dentro do campo.
 C) Impede que o usuário digite valores numéricos.
 D) Controla a opacidade do campo de entrada.
-Resposta: A
+R: A
 
 P: Para que serve o android:focusableInTouchMode?
 A) Permite que um elemento receba foco mesmo quando o usuário está em modo de toque.
 B) Define a velocidade da rolagem do ScrollView.
 C) Impede que botões sejam clicados acidentalmente.
 D) Modifica o espaçamento interno de um layout.
-Resposta: A
+R: A
 
 P: Como evitar problemas de desempenho ao usar imagens no layout?
 A) Usar VectorDrawables e otimizar o tamanho das imagens para evitar consumo excessivo de memória.
 B) Carregar todas as imagens na memória ao iniciar o aplicativo.
 C) Usar apenas imagens de alta resolução sem compactação.
 D) Criar múltiplas cópias da mesma imagem no código XML.
-Resposta: A
+R: A
 
 P: O que acontece se android:clickable for definido como false em um botão?
 A) O botão não responderá a toques do usuário.
 B) O botão ficará invisível.
 C) O botão será automaticamente redimensionado.
 D) O botão só poderá ser usado com teclado físico.
-Resposta: A
+R: A
