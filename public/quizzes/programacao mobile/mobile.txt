@@ -1,0 +1,910 @@
+P: Qual é a função principal de um arquivo de layout XML no Android?
+A) Armazenar imagens para o app
+B) Definir o comportamento do código Kotlin
+C) Indicar como as views devem ser organizadas na tela
+D) Gerar automaticamente o código Java
+R: C
+E: A resposta correta é C porque o layout XML serve para descrever a estrutura visual do app, como botões, textos e outros elementos devem ser exibidos.
+
+P: Quantas etapas principais são necessárias ao criar um layout no Android?
+A) Duas
+B) Três
+C) Quatro
+D) Cinco
+R: B
+E: A resposta correta é B porque as etapas são: definir o tipo de layout, especificar as views e associar o layout a uma activity.
+
+P: O que um elemento <LinearLayout> organiza?
+A) Views sobrepostas em camadas
+B) Views em colunas ou linhas lineares
+C) Views em um grid
+D) Views com rolagem automática
+R: B
+E: A resposta correta é B porque o LinearLayout organiza views em linha reta, na vertical ou horizontal.
+
+P: Qual atributo define a largura de uma view ou layout?
+A) android:width
+B) layout:width
+C) android:layout_width
+D) width:android
+R: C
+E: A resposta correta é C porque esse é o nome exato do atributo utilizado para definir a largura em XML.
+
+P: Qual valor faz com que o layout ocupe todo o espaço disponível do seu elemento pai?
+A) match_content
+B) wrap_content
+C) full_parent
+D) match_parent
+R: D
+E: A resposta correta é D porque match_parent faz o layout expandir até preencher todo o espaço do elemento pai.
+
+P: O que significa o valor “wrap_content”?
+A) Ocupa todo o espaço da tela
+B) Ocupa somente o espaço necessário para o conteúdo
+C) Centraliza o conteúdo
+D) Faz a view desaparecer
+R: B
+E: A resposta correta é B porque esse valor ajusta a view para caber exatamente no tamanho de seu conteúdo.
+
+P: Por que usamos “dp” ao definir tamanhos de elementos visuais em Android?
+A) Para manter compatibilidade com Java
+B) Porque é mais rápido para o sistema processar
+C) Porque o valor em dp se adapta melhor a diferentes densidades de tela
+D) Para evitar conflitos com arquivos XML
+R: C
+E: A resposta correta é C porque dp (density-independent pixel) garante consistência visual em diferentes dispositivos.
+
+P: Qual a unidade recomendada para definir o tamanho de textos em Android?
+A) dp
+B) px
+C) sp
+D) pt
+R: C
+E: A resposta correta é C porque sp (scale-independent pixels) considera tanto a densidade da tela quanto as configurações de acessibilidade do usuário.
+
+P: O que acontece se o namespace xmlns:android não for definido em um layout XML?
+A) O app irá compilar normalmente
+B) O layout será ignorado
+C) O Android não reconhecerá os atributos do layout
+D) Os textos não aparecerão na tela
+R: C
+E: A resposta correta é C porque o namespace permite que o Android identifique corretamente os atributos do XML.
+
+P: Qual atributo é usado para definir a orientação do LinearLayout?
+A) android:gravity
+B) layout:align
+C) android:orientation
+D) orientation:layout
+R: C
+E: A resposta correta é C porque android:orientation é o atributo utilizado para definir se as views ficam em linha ou coluna.
+
+P: O que acontece com a ordem das views quando a orientação horizontal é usada em um dispositivo com idioma árabe (direita para esquerda)?
+A) A ordem permanece a mesma
+B) As views são centralizadas
+C) A primeira view aparece no lado direito
+D) O layout ignora a orientação
+R: C
+E: A resposta correta é C porque, em idiomas RTL (right-to-left), a ordem de exibição também muda se supportsRtl estiver habilitado.
+
+P: Onde você ativa o suporte para layouts da direita para a esquerda?
+A) Em strings.xml
+B) No AndroidManifest.xml
+C) No arquivo MainActivity.kt
+D) Em styles.xml
+R: B
+E: A resposta correta é B porque a propriedade supportsRtl precisa ser configurada no AndroidManifest.xml.
+
+P: O que o atributo android:padding faz em um layout?
+A) Define a cor de fundo do layout
+B) Adiciona espaço externo entre os layouts
+C) Adiciona espaço interno entre o conteúdo e a borda do layout
+D) Adiciona uma margem inferior ao layout
+R: C
+E: A resposta correta é C porque o padding cria um espaço interno, entre as bordas do layout e os elementos dentro dele.
+
+P: Qual atributo permite definir diferentes valores de padding para cada lado do layout?
+A) android:paddingSides
+B) android:paddingMultiple
+C) android:paddingTop, android:paddingBottom, etc.
+D) android:paddingCustom
+R: C
+E: A resposta correta é C porque podemos usar atributos como android:paddingTop, android:paddingBottom, android:paddingStart e android:paddingEnd para definir valores diferentes em cada lado.
+
+P: Qual é a função do atributo android:paddingStart?
+A) Adiciona padding à borda inferior do layout
+B) Adiciona padding à borda inicial, considerando o idioma do dispositivo
+C) Define o espaçamento entre dois elementos
+D) Adiciona uma margem externa
+R: B
+E: A resposta correta é B porque paddingStart respeita o sentido da leitura (LTR ou RTL) do idioma configurado no aparelho.
+
+P: O atributo android:paddingHorizontal afeta quais lados do layout?
+A) Direita e esquerda
+B) Cima e baixo
+C) Apenas a direita
+D) Todos os lados igualmente
+R: A
+E: A resposta correta é A porque paddingHorizontal aplica padding tanto à esquerda quanto à direita do layout.
+
+P: Qual elemento é usado para permitir a entrada de texto pelo usuário?
+A) <Button>
+B) <TextView>
+C) <EditText>
+D) <InputBox>
+R: C
+E: A resposta correta é C porque <EditText> é o elemento usado para criar campos de texto editáveis.
+
+P: Qual atributo exibe uma dica dentro de um EditText quando ele está vazio?
+A) android:label
+B) android:helperText
+C) android:hint
+D) android:tooltip
+R: C
+E: A resposta correta é C porque android:hint mostra um texto temporário que orienta o usuário sobre o que digitar.
+
+P: Para que serve o atributo android:inputType em um EditText?
+A) Definir a fonte do texto
+B) Configurar o tipo de dado e o teclado que será exibido
+C) Ativar o corretor automático
+D) Definir o alinhamento do texto
+R: B
+E: A resposta correta é B porque o inputType define o tipo de dado esperado, como número, texto, senha, e ajusta o teclado correspondente.
+
+P: O que acontece se não for definido um inputType em um EditText?
+A) O campo não funcionará
+B) O teclado não aparecerá
+C) O campo usará o teclado padrão de texto
+D) O app apresentará erro de compilação
+R: C
+E: A resposta correta é C porque, sem inputType, o Android usa o teclado padrão de texto.
+
+P: Qual o comportamento de um EditText com layout_width="match_parent" e layout_height="wrap_content"?
+A) Ele ocupará toda a altura da tela e metade da largura
+B) Ele terá altura fixa e largura flexível
+C) Ele ocupará toda a largura disponível e altura mínima para o conteúdo
+D) Ele será centralizado na tela
+R: C
+E: A resposta correta é C porque match_parent faz com que a largura ocupe todo o espaço disponível, enquanto wrap_content ajusta a altura ao conteúdo.
+
+P: Qual é a principal diferença entre um TextView e um EditText?
+A) O TextView é usado para mostrar texto, enquanto o EditText permite editar
+B) O EditText é maior
+C) O TextView consome menos memória
+D) O TextView aceita apenas números
+R: A
+E: A resposta correta é A porque a função do TextView é exibir texto fixo, enquanto o EditText permite entrada do usuário.
+
+P: Em qual situação o android:hint deve ser armazenado como recurso de string em vez de texto direto?
+A) Quando se trata de apps que não usam Kotlin
+B) Quando o texto será traduzido para múltiplos idiomas
+C) Quando o app usa apenas layouts verticais
+D) Quando o app não utiliza AndroidManifest
+R: B
+E: A resposta correta é B porque usar recursos de string facilita a internacionalização e tradução do app.
+
+P: Se um layout possui android:padding=16dp, qual será o efeito visual?
+A) O conteúdo terá margem de 16dp para fora
+B) O layout terá uma sombra de 16dp
+C) O conteúdo será empurrado 16dp para dentro em todas as bordas
+D) O conteúdo ficará centralizado automaticamente
+R: C
+E: A resposta correta é C porque o padding adiciona espaço interno entre as bordas do layout e seus elementos.
+
+P: Se quisermos aplicar diferentes valores de padding na vertical e horizontal ao mesmo tempo, quais atributos devemos usar?
+A) android:paddingAll e android:paddingDouble
+B) android:paddingVertical e android:paddingHorizontal
+C) android:paddingTop e android:paddingLeft
+D) android:marginVertical e android:marginHorizontal
+R: B
+E: A resposta correta é B porque esses dois atributos permitem definir padding específico para os eixos vertical e horizontal.
+
+P: O que o atributo android:gravity controla?
+A) A largura da visualização
+B) O espaçamento externo de uma view
+C) O alinhamento do conteúdo interno de uma view
+D) O posicionamento da view no layout
+R: C
+E: A resposta correta é C porque android:gravity define onde o conteúdo interno de uma view (como texto) será posicionado dentro dela.
+
+P: Qual é a principal diferença entre android:gravity e android:layout_gravity?
+A) Um define cor de fundo e o outro, o texto
+B) Um posiciona a view dentro do layout, o outro alinha o conteúdo dentro da view
+C) Um é usado apenas em FrameLayout
+D) Ambos significam a mesma coisa
+R: B
+E: A resposta correta é B porque android:gravity alinha o conteúdo dentro da view, e android:layout_gravity posiciona a view dentro de seu layout pai.
+
+P: Se quisermos que um texto apareça centralizado dentro de um TextView, qual atributo usamos?
+A) android:layout_gravity="center"
+B) android:text_align="center"
+C) android:gravity="center"
+D) android:centerText="true"
+R: C
+E: A resposta correta é C porque android:gravity="center" centraliza o conteúdo dentro da própria view.
+
+P: Para posicionar um botão no centro horizontal de um LinearLayout, usamos:
+A) android:layout_gravity="center_horizontal"
+B) android:gravity="horizontal_center"
+C) layout:center="true"
+D) android:horizontal_align="center"
+R: A
+E: A resposta correta é A porque layout_gravity define onde a view em si será posicionada dentro do layout.
+
+P: Quando o Android executa uma activity, qual método é chamado primeiro?
+A) run()
+B) createUI()
+C) initLayout()
+D) onCreate()
+R: D
+E: A resposta correta é D porque onCreate() é o método inicial da activity onde o layout é definido.
+
+P: Qual função Kotlin define qual layout será usado em uma activity?
+A) startLayout()
+B) bindLayout()
+C) setContentView()
+D) loadLayout()
+R: C
+E: A resposta correta é C porque setContentView() associa um layout XML à interface gráfica da activity.
+
+P: O que significa "inflar" um layout?
+A) Reduzir o tamanho de um layout na memória
+B) Compactar o XML para salvar espaço
+C) Converter o XML do layout em objetos que o código Kotlin pode manipular
+D) Sincronizar o layout com o banco de dados
+R: C
+E: A resposta correta é C porque a inflação transforma as tags XML em objetos reais que podem ser usados no código.
+
+P: Após a inflação, o que acontece com cada view no layout?
+A) São ignoradas se estiverem vazias
+B) São renderizadas como objetos na memória
+C) São convertidas em imagens
+D) São automaticamente conectadas ao banco de dados
+R: B
+E: A resposta correta é B porque cada elemento visual vira um objeto Kotlin (por exemplo, um botão vira um objeto Button).
+
+P: Qual é o papel da função setContentView(R.layout.main)?
+A) Define qual drawable será carregado
+B) Associa o layout XML “main” à activity atual
+C) Inicia a primeira tela do app
+D) Desenha todas as views manualmente
+R: B
+E: A resposta correta é B porque essa função carrega o arquivo XML de layout e o exibe como interface da activity.
+
+P: Qual classe é responsável por conter outras views em um layout?
+A) android.widget.View
+B) android.core.Element
+C) android.view.Layout
+D) android.view.ViewGroup
+R: D
+E: A resposta correta é D porque o ViewGroup é a classe base de todos os layouts que agrupam outras views.
+
+P: Por que os atributos layout_width e layout_height são obrigatórios em todas as views e layouts?
+A) Porque o Android precisa saber o posicionamento para conectar ao Firebase
+B) Porque são exigências do Google Play
+C) Porque todas as views precisam de medidas mínimas para serem renderizadas corretamente
+D) Porque essas medidas determinam a velocidade do app
+R: C
+E: A resposta correta é C porque sem essas dimensões o Android não consegue saber como exibir a view na tela.
+
+P: O que acontece se setContentView() não for chamado em uma activity?
+A) A activity é ignorada pelo sistema
+B) O app mostrará uma tela em branco
+C) O layout será carregado automaticamente
+D) O app travará ao abrir
+R: B
+E: A resposta correta é B porque sem chamar setContentView(), nenhum layout será exibido e a tela ficará em branco.
+
+P: Por que o processo de inflação é importante no desenvolvimento Android?
+A) Permite que o sistema opere sem classes Kotlin
+B) Garante que as animações sejam fluidas
+C) Torna os elementos XML acessíveis via código Kotlin
+D) Evita o uso de memória durante o runtime
+R: C
+E: A resposta correta é C porque a inflação converte as views do XML em objetos manipuláveis dentro da activity.
+
+P: Qual é a principal característica de um FrameLayout?
+A) Organiza elementos em grade
+B) Permite a rolagem do conteúdo
+C) Empilha as views, uma sobre a outra
+D) Organiza views em linha ou coluna
+R: C
+E: A resposta correta é C porque o FrameLayout exibe os elementos empilhados na mesma área da tela.
+
+P: Quando usamos um FrameLayout, qual é a ordem de empilhamento das views?
+A) Da view maior para a menor
+B) Por ordem de prioridade no código Kotlin
+C) Pela ordem em que aparecem no XML
+D) Por ordem alfabética de ID
+R: C
+E: A resposta correta é C porque as views são desenhadas em camadas, respeitando a ordem de declaração no XML.
+
+P: Qual tipo de layout você usaria para colocar um texto por cima de uma imagem?
+A) LinearLayout
+B) ConstraintLayout
+C) ScrollView
+D) FrameLayout
+R: D
+E: A resposta correta é D porque o FrameLayout permite sobrepor elementos, como um texto em cima de uma imagem.
+
+P: Qual elemento é usado para exibir uma imagem no layout?
+A) <PictureBox>
+B) <ImageView>
+C) <Image>
+D) <Drawable>
+R: B
+E: A resposta correta é B porque <ImageView> é o componente utilizado para mostrar imagens em layouts Android.
+
+P: Qual atributo define qual imagem será exibida em uma ImageView?
+A) android:drawable
+B) android:src
+C) android:imagePath
+D) android:source
+R: B
+E: A resposta correta é B porque android:src especifica o recurso de imagem que será usado.
+
+P: Onde devemos salvar imagens para que fiquem disponíveis no layout?
+A) Na pasta assets/
+B) Na pasta values/
+C) Na pasta res/raw/
+D) Na pasta res/drawable/
+R: D
+E: A resposta correta é D porque a pasta drawable/ é o local padrão para armazenar imagens no Android Studio.
+
+P: Qual é o formato de imagem recomendado para Android por oferecer boa qualidade com tamanho reduzido?
+A) PNG
+B) JPEG
+C) SVG
+D) WebP
+R: D
+E: A resposta correta é D porque o WebP oferece compressão eficiente e é ideal para performance sem perder qualidade visual.
+
+P: Qual atributo da ImageView melhora a acessibilidade para pessoas com deficiência visual?
+A) android:hint
+B) android:tooltipText
+C) android:contentDescription
+D) android:label
+R: C
+E: A resposta correta é C porque contentDescription fornece uma descrição que pode ser lida por leitores de tela.
+
+P: O atributo android:scaleType="centerCrop" faz o quê com a imagem?
+A) Estica a imagem para preencher toda a tela
+B) Exibe a imagem sem cortes, mesmo que fique pequena
+C) Recorta as bordas e centraliza o conteúdo
+D) Reduz a imagem até caber no layout
+R: C
+E: A resposta correta é C porque centerCrop centraliza a imagem e a ajusta ao espaço disponível, cortando suas bordas se necessário.
+
+P: Qual benefício há em fornecer diferentes versões da mesma imagem para densidades distintas de tela?
+A) Reduz o tempo de desenvolvimento
+B) Facilita a conversão para Kotlin
+C) Melhora a performance e a aparência do app em diversos dispositivos
+D) Elimina a necessidade de usar a pasta drawable
+R: C
+E: A resposta correta é C porque imagens adaptadas à densidade garantem qualidade visual e uso eficiente de memória em diferentes aparelhos.
+
+P: Como converter uma imagem para o formato WebP no Android Studio?
+A) Editando o XML do layout manualmente
+B) Clicando com o botão direito na imagem e escolhendo “Convert to WebP”
+C) Usando a opção "Import to Kotlin"
+D) Executando um script Gradle
+R: B
+E: A resposta correta é B porque o Android Studio oferece essa funcionalidade diretamente no menu de contexto da imagem.
+
+P: O que acontece se você tentar exibir uma imagem que não existe na pasta drawable?
+A) O app usará uma imagem padrão
+B) A ImageView mostrará um erro na tela
+C) A compilação falhará
+D) O app pode travar ou exibir a ImageView em branco
+R: D
+E: A resposta correta é D porque, em tempo de execução, o app não encontra o recurso e pode exibir um espaço em branco ou gerar erro.
+
+P: Qual é o comportamento padrão de um FrameLayout com múltiplas views?
+A) Divide o espaço igualmente entre as views
+B) Alinha todas as views ao centro
+C) Empilha as views em uma única posição
+D) Alinha todas as views na parte inferior
+R: C
+E: A resposta correta é C porque o comportamento padrão é sobrepor os elementos na mesma área, de acordo com a ordem no XML.
+
+P: Qual tipo de layout também é uma subclasse de ViewGroup, assim como o FrameLayout?
+A) ImageView
+B) ScrollView
+C) TextView
+D) AppCompatButton
+R: B
+E: A resposta correta é B porque ScrollView é um tipo de ViewGroup, e assim como o FrameLayout, pode conter outras views.
+
+P: Qual é a principal função do ScrollView em um layout Android?
+A) Empilhar elementos um sobre o outro
+B) Organizar elementos em colunas
+C) Permitir rolar a tela verticalmente quando o conteúdo não cabe
+D) Centralizar todos os elementos da tela
+R: C
+E: A resposta correta é C porque o ScrollView adiciona rolagem vertical quando o conteúdo ultrapassa a área visível do dispositivo.
+
+P: O ScrollView pode conter quantas views diretamente dentro dele?
+A) Quantas o programador desejar
+B) Apenas uma
+C) No máximo cinco
+D) Nenhuma, apenas layouts
+R: B
+E: A resposta correta é B porque o ScrollView só pode conter uma única view direta, geralmente um layout que organiza os demais elementos.
+
+P: Qual atributo usado no ScrollView define se ele deve preencher a tela do dispositivo?
+A) android:fill
+B) android:stretchToScreen
+C) android:fillViewport
+D) android:expandFull
+R: C
+E: A resposta correta é C porque fillViewport permite que o conteúdo se expanda para preencher todo o espaço da tela, mesmo que não ultrapasse os limites visíveis.
+
+P: Um ScrollView é uma subclasse de qual outro layout?
+A) LinearLayout
+B) FrameLayout
+C) ConstraintLayout
+D) RelativeLayout
+R: B
+E: A resposta correta é B porque o ScrollView herda de FrameLayout, e por isso também empilha suas views.
+
+P: Por que o ScrollView é útil em dispositivos com telas menores?
+A) Porque aumenta a fonte automaticamente
+B) Porque exibe apenas o título do app
+C) Porque permite rolar o conteúdo invisível
+D) Porque bloqueia interações com a tela
+R: C
+E: A resposta correta é C porque quando o conteúdo excede a tela, ele ainda pode ser acessado via rolagem.
+
+P: Todos os layouts são subclasses de qual classe principal no Android?
+A) android.widget.View
+B) android.view.ViewGroup
+C) android.layout.Base
+D) android.support.Layout
+R: B
+E: A resposta correta é B porque ViewGroup é a classe base que permite a existência de layouts com múltiplas views.
+
+P: Qual a relação entre ViewGroup e View?
+A) ViewGroup herda de View
+B) View herda de ViewGroup
+C) São classes sem relação direta
+D) Ambas herdam de Button
+R: A
+E: A resposta correta é A porque ViewGroup é uma View especial que pode conter outras View como filhos.
+
+P: Por que os layouts e views compartilham atributos como layout_width e layout_height?
+A) Porque todos eles herdam da mesma classe base
+B) Porque o Android os copia automaticamente entre layouts
+C) Porque isso é exigido pelo Google Play
+D) Porque o Kotlin os aplica por padrão
+R: A
+E: A resposta correta é A porque View e ViewGroup compartilham atributos herdados da hierarquia de classes.
+
+P: Qual das opções abaixo é uma característica comum de todas as views e layouts?
+A) São sempre visíveis
+B) Podem conter imagens
+C) Precisam ter largura e altura definidas
+D) Não podem ser usadas com Kotlin
+R: C
+E: A resposta correta é C porque toda View e todo Layout exige os atributos layout_width e layout_height.
+
+P: Qual classe representa qualquer elemento visual que possa ser exibido na tela?
+A) ViewGroup
+B) LayoutInflater
+C) View
+D) Widget
+R: C
+E: A resposta correta é C porque View é a superclasse de todos os componentes visuais do Android.
+
+P: Qual classe pode conter múltiplas views e organizar a estrutura da interface?
+A) View
+B) ImageView
+C) ViewGroup
+D) Context
+R: C
+E: A resposta correta é C porque ViewGroup é responsável por agrupar e posicionar múltiplos elementos da UI.
+
+P: Quando o conteúdo do layout ultrapassa o tamanho da tela e não há ScrollView, o que acontece?
+A) O Android oculta parte do conteúdo
+B) O app trava
+C) O layout automaticamente cria rolagem
+D) O conteúdo é redimensionado automaticamente
+R: A
+E: A resposta correta é A porque sem rolagem configurada, o Android exibe apenas o que cabe na tela.
+
+P: Qual vantagem o atributo fillViewport="true" oferece em um ScrollView?
+A) Garante que o conteúdo sempre ocupe o tamanho total da tela, mesmo se for pequeno
+B) Centraliza automaticamente todos os textos
+C) Torna a rolagem mais rápida
+D) Evita que imagens sejam comprimidas
+R: A
+E: A resposta correta é A porque fillViewport preenche todo o espaço visível, mesmo quando o conteúdo não excede o tamanho da tela.
+
+P: Qual tipo de layout é mais indicado para organizar views em linha ou coluna?
+A) FrameLayout
+B) ConstraintLayout
+C) LinearLayout
+D) GridLayout
+R: C
+E: A resposta correta é C porque o LinearLayout foi feito para posicionar elementos sequencialmente, vertical ou horizontalmente.
+
+P: Em qual situação é mais adequado usar um FrameLayout?
+A) Quando precisamos alinhar elementos em colunas
+B) Quando queremos sobrepor elementos, como imagem com texto por cima
+C) Quando a interface tem muito conteúdo e exige rolagem
+D) Quando queremos usar listas
+R: B
+E: A resposta correta é B porque o FrameLayout permite empilhar elementos visuais, ideal para sobreposição.
+
+P: Qual característica o ScrollView possui que o diferencia dos demais layouts?
+A) Permite navegação por abas
+B) Agrupa elementos em forma de grade
+C) Oferece rolagem vertical do conteúdo
+D) Posiciona views em camadas
+R: C
+E: A resposta correta é C porque o ScrollView é usado quando o conteúdo ultrapassa a altura da tela.
+
+P: O ScrollView deve conter diretamente quantas views?
+A) Uma ou mais, dependendo da densidade
+B) Uma única view (geralmente um layout)
+C) Nenhuma
+D) Apenas views de texto
+R: B
+E: A resposta correta é B porque ele precisa de uma única view como filho direto, que pode ser um layout agrupando outras views.
+
+P: Qual cuidado devemos ter ao exibir imagens em diferentes dispositivos?
+A) Usar imagens em SVG apenas
+B) Ajustar manualmente via código Kotlin
+C) Usar versões diferentes da imagem para diferentes densidades de tela
+D) Deixar o sistema escolher a imagem aleatoriamente
+R: C
+E: A resposta correta é C porque a densidade da tela afeta como as imagens são exibidas, e o Android pode carregar a versão apropriada automaticamente.
+
+P: Para aumentar a acessibilidade, qual atributo é essencial em uma ImageView?
+A) android:hint
+B) android:title
+C) android:contentDescription
+D) android:labelText
+R: C
+E: A resposta correta é C porque leitores de tela utilizam esse atributo para descrever a imagem ao usuário.
+
+P: Por que é importante usar recursos de string (strings.xml) ao invés de texto fixo nos layouts?
+A) Para diminuir o tempo de compilação
+B) Para facilitar a manutenção e internacionalização
+C) Para evitar quebras no código Kotlin
+D) Porque é obrigatório na Play Store
+R: B
+E: A resposta correta é B porque usar strings externas facilita tradução, reutilização e manutenção do app.
+
+P: Qual formato de imagem é recomendado pelo Android por balancear qualidade e tamanho?
+A) PNG
+B) JPEG
+C) WebP
+D) BMP
+R: C
+E: A resposta correta é C porque o WebP oferece boa qualidade com arquivos menores, otimizando desempenho.
+
+P: Se um dispositivo usa leitura da direita para a esquerda (como árabe), e o app tem supportsRtl=true, o que muda?
+A) As views são alinhadas ao centro
+B) A primeira view é exibida no lado direito
+C) O layout é ignorado
+D) O app trava
+R: B
+E: A resposta correta é B porque com suporte a RTL, a ordem dos elementos acompanha a direção da leitura.
+
+P: Onde configuramos o suporte a RTL (Right-to-Left) no projeto Android?
+A) No arquivo strings.xml
+B) No build.gradle
+C) No AndroidManifest.xml
+D) No arquivo colors.xml
+R: C
+E: A resposta correta é C porque o atributo supportsRtl deve ser definido no manifesto do app.
+
+P: O que pode ocorrer se você usar match_parent em muitas views dentro de um LinearLayout vertical?
+A) As views se organizam automaticamente em grid
+B) As views se sobrepõem
+C) As views tentam ocupar toda a altura disponível, podendo causar problemas de espaço
+D) As views desaparecem
+R: C
+E: A resposta correta é C porque múltiplas views com match_parent em altura podem competir por espaço e causar falhas visuais.
+
+P: Qual layout é o mais indicado para quando precisamos de uma interface com rolagem e empilhamento de views?
+A) ScrollView contendo FrameLayout
+B) ScrollView contendo LinearLayout
+C) FrameLayout contendo ScrollView
+D) LinearLayout contendo ConstraintLayout
+R: B
+E: A resposta correta é B porque a combinação ScrollView + LinearLayout permite adicionar vários elementos com rolagem.
+
+P: Por que não é recomendável empilhar muitos layouts dentro de outros layouts (nesting profundo)?
+A) Porque causa falha na compilação
+B) Porque deixa o app mais lento na renderização da interface
+C) Porque impede a aplicação de estilos
+D) Porque não funciona com ScrollView
+R: B
+E: A resposta correta é B porque muitos níveis de aninhamento tornam a renderização mais pesada e lenta.
+
+P: Qual layout organiza views uma após a outra, sem permitir sobreposição nem rolagem?
+A) LinearLayout
+B) FrameLayout
+C) ScrollView
+D) AbsoluteLayout
+R: A
+E: A resposta correta é A porque o LinearLayout é feito para exibir elementos sequenciais em linha ou coluna.
+
+P: Por que é importante adicionar android:layout_width e android:layout_height em todas as views?
+A) Para habilitar as animações
+B) Para evitar o uso de memória extra
+C) Porque sem essas dimensões o Android não consegue desenhar a view corretamente
+D) Para permitir usar padding e gravity
+R: C
+E: A resposta correta é C porque esses atributos são obrigatórios para que o Android saiba como exibir a view na tela.
+
+P: Qual é o papel do arquivo AndroidManifest.xml em um projeto Android?
+A) Gerenciar as dependências do app
+B) Definir o comportamento de todas as activities e recursos importantes do app
+C) Criar layouts dinamicamente
+D) Aplicar estilos personalizados
+R: B
+E: A resposta correta é B porque o AndroidManifest.xml contém informações essenciais como activities, permissões, tema, nome do app, suporte RTL, etc.
+
+P: Onde o arquivo AndroidManifest.xml fica localizado dentro da estrutura do projeto?
+A) res/layout
+B) res/values
+C) app/src/main
+D) gradle/scripts
+R: C
+E: A resposta correta é C porque o caminho padrão é app/src/main, onde o Android espera encontrar o manifesto do app.
+
+P: Qual atributo do AndroidManifest.xml ativa o suporte à leitura da direita para a esquerda (RTL)?
+A) rtlLayout
+B) allowRtl="true"
+C) android:rtlSupport="true"
+D) supportsRtl="true"
+R: D
+E: A resposta correta é D porque supportsRtl="true" habilita o layout adaptável para idiomas como árabe e hebraico.
+
+P: Quando uma activity é iniciada, qual método é chamado primeiro?
+A) onStart()
+B) onLaunch()
+C) onCreate()
+D) initLayout()
+R: C
+E: A resposta correta é C porque o método onCreate() é o ponto de entrada onde a interface é configurada.
+
+P: Qual função define qual layout XML será usado pela activity?
+A) initLayout()
+B) setLayoutFile()
+C) setContentView()
+D) attachLayout()
+R: C
+E: A resposta correta é C porque setContentView(R.layout.nome_do_layout) associa a interface da activity a um arquivo XML.
+
+P: O que significa dizer que um layout foi "inflado"?
+A) Ele foi otimizado para performance
+B) Ele foi criado como imagem
+C) Ele foi transformado de XML em objetos reais que podem ser manipulados
+D) Ele foi transferido para o servidor
+R: C
+E: A resposta correta é C porque “inflar” é o processo de transformar o XML de layout em objetos do tipo View/Widget no Kotlin.
+
+P: Qual o resultado da inflação do layout na memória?
+A) Uma string XML
+B) Um layout renderizado em SVG
+C) Objetos reais (como EditText, Button) que podem ser acessados via código
+D) Um novo arquivo .java
+R: C
+E: A resposta correta é C porque o processo cria instâncias dos componentes declarados no XML.
+
+P: O que acontece com o layout se setContentView() não for chamado?
+A) O layout será exibido como padrão
+B) O app usará um layout anterior automaticamente
+C) Nenhum layout será exibido
+D) O app ainda funcionará normalmente
+R: C
+E: A resposta correta é C porque sem essa chamada, a activity não terá interface gráfica visível.
+
+P: O que é necessário fazer para acessar uma View do layout via código Kotlin após inflar o layout?
+A) Atribuir um ID à view no XML
+B) Declarar a view em Manifest
+C) Importar a view do Android Studio
+D) Converter o XML em Java
+R: A
+E: A resposta correta é A porque apenas com um android:id é possível referenciar a view com findViewById.
+
+P: Qual a ordem de exibição das views dentro de um FrameLayout?
+A) Ordem alfabética dos IDs
+B) Ordem definida no Kotlin
+C) Ordem de declaração no XML
+D) Ordem aleatória com base em densidade
+R: C
+E: A resposta correta é C porque em um FrameLayout, a última view declarada no XML aparece por cima das anteriores.
+
+P: Em layouts com orientação horizontal, o idioma do sistema pode alterar a ordem visual das views. Isso acontece quando:
+A) As views têm gravity="start"
+B) supportsRtl está ativado no Manifest
+C) O layout usa ScrollView
+D) O layout é inflado automaticamente
+R: B
+E: A resposta correta é B porque com supportsRtl="true", a orientação pode ser invertida conforme o idioma do dispositivo.
+
+P: Qual combinação de atributos pode garantir que o conteúdo de uma view fique centralizado dentro dela?
+A) layout_gravity="center"
+B) gravity="center"
+C) align="center"
+D) text_align="center"
+R: B
+E: A resposta correta é B porque o gravity centraliza o conteúdo dentro da view (como texto dentro de um TextView).
+
+P: Ao se referir a match_parent, o termo “parent” significa:
+A) A activity principal
+B) O layout pai onde a view está inserida
+C) O AndroidManifest.xml
+D) A classe ViewGroup
+R: B
+E: A resposta correta é B porque o “pai” representa o container/layout que envolve aquela view.
+
+P: Qual prática é recomendada para tornar o layout mais flexível para múltiplos dispositivos?
+A) Definir todos os tamanhos em px
+B) Usar valores fixos e não dimensionáveis
+C) Usar dp para dimensões e sp para texto
+D) Usar apenas LinearLayout
+R: C
+E: A resposta correta é C porque dp adapta-se à densidade de tela e sp respeita acessibilidade.
+
+P: O que acontece se uma imagem for exibida em um dispositivo com densidade diferente e não houver versão apropriada na pasta drawable?
+A) O Android usa a versão mais próxima disponível
+B) O app é encerrado
+C) A imagem não aparece
+D) A imagem é convertida automaticamente para vetor
+R: A
+E: A resposta correta é A porque o Android busca automaticamente a versão mais compatível da imagem disponível.
+
+P: Dado o código abaixo, o que ele faz?
+setContentView(R.layout.activity_main)
+A) Cria um novo layout dinamicamente
+B) Conecta o layout activity_main.xml à interface da activity
+C) Carrega uma imagem do drawable
+D) Adiciona uma nova activity ao projeto
+R: B
+E: A resposta correta é B porque setContentView() vincula o XML de layout à tela da activity no momento da criação.
+
+P: Observe o trecho XML abaixo. Qual será a largura da view resultante?
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"/>
+A) O texto será centralizado na tela
+B) A view terá altura mínima e largura máxima
+C) A altura ocupará todo o espaço do pai e a largura será ajustada ao conteúdo
+D) A view ficará invisível
+R: C
+E: A resposta correta é C porque match_parent ocupa toda a altura disponível, e wrap_content ajusta a largura ao conteúdo da TextView.
+
+P: O que o código abaixo representa?
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</LinearLayout>
+A) Um layout invisível
+B) Um layout vertical com rolagem
+C) Um layout com views organizadas lado a lado
+D) Um layout que empilha views
+R: C
+E: A resposta correta é C porque a orientação “horizontal” posiciona os elementos da esquerda para a direita (ou direita para esquerda em RTL).
+
+P: Considerando o trecho: android:hint="Digite seu nome", qual será o comportamento da EditText?
+A) Mostrará esse texto permanentemente
+B) Exibirá a dica apenas quando o campo estiver vazio
+C) Usará esse texto como rótulo
+D) Ignorará esse valor
+R: B
+E: A resposta correta é B porque o hint aparece como sugestão quando o campo está sem conteúdo.
+
+P: Dado o código:
+<EditText
+    android:layout_width="match_parent"
+    android:inputType="textEmailAddress"/>
+A) A view aceitará apenas números
+B) O teclado exibido será padrão
+C) O teclado será ajustado para inserir e-mails
+D) O campo ficará bloqueado
+R: C
+E: A resposta correta é C porque inputType="textEmailAddress" ativa um teclado adaptado para e-mail (com “@” e “.” visíveis).
+
+P: Em um FrameLayout, se houver três ImageViews com layout_width="match_parent" e sem margem, o que acontecerá?
+A) As três imagens serão exibidas lado a lado
+B) Apenas a última será visível, pois as outras ficarão embaixo dela
+C) As imagens serão cortadas
+D) O Android exibirá um erro
+R: B
+E: A resposta correta é B porque em um FrameLayout as views se empilham, e a última declarada no XML fica por cima.
+
+P: O código abaixo faz parte de qual tipo de layout?
+android:scaleType="centerCrop"
+A) TextView
+B) ImageView
+C) EditText
+D) Button
+R: B
+E: A resposta correta é B porque scaleType é um atributo usado especificamente para configurar como imagens se ajustam dentro de uma ImageView.
+
+P: O que acontece ao usar este código com suporte a RTL ativado?
+android:paddingStart="16dp"
+A) O padding será aplicado apenas em inglês
+B) O padding será sempre à esquerda
+C) O padding será aplicado ao lado inicial, variando com o idioma
+D) O layout ignora esse atributo
+R: C
+E: A resposta correta é C porque paddingStart se adapta ao idioma, sendo à esquerda em LTR e à direita em RTL.
+
+P: Dado este XML, o que está sendo feito?
+<ImageView
+    android:src="@drawable/duck"
+    android:contentDescription="@string/desc_duck"/>
+A) A imagem será carregada e terá uma descrição acessível
+B) A imagem aparecerá com zoom
+C) A descrição será usada como legenda visível
+D) Nada será exibido na imagem
+R: A
+E: A resposta correta é A porque src define a imagem e contentDescription torna o conteúdo acessível a leitores de tela.
+
+P: O que esse XML define?
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+</ScrollView>
+A) Um layout que centraliza os filhos
+B) Um layout que exibe conteúdo com barra lateral
+C) Um layout que rola verticalmente e ocupa toda a tela mesmo se o conteúdo for menor
+D) Um layout que empilha views
+R: C
+E: A resposta correta é C porque fillViewport="true" faz com que o conteúdo do ScrollView preencha a tela mesmo se não for grande.
+
+P: Se android:layout_height="wrap_content" for usado em um ScrollView que contém um LinearLayout, o que pode acontecer?
+A) O conteúdo será cortado
+B) O ScrollView exibirá uma barra horizontal
+C) O layout pode não permitir rolagem adequada
+D) O layout será empurrado para fora da tela
+R: C
+E: A resposta correta é C porque ScrollViews devem ter layout_height="match_parent" para garantir que o espaço de rolagem seja respeitado.
+
+P: O que o Android faz com este código durante a execução?
+val nome = findViewById<EditText>(R.id.nome)
+A) Cria um novo campo de texto
+B) Inicializa uma variável com o valor do EditText do layout inflado
+C) Cria uma nova activity
+D) Salva o valor no banco de dados
+R: B
+E: A resposta correta é B porque esse comando associa a variável nome a uma view existente no layout.
+
+P: Qual será o comportamento de uma View com este trecho?
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+A) A altura será ignorada
+B) A view terá altura nula
+C) A altura será calculada com base no peso no layout
+D) A view será fixa em 100dp
+R: C
+E: A resposta correta é C porque quando a altura é 0dp em LinearLayout com weight, o espaço é distribuído proporcionalmente pelo peso.
+
+P: Esse código está correto?
+<EditText
+    android:layout_width="match_parent"
+    android:hint="@string/hint_nome"
+    android:inputType="number"/>
+A) Não, pois hint só aceita texto fixo
+B) Sim, e ele exibirá uma dica e abrirá o teclado numérico
+C) Não, pois inputType não funciona com EditText
+D) Sim, mas o inputType será ignorado
+R: B
+E: A resposta correta é B porque hint pode ser uma string externa e inputType="number" ajusta o teclado para números.
+
+P: Em qual pasta devemos colocar imagens como duck.webp usadas em @drawable/duck?
+A) res/layout
+B) res/values
+C) res/raw
+D) res/drawable
+R: D
+E: A resposta correta é D porque a pasta drawable é onde ficam os recursos gráficos usados no app.
