@@ -17,6 +17,9 @@ export default function QuizInterativo() {
   const [quizTitle, setQuizTitle] = useState('');
   const [categories, setCategories] = useState({});
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [showUserArea, setShowUserArea] = useState(false);
+  const [forceUnansweredJump, setForceUnansweredJump] = useState(false);
+  const [refreshUserArea, setRefreshUserArea] = useState(false);
 
   const shuffleArray = (array) => {
     return array.map(value => ({ value, sort: Math.random() }))
@@ -38,7 +41,17 @@ export default function QuizInterativo() {
       setShowFeedback(false);
       setShowResult(false);
       setScore(0);
-      localStorage.removeItem("quizProgress");
+// Remover apenas o quiz com o mesmo título, após já ter sido definido
+const title = file.name.replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+setQuizTitle(title);
+
+// Delay o filtro até o próximo useEffect ou no final do upload
+setTimeout(() => {
+  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const updated = saved.filter(q => q.title !== title);
+  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
+}, 0);
+
     };
     reader.readAsText(file);
   };
@@ -66,30 +79,25 @@ export default function QuizInterativo() {
     });
   };
 
-  useEffect(() => {
-    const saved = localStorage.getItem("quizProgress");
-    if (saved) {
-      const { current, answers, score, quizData } = JSON.parse(saved);
-      setAnswers(answers.length === quizData.length ? answers : new Array(quizData.length).fill(undefined).map((_, i) => answers[i]));
-      setScore(score);
-      setQuizData(quizData);
-      const firstUnanswered = answers.findIndex(ans => ans === undefined);
-      setCurrent(firstUnanswered !== -1 ? firstUnanswered : current);
+useEffect(() => {
+  if (quizData.length === 0) return;
 
-      if (firstUnanswered !== -1) {
-        setCurrent(firstUnanswered);
-        setShowResult(false);
-      }
-    }
-  }, []);
+  const allAnswered = answers.length === quizData.length && answers.every(a => a !== undefined);
+  if (allAnswered) return;
 
-  useEffect(() => {
-    if (quizData.length > 0) {
-      localStorage.setItem("quizProgress", JSON.stringify({
-        current, answers, score, quizData
-      }));
-    }
-  }, [current, answers, score, quizData]);
+  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const updated = saved.filter(q => q.title !== quizTitle);
+  updated.unshift({
+    title: quizTitle,
+    current,
+    answers,
+    score,
+    quizData,
+    date: new Date().toISOString()
+  });
+  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated.slice(0, 10)));
+}, [current, answers, score, quizData]);
+
 
   useEffect(() => {
     fetch("/quizzes/index.json")
@@ -122,17 +130,16 @@ export default function QuizInterativo() {
   }, []);
 
   useEffect(() => {
-    setIsTouchDevice(window.matchMedia('(pointer: coarse)').matches);
-  }, []);
+  if (forceUnansweredJump) {
+    setShowFeedback(false);
+    setSelected(null);
+    setForceUnansweredJump(false);
+    setShowResult(false); // <-- reforço visual no retorno
+  }
+  }, [forceUnansweredJump]);
 
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (tooltipRef.current && !tooltipRef.current.contains(event.target)) {
-        setShowInfo(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    setIsTouchDevice(window.matchMedia('(pointer: coarse)').matches);
   }, []);
 
   const handleOptionClick = (option) => {
@@ -157,7 +164,9 @@ export default function QuizInterativo() {
       setShowResult(true);
       const hasUnanswered = answers.some(ans => ans === undefined);
       setFinished(!hasUnanswered);
-      localStorage.removeItem("quizProgress");
+  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const updated = saved.filter(q => q.title !== quizTitle);
+  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
     }
   };
 
@@ -168,7 +177,9 @@ export default function QuizInterativo() {
     setShowFeedback(false);
     setShowResult(false);
     setScore(0);
-    localStorage.removeItem("quizProgress");
+  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const updated = saved.filter(q => q.title !== quizTitle);
+  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
     setQuizData(shuffleArray(quizData.map(q => ({
       ...q,
       options: shuffleArray(q.options)
@@ -193,6 +204,25 @@ export default function QuizInterativo() {
     document.body.removeChild(link);
   };
 
+  const saveAsIncomplete = () => {
+  if (quizData.length === 0) return;
+  const allAnswered = answers.length === quizData.length && answers.every(a => a !== undefined);
+  if (allAnswered) return;
+
+  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const updated = saved.filter(q => q.title !== quizTitle);
+  updated.unshift({
+    title: quizTitle,
+    current,
+    answers,
+    score,
+    quizData,
+    date: new Date().toISOString()
+  });
+  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated.slice(0, 10)));
+};
+
+
   const getFeedbackMessage = () => {
     const totalAnswered = answers.filter(ans => ans !== undefined).length;
     const ratio = score / totalAnswered;
@@ -201,9 +231,108 @@ export default function QuizInterativo() {
     return "🎉 Você está arrasando! Parabéns!";
   };
 
+  const getCompletedQuizzes = () => JSON.parse(localStorage.getItem("completedQuizzes") || "[]");
+  const getIncompleteQuizzes = () => JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+  const removeCompletedQuiz = (title) => {
+    const updated = getCompletedQuizzes().filter(q => q.title !== title);
+    localStorage.setItem("completedQuizzes", JSON.stringify(updated));
+  };
+  const removeIncompleteQuiz = (title) => {
+    const updated = getIncompleteQuizzes().filter(q => q.title !== title);
+    localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
+  };
+
+    const clearCurrentQuizProgress = () => {
+    const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+    const updated = saved.filter(q => q.title !== quizTitle);
+    localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
+  };
+
+  const renderUserArea = () => {
+    const completed = getCompletedQuizzes();
+    const incomplete = getIncompleteQuizzes();
+
+    return (
+      <div className="space-y-6">
+      <div className="flex items-center justify-between h-16">
+        <button
+          onClick={() => setShowUserArea(false)}
+          className="text-blue-400 hover:underline flex items-center h-full"
+        >
+          Voltar
+        </button>
+        <h2 className="text-2xl font-bold text-center mx-auto">Minha Área</h2>
+        <div className="w-[75px]" />
+      </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Quizzes Concluídos ⭐</h3>
+          {completed.length === 0 ? <p className="text-sm text-gray-400">Nenhum quiz concluído.</p> : (
+            <ul className="space-y-2">
+              {completed.map((quiz, idx) => (
+                <li key={idx} className="bg-slate-700 p-4 rounded-lg flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                  <div>
+                    <strong>{quiz.title}</strong> – ⭐ {quiz.score}/{quiz.total} – {new Date(quiz.date).toLocaleDateString()}
+                  </div>
+                  <button onClick={() => removeCompletedQuiz(quiz.title)} className="text-sm text-red-400 hover:underline mt-2 sm:mt-0">Excluir</button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {completed.length > 0 && (
+            <button onClick={() => {
+              localStorage.removeItem("completedQuizzes");
+              setRefreshUserArea(prev => !prev); // força re-render
+            }} className="mt-4 bg-red-700 px-4 py-2 rounded hover:bg-red-800 text-white">Limpar Concluídos</button>
+          )}
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Quizzes Inacabados 🕒</h3>
+          {incomplete.length === 0 ? <p className="text-sm text-gray-400">Nenhum quiz em andamento.</p> : (
+            <ul className="space-y-2">
+              {incomplete.map((quiz, idx) => (
+                <li key={idx} className="bg-slate-700 p-4 rounded-lg flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                  <div>
+                    <strong>{quiz.title}</strong> –{quiz.answers.filter(a => a !== undefined).length}/{quiz.quizData.length} respondidas
+                  </div>
+                  <div className="flex gap-2 mt-2 sm:mt-0">
+                    <button onClick={async () => {
+                      setQuizData(quiz.quizData);
+                      setQuizTitle(quiz.title);
+                      setCurrent(quiz.current);
+                      setAnswers(
+                        quiz.answers.map(ans => (ans === undefined || ans === '' || ans === null) ? undefined : ans)
+                      );
+                      setScore(quiz.score);
+                      setShowResult(false);
+                      setSelected(null);
+                      setShowFeedback(false);
+                      setShowUserArea(false);
+                      setFinished(false); // <- AQUI
+                    }} className="text-sm text-blue-400 hover:underline">Retomar</button>
+                    <button onClick={() => removeIncompleteQuiz(quiz.title)} className="text-sm text-red-400 hover:underline">Excluir</button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+          {incomplete.length > 0 && (
+            <button onClick={() => {
+              localStorage.removeItem("incompleteQuizzes");
+              setRefreshUserArea(prev => !prev); // força re-render
+            }} className="mt-4 bg-red-700 px-4 py-2 rounded hover:bg-red-800 text-white">Limpar Inacabados</button>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen w-screen bg-slate-800 text-white flex items-center justify-center p-4">
       <div className="w-full max-w-2xl bg-slate-900 p-6 rounded-lg shadow-xl min-h-[90vh] flex flex-col justify-between">
+                {showUserArea ? renderUserArea() : (
+                    <>
         <div>
           <h1 className="text-3xl font-bold mb-4 text-center">Quiz Interativo</h1>
 
@@ -262,8 +391,11 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
 
 {!quizData.length && (
   <>
+    <button onClick={() => setShowUserArea(true)} className="bg-blue-600 text-white px-4 py-2 rounded w-48">
+      Minha Área
+    </button>
     <select
-      className="mb-6 p-2 rounded bg-slate-700 text-white"
+      className="mb-6 p-2 rounded-lg bg-slate-700 text-white text-center"
       value={selectedCategory}
       onChange={(e) => setSelectedCategory(e.target.value)}
     >
@@ -292,9 +424,17 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
           setShowFeedback(false);
           setShowResult(false);
           setScore(0);
-          localStorage.removeItem("quizProgress");
+          const title = file.split('/').pop().replace(".txt", "").replace(/[-_]/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+          setQuizTitle(title);
+
+          setTimeout(() => {
+            const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+            const updated = saved.filter(q => q.title !== title);
+            localStorage.setItem("incompleteQuizzes", JSON.stringify(updated));
+          }, 0);
+
         }}
-        className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-left shadow-md"
+        className="bg-slate-700 text-white p-4 rounded hover:bg-slate-600 text-center shadow-md"
       >
         <strong>
           {file
@@ -320,6 +460,8 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
             <>
               <button
               onClick={() => {
+                saveAsIncomplete(); // salva se não estiver completo
+
                 setQuizData([]);
                 setAnswers([]);
                 setSelected(null);
@@ -327,7 +469,6 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                 setShowResult(false);
                 setCurrent(0);
                 setFinished(false);
-                localStorage.removeItem("quizProgress");
               }}
               className="mb-6 bg-blue-700 px-4 py-2 rounded hover:bg-blue-800"
             >
@@ -392,6 +533,8 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
               <div className="mt-4 flex justify-center">
                 <button
                   onClick={() => {
+                    saveAsIncomplete(); // salva se não estiver completo
+
                     setQuizData([]);
                     setAnswers([]);
                     setSelected(null);
@@ -399,7 +542,6 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                     setShowResult(false);
                     setCurrent(0);
                     setFinished(false);
-                    localStorage.removeItem("quizProgress");
                   }}
                   className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800"
                 >
@@ -437,12 +579,22 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
                   Próxima pergunta
                 </button>
                 <button
-                  onClick={() => {
-                    const hasUnanswered = answers.some(ans => ans === undefined);
-                    setShowResult(true);
-                    setFinished(!hasUnanswered);
-                    localStorage.removeItem("quizProgress");
-                  }}
+                onClick={() => {
+                  const saved = JSON.parse(localStorage.getItem("incompleteQuizzes") || "[]");
+                  const updated = saved.filter(q => q.title !== quizTitle);
+                  updated.unshift({
+                    title: quizTitle,
+                    current,
+                    answers,
+                    score,
+                    quizData,
+                    date: new Date().toISOString()
+                  });
+                  localStorage.setItem("incompleteQuizzes", JSON.stringify(updated.slice(0, 10)));
+
+                  setFinished(false); // ← força a lógica de 'quiz incompleto'
+                  setShowResult(true);
+                }}
                   className="w-full sm:w-auto bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
                 >
                   Finalizar Quiz Agora
@@ -452,10 +604,21 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
               <div className="w-full flex justify-center">
               <button
                 onClick={() => {
-                  const hasUnanswered = answers.some(ans => ans === undefined);
                   setShowResult(true);
-                  setFinished(!hasUnanswered);
-                  localStorage.removeItem("quizProgress");
+                  setFinished(true);
+
+                  const saved = JSON.parse(localStorage.getItem("completedQuizzes") || "[]");
+                  saved.unshift({
+                    title: quizTitle,
+                    score,
+                    total: quizData.length,
+                    date: new Date().toISOString(),
+                    answers,
+                    quizData
+                  });
+                  localStorage.setItem("completedQuizzes", JSON.stringify(saved.slice(0, 20)));
+
+                  clearCurrentQuizProgress();
                 }}
                 className="w-full sm:w-3/3 bg-green-700 text-white px-4 py-3 rounded text-lg font-semibold hover:bg-green-800"
               >
@@ -475,10 +638,11 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
               onClick={() => {
                 const firstUnanswered = answers.findIndex(ans => ans === undefined);
                 if (firstUnanswered !== -1) {
+                  setForceUnansweredJump(true);
                   setCurrent(firstUnanswered);
-                  setSelected(null);
                   setShowResult(false);
                   setShowFeedback(false);
+                  setSelected(null);
                   setFinished(false);
                 }
               }}
@@ -495,6 +659,8 @@ E: A resposta correta é C porque um jogo é definido por seus elementos estrutu
             Idealizado por <span className="text-white font-medium">Kauan B.</span>
           </footer>
         )}
+          </>
+)}
       </div>
     </div>
   );
