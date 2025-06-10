@@ -161,7 +161,7 @@ if (type === "match-pairs") {
 }
 
     if (type === "single-choice") {
-      const options = linesWithoutHeader.filter(line => /^[A-Z]\)/.test(line));
+      const options = shuffleArray(linesWithoutHeader.filter(line => /^[A-Z]\)/.test(line)));
       const answerLine = linesWithoutHeader.find(line => line.startsWith("R:"));
       const explanationLines = linesWithoutHeader.filter(line => line.startsWith("E:"));
       const explanation = explanationLines.map(l => l.replace(/^E:\s?/, '')).join("\n").trim();
