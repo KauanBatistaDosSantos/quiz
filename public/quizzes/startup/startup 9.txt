@@ -1,0 +1,607 @@
+P: Para negócios baseados em plataforma ou rede, uma Atividade-Chave essencial é:
+A) Construção e manutenção da plataforma tecnológica que conecta os usuários.
+B) Venda direta de produtos aos consumidores.
+C) Produção em larga escala de bens físicos.
+D) Contratação de equipes de vendas externas.
+R: A
+E: A resposta correta é A porque, conforme descrito, negócios de plataforma dependem fortemente da tecnologia que conecta os participantes, tornando a manutenção dessa plataforma uma Atividade-Chave essencial para seu funcionamento.
+
+P: Qual das alternativas representa uma Atividade-Chave comum a muitos tipos de negócios?
+A) Suporte ao cliente para garantir satisfação e fidelização.
+B) Compra de imóveis comerciais para expansão.
+C) Elaboração de relatórios anuais para investidores.
+D) Pagamento de impostos municipais.
+R: A
+E: A resposta correta é A porque o slide destaca que o suporte ao cliente é uma atividade fundamental para garantir a experiência e a continuidade do negócio, sendo comum a diversos modelos de negócio.
+
+P: Qual das perguntas abaixo ajuda a identificar as Atividades-Chave de um negócio?
+A) Quais recursos financeiros precisamos para iniciar a operação?
+B) Quais atividades são indispensáveis para entregar nossa proposta de valor?
+C) Qual o valor médio gasto em marketing digital?
+D) Quem são nossos principais concorrentes?
+R: B
+E: A resposta correta é B porque o foco está em identificar as atividades que garantem que a proposta de valor seja entregue com sucesso, ou seja, aquelas que são essenciais para o funcionamento do negócio.
+
+P: Para mapear Atividades-Chave relacionadas ao relacionamento com clientes, deve-se perguntar:
+A) Quais processos de fabricação podem ser terceirizados?
+B) Que ações garantem a manutenção e a fidelização dos clientes?
+C) Quais são os canais de distribuição mais baratos?
+D) Quantos funcionários são necessários para o departamento financeiro?
+R: B
+E: A resposta correta é B porque essa pergunta busca identificar as atividades que sustentam o relacionamento e a satisfação dos clientes, ponto crucial para a continuidade do negócio.
+
+P: Como identificar Atividades-Chave relacionadas aos canais de distribuição?
+A) Verificando os fornecedores que entregam matérias-primas.
+B) Avaliando as atividades necessárias para fazer os produtos chegarem aos clientes.
+C) Calculando os custos fixos de operação da empresa.
+D) Avaliando a estrutura tributária da empresa.
+R: B
+E: A resposta correta é B porque os canais dependem de atividades específicas para garantir que a entrega da proposta de valor seja eficaz e eficiente, o que torna essas atividades chave para o sucesso dos canais.
+
+P: Qual categoria de Atividades-Chave envolve a criação e fabricação de produtos físicos?
+A) Plataforma/Rede
+B) Produção
+C) Resolução de Problemas
+D) Marketing Digital
+R: B
+E: A resposta correta é B porque a categoria de Produção abrange a fabricação e transformação de bens físicos, essencial para empresas industriais e manufatureiras.
+
+P: Qual categoria de Atividades-Chave é centrada em solucionar necessidades específicas dos clientes?
+A) Produção
+B) Resolução de Problemas
+C) Plataforma/Rede
+D) Atendimento ao cliente
+R: B
+E: A resposta correta é B porque a categoria de Resolução de Problemas envolve atividades de consultoria, suporte técnico e outros serviços que solucionam demandas específicas dos clientes, típica em negócios de serviços.
+
+P: Atividades relacionadas ao desenvolvimento e manutenção de sistemas que conectam múltiplos usuários se enquadram em qual categoria?
+A) Produção
+B) Resolução de Problemas
+C) Plataforma/Rede
+D) Logística
+R: C
+E: A resposta correta é C porque negócios baseados em plataformas ou redes dependem fortemente do desenvolvimento tecnológico para conectar seus usuários, como em aplicativos e marketplaces, caracterizando essa categoria.
+
+P: Em qual categoria de Atividades-Chave se encaixa o suporte contínuo para clientes de uma empresa de software?
+A) Produção
+B) Resolução de Problemas
+C) Plataforma/Rede
+D) Comercialização
+R: B
+E: A resposta correta é B porque o suporte técnico e a resolução de problemas são atividades típicas da categoria de Resolução de Problemas, essenciais para garantir a satisfação do cliente em serviços.
+
+P: Qual das atividades a seguir é típica da categoria “Produção”?
+A) Desenvolvimento de novos produtos e controle da qualidade.
+B) Gerenciamento de comunidade online de usuários.
+C) Atendimento personalizado ao cliente.
+D) Criação de campanhas publicitárias digitais.
+R: A
+E: A resposta correta é A porque, conforme os slides, na categoria de Produção, as atividades principais incluem fabricação, desenvolvimento e controle de qualidade dos bens produzidos.
+
+P: Uma atividade típica da categoria “Resolução de Problemas” é:
+A) Manutenção preventiva de máquinas.
+B) Consultoria e suporte técnico personalizado.
+C) Desenvolvimento de software para plataforma online.
+D) Logística de distribuição física.
+R: B
+E: A resposta correta é B porque a categoria de Resolução de Problemas abrange ações que buscam solucionar demandas específicas dos clientes, como consultoria, suporte e assistência técnica.
+
+P: Em negócios baseados em plataforma ou rede, uma atividade típica é:
+A) Gestão do estoque de produtos.
+B) Operação e manutenção da infraestrutura tecnológica que conecta usuários.
+C) Venda direta de produtos físicos.
+D) Recrutamento e seleção de funcionários.
+R: B
+E: A resposta correta é B porque o slide indica que manter e desenvolver a plataforma tecnológica é fundamental para o sucesso dos negócios baseados em redes, garantindo a conexão entre os participantes.
+
+P: Qual atividade não é típica da categoria “Plataforma/Rede”?
+A) Desenvolvimento de infraestrutura tecnológica.
+B) Suporte e mediação entre usuários da plataforma.
+C) Produção em larga escala de bens físicos.
+D) Monitoramento da interação entre usuários.
+R: C
+E: A resposta correta é C porque a produção em larga escala é característica da categoria de Produção, e não da Plataforma/Rede, que foca mais em tecnologia e mediação.
+
+P: Qual exemplo representa uma atividade-chave típica de “Produção”?
+A) A Amazon garantindo a operação da AWS para hospedagem de terceiros.
+B) A Natura desenvolvendo e fabricando seus próprios cosméticos.
+C) O Nubank oferecendo suporte via aplicativo para resolução de dúvidas.
+D) O iFood integrando motoboys, restaurantes e clientes em tempo real.
+R: B
+E: A resposta correta é B porque a Natura é um exemplo clássico de empresa que depende fortemente da produção própria, sendo responsável por desenvolver e fabricar seus próprios cosméticos, o que caracteriza a categoria de Produção.
+
+P: A atividade do iFood de integrar restaurantes, entregadores e clientes é exemplo de:
+A) Produção
+B) Resolução de Problemas
+C) Plataforma/Rede
+D) Logística tradicional
+R: C
+E: A resposta correta é C porque o iFood atua como plataforma de intermediação entre diferentes usuários, sendo sua atividade-chave manter e otimizar a conexão entre restaurantes, entregadores e consumidores — isso se enquadra na categoria de Plataforma/Rede.
+
+P: Qual das opções a seguir melhor exemplifica a categoria “Resolução de Problemas”?
+A) A Apple lançando novos modelos de iPhone com fabricação própria.
+B) A IBM oferecendo serviços de consultoria empresarial para outras organizações.
+C) A Netflix atualizando seu catálogo de séries mensalmente.
+D) O Magazine Luiza realizando campanhas publicitárias em redes sociais.
+R: B
+E: A resposta correta é B porque a IBM, ao fornecer consultoria e soluções personalizadas, se encaixa na categoria de Resolução de Problemas, que tem como foco central entender e atender necessidades específicas dos clientes com expertise técnica.
+
+P: Qual exemplo abaixo representa uma atividade-chave típica de negócios baseados em plataforma/rede?
+A) A Coca-Cola produzindo bebidas em escala global.
+B) O Google operando o sistema Android e conectando desenvolvedores e usuários.
+C) A Localiza realizando manutenção de sua frota.
+D) A Nestlé realizando pesquisas sobre novos sabores.
+R: B
+E: A resposta correta é B porque o Google, com o Android, atua como intermediário tecnológico entre usuários e desenvolvedores, sua principal atividade é manter e evoluir a plataforma — um exemplo clássico da categoria Plataforma/Rede.
+
+P: Qual das alternativas representa o principal critério para considerar uma atividade como chave dentro de um modelo de negócio?
+A) A atividade que gera maior custo fixo.
+B) A atividade que pode ser facilmente terceirizada.
+C) A atividade essencial para entregar a Proposta de Valor.
+D) A atividade que mais utiliza recursos físicos.
+R: C
+E: A resposta correta é C porque uma atividade-chave é definida como essencial para a entrega da Proposta de Valor ao cliente. Ou seja, é aquela sem a qual o negócio não consegue funcionar de forma coerente com sua missão principal, ainda que não seja a mais cara ou complexa.
+
+P: Uma atividade que permite acesso direto aos canais de distribuição e relacionamento com clientes deve ser classificada como:
+A) Uma atividade genérica.
+B) Uma atividade secundária.
+C) Uma atividade opcional.
+D) Uma atividade-chave.
+R: D
+E: A resposta correta é D porque atividades que garantem acesso aos canais e aos clientes são consideradas centrais, pois viabilizam a geração de receitas e o funcionamento do negócio. Elas influenciam diretamente a experiência do consumidor e o desempenho da empresa.
+
+P: Quando uma empresa deve considerar terceirizar uma atividade operacional?
+A) Quando ela é uma das mais estratégicas para o negócio.
+B) Quando ela está diretamente ligada à proposta de valor.
+C) Quando ela não compromete a entrega de valor nem o relacionamento com o cliente.
+D) Quando ela tem alto custo e complexidade.
+R: C
+E: A resposta correta é C porque atividades não essenciais podem ser terceirizadas, desde que isso não afete a qualidade da entrega de valor nem prejudique o relacionamento com o cliente. Atividades-chave, ao contrário, devem ser mantidas sob controle direto da empresa.
+
+P: Por que é importante priorizar atividades que geram impacto direto nas fontes de receita?
+A) Porque são as únicas que não precisam de controle de qualidade.
+B) Porque todas as receitas vêm de publicidade.
+C) Porque ajudam a garantir a sustentabilidade financeira do modelo de negócio.
+D) Porque são as mais fáceis de serem terceirizadas.
+R: C
+E: A resposta correta é C porque atividades que impactam diretamente nas receitas ajudam a manter a viabilidade econômica do negócio. Priorizar essas atividades garante foco nas ações que realmente geram valor monetário e sustentam o modelo adotado.
+
+P: Qual é o papel das Atividades-Chave na entrega da Proposta de Valor de um negócio?
+A) Substituir a necessidade de Recursos-Chave.
+B) Viabilizar ações de marketing apenas.
+C) Garantir que o valor prometido ao cliente seja de fato entregue.
+D) Automatizar tarefas operacionais para reduzir custos.
+R: C
+E: A resposta correta é C porque as Atividades-Chave são responsáveis por operacionalizar a entrega da Proposta de Valor, ou seja, elas colocam em prática tudo aquilo que foi prometido ao cliente. Sem essas atividades, a proposta se torna apenas teórica, sem aplicação prática ou impacto real.
+
+P: Uma Atividade-Chave que envolve logística e transporte está mais diretamente conectada a qual bloco do Canvas?
+A) Relacionamento com o Cliente.
+B) Recursos-Chave.
+C) Canais.
+D) Fontes de Receita.
+R: C
+E: A resposta correta é C porque atividades logísticas estão intimamente ligadas aos canais, já que são responsáveis por garantir que o produto ou serviço chegue até o cliente de maneira eficiente e no tempo certo, o que influencia a experiência do consumidor.
+
+P: O relacionamento com o cliente pode ser diretamente impactado por uma Atividade-Chave quando:
+A) A atividade tem como foco apenas a produção do produto.
+B) A empresa automatiza todos os contatos com clientes.
+C) A atividade envolve atendimento, suporte e comunicação constante com o cliente.
+D) A atividade é desenvolvida por um parceiro externo.
+R: C
+E: A resposta correta é C porque atividades que envolvem suporte, atendimento ou interação constante com o cliente afetam diretamente a percepção de valor e fidelização. Elas precisam ser tratadas como estratégicas no modelo de negócio.
+
+P: A conexão entre Recursos-Chave e Atividades-Chave se expressa quando:
+A) A empresa possui recursos abundantes, mesmo que não sejam utilizados.
+B) Um recurso é utilizado para realizar atividades que suportam a proposta de valor.
+C) A empresa depende exclusivamente de recursos intelectuais.
+D) Os recursos são genéricos e podem ser descartados.
+R: B
+E: A resposta correta é B porque os Recursos-Chave são os meios que tornam possível a execução das Atividades-Chave. Essa relação é essencial, já que não basta saber o que precisa ser feito — é preciso ter os recursos certos para executar cada ação estratégica.
+
+P: Em um modelo de negócio baseado em produto físico, qual é uma Atividade-Chave essencial?
+A) Desenvolvimento de algoritmos de recomendação.
+B) Pesquisa de clima organizacional.
+C) Produção, distribuição e controle de estoque.
+D) Análise de perfil psicológico dos clientes.
+R: C
+E: A resposta correta é C porque um negócio baseado em produto físico depende de atividades operacionais como produção, logística e controle de estoque para garantir que o bem esteja disponível para o consumidor no momento certo, garantindo a proposta de valor.
+
+P: Em uma empresa de software como serviço (SaaS), qual atividade costuma ser considerada chave?
+A) Gerenciamento de frotas de transporte.
+B) Produção de insumos físicos.
+C) Desenvolvimento contínuo da plataforma e suporte ao cliente.
+D) Treinamento de operários industriais.
+R: C
+E: A resposta correta é C porque em negócios SaaS a entrega de valor está diretamente ligada à qualidade, atualização constante e usabilidade da plataforma, além do suporte eficaz, que impacta na retenção de clientes e percepção de valor.
+
+P: Em modelos de negócios baseados em redes e plataformas, como marketplaces ou redes sociais, qual é uma Atividade-Chave típica?
+A) Controle de estoque e entrega.
+B) Publicidade impressa.
+C) Gestão da comunidade e melhoria da experiência do usuário.
+D) Importação de insumos internacionais.
+R: C
+E: A resposta correta é C porque em plataformas e redes, o valor está no engajamento e na experiência dos usuários, portanto atividades como gestão de comunidade, mediação de interações e melhoria contínua da experiência são centrais para a manutenção do modelo.
+
+P: Qual das alternativas representa melhor uma Atividade-Chave em um modelo de consultoria estratégica?
+A) Aquisição de maquinário pesado.
+B) Desenvolvimento de soluções personalizadas para clientes.
+C) Processamento de pedidos online.
+D) Produção em massa de produtos padronizados.
+R: B
+E: A resposta correta é B porque consultorias se baseiam na personalização e análise estratégica para cada cliente, sendo a criação de soluções únicas uma atividade central que sustenta a entrega de valor da proposta do negócio.
+
+P: Qual das atividades abaixo é mais provavelmente uma Atividade-Chave estratégica e não apenas uma atividade operacional genérica?
+A) Pagamento de contas de água e luz.
+B) Desenvolvimento de novos produtos inovadores.
+C) Organização da agenda dos funcionários.
+D) Limpeza de ambientes administrativos.
+R: B
+E: A resposta correta é B porque o desenvolvimento de novos produtos é uma ação que impacta diretamente a proposta de valor, diferencia a empresa no mercado e sustenta sua vantagem competitiva, enquanto as demais são rotinas administrativas que, embora importantes, não são diferenciais estratégicos.
+
+P: O que caracteriza uma Atividade-Chave como estratégica no contexto do modelo de negócios?
+A) Baixo custo e rápida execução.
+B) Capacidade de terceirização completa sem perda de valor.
+C) Contribuição direta para a entrega da proposta de valor e diferenciação competitiva.
+D) Sua execução apenas por setores operacionais.
+R: C
+E: A resposta correta é C porque uma atividade estratégica está ligada àquilo que sustenta o modelo de negócio e gera valor único ao cliente, como inovação, propriedade intelectual, ou experiência diferenciada. Isso a distingue de tarefas rotineiras, que podem ser delegadas sem prejuízo ao diferencial competitivo.
+
+P: Por que atividades como “gestão da marca” ou “experiência do usuário” são consideradas estratégicas para muitos negócios modernos?
+A) Porque são facilmente substituídas por automação.
+B) Porque não exigem conhecimento técnico específico.
+C) Porque impactam diretamente a percepção de valor do cliente e a fidelização.
+D) Porque fazem parte da contabilidade operacional.
+R: C
+E: A resposta correta é C porque a forma como o cliente percebe a marca e interage com a solução está diretamente ligada à fidelização, ao valor percebido e à recomendação da empresa, tornando essas atividades centrais para o sucesso e longevidade do negócio.
+
+P: Qual é um exemplo de atividade que, embora necessária, geralmente não é considerada uma Atividade-Chave estratégica?
+A) Produção exclusiva de uma fórmula patenteada.
+B) Atendimento personalizado a clientes premium.
+C) Controle da folha de pagamento dos funcionários.
+D) Inovação contínua em design de produto.
+R: C
+E: A resposta correta é C porque atividades como controle da folha de pagamento são operacionais e administrativas, e não geram diferenciação estratégica direta, embora sejam essenciais para o funcionamento interno da empresa. Já as demais têm impacto direto na proposta de valor ou no posicionamento competitivo.
+
+P: Qual das alternativas descreve corretamente o papel das parcerias-chave no modelo de negócios Canvas?
+A) São alianças com concorrentes para fusão de empresas.
+B) Representam os canais de distribuição usados para vender produtos.
+C) São acordos com outras organizações que ajudam a empresa a realizar suas atividades ou oferecer sua proposta de valor.
+D) Correspondem aos recursos financeiros internos da empresa.
+R: C
+E: A resposta correta é C porque as parcerias-chave são acordos que a empresa estabelece com outras organizações para obter recursos, desempenhar atividades ou ampliar sua proposta de valor. Elas não envolvem, necessariamente, fusão ou aquisição (A), nem se referem a canais de venda (B) ou recursos internos (D), mas sim a colaborações externas estratégicas.
+
+P: Entre os tipos de parcerias citados no modelo de negócios, qual representa uma aliança entre concorrentes para ganho mútuo?
+A) Parceria estratégica entre empresas não concorrentes
+B) Co-opetição
+C) Joint venture
+D) Relacionamento comprador-fornecedor
+R: B
+E: A resposta correta é B porque a co-opetição é uma aliança entre concorrentes que buscam benefícios conjuntos sem abrir mão da competição. A alternativa A se refere a colaboração com empresas que não competem diretamente. Joint venture (C) envolve criação de uma nova empresa, e D trata da relação típica de fornecimento entre comprador e fornecedor.
+
+P: Qual motivação abaixo não está entre as principais razões para se formar uma parceria-chave?
+A) Otimizar recursos e atividades
+B) Reduzir riscos e incertezas
+C) Ampliar a concorrência no setor
+D) Acessar recursos e atividades específicas
+R: C
+E: A resposta correta é C porque ampliar a concorrência no setor vai contra os interesses de uma parceria. As parcerias são formadas para unir forças e não para incentivar novos competidores. As demais alternativas são motivações legítimas descritas nos slides.
+
+P: Quando duas empresas criam uma nova entidade conjunta para explorar uma oportunidade de negócio, isso é caracterizado como:
+A) Parceria de distribuição
+B) Joint venture
+C) Fusões horizontais
+D) Co-opetição estratégica
+R: B
+E: A resposta correta é B porque uma joint venture envolve a criação de uma nova organização que será operada por duas ou mais empresas com objetivos compartilhados. Parcerias de distribuição (A) não envolvem nova entidade, fusões (C) extinguem uma das empresas, e co-opetição (D) não necessariamente gera uma nova empresa.
+
+P: Qual dos testes ajuda a avaliar se uma parceria proposta faz sentido com base no que o cliente realmente valoriza?
+A) Teste da interdependência
+B) Teste da vantagem competitiva
+C) Teste da empatia
+D) Teste jurídico
+R: C
+E: A resposta correta é C porque o teste da empatia avalia se a parceria tem impacto positivo para o cliente e contribui para a entrega da proposta de valor. Já o teste da interdependência (A) verifica a complementaridade, o da vantagem (B) foca no diferencial competitivo, e o jurídico (D) em contratos e obrigações.
+
+P: Em qual dos casos a parceria-chave pode ajudar uma empresa a reduzir incertezas de mercado?
+A) Ao terceirizar somente tarefas internas de baixo valor
+B) Ao realizar exclusivamente parcerias com concorrentes
+C) Ao formar alianças para validar ideias e dividir riscos em novos mercados
+D) Ao limitar a atuação da outra empresa a apenas recursos físicos
+R: C
+E: A resposta correta é C porque uma das funções das parcerias-chave é reduzir riscos e incertezas, especialmente ao entrar em novos mercados. Parcerias permitem validar hipóteses, dividir investimentos e responsabilidades. A alternativa A limita o potencial das parcerias, B é restritiva, e D não explora todo o potencial colaborativo.
+
+P: O que diferencia uma parceria-chave de um simples contrato de fornecimento comum?
+A) A existência de concorrência direta entre as partes
+B) A entrega pontual dos insumos negociados
+C) O alinhamento estratégico com objetivos de longo prazo e criação de valor conjunto
+D) A formalização obrigatória via contrato judicial
+R: C
+E: A resposta correta é C porque uma parceria-chave envolve alinhamento estratégico, contribuição para atividades críticas e proposta de valor, indo além da simples troca comercial. Alternativas A, B e D descrevem relações operacionais ou legais, mas não refletem o conceito de parceria-chave no Canvas.
+
+P: Em que situação abaixo uma empresa não estaria estabelecendo uma parceria-chave?
+A) Uma fintech contrata uma empresa de marketing para campanhas esporádicas
+B) Uma startup de IA e uma empresa de hardware se unem para criar um produto novo
+C) Uma rede de supermercados e uma empresa de logística integram sistemas para entrega otimizada
+D) Duas empresas de software firmam acordo para compartilhar APIs e aumentar usabilidade
+R: A
+E: A resposta correta é A porque campanhas esporádicas não configuram uma parceria-chave, pois não envolvem interdependência, nem colaboração estratégica contínua. Já os demais exemplos (B, C, D) envolvem alianças estruturadas que impactam diretamente o modelo de negócio.
+
+P: O teste da vantagem competitiva nas parcerias-chave serve para:
+A) Verificar se a empresa mantém segredo sobre seus processos internos
+B) Confirmar se a parceria fornece diferencial que o concorrente não consegue replicar
+C) Avaliar se a empresa pode quebrar a parceria com baixo risco
+D) Garantir que a parceria pode ser facilmente substituída
+R: B
+E: A resposta correta é B porque o teste da vantagem competitiva busca identificar se a parceria traz um diferencial difícil de ser copiado, oferecendo vantagem sustentável. A alternativa A está relacionada à confidencialidade, C e D indicam fragilidade, não vantagem.
+
+P: Por que o teste da interdependência é importante ao decidir por uma parceria-chave?
+A) Porque avalia se há concorrência direta entre os parceiros
+B) Porque assegura que a empresa possa operar sozinha
+C) Porque verifica se o parceiro é financeiramente independente
+D) Porque determina se a empresa depende ou se beneficia da parceria para entregar valor
+R: D
+E: A resposta correta é D porque o teste da interdependência ajuda a entender o quanto a parceria é necessária para executar atividades, obter recursos ou entregar a proposta de valor. Alternativas A, B e C não capturam a lógica da interdependência estratégica.
+
+P: Qual das alternativas representa uma aliança estratégica entre não concorrentes?
+A) Uma empresa de moda firmando contrato com uma agência de publicidade para um catálogo anual
+B) Uma startup de software se unindo a uma empresa de cibersegurança para agregar valor à solução
+C) Um restaurante terceirizando seu serviço de entrega com um aplicativo de delivery
+D) Duas marcas de refrigerantes criando um sabor conjunto para o verão
+R: B
+E: A resposta correta é B porque esse é um exemplo clássico de aliança estratégica entre não concorrentes, onde ambas empresas compartilham competências complementares para agregar valor ao cliente. A alternativa A é apenas prestação de serviço; C é terceirização comum; D envolve concorrência direta.
+
+P: Qual é o principal objetivo de uma joint venture no contexto de parcerias-chave?
+A) Aumentar a base de clientes de forma independente
+B) Criar uma nova empresa compartilhada para alcançar objetivos comuns
+C) Eliminar a concorrência através de fusão
+D) Reduzir custos operacionais com mão de obra terceirizada
+R: B
+E: A resposta correta é B porque uma joint venture é uma forma formal de parceria em que duas ou mais empresas criam uma nova entidade para aproveitar oportunidades em conjunto. Não é fusão (C), nem terceirização (D), e não visa atuação isolada (A).
+
+P: Quando se fala em coopetição, o que se está considerando?
+A) Colaboração entre empresas para atender exclusivamente a demandas internas
+B) A cooperação entre concorrentes para objetivos mutuamente vantajosos
+C) A competição por clientes usando os mesmos fornecedores
+D) O repasse de clientes entre empresas de setores distintos
+R: B
+E: A resposta correta é B porque coopetição é a união de cooperação com competição, onde concorrentes colaboram em áreas específicas (como pesquisa, tecnologia ou logística) sem abrir mão da disputa no mercado. É uma prática estratégica comum em mercados maduros.
+
+P: Qual dos exemplos abaixo mais se aproxima de uma parceria-chave baseada em infraestrutura compartilhada?
+A) Duas empresas dividindo uma plataforma de vendas online
+B) Uma empresa contratando outra para realizar pesquisa de mercado
+C) Uma loja oferecendo espaço para freelancers venderem seus produtos
+D) Um influenciador divulgando uma marca por contrato pontual
+R: A
+E: A resposta correta é A porque nesse caso ambas as empresas compartilham infraestrutura tecnológica, o que configura uma parceria contínua e estratégica. As opções B e D são pontuais e C representa mais um modelo de locação do que de parceria.
+
+P: Uma aliança estratégica entre concorrentes pode ser benéfica especialmente quando:
+A) O objetivo é impedir que novas empresas entrem no mercado
+B) Há necessidade de colaboração para definir políticas públicas do setor
+C) A empresa deseja reduzir custos de produção internalizando processos
+D) O foco é eliminar completamente a competição no setor
+R: B
+E: A resposta correta é B porque concorrentes podem colaborar estrategicamente em frentes regulatórias, desenvolvimento de padrões ou infraestrutura comum. Isso não elimina a competição (como na alternativa D), nem necessariamente visa barrar novos entrantes (A) ou internalizar custos (C).
+
+P: Qual é uma vantagem estratégica clara de estabelecer uma parceria-chave com fornecedores?
+A) Permite manter controle total sobre a produção
+B) Elimina a necessidade de diferenciação de produto
+C) Reduz riscos de interrupção na cadeia de suprimentos
+D) Aumenta o número de concorrentes diretos
+R: C
+E: A resposta correta é C porque parcerias com fornecedores confiáveis ajudam a garantir estabilidade na entrega de insumos, evitando gargalos produtivos. O controle total (A) se perde em parcerias; B e D não se relacionam com o propósito de parceria com fornecedores.
+
+P: O que caracteriza uma parceria estratégica de otimização e economia de escala?
+A) É sempre temporária e informal
+B) Tem como foco principal a expansão de mercado conjunto
+C) Ocorre quando duas empresas compartilham recursos para reduzir custos
+D) Exige obrigatoriamente a criação de uma nova empresa
+R: C
+E: A resposta correta é C porque essas parcerias visam reduzir custos por meio de compartilhamento de recursos, como logística, armazenamento ou tecnologia. Elas não são necessariamente temporárias (A), nem envolvem criação de nova empresa (D), e o foco não é expansão de mercado (B).
+
+P: Em relação às motivações para parcerias-chave, qual alternativa é mais adequada?
+A) Aumentar o número de concorrentes no setor
+B) Ampliar riscos e custos operacionais
+C) Obter acesso a recursos ou atividades que não são centrais para a empresa
+D) Eliminar o atendimento ao cliente para reduzir despesas
+R: C
+E: A resposta correta é C porque uma das principais razões para estabelecer parcerias-chave é acessar recursos ou competências que a empresa não domina ou não deseja internalizar. As opções A, B e D representam impactos negativos e incoerentes com o objetivo das parcerias.
+
+P: Qual cenário representa terceirização como parceria-chave?
+A) Uma empresa contratando consultores externos para workshops esporádicos
+B) Um restaurante contratando uma empresa terceirizada para fazer toda a entrega dos pedidos
+C) Uma escola convidando palestrantes para eventos abertos ao público
+D) Um artista independente vendendo seus produtos por conta própria
+R: B
+E: A resposta correta é B porque nesse caso há uma delegação de uma atividade operacional recorrente (entrega de pedidos), configurando uma relação contínua e estratégica, mesmo sendo com terceiros. A opção A é pontual; C é ocasional; D não envolve parceria.
+
+P: A escolha de parcerias-chave deve considerar principalmente:
+A) O grau de competição interna entre as áreas da empresa
+B) A capacidade de o parceiro agregar valor à proposta de valor e ao modelo de negócio
+C) O tamanho da base de clientes do parceiro
+D) A possibilidade de o parceiro ser absorvido futuramente pela empresa
+R: B
+E: A resposta correta é B porque a essência de uma parceria-chave está na contribuição estratégica que o parceiro traz para reforçar a proposta de valor, ampliar canais ou viabilizar atividades essenciais. Os demais critérios podem ser relevantes, mas são secundários.
+
+P: O que melhor descreve a estrutura de custos no modelo de negócios Canvas?
+A) Uma lista de fornecedores que oferecem os melhores preços para a empresa
+B) O conjunto de custos financeiros que a empresa deve eliminar para obter lucro
+C) A descrição de todos os custos mais importantes envolvidos na operação do modelo de negócios
+D) Um controle de despesas exclusivamente voltado para folha de pagamento
+R: C
+E: A resposta correta é C porque a estrutura de custos representa todos os custos significativos necessários para operar o modelo de negócios. Isso inclui custos fixos, variáveis, economias de escala e escopo, além de estar diretamente ligada à proposta de valor, canais, atividades e recursos-chave.
+
+P: Por que entender a estrutura de custos é essencial para um modelo de negócio eficiente?
+A) Porque permite à empresa pagar menos impostos ao declarar menos despesas
+B) Porque ajuda a atrair clientes dispostos a pagar mais pelos produtos
+C) Porque permite analisar, planejar e otimizar os custos operacionais para garantir sustentabilidade
+D) Porque garante que todos os produtos sejam vendidos acima do preço de mercado
+R: C
+E: A resposta correta é C porque compreender a estrutura de custos permite uma gestão estratégica dos gastos, alinhando os recursos disponíveis à geração de valor. Isso torna o negócio mais competitivo, rentável e sustentável a longo prazo.
+
+P: Qual das alternativas abaixo NÃO é uma consequência direta de se mapear corretamente a estrutura de custos?
+A) Facilita a identificação de gargalos financeiros
+B) Melhora o planejamento de receitas da empresa
+C) Elimina a necessidade de conhecer as atividades-chave do negócio
+D) Possibilita decisões mais eficientes sobre onde investir ou economizar
+R: C
+E: A resposta correta é C porque mapear a estrutura de custos está diretamente relacionado ao entendimento das atividades-chave. A estrutura de custos depende delas, além de recursos e parcerias, portanto, eliminá-las do processo inviabiliza a análise.
+
+P: Quando a estrutura de custos é baseada no valor, o foco da empresa está:
+A) Na redução de custos a qualquer custo, mesmo que impacte o cliente negativamente
+B) Na otimização dos gastos com foco na proposta de valor para o cliente
+C) Na eliminação de qualquer investimento em inovação
+D) Em produtos e serviços com o menor custo unitário possível
+R: B
+E: A resposta correta é B porque quando a estrutura de custos é baseada em valor, a empresa prioriza investir nos elementos que geram maior valor percebido pelo cliente, mesmo que isso signifique custos mais elevados em alguns pontos. O objetivo não é reduzir custo a qualquer preço, mas sim equilibrar custo e valor.
+
+P: Qual dos itens abaixo é um exemplo de custo fixo em um modelo de negócios?
+A) Comissões de vendas variáveis conforme o desempenho
+B) Despesas com energia elétrica em uma fábrica com produção sazonal
+C) Salários de funcionários administrativos
+D) Compra de matéria-prima de acordo com a demanda
+R: C
+E: A resposta correta é C porque salários fixos de funcionários administrativos não variam com o volume de produção ou vendas. Eles são pagos independentemente do desempenho da empresa, caracterizando-se como custos fixos.
+
+P: Qual dos seguintes é um exemplo típico de custo variável?
+A) Mensalidade de aluguel de um escritório
+B) Pagamento de impostos sobre folha de pagamento
+C) Gastos com matéria-prima para produção conforme demanda
+D) Salários da diretoria
+R: C
+E: A resposta correta é C porque custos variáveis aumentam ou diminuem conforme a produção ou vendas da empresa. Matéria-prima, por exemplo, está diretamente ligada ao volume produzido, tornando-se um custo variável por excelência.
+
+P: O que caracteriza uma empresa com estrutura de custos baseada em custos?
+A) Prioriza entregar alto valor ao cliente, mesmo que o custo seja maior
+B) Tem como foco principal otimizar custos e operar com gastos mínimos
+C) Foca em gastar mais com marketing para crescer mais rapidamente
+D) Aplica investimentos contínuos em recursos humanos
+R: B
+E: A resposta correta é B porque uma estrutura baseada em custos visa maximizar a eficiência operacional, buscando minimizar despesas em todos os processos sem comprometer a entrega do produto ou serviço.
+
+P: Qual exemplo a seguir representa uma economia de escala?
+A) Redução de custo por unidade produzida ao aumentar o volume de produção
+B) Aumento de lucro por produto ao cobrar preços diferentes para segmentos
+C) Aquisição de máquinas que não alteram o custo de produção
+D) Redução de custo ao mudar fornecedores sem alterar a produção
+R: A
+E: A resposta correta é A porque a economia de escala acontece quando o custo por unidade diminui conforme a produção aumenta. Isso ocorre porque custos fixos são diluídos em um número maior de unidades produzidas.
+
+P: Uma empresa que busca operar com o menor gasto possível em todas as suas atividades possui qual tipo de estrutura de custos?
+A) Baseada em valor
+B) Baseada em crescimento
+C) Baseada em inovação
+D) Baseada em custos
+R: D
+E: A resposta correta é D porque uma estrutura baseada em custos foca na máxima eficiência operacional, visando reduzir despesas em todos os níveis e priorizando preços baixos ao cliente como diferencial competitivo.
+
+P: Qual é a característica central de uma estrutura de custos baseada em valor?
+A) Minimizar todos os gastos, mesmo que isso reduza a experiência do cliente
+B) Maximizar os lucros a qualquer custo
+C) Priorizar a qualidade, personalização e excelência na experiência do cliente
+D) Substituir todos os processos físicos por automação
+R: C
+E: A resposta correta é C porque uma estrutura baseada em valor não tem como foco principal a economia, mas sim a entrega de um alto nível de valor ao cliente, o que pode envolver maiores investimentos em qualidade, marca, atendimento e inovação.
+
+P: Um hotel de luxo que investe pesadamente em atendimento personalizado, decoração sofisticada e experiências exclusivas provavelmente adota qual estrutura de custos?
+A) Baseada em custos
+B) Baseada em automação
+C) Baseada em valor
+D) Baseada em volume
+R: C
+E: A resposta correta é C porque empresas de alto padrão, como hotéis de luxo, priorizam oferecer uma experiência memorável e diferenciada, o que implica uma estrutura baseada em valor — mesmo que isso envolva altos custos operacionais.
+
+P: Quando uma empresa oferece preços muito baixos como diferencial e mantém custos operacionais mínimos, como pode ser classificada sua estrutura de custos?
+A) Baseada em volume
+B) Baseada em valor
+C) Baseada em inovação
+D) Baseada em custos
+R: D
+E: A resposta correta é D porque a empresa adota uma estrutura baseada em custos, típica de modelos como o da Ryanair ou das marcas de atacado, em que a competitividade está ligada à redução máxima de despesas.
+
+P: No Canvas, ao refletir sobre a estrutura de custos, é fundamental identificar:
+A) O número de vendas mensais por produto
+B) Os custos fixos e variáveis associados às atividades e recursos necessários
+C) As preferências pessoais do empreendedor sobre finanças
+D) Os canais de comunicação mais eficientes com o cliente
+R: B
+E: A resposta correta é B porque o bloco de Estrutura de Custos deve estar alinhado com os recursos e atividades essenciais descritos no modelo de negócio. Avaliar quais custos são fixos (como aluguel, salários) e variáveis (como comissões, matéria-prima) permite entender a sustentabilidade e os pontos críticos do negócio.
+
+P: O alinhamento entre recursos-chave, atividades-chave e estrutura de custos permite:
+A) Ignorar custos não relacionados ao marketing
+B) Prever a concorrência de mercado com exatidão
+C) Identificar oportunidades de eficiência e melhoria na gestão financeira
+D) Investir somente em tecnologias de ponta
+R: C
+E: A resposta correta é C porque analisar a conexão entre recursos e atividades com seus respectivos custos permite à empresa visualizar onde estão os maiores gastos, quais são estratégicos e onde há espaço para otimização, fortalecendo a tomada de decisão.
+
+P: Ao fazer a estrutura de custos no Canvas, por que é importante considerar os tipos de estrutura (custo ou valor)?
+A) Para saber se deve investir em marketing ou não
+B) Para definir se a empresa terá mais lucros no curto ou longo prazo
+C) Para alinhar os gastos com a proposta de valor e o modelo de operação
+D) Para saber se pode ou não contratar influenciadores
+R: C
+E: A resposta correta é C porque entender se o foco da empresa está em redução de custos ou em entrega de valor influencia todas as decisões operacionais e estratégicas. Isso garante coerência entre proposta de valor, canais, relacionamento e os recursos/atividades que geram esses custos.
+
+P: Qual reflexão prática o empreendedor deve fazer ao analisar a estrutura de custos em seu Canvas?
+A) Qual é o custo de vida dos sócios da empresa
+B) Quais são os custos que podem ser eliminados sem prejudicar a entrega da proposta de valor
+C) Quais fornecedores estão disponíveis no mercado internacional
+D) Quantas curtidas sua marca tem nas redes sociais
+R: B
+E: A resposta correta é B porque um dos principais objetivos da análise da estrutura de custos é entender onde é possível economizar sem afetar negativamente a experiência do cliente, a qualidade do produto ou o funcionamento do negócio. Isso gera maior eficiência e saúde financeira.
+
+P: O que é valuation no contexto do empreendedorismo?
+A) É o processo de precificar apenas os ativos tangíveis de uma empresa.
+B) É o valor total das vendas realizadas por uma empresa em um período.
+C) É a estimativa do valor de uma empresa com base em diversos fatores financeiros e de mercado.
+D) É o lucro líquido obtido pela empresa antes dos impostos.
+R: C
+E: A resposta correta é C porque valuation é o processo de estimar quanto uma empresa vale, considerando aspectos como ativos, passivos, receitas futuras, posicionamento no mercado e potencial de crescimento. Não se restringe apenas a bens tangíveis (como na alternativa A) nem se confunde com vendas ou lucros, como afirmam B e D.
+
+P: Qual a principal diferença entre valor contábil e valor de mercado de uma empresa?
+A) O valor contábil considera a imagem da empresa perante os consumidores, enquanto o valor de mercado não.
+B) O valor contábil reflete o valor real da empresa, já o de mercado é sempre especulativo.
+C) O valor contábil considera registros financeiros históricos, enquanto o valor de mercado reflete a percepção dos investidores e expectativas futuras.
+D) O valor de mercado é o valor dos impostos devidos e o contábil é o faturamento total.
+R: C
+E: A resposta correta é C porque o valor contábil é baseado em registros financeiros históricos da empresa (ativos menos passivos), enquanto o valor de mercado representa quanto os investidores estão dispostos a pagar, levando em conta projeções, risco, imagem e tendências. As alternativas A, B e D simplificam ou distorcem essa distinção.
+
+P: Por que o valuation é importante para empreendedores?
+A) Para definir preços promocionais e margens de lucro no curto prazo.
+B) Para atrair investidores, avaliar oportunidades de venda ou fusão e fundamentar decisões estratégicas.
+C) Para saber quanto dinheiro foi investido em marketing no último ano.
+D) Para calcular a quantidade de impostos devidos por uma empresa.
+R: B
+E: A resposta correta é B porque empreendedores precisam conhecer o valor do seu negócio para negociar com investidores, tomar decisões de expansão ou venda e justificar seu plano de negócios. As outras alternativas tratam de questões financeiras pontuais que não envolvem valuation diretamente.
+
+P: Qual dos seguintes métodos de valuation se baseia na projeção de lucros futuros ajustados ao valor presente?
+A) Método de múltiplos de mercado
+B) Valuation contábil
+C) Valuation baseado em benchmarking
+D) Fluxo de Caixa Descontado (FCD)
+R: D
+E: A resposta correta é D porque o método de Fluxo de Caixa Descontado calcula o valor da empresa com base na estimativa de ganhos futuros, trazidos a valor presente por uma taxa de desconto. Esse método é o mais utilizado em análises profundas, enquanto os outros métodos (como múltiplos ou contábil) olham para o passado ou comparam com empresas similares.
+
+P: Uma das desvantagens do método contábil de valuation é:
+A) Considerar ativos intangíveis de maneira exagerada.
+B) Basear-se em expectativas subjetivas de investidores.
+C) Não refletir o valor de mercado e ignorar ativos intangíveis importantes.
+D) Usar projeções de fluxo de caixa futuras que podem não se concretizar.
+R: C
+E: A resposta correta é C porque o método contábil considera os ativos registrados formalmente, deixando de fora ativos intangíveis como marca, patentes e reputação, o que pode resultar em uma subavaliação do valor real da empresa. A alternativa D se refere ao método de fluxo de caixa descontado, e as demais distorcem o conceito.
+
+P: Qual fator abaixo geralmente não é considerado no cálculo do valor de mercado de uma empresa?
+A) Expectativa de crescimento do setor
+B) Reputação e marca da empresa
+C) Número de seguidores nas redes sociais
+D) Rentabilidade futura estimada
+R: C
+E: A resposta correta é C porque, embora o número de seguidores possa indicar popularidade, ele por si só não representa um critério financeiro concreto utilizado nos modelos de valuation. Os fatores A, B e D influenciam diretamente o valor percebido da empresa, pois refletem desempenho potencial, imagem de marca e retorno futuro.
+
+P: O que o método de múltiplos utiliza para estimar o valor de uma empresa?
+A) Projeções subjetivas baseadas em tendências de mercado
+B) Comparação com empresas similares utilizando indicadores como EBITDA ou lucro
+C) Apenas ativos tangíveis registrados no balanço patrimonial
+D) Um cálculo baseado unicamente em fluxo de caixa futuro
+R: B
+E: A resposta correta é B porque o método de múltiplos usa indicadores financeiros (como lucro, faturamento ou EBITDA) de empresas semelhantes para estimar quanto vale a empresa avaliada. Ele não depende de fluxo de caixa futuro (como o método de FCD) nem se baseia somente em ativos contábeis.

@@ -1,0 +1,45 @@
+PMA: Leia as afirmações abaixo:
+A) A propriedade color em CSS altera a cor de fundo de um elemento.
+RA: false
+EA: A propriedade color altera a cor do **texto**, não o fundo.
+B) A propriedade font-size define o tamanho da fonte.
+RB: true
+C) A tag <head> define o conteúdo visível do site.
+RC: false
+D) Bla bla
+RD: true
+ED: bla bla
+E) ble ble
+RE:false
+EE: ble ble
+
+P: No Onion Routing, o cliente cria um circuito com quantos roteadores (nós) por padrão?
+A) 1
+B) 2
+C) 3
+D) 5
+R: C
+E: A resposta correta é C porque, no modelo típico do Tor, são utilizados três roteadores: o de entrada, o intermediário e o de saída. Isso garante um nível de anonimato onde nenhum dos nós tem conhecimento total da origem e destino dos dados.
+
+PSC: No Onion Routing, o cliente cria um circuito com quantos roteadores (nós) por padrão?
+A) 1
+B) 2
+C) 3
+D) 5
+R: C
+E: A resposta correta é C porque, no modelo típico do Tor, são utilizados três roteadores: o de entrada, o intermediário e o de saída. Isso garante um nível de anonimato onde nenhum dos nós tem conhecimento total da origem e destino dos dados.
+
+PMP: Associe a tag com sua função:
+A) <h1>
+RA: 2
+EA: A tag <h1> define um título de nível 1.
+B) <p>
+RB: 3
+EB: A tag <p> define um parágrafo de texto.
+C) <img>
+RC: 1
+EC: A tag <img> é usada para inserir imagens.
+1) Insere uma imagem
+2) Título de nível 1
+3) Parágrafo de texto
+

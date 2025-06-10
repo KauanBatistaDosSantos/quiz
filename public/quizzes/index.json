@@ -1,6 +1,7 @@
 {
-  "Startup": ["startup/startup.txt", "startup/startup 2.txt", "startup/startup 3.txt", "startup/startup 4 percentuais.txt"],
+  "Startup": ["startup/startup.txt", "startup/startup 2.txt", "startup/startup 3.txt", "startup/startup 4 percentuais.txt", "startup/startup 5.txt", "startup/startup 6.txt", "startup/startup 7.txt", "startup/startup 8.txt", "startup/startup 9.txt", "startup/startup 10.txt"],
   "Teste e Validação de Software": ["teste/Teste e Validação 1.txt", "teste/Abordagem de Teste 2.txt", "teste/Planejamento de Testes 3.txt", "teste/Casos de Teste 4.txt", "teste/Níveis de Teste 5.txt", "teste/Teste de Frontend 6.txt"],
   "Power BI": ["power bi/Power BI.txt"],
-  "Programação Mobile": ["programacao mobile/codigo_bebidas.txt", "programacao mobile/codigo_textoencriptografado.txt", "programacao mobile/codigo_cronometro.txt", "programacao mobile/codigo_sorteador.txt", "programacao mobile/mobile.txt", "programacao mobile/mobile2.txt", "programacao mobile/mobile3.txt"]
+  "Programação Mobile": ["programacao mobile/codigo_bebidas.txt", "programacao mobile/codigo_textoencriptografado.txt", "programacao mobile/codigo_cronometro.txt", "programacao mobile/codigo_sorteador.txt", "programacao mobile/mobile.txt", "programacao mobile/mobile2.txt", "programacao mobile/mobile3.txt"],
+  "Dev": ["dev/CSS.txt"]
 }
