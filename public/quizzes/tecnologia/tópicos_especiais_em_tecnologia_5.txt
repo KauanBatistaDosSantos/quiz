@@ -1,0 +1,439 @@
+P: Para que serve o tracker no BitTorrent?
+A) Controlar a ordem dos pedaços
+B) Fazer a verificação de segurança dos arquivos
+C) Encontrar outros peers com o mesmo arquivo
+D) Armazenar os arquivos originais
+R: C
+E: A resposta correta é C porque o tracker ajuda um cliente BitTorrent a localizar outros peers (nós) que compartilham o mesmo conteúdo.
+
+P: Qual é o papel do DHT (Distributed Hash Table) no BitTorrent?
+A) Substituir o protocolo de download
+B) Criar hashes para criptografar arquivos
+C) Distribuir os pedaços de forma sequencial
+D) Atuar como substituto do tracker
+R: D
+E: A resposta correta é D porque o DHT é uma tabela hash distribuída que permite aos nós atuarem como um tracker descentralizado, útil especialmente quando o tracker original não está disponível.
+
+P: O que são links magnéticos (magnet links) no BitTorrent?
+A) URLs para sites de torrent anônimos
+B) Links que apontam para o conteúdo usando DHT, sem precisar do arquivo .torrent
+C) Atalhos para acelerar downloads em navegadores
+D) Extensões que protegem contra malware
+R: B
+E: A resposta correta é B porque os links magnéticos utilizam o DHT para localizar os peers e iniciar o download sem precisar do arquivo .torrent.
+
+P: O Peer Exchange (PEX) tem qual função no BitTorrent?
+A) Acelerar o upload dos pedaços
+B) Sincronizar arquivos entre dispositivos
+C) Permitir que nós troquem informações sobre outros usuários
+D) Compactar arquivos para download mais rápido
+R: C
+E: A resposta correta é C porque o PEX permite que os nós troquem listas de peers (usuários), aumentando a disponibilidade e descoberta de outros participantes da rede.
+
+P: Em relação ao anonimato, qual é a limitação do BitTorrent?
+A) Criptografa todo o conteúdo por padrão
+B) Os IPs dos nós são visíveis entre si
+C) O conteúdo não pode ser monitorado por terceiros
+D) O uso é restrito apenas a redes privadas
+R: B
+E: A resposta correta é B porque, no BitTorrent, os nós visualizam os IPs uns dos outros, o que permite o monitoramento da atividade na rede.
+
+P: Qual das alternativas abaixo representa uma vantagem do uso de DHT no BitTorrent?
+A) Reduz o tempo de download dos arquivos grandes
+B) Garante a verificação de malware em tempo real
+C) Substitui o tracker, permitindo descentralização
+D) Impede que IPs sejam visualizados na rede
+R: C
+E: A resposta correta é C porque o DHT permite que os próprios nós atuem como um tracker descentralizado, aumentando a disponibilidade e resistência da rede.
+
+P: O que torna o BitTorrent resistente à censura e a ataques de negação de serviço?
+A) Uso obrigatório de criptografia em todos os dados
+B) A existência de super servidores com proteção dedicada
+C) Mecanismos como DHT, PEX e magnet links
+D) Compressão dos arquivos em pacotes protegidos
+R: C
+E: A resposta correta é C porque o uso de mecanismos como DHT (para buscar peers), PEX (para trocar listas de nós) e magnet links (para iniciar downloads sem arquivos .torrent) tornam a rede mais resiliente a falhas e censura.
+
+P: Qual recurso do BitTorrent permite que um usuário comece o download mesmo sem um arquivo .torrent?
+A) UDP Tracking
+B) Magnet Link
+C) Tit-for-Tat
+D) Checksum Verification
+R: B
+E: A resposta correta é B porque os magnet links contêm informações suficientes (como o hash do conteúdo) para iniciar o processo de download usando DHT, mesmo sem o arquivo .torrent.
+
+P: O que o BitTorrent utiliza para prevenir a inserção de arquivos maliciosos em torrents legítimos?
+A) Monitoramento constante via firewall
+B) Análise de reputação dos peers
+C) Verificação de integridade por hash
+D) Criptografia ponta a ponta
+R: C
+E: A resposta correta é C porque o protocolo utiliza hash para garantir que os pedaços recebidos correspondem ao arquivo original, evitando alterações maliciosas.
+
+P: O que acontece quando um peer envia pedaços falsos na rede BitTorrent?
+A) O conteúdo corrompe todo o arquivo baixado
+B) O nó é automaticamente banido da rede
+C) O pedaço é descartado na verificação
+D) O download é reiniciado desde o começo
+R: C
+E: A resposta correta é C porque cada pedaço recebido passa por verificação de integridade, e caso esteja incorreto (como no envio de pedaços falsos), ele é simplesmente descartado.
+
+P: Qual técnica usada no BitTorrent encoraja os usuários a compartilharem dados?
+A) Criptografia assimétrica
+B) Compressão automática dos pedaços
+C) Tit-for-tat (olho por olho)
+D) Alocação sequencial dos arquivos
+R: C
+E: A resposta correta é C porque o sistema “tit-for-tat” prioriza o envio de dados para os peers que também compartilham, estimulando a cooperação e evitando usuários passivos.
+
+P: Qual aplicativo NÃO é um cliente de BitTorrent?
+A) qBittorrent
+B) Deluge
+C) uTorrent
+D) Spotify
+R: D
+E: A resposta correta é D porque Spotify é um serviço de streaming que utiliza modelo cliente-servidor e não opera com compartilhamento P2P como os demais aplicativos listados.
+
+P: Por que a busca de arquivos não está incluída no protocolo BitTorrent?
+A) Porque é ilegal em todos os países
+B) Para garantir velocidade de download
+C) Para manter o protocolo simples e modular
+D) Para evitar conflitos com sistemas operacionais
+R: C
+E: A resposta correta é C porque a busca por arquivos é feita por sites ou interfaces externas, mantendo o protocolo BitTorrent voltado apenas para o compartilhamento de arquivos, de forma modular e eficiente.
+
+P: Qual percentual do tráfego de upload da Internet era atribuído ao BitTorrent em 2018, segundo a Sandvine?
+A) 8%
+B) 15%
+C) 22%
+D) 58%
+R: C
+E: A resposta correta é C porque, segundo dados de 2018 da empresa Sandvine, o BitTorrent era responsável por 22% de todo o tráfego de upload da Internet.
+
+P: Por que o uso do BitTorrent pode comprometer o anonimato dos usuários?
+A) Os arquivos baixados são públicos
+B) A rede registra os dados bancários dos usuários
+C) Os IPs dos peers são visíveis durante o compartilhamento
+D) O protocolo exige login em servidor centralizado
+R: C
+E: A resposta correta é C porque os usuários da rede enxergam os IPs uns dos outros, o que pode permitir o rastreamento de suas atividades, comprometendo o anonimato.
+
+P: Qual é uma das funções da extensão .torrent no protocolo BitTorrent?
+A) Criptografar os dados para segurança.
+B) Servir como link fixo que identifica o conteúdo e verifica sua integridade.
+C) Garantir anonimato completo aos usuários.
+D) Gerar uma senha para download automático.
+R: B
+E: A resposta correta é B porque o arquivo .torrent funciona como um identificador fixo do conteúdo e permite a verificação de integridade, prevenindo alterações ou inserção de malware.
+
+P: Qual mecanismo BitTorrent usa para decidir quais pedaços de arquivos baixar primeiro?
+A) Os maiores primeiro
+B) Os que demoram mais para baixar
+C) Os mais raros primeiro
+D) Os mais populares primeiro
+R: C
+E: A resposta correta é C porque o BitTorrent prioriza pedaços menos disponíveis na rede, ajudando na distribuição mais eficiente e garantindo a permanência do conteúdo.
+
+P: O que é o mecanismo “tit-for-tat” no BitTorrent?
+A) Um método de bloqueio de peers maliciosos.
+B) Uma forma de criptografar pacotes de dados.
+C) Um sistema onde um peer só envia dados para quem também compartilha com ele.
+D) Um tipo de compressão de arquivos grandes.
+R: C
+E: A resposta correta é C porque “tit-for-tat” incentiva a cooperação entre nós: cada usuário tende a enviar dados para aqueles que mais compartilham com ele.
+
+P: O que é o “optimistic unchoke” no BitTorrent?
+A) Um sistema de segurança contra malwares.
+B) Uma forma de excluir peers lentos.
+C) Um método de tentar trocar dados com um peer novo ou não testado.
+D) Um protocolo de anonimato embutido.
+R: C
+E: A resposta correta é C porque o “optimistic unchoke” tenta se conectar com peers novos para testar se há alguma oportunidade de transferência mais rápida, mesmo que eles não tenham sido os mais eficientes anteriormente.
+
+P: Qual das alternativas representa corretamente o papel dos seeders em uma rede BitTorrent?
+A) Usuários que consomem o arquivo e saem da rede.
+B) Usuários que nunca compartilham dados com os outros.
+C) Usuários que já possuem o arquivo completo e continuam compartilhando.
+D) Usuários que apenas monitoram a rede.
+R: C
+E: A resposta correta é C porque seeders são nós que têm o arquivo completo e continuam distribuindo-o, contribuindo para a disponibilidade do conteúdo.
+
+P: Qual é a consequência de um usuário se conectar a muitos peers no BitTorrent?
+A) Aumenta automaticamente sua taxa de download.
+B) Pode reduzir a eficiência da conexão por dividir a banda.
+C) Garante mais segurança nas trocas.
+D) Diminui as chances de encontrar pedaços raros.
+R: B
+E: A resposta correta é B porque conectar-se a muitos peers divide a banda entre eles, o que pode reduzir a eficiência das transferências em vez de aumentá-la.
+
+P: Qual dessas opções representa uma vantagem do BitTorrent sem tracker?
+A) Menor velocidade de download.
+B) Maior vulnerabilidade a censura.
+C) Maior resiliência contra falhas e censura.
+D) Dependência de um servidor central.
+R: C
+E: A resposta correta é C porque, sem tracker, o sistema utiliza mecanismos como DHT e PEX, que permitem mais autonomia entre os peers e dificultam o bloqueio do conteúdo.
+
+P: O que é o Peer Exchange (PEX) no BitTorrent?
+A) Uma técnica de criptografia entre peers.
+B) Um modo de alterar endereços IP durante o download.
+C) Um mecanismo onde peers trocam listas de outros peers.
+D) Um algoritmo para bloquear peers maliciosos.
+R: C
+E: A resposta correta é C porque PEX permite que peers compartilhem informações sobre outros usuários conectados, facilitando a formação da rede de distribuição.
+
+P: Por que o uso de magnet links é vantajoso no BitTorrent?
+A) Porque oculta completamente o IP do usuário.
+B) Porque é usado apenas para arquivos pequenos.
+C) Porque dispensa o uso de arquivos .torrent, usando DHT para localizar os dados.
+D) Porque realiza o download mais rápido.
+R: C
+E: A resposta correta é C porque magnet links usam DHT para localizar os peers e os dados sem precisar baixar o .torrent, aumentando a praticidade e resistência a falhas.
+
+P: O BitTorrent garante o anonimato dos usuários na rede?
+A) Sim, todos os dados são criptografados e não rastreáveis.
+B) Não, os IPs são visíveis entre peers durante a troca de pedaços.
+C) Sim, graças ao uso de magnet links.
+D) Não, mas impede rastreamento por operadores de Internet.
+R: B
+E: A resposta correta é B porque, por padrão, o BitTorrent não oferece anonimato: os peers veem os IPs uns dos outros, o que permite rastreamento por terceiros.
+
+P: Qual é uma das formas de se proteger contra a inserção de malware em arquivos .torrent?
+A) Utilizar criptografia AES nativa.
+B) Baixar apenas arquivos com menos de 100MB.
+C) Verificar a integridade do arquivo pelo hash incluído no .torrent.
+D) Usar redes VPN em todas as conexões.
+R: C
+E: A resposta correta é C porque o .torrent contém hashes que permitem verificar a integridade do arquivo, garantindo que ele corresponde ao conteúdo original, impedindo alterações maliciosas.
+
+P: Qual é a função de um tracker no protocolo BitTorrent?
+A) Criptografar os dados transferidos.
+B) Armazenar o conteúdo dos arquivos.
+C) Coordenar a troca de pedaços entre peers.
+D) Ajudar os peers a se encontrarem inicialmente.
+R: D
+E: A resposta correta é D porque o tracker serve para conectar os peers entre si no início da transferência, mas não armazena o conteúdo nem intermedia diretamente a troca dos pedaços.
+
+P: O que acontece se o tracker sair do ar em uma rede BitTorrent com DHT ativado?
+A) Toda a transferência falha.
+B) A rede continua funcionando usando DHT para localização de peers.
+C) Os arquivos são criptografados automaticamente.
+D) A rede reinicia todas as conexões.
+R: B
+E: A resposta correta é B porque com DHT (Distributed Hash Table), os peers conseguem se localizar diretamente sem depender de um tracker central, garantindo a continuidade da transferência.
+
+P: Qual é um benefício do uso de “mais raros primeiro” como estratégia de download?
+A) Evita que o arquivo seja muito baixado.
+B) Garante que os peers fiquem online por mais tempo.
+C) Aumenta a velocidade da transferência em conexões lentas.
+D) Mantém a disponibilidade dos pedaços menos comuns, dificultando sua perda.
+R: D
+E: A resposta correta é D porque essa estratégia ajuda a garantir que os pedaços mais escassos sejam distribuídos rapidamente, evitando gargalos na rede e garantindo que todos possam completá-los.
+
+P: Por que o BitTorrent é considerado eficiente em termos de escalabilidade?
+A) Porque depende de servidores centralizados.
+B) Porque não requer internet de alta velocidade.
+C) Porque quanto mais usuários, mais distribuição de dados ocorre.
+D) Porque divide os dados apenas entre os peers mais antigos.
+R: C
+E: A resposta correta é C porque a arquitetura P2P do BitTorrent permite que cada novo usuário se torne também um distribuidor (uploader), aumentando a capacidade de transferência da rede.
+
+P: O que significa dizer que o BitTorrent cria uma “rede overlay” para cada arquivo?
+A) Cada peer conecta-se a todos os outros globalmente.
+B) Uma rede lógica é formada com conexões específicas para aquele arquivo.
+C) A rede depende exclusivamente de servidores fixos.
+D) Um backup automático é criado em nuvem.
+R: B
+E: A resposta correta é B porque cada arquivo compartilhado via BitTorrent gera uma rede específica com peers que possuem ou desejam aquele conteúdo, formando uma sobreposição à rede física.
+
+P: Qual ferramenta ajuda a iniciar downloads sem depender de um arquivo .torrent físico?
+A) IPsec
+B) Magnet Link
+C) VPN
+D) Seedbox
+R: B
+E: A resposta correta é B porque os magnet links contêm informações suficientes (como hashes) para localizar e iniciar a transferência de arquivos via DHT, sem precisar de um .torrent separado.
+
+P: Qual é um dos perigos em relação à privacidade ao usar o BitTorrent sem proteção adicional?
+A) Vazamento de senhas armazenadas no navegador.
+B) Riscos de infecção por vírus no cache.
+C) Exposição do endereço IP a qualquer peer conectado.
+D) Bloqueio automático de arquivos criptografados.
+R: C
+E: A resposta correta é C porque o protocolo BitTorrent, por padrão, não esconde o IP dos usuários, e qualquer peer na rede pode visualizar os IPs dos outros conectados ao mesmo torrent.
+
+P: Por que o BitTorrent ainda é amplamente usado, mesmo com o aumento de plataformas de streaming?
+A) Porque é o único método de distribuição de vídeos.
+B) Porque os arquivos são obrigatoriamente gratuitos.
+C) Porque sua arquitetura é resiliente, eficiente e permite compartilhar qualquer tipo de arquivo.
+D) Porque só funciona em redes locais, garantindo segurança.
+R: C
+E: A resposta correta é C porque o BitTorrent continua útil para distribuição de arquivos de qualquer tipo (não apenas mídia), com grande eficiência, escalabilidade e sem depender de um servidor central.
+
+P: Em qual cenário o BitTorrent com Peer Exchange (PEX) e DHT é mais vantajoso?
+A) Quando se precisa de altíssima velocidade de download.
+B) Quando se busca anonimato completo.
+C) Quando se deseja resistência à censura ou queda de trackers.
+D) Quando se compartilham arquivos criptografados.
+R: C
+E: A resposta correta é C porque os mecanismos de PEX e DHT permitem que os peers descubram uns aos outros mesmo sem um servidor central (tracker), o que é útil em contextos com censura ou interrupções.
+
+P: O que é o "tit-for-tat" (olho por olho) no BitTorrent?
+A) Um algoritmo de encriptação de arquivos.
+B) Um mecanismo para evitar IPs duplicados.
+C) Uma estratégia que prioriza peers que também enviam dados.
+D) Um método de identificar peers com conteúdo corrompido.
+R: C
+E: A resposta correta é C porque o "tit-for-tat" incentiva a cooperação entre os usuários: quem contribui com upload é priorizado para receber dados, otimizando a eficiência da rede.
+
+P: Qual o papel do “optimistic unchoke” no BitTorrent?
+A) Escolher o peer mais rápido da rede.
+B) Garantir que o peer principal nunca seja desconectado.
+C) Substituir periodicamente um peer por outro, testando novas conexões.
+D) Criptografar pacotes de dados temporariamente.
+R: C
+E: A resposta correta é C porque o “optimistic unchoke” permite testar novas conexões com outros peers, substituindo temporariamente os menos eficientes, o que melhora a redistribuição dos dados.
+
+P: Qual é uma desvantagem de se conectar a muitos peers simultaneamente no BitTorrent?
+A) Aumenta a chance de malware.
+B) Diminui a velocidade total da conexão, pois divide a banda.
+C) Gera conflito de IP com outros peers.
+D) Impede a verificação de integridade dos dados.
+R: B
+E: A resposta correta é B porque, apesar de parecer vantajoso, conectar-se a muitos peers pode reduzir a eficiência, pois a largura de banda é compartilhada entre todas as conexões ativas.
+
+P: Qual é o impacto da estratégia "mais raros primeiro" na rede BitTorrent?
+A) Reduz o tráfego entre peers.
+B) Aumenta o anonimato das conexões.
+C) Garante maior disponibilidade dos dados.
+D) Diminui o tempo total de download.
+R: C
+E: A resposta correta é C porque a estratégia "mais raros primeiro" garante que os pedaços menos distribuídos sejam compartilhados primeiro, prevenindo sua perda e mantendo o arquivo disponível na rede.
+
+P: Em qual aspecto o BitTorrent se diferencia de outros modelos de P2P?
+A) Não utiliza criptografia em nenhum nível.
+B) Cada arquivo possui uma rede de peers própria.
+C) Requer autenticação via e-mail.
+D) Só funciona com arquivos abaixo de 1GB.
+R: B
+E: A resposta correta é B porque o BitTorrent cria uma rede específica para cada arquivo compartilhado, o que o torna altamente eficiente na distribuição de dados específicos.
+
+P: Como o BitTorrent contribui para a descentralização da distribuição de arquivos?
+A) Centralizando os arquivos em um servidor principal.
+B) Compartilhando os arquivos apenas com supernós.
+C) Permitindo que cada usuário atue como servidor e cliente ao mesmo tempo.
+D) Utilizando redes locais ao invés da internet.
+R: C
+E: A resposta correta é C porque todos os peers no BitTorrent podem enviar e receber dados, eliminando a necessidade de um servidor central e promovendo a descentralização.
+
+P: O que representa um “seeder” em uma rede BitTorrent?
+A) Um usuário que ainda não baixou nada.
+B) Um usuário que compartilha arquivos sem receber nada em troca.
+C) Um nó que impede o funcionamento do tracker.
+D) Um peer que tenta burlar o protocolo.
+R: B
+E: A resposta correta é B porque o seeder é o usuário que já completou o download do arquivo e permanece compartilhando com outros, contribuindo para a manutenção da rede.
+
+P: Por que magnet links são considerados mais resistentes a falhas?
+A) Porque não exigem conexão com a internet.
+B) Porque não possuem endereço IP.
+C) Porque eliminam a necessidade do arquivo .torrent, usando DHT diretamente.
+D) Porque criptografam automaticamente os arquivos.
+R: C
+E: A resposta correta é C porque magnet links funcionam com DHT e permitem iniciar a busca por peers diretamente, sem depender de arquivos .torrent que poderiam ser apagados ou bloqueados.
+
+P: O que é Peer Exchange (PEX) no BitTorrent?
+A) Um site de indexação de torrents.
+B) Um protocolo para acelerar downloads com redes locais.
+C) Um sistema onde peers trocam informações sobre outros peers.
+D) Um mecanismo para codificar pedaços de arquivos.
+R: C
+E: A resposta correta é C porque o PEX permite que os peers compartilhem listas de outros usuários conectados, facilitando a descoberta de novas conexões sem depender de trackers.
+
+P: O que é possível monitorar na rede BitTorrent mesmo sem anonimato?
+A) O conteúdo dos arquivos criptografados.
+B) A localização geográfica exata de cada usuário.
+C) O endereço IP dos peers conectados a um determinado conteúdo.
+D) As credenciais bancárias dos usuários.
+R: C
+E: A resposta correta é C porque os IPs são visíveis durante a troca de pedaços de arquivo, e qualquer peer pode monitorar outros participantes da mesma rede de torrent.
+
+P: O que é o Onion Routing?
+A) Uma técnica de compressão de dados da internet
+B) Um protocolo de streaming utilizado por serviços de vídeo
+C) Um método de roteamento que utiliza múltiplas camadas de criptografia para anonimato
+D) Um sistema para gerenciar servidores proxy em redes privadas
+R: C
+E: A resposta correta é C porque o Onion Routing é um método de roteamento que utiliza vários nós intermediários (roteadores) para cifrar os dados em camadas. Cada nó remove uma camada até que a mensagem chegue ao destino, garantindo que nenhum nó saiba origem e destino completos.
+
+P: Qual o principal objetivo do uso de Tor?
+A) Proteger senhas em e-mails corporativos
+B) Facilitar o download de arquivos grandes
+C) Navegar de forma anônima na internet
+D) Aumentar a velocidade de conexão com servidores internacionais
+R: C
+E: A resposta correta é C porque o Tor (The Onion Router) é uma rede criada especificamente para permitir que os usuários naveguem na internet de forma anônima, escondendo seus IPs e localização por meio do Onion Routing.
+
+P: No Onion Routing, o cliente cria um circuito com quantos roteadores (nós) por padrão?
+A) 1
+B) 2
+C) 3
+D) 5
+R: C
+E: A resposta correta é C porque, no modelo típico do Tor, são utilizados três roteadores: o de entrada, o intermediário e o de saída. Isso garante um nível de anonimato onde nenhum dos nós tem conhecimento total da origem e destino dos dados.
+
+P: Qual é a função do Onion Router de saída (último nó) no circuito do Tor?
+A) Identificar o endereço IP do cliente
+B) Conectar-se diretamente ao destino final da navegação
+C) Criptografar os dados com uma chave pública
+D) Interceptar e armazenar todas as informações do usuário
+R: B
+E: A resposta correta é B porque o nó de saída é o único que se comunica diretamente com o destino final na internet. Os dados que chegam até ele já foram decifrados e ele apenas entrega esses dados, sem saber quem os originou.
+
+P: O que são os serviços escondidos no Tor (endereços .onion)?
+A) Sites que utilizam múltiplas autenticações
+B) Servidores que estão offline, mas registrados no diretório do Tor
+C) Servidores cujo endereço IP é ocultado usando o próprio Tor
+D) Sites indexados por buscadores tradicionais como Google
+R: C
+E: A resposta correta é C porque os serviços escondidos (ou hidden services) do Tor permitem que um servidor ofereça conteúdo sem revelar seu endereço IP, utilizando endereços .onion que só podem ser acessados pela rede Tor.
+
+P: Qual o papel dos “pontos de apresentação” nos serviços escondidos do Tor?
+A) Aumentar a velocidade de conexão entre cliente e servidor
+B) Armazenar dados temporários para facilitar buscas na Deep Web
+C) Atuar como intermediários que permitem a conexão entre cliente e servidor sem que seus IPs reais sejam expostos
+D) Fornecer proteção contra vírus ao acessar sites .onion
+R: C
+E: A resposta correta é C porque os pontos de apresentação são nós intermediários escolhidos pelo servidor oculto para permitir que clientes se conectem a ele anonimamente. Eles garantem que o servidor permaneça oculto.
+
+P: Como um cliente encontra o caminho até um serviço escondido no Tor?
+A) Por meio de DNS públicos como na web tradicional
+B) Solicitando diretamente ao servidor seu IP real
+C) Através de um diretório onde estão armazenadas informações sobre os pontos de apresentação
+D) Digitando o endereço IP da Deep Web manualmente
+R: C
+E: A resposta correta é C porque os serviços escondidos registram descritores com informações sobre os pontos de apresentação em diretórios da rede Tor. O cliente consulta esse diretório para iniciar a conexão de forma anônima.
+
+P: Qual é uma das principais finalidades da existência dos serviços escondidos na rede Tor?
+A) Compartilhar arquivos grandes com mais velocidade
+B) Proteger a privacidade de servidores contra ataques e rastreamento
+C) Armazenar logs de navegação dos usuários
+D) Reduzir o uso de largura de banda em redes corporativas
+R: B
+E: A resposta correta é B porque os serviços escondidos permitem que servidores ocultem seu IP e localização, oferecendo proteção contra censura, ataques físicos ou ataques de negação de serviço.
+
+P: Qual característica da Deep Web a diferencia da Surface Web (web da superfície)?
+A) É mais rápida e segura para navegação comum
+B) É completamente indexada por buscadores tradicionais
+C) Contém conteúdo não indexado por mecanismos de busca
+D) É usada apenas por criminosos
+R: C
+E: A resposta correta é C porque a Deep Web inclui todo conteúdo que não é indexado por buscadores comuns, como páginas protegidas por login, bancos de dados privados, e sistemas como o Tor.
+
+P: Qual dos seguintes exemplos não pertence à Deep Web?
+A) Página de e-mail acessada por login pessoal
+B) Fórum oculto acessível apenas por Tor
+C) Página de pesquisa no Google.com
+D) Banco de dados acadêmico com acesso restrito
+R: C
+E: A resposta correta é C porque o Google.com e seus resultados fazem parte da Surface Web (web da superfície), sendo completamente indexados por buscadores e de livre acesso.

@@ -1,0 +1,517 @@
+P: Qual a função do comando pinMode(ledPin, OUTPUT); no código do Arduino?
+A) Lê o valor de uma variável analógica.
+B) Define que o pino ledPin será utilizado para leitura de dados.
+C) Define que o pino ledPin será utilizado para enviar sinais.
+D) Inicia a comunicação serial com o computador.
+R: C
+E: A função pinMode(pino, OUTPUT) configura o pino digital do Arduino para atuar como saída (output), ou seja, enviará sinais (por exemplo, para acender um LED). A opção A se refere a leitura, a B está incorreta pois INPUT seria o correto, e a D não tem relação com pinMode.
+
+P: O que o comando delay(1000); faz no Arduino?
+A) Pausa o código por 1 segundo.
+B) Inicia o programa com 1 segundo de atraso.
+C) Cria um loop de 1 segundo.
+D) Reinicia o Arduino após 1 segundo.
+R: A
+E: O comando delay(1000); pausa a execução do código por 1000 milissegundos, ou seja, 1 segundo. Não inicia o programa com atraso (B), não reinicia o sistema (D) nem cria um loop (C).
+
+P: O que acontece se usarmos pinMode(3, INPUT); no setup()?
+A) O pino 3 será configurado para enviar sinais.
+B) O pino 3 será usado como entrada, permitindo ler sensores ou botões.
+C) O Arduino irá escrever valores nesse pino.
+D) O pino 3 será desativado.
+R: B
+E: O pinMode(3, INPUT) configura o pino 3 como entrada, o que é necessário quando usamos sensores, botões ou outros dispositivos que enviam sinais para o Arduino. A função não escreve valores (C), nem desativa o pino (D).
+
+P: Qual é a principal função do Serial.begin(9600);?
+A) Inicia o sensor ultrassônico.
+B) Configura a comunicação serial na velocidade de 9600 bps.
+C) Envia comandos para o display.
+D) Executa a função de criptografia.
+R: B
+E: Serial.begin(9600); inicia a comunicação serial entre o Arduino e o computador à taxa de 9600 bits por segundo. Isso permite envio e recepção de dados pela porta USB. Não tem relação com sensores, displays ou criptografia.
+
+P: Qual estrutura está correta para escrever uma mensagem no monitor serial?
+A) Serial.output("Olá");
+B) Serial.write("Olá");
+C) Serial.send("Olá");
+D) Serial.println("Olá");
+R: D
+E: O comando correto para imprimir texto no monitor serial com quebra de linha é Serial.println("Texto");. Serial.write() é usado para bytes, e os outros comandos não existem.
+
+P: Qual comando abaixo mede o tempo que o pino fica em estado HIGH?
+A) delay()
+B) pulseIn()
+C) digitalRead()
+D) millis()
+R: B
+E: pulseIn(pino, HIGH) mede o tempo, em microssegundos, que o pino especificado permaneceu no estado HIGH. Essa função é comumente usada para medir o tempo de retorno de um sinal ultrassônico. As outras alternativas não servem para isso.
+
+P: Se digitalWrite(5, LOW); é executado, o que ocorre com o pino 5?
+A) Ele é ativado com 5V.
+B) Ele passa a ler dados.
+C) Ele é colocado em nível lógico baixo (0V).
+D) Ele muda automaticamente para INPUT.
+R: C
+E: digitalWrite(pino, LOW) faz com que o pino seja colocado em nível lógico baixo, ou seja, 0V. Isso pode desligar um LED, por exemplo. A opção A descreve HIGH, e as demais não estão corretas.
+
+P: O que significa void setup() em um programa Arduino?
+A) Define variáveis globais.
+B) Cria uma função que será executada várias vezes.
+C) Função executada uma única vez ao iniciar o código.
+D) Função chamada a cada 1 segundo automaticamente.
+R: C
+E: void setup() é a função que o Arduino executa uma única vez após ligar ou reiniciar. Normalmente é usada para inicializar configurações, como pinMode e Serial.begin. A função repetida é loop(), não setup().
+
+P: Para alternar entre ligar e desligar um LED, qual comando é essencial?
+A) analogRead()
+B) digitalRead()
+C) digitalWrite()
+D) Serial.print()
+R: C
+E: digitalWrite() permite enviar sinais HIGH ou LOW para pinos de saída, controlando dispositivos como LEDs. analogRead() e digitalRead() são para leitura, e Serial.print() é para exibir mensagens.
+
+P: Qual a finalidade da estrutura while (true) { ... } no Arduino?
+A) Executar o código dentro uma vez.
+B) Executar continuamente até que uma condição falsa ocorra.
+C) Garantir que o loop nunca pare.
+D) Impedir que o setup() termine.
+R: C
+E: A estrutura while (true) cria um laço infinito, garantindo que o código interno seja executado indefinidamente. Essa estrutura é perigosa se mal utilizada, pois pode travar o programa caso não haja forma de sair do laço.
+
+P: No projeto de semáforo com Arduino, qual é a finalidade da variável duracao no trecho abaixo?
+duracao = pulseIn(echo, HIGH);
+A) Armazenar a distância entre dois carros.
+B) Controlar a velocidade da luz do LED.
+C) Medir o tempo que o sinal levou para ir e voltar no sensor ultrassônico.
+D) Contar quantos carros passaram.
+R: C
+E: O comando pulseIn(echo, HIGH) mede o tempo que o sinal emitido pelo sensor ultrassônico leva para retornar, permitindo o cálculo da distância até um objeto.
+
+P: No projeto com sensor ultrassônico, o cálculo da distância é feito com a seguinte fórmula:
+distancia = duracao * 0.034 / 2;
+O que o número 0.034 representa?
+A) A velocidade da luz.
+B) O tempo total da medição.
+C) A velocidade do som em cm/μs.
+D) Um valor aleatório usado para delay.
+R: C
+E: A constante 0.034 representa a velocidade do som no ar em cm por microssegundo (μs), usada para converter o tempo medido (duracao) em distância.
+
+P: O que o código abaixo realiza?
+if(distancia <= 40){
+  digitalWrite(green, HIGH);
+  digitalWrite(red, LOW);
+}
+A) Acende o LED vermelho se a distância for maior que 40.
+B) Mantém todos os LEDs apagados.
+C) Acende o LED verde quando um objeto estiver próximo.
+D) Desliga o sensor ultrassônico.
+R: C
+E: O código indica que, se a distância até o objeto for igual ou inferior a 40 cm, o LED verde será aceso e o vermelho desligado, sinalizando "pode passar".
+
+P: Qual é a função de delayMicroseconds(10); logo após digitalWrite(trig, HIGH);?
+A) Economizar energia no sistema.
+B) Esperar que o LED pisque por 10 segundos.
+C) Gerar um pulso de 10 microssegundos no pino trig.
+D) Controlar o tempo de comunicação serial.
+R: C
+E: A linha delayMicroseconds(10); garante que o sinal HIGH enviado ao pino trig dure o tempo necessário para o sensor ultrassônico disparar um pulso.
+
+P: O que aconteceria se digitalWrite(trig, LOW); fosse omitido do código?
+A) O Arduino travaria.
+B) O sensor ultrassônico não funcionaria corretamente.
+C) O LED nunca acenderia.
+D) A variável duracao se tornaria uma string.
+R: B
+E: Sem definir LOW após o HIGH, o sensor pode continuar emitindo sinais ou ficar com leituras imprecisas, pois não há "reset" do pulso.
+
+P: No projeto com LEDs e sensor, qual a finalidade do trecho pinMode(echo, INPUT);?
+A) Configurar o pino echo para emitir sinais.
+B) Armazenar a distância medida.
+C) Permitir que o Arduino receba sinais refletidos do sensor.
+D) Estabelecer a velocidade de leitura.
+R: C
+E: O pino echo precisa estar em modo de entrada (INPUT) para receber o sinal refletido pelo obstáculo e medir o tempo decorrido.
+
+P: O sensor ultrassônico utilizado mede a distância por meio de:
+A) Luz infravermelha.
+B) Reflexo de som.
+C) Campo magnético.
+D) Micro-ondas.
+R: B
+E: O sensor emite ondas sonoras ultrassônicas e mede o tempo até que elas retornem ao sensor após refletirem em um objeto.
+
+P: Suponha que a distância medida seja 100 cm. Qual bloco de código será executado?
+if(distancia <= 40){
+  digitalWrite(green, HIGH);
+  digitalWrite(red, LOW);
+} else {
+  digitalWrite(red, HIGH);
+  digitalWrite(green, LOW);
+}
+A) Acende LED verde.
+B) Acende LED vermelho.
+C) Acende ambos.
+D) Apaga ambos.
+R: B
+E: Como 100 > 40, o programa executará o bloco else, acendendo o LED vermelho e apagando o verde.
+
+P: O sensor ultrassônico do projeto mede distâncias com base em:
+A) Cálculo de tempo e velocidade da luz.
+B) Contagem de objetos em movimento.
+C) Tempo de ida e volta das ondas sonoras.
+D) Corrente elétrica no pino red.
+R: C
+E: O sensor emite um som e mede quanto tempo leva até o som bater em um objeto e voltar, permitindo calcular a distância.
+
+P: Por que usamos float nas variáveis distancia e duracao?
+A) Para armazenar apenas números inteiros.
+B) Porque o Arduino não reconhece int.
+C) Para lidar com números decimais.
+D) Para armazenar letras e textos.
+R: C
+E: float é utilizado quando precisamos de valores com casas decimais, como distâncias em centímetros, que não são inteiros.
+
+P: O que acontece dentro da função setup() em um código Arduino?
+A) A lógica principal do programa é executada repetidamente.
+B) O Arduino entra em modo de espera.
+C) A configuração inicial dos pinos e variáveis ocorre.
+D) Os sensores são desligados automaticamente.
+R: C
+E: A função setup() roda uma única vez quando o Arduino é ligado ou reiniciado, sendo usada para definir pinos como entrada ou saída e configurar variáveis.
+
+P: Qual a principal diferença entre as funções setup() e loop() no Arduino?
+A) setup() é usada para cálculos matemáticos; loop() para entrada de dados.
+B) setup() é executada repetidamente; loop() apenas uma vez.
+C) setup() é para configurações iniciais; loop() roda continuamente enquanto o Arduino estiver ligado.
+D) Ambas são obrigatórias e fazem a mesma coisa.
+R: C
+E: setup() serve para inicializações e loop() para executar a lógica principal de forma contínua.
+
+P: A função pinMode(pin, OUTPUT); define o pino como:
+A) Conector USB.
+B) Entrada de dados.
+C) Saída para controlar dispositivos como LEDs.
+D) Sensor de luz.
+R: C
+E: Com OUTPUT, o pino pode enviar sinais elétricos, como acender um LED ou ativar um motor.
+
+P: O que digitalWrite(pin, HIGH); faz com o pino configurado como saída?
+A) Envia um sinal analógico.
+B) Desliga o pino.
+C) Envia tensão (5V) para o pino, ativando o dispositivo conectado.
+D) Coloca o Arduino em modo de espera.
+R: C
+E: HIGH significa nível lógico alto (5V), utilizado para energizar componentes eletrônicos.
+
+P: Em um projeto de semáforo com Arduino, por que usar if/else em vez de while?
+A) if/else permite travar o programa.
+B) if/else é usado para decisões pontuais, enquanto while é mais usado para repetições contínuas.
+C) while é mais simples que if/else.
+D) if/else é exclusivo do Arduino.
+R: B
+E: if/else é usado para avaliar condições pontuais e tomar decisões baseadas nos valores atuais, sem prender o código num laço.
+
+P: No contexto de sensores ultrassônicos, o termo “trigger” refere-se a:
+A) A função do LED.
+B) O nome do objeto medido.
+C) O pino que envia o pulso sonoro.
+D) O cálculo de distância.
+R: C
+E: “Trigger” (gatilho) é o pino que envia o pulso de som no sensor ultrassônico, iniciando a medição.
+
+P: No sensor HC-SR04, o pino “echo” serve para:
+A) Enviar dados via Bluetooth.
+B) Receber o som refletido e medir o tempo de retorno.
+C) Desligar o sensor quando não usado.
+D) Controlar a luminosidade do LED.
+R: B
+E: O “echo” detecta o tempo que o som levou para voltar após refletir em um obstáculo, e esse valor é usado para calcular a distância.
+
+P: Quando o LED verde acende e o vermelho apaga no projeto, o que isso indica?
+A) O sensor está com defeito.
+B) Não há objetos na frente.
+C) Um objeto está a até 40 cm de distância.
+D) A distância é maior que 1 metro.
+R: C
+E: O LED verde indica que o caminho está livre apenas até 40 cm. Depois disso, o vermelho toma o lugar.
+
+P: Qual seria uma forma correta de ligar um LED no Arduino?
+A) O positivo no GND e o negativo no pino digital.
+B) O positivo no pino digital e o negativo com resistor no GND.
+C) Ligar diretamente ao pino analógico.
+D) Ligar nos dois extremos da bateria.
+R: B
+E: LEDs devem ser conectados com o anodo (positivo) no pino digital e o catodo (negativo) no GND com resistor para limitar a corrente.
+
+P: O que pode ocorrer se não for usado um resistor ao ligar um LED no Arduino?
+A) O LED piscará mais forte.
+B) O LED durará mais tempo.
+C) Pode queimar o LED e danificar a porta do Arduino.
+D) Nada acontece.
+R: C
+E: Sem resistor, a corrente passa sem controle, podendo queimar o LED e causar sobrecarga no pino do Arduino.
+
+P: Qual é a função do comando pinMode(led, OUTPUT); em um código Arduino?
+A) Ler dados analógicos do LED
+B) Atribuir valor alto ou baixo ao LED
+C) Definir o pino como entrada de sinal
+D) Definir o pino como saída de sinal
+R: D
+E: A resposta correta é D porque o comando pinMode(pino, OUTPUT); configura um pino específico do Arduino como saída, permitindo que você envie sinais elétricos (como acender um LED). Isso é essencial antes de usar digitalWrite().
+
+P: O que acontece se você usar digitalWrite(pino, HIGH); sem ter configurado o pino antes com pinMode(pino, OUTPUT);?
+A) O código entra em erro de compilação
+B) O pino será configurado automaticamente como saída
+C) O LED pode não acender ou funcionar de forma instável
+D) O programa ignora o comando
+R: C
+E: A resposta correta é C porque, se o pino não for configurado como saída, o Arduino pode não saber como tratá-lo, o que pode causar comportamento imprevisível — como o LED não acender ou piscar de forma incorreta.
+
+P: Qual é o principal propósito da função setup() no Arduino?
+A) Repetir comandos indefinidamente
+B) Inicializar variáveis apenas quando for necessário
+C) Executar comandos de inicialização uma única vez
+D) Receber entradas analógicas contínuas
+R: C
+E: A resposta correta é C porque a função setup() é chamada uma única vez no início do programa e serve para inicializar configurações, como definir os modos dos pinos ou iniciar a comunicação serial.
+
+P: Em um programa Arduino, o que significa delay(1000);?
+A) Um atraso de 1000 segundos
+B) Um atraso de 100 milissegundos
+C) Um atraso de 1 segundo
+D) Um atraso indefinido
+R: C
+E: A resposta correta é C porque o comando delay(valor); usa milissegundos como unidade. Portanto, delay(1000); cria uma pausa de 1 segundo antes da próxima linha ser executada.
+
+P: Qual é o tipo de variável correto para armazenar a leitura de um sensor de distância com precisão decimal?
+A) int
+B) char
+C) boolean
+D) float
+R: D
+E: A resposta correta é D porque o tipo float armazena números com ponto flutuante (decimais), ideal para sensores que fornecem medidas como 30.42 cm. O tipo int só armazena números inteiros, o que limitaria a precisão.
+
+P: O comando digitalRead(pino); é utilizado para:
+A) Escrever um valor digital em um pino
+B) Ler valores analógicos de um pino
+C) Ler se um pino digital está em estado ALTO ou BAIXO
+D) Configurar o pino como entrada
+R: C
+E: A resposta correta é C porque digitalRead(pino); retorna o estado atual do pino digital, se está em HIGH (1) ou LOW (0), o que é essencial para ler botões, sensores e outros dispositivos digitais.
+
+P: O que é necessário para fazer com que um botão funcione corretamente como entrada no Arduino?
+A) Conectar o botão a um pino analógico e usar analogRead()
+B) Configurar o botão com pinMode(pino, OUTPUT)
+C) Usar pinMode(pino, INPUT_PULLUP) e lógica invertida
+D) Conectar o botão apenas ao GND
+R: C
+E: A resposta correta é C porque a prática comum com botões no Arduino é usar INPUT_PULLUP, que ativa um resistor interno. Isso significa que o botão "pressionado" gera um sinal LOW e solto gera HIGH, invertendo a lógica padrão.
+
+P: Qual comando inicia a comunicação entre o Arduino e o computador via porta serial?
+A) Serial.read();
+B) Serial.begin(9600);
+C) digitalWrite(Serial, HIGH);
+D) begin.serial(9600);
+R: B
+E: A resposta correta é B porque Serial.begin(9600); configura a taxa de transmissão de dados (baud rate), geralmente 9600 bits por segundo, para que o Arduino envie e receba dados do monitor serial.
+
+P: Qual componente é comumente usado no Arduino para simular um semáforo?
+A) Servomotor
+B) LEDs de diferentes cores
+C) Display LCD
+D) Sensor de distância
+R: B
+E: A resposta correta é B porque o semáforo de pedestres é comumente representado com LEDs vermelhos, verdes e às vezes amarelos, conectados a diferentes pinos do Arduino para simular as luzes de trânsito.
+
+P: O que representa o comando digitalWrite(red, HIGH); dentro do contexto de um semáforo?
+A) Desliga o LED vermelho
+B) Liga o LED vermelho
+C) Alterna o LED entre ligado e desligado
+D) Liga todos os LEDs ao mesmo tempo
+R: B
+E: A resposta correta é B porque digitalWrite(red, HIGH); envia tensão para o pino do LED vermelho, acendendo-o. O estado HIGH indica que o LED está ligado.
+
+P: O que o comando delay(5000); faz em um projeto de semáforo?
+A) Gera um atraso de 5 minutos
+B) Espera 5 segundos antes de mudar a luz
+C) Reinicia o programa
+D) Cria uma piscada no LED
+R: B
+E: A resposta correta é B porque delay(5000); indica uma pausa de 5.000 milissegundos = 5 segundos, geralmente usada para manter o LED aceso por esse tempo antes da próxima mudança.
+
+P: Por que o loop() é fundamental em um semáforo com Arduino?
+A) Porque define os pinos digitais
+B) Porque impede que o programa reinicie
+C) Porque permite a repetição contínua da lógica de mudança das luzes
+D) Porque controla a velocidade de transmissão serial
+R: C
+E: A resposta correta é C porque o loop() repete indefinidamente a lógica programada, permitindo simular o ciclo contínuo de um semáforo de pedestres.
+
+P: Qual seria a ordem lógica de funcionamento de um semáforo simples com pedestre?
+A) Verde → Amarelo → Vermelho
+B) Vermelho → Verde → Amarelo
+C) Vermelho → Amarelo → Verde
+D) Verde → Vermelho → Amarelo
+R: A
+E: A resposta correta é A porque a sequência Verde (andar) → Amarelo (atenção) → Vermelho (parar) é a mais comum em semáforos, inclusive nos exemplos discutidos em aula.
+
+P: Para alternar entre dois LEDs com atraso, o que é necessário?
+A) Usar apenas um pino para os dois LEDs
+B) Usar digitalRead() e loop()
+C) Usar digitalWrite() para desligar um e ligar o outro com delay() entre eles
+D) Usar analogWrite() e for
+R: C
+E: A resposta correta é C porque, para simular a troca de luzes, é comum usar digitalWrite(led1, LOW); digitalWrite(led2, HIGH); delay(tempo); para alternar e manter o efeito realista.
+
+P: O que pode acontecer se todos os LEDs estiverem ligados simultaneamente no semáforo?
+A) Nenhum problema ocorrerá
+B) O pedestre terá clareza sobre o que fazer
+C) Pode causar confusão, já que os sinais se contradizem
+D) O semáforo entrará em modo de emergência
+R: C
+E: A resposta correta é C porque acender luzes vermelha e verde ao mesmo tempo, por exemplo, pode causar confusão ao pedestre, representando uma falha lógica no código.
+
+P: Como evitar que o LED fique ligado para sempre após o primeiro HIGH?
+A) Utilizar delay(0);
+B) Colocar LOW antes do HIGH
+C) Acompanhar o digitalWrite(pino, HIGH); com delay() e depois digitalWrite(pino, LOW);
+D) Usar break; no código
+R: C
+E: A resposta correta é C porque, para o LED não ficar permanentemente aceso, é necessário desligá-lo manualmente usando digitalWrite(pino, LOW); após o tempo desejado.
+
+P: No código apresentado nas aulas, por que o pino 1 foi usado para o LED vermelho?
+A) Porque o pino 1 é o único com PWM
+B) Porque é o padrão para semáforo
+C) Porque o pino 1 está ligado à comunicação serial, o que foi um erro
+D) Porque ele está ao lado do pino 0
+R: C
+E: A resposta correta é C porque o uso do pino 1 no Arduino interfere na comunicação serial, algo alertado nas aulas. Ele deve ser evitado em projetos que usam Serial.begin().
+
+P: Qual é a função dos pinos trig e echo mesmo quando o foco é o semáforo?
+A) Monitorar a energia dos LEDs
+B) Medir distância para acionar a troca das luzes
+C) Acionar o botão de pedestre
+D) Fazer a contagem regressiva
+R: B
+E: A resposta correta é B porque em alguns projetos de semáforo inteligente, o sensor ultrassônico (com trig e echo) mede a distância do pedestre, e assim pode acionar o ciclo de luzes.
+
+P: Qual a principal função do sensor ultrassônico no Arduino?
+A) Detectar luz ambiente
+B) Medir a umidade do ar
+C) Medir a distância de objetos usando ondas sonoras
+D) Controlar temperatura
+R: C
+E: A resposta correta é C porque o sensor ultrassônico envia ondas sonoras e mede o tempo que elas demoram para retornar, permitindo o cálculo da distância até um objeto.
+
+P: No sensor ultrassônico, qual o papel do pino trig?
+A) Receber os dados de retorno
+B) Enviar o sinal sonoro
+C) Ligar o LED
+D) Calcular a velocidade do som
+R: B
+E: A resposta correta é B porque o trig (de trigger) é responsável por emitir o pulso ultrassônico inicial que será refletido pelo objeto.
+
+P: O pino echo é responsável por:
+A) Acionar o sensor
+B) Calcular a distância
+C) Receber o sinal refletido de volta
+D) Medir temperatura
+R: C
+E: A resposta correta é C porque o pino echo recebe o sinal de volta após o pulso ser refletido por um objeto, permitindo o cálculo da distância.
+
+P: O cálculo distancia = duracao * 0.034 / 2 representa:
+A) O tempo total do sinal
+B) A potência sonora emitida
+C) A distância baseada no tempo e na velocidade do som
+D) A velocidade do Arduino
+R: C
+E: A resposta correta é C porque a equação usa o tempo medido (duracao) e a velocidade do som (aproximadamente 0.034 cm/μs) para calcular a distância. O valor é dividido por 2 porque o sinal vai e volta.
+
+P: Qual comando é usado para medir o tempo de retorno do sinal ultrassônico?
+A) digitalRead()
+B) pulseIn()
+C) analogRead()
+D) millis()
+R: B
+E: A resposta correta é B porque pulseIn(echo, HIGH) mede o tempo, em microssegundos, que o pino echo ficou em nível alto, o que representa o tempo de ida e volta da onda.
+
+P: Qual tipo de dado é usado para armazenar a variável distancia?
+A) int
+B) float
+C) char
+D) boolean
+R: B
+E: A resposta correta é B porque float permite valores com casas decimais, fundamentais para medições mais precisas de distância, como 34.5 cm.
+
+P: Por que o valor da distância é dividido por 2 na fórmula?
+A) Porque o sensor está com baixa voltagem
+B) Para compensar o atraso do Arduino
+C) Porque a onda percorre o trajeto de ida e volta
+D) Para corrigir o valor para centímetros
+R: C
+E: A resposta correta é C porque o tempo registrado pelo sensor refere-se ao trajeto completo da onda sonora (ida e volta), e a distância até o objeto é metade disso.
+
+P: Se a distância lida for menor que 40 cm, qual LED será aceso no exemplo do código da aula?
+A) Vermelho
+B) Azul
+C) Verde
+D) Amarelo
+R: C
+E: A resposta correta é C porque, segundo o código, quando a distância for menor ou igual a 40 cm, o LED verde será aceso para indicar que o objeto está próximo.
+
+P: Qual erro comum deve ser evitado ao usar os pinos 0 e 1 com sensores ou LEDs?
+A) Eles não têm sinal digital
+B) São pinos reservados para comunicação serial
+C) Não suportam corrente suficiente
+D) Estão desativados por padrão
+R: B
+E: A resposta correta é B porque os pinos 0 (RX) e 1 (TX) são usados pela comunicação serial (Serial.begin()), podendo causar conflitos com sensores ou LEDs.
+
+P: O que acontece se o sensor estiver muito perto do objeto (por exemplo, a menos de 2 cm)?
+A) Mede com maior precisão
+B) Pode não detectar o objeto corretamente
+C) Sempre retorna 0 cm
+D) O sensor se desliga
+R: B
+E: A resposta correta é B porque sensores ultrassônicos têm uma distância mínima de operação, e abaixo dela podem não captar o eco corretamente, resultando em medições incorretas ou nulas.
+
+P: Qual a função do comando Serial.begin(9600); no Arduino?
+A) Finaliza a comunicação serial
+B) Inicia a comunicação serial com velocidade de 9600 bauds
+C) Lê informações da porta digital
+D) Acende o LED da placa
+R: B
+E: A resposta correta é B porque Serial.begin(9600); configura a velocidade da comunicação serial entre o Arduino e o computador para leitura e escrita via monitor serial.
+
+P: Qual comando usamos para mostrar dados no monitor serial?
+A) digitalRead()
+B) analogWrite()
+C) Serial.print()
+D) Serial.read()
+R: C
+E: A resposta correta é C porque Serial.print() é o comando utilizado para enviar informações ao monitor serial, permitindo acompanhar valores de variáveis em tempo real.
+
+P: O botão conectado a uma entrada digital do Arduino pode ser lido com qual função?
+A) digitalWrite()
+B) digitalRead()
+C) analogRead()
+D) Serial.read()
+R: B
+E: A resposta correta é B porque digitalRead() permite verificar se um botão está pressionado (HIGH) ou não (LOW) ao ler o valor lógico do pino.
+
+P: O que o comando Serial.read() faz?
+A) Envia dados para o Arduino
+B) Lê entradas analógicas
+C) Lê um caractere digitado no monitor serial
+D) Ativa a leitura digital dos botões
+R: C
+E: A resposta correta é C porque Serial.read() é usado para capturar dados enviados pelo teclado no monitor serial, geralmente caracteres.
+
+P: Se um botão está ligado ao pino 5 e pressionado, o que digitalRead(5) retorna?
+A) LOW
+B) 0
+C) HIGH
+D) -1
+R: C
+E: A resposta correta é C porque, ao pressionar o botão, se ele estiver corretamente conectado com resistor de pull-down, o pino fica em nível HIGH (1).

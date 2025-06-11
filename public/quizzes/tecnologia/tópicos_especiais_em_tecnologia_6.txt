@@ -1,0 +1,407 @@
+P: O que é o Tor Browser?
+A) Um antivírus usado para proteger a navegação por sites comuns
+B) Um navegador especializado em acesso a serviços escondidos da rede Tor
+C) Um plugin para acelerar downloads em redes P2P
+D) Um sistema operacional para celulares criptografados
+R: B
+E: A resposta correta é B porque o Tor Browser é um navegador baseado no Firefox, adaptado para navegar pela rede Tor e acessar sites .onion, garantindo anonimato e segurança.
+
+P: O que é a técnica de Onion Routing?
+A) Uma forma de compartilhar arquivos grandes via torrents
+B) Um modelo de criptografia baseado em bloqueios de IP
+C) Uma técnica em que os dados passam por múltiplos nós com camadas de criptografia
+D) Um sistema de roteamento que usa apenas um servidor central
+R: C
+E: A resposta correta é C porque no Onion Routing os dados são criptografados em camadas e enviados através de múltiplos roteadores (nós), onde cada um decifra apenas sua camada, protegendo origem, destino e conteúdo.
+
+P: O que ocorre quando o cliente Tor acessa o destino final?
+A) O destino vê o IP real do cliente
+B) O destino vê apenas o Onion Router final do circuito
+C) O destino vê todos os roteadores intermediários
+D) O destino bloqueia o acesso automaticamente
+R: B
+E: A resposta correta é B porque, ao final do circuito Tor, o destino só consegue ver o IP do último roteador (Onion Router #3), mantendo o IP do cliente oculto.
+
+P: O que são "serviços escondidos" na rede Tor?
+A) Sites que só funcionam com login administrativo
+B) Aplicações que operam fora da internet tradicional e podem ser acessadas por endereços .onion
+C) Serviços de internet que bloqueiam rastreamento de cookies
+D) Páginas privadas da Surface Web acessadas por senha
+R: B
+E: A resposta correta é B porque os serviços escondidos são sites ou aplicações que operam dentro da rede Tor e só são acessíveis por endereços terminados em .onion, com proteção de IP e localização.
+
+P: Qual das opções não é um motivo legítimo para alguém desejar anonimato na internet?
+A) Denunciar abusos anonimamente
+B) Participar de protestos contra regimes autoritários
+C) Evitar censura e perseguição
+D) Fazer ataques de negação de serviço (DDoS)
+R: D
+E: A resposta correta é D porque ataques DDoS são ilegais e maliciosos. Já os outros exemplos envolvem usos legítimos da privacidade e anonimato.
+
+P: Por que o Tor é considerado mais resistente à censura do que métodos tradicionais?
+A) Porque exige login com verificação em duas etapas
+B) Porque seus dados são criptografados por VPNs
+C) Porque utiliza uma rede descentralizada e com múltiplos nós
+D) Porque bloqueia qualquer tipo de conteúdo ilegal
+R: C
+E: A resposta correta é C porque a estrutura descentralizada do Tor e o uso de Onion Routing tornam mais difícil para censores bloquearem ou rastrearem usuários, aumentando a resistência contra restrições governamentais.
+
+P: O que é um “ponto de encontro” na comunicação entre cliente e servidor oculto no Tor?
+A) Um diretório público que armazena endereços .onion
+B) Um roteador que intermedia o tráfego de toda a rede
+C) Um nó intermediário que conecta o circuito do cliente ao circuito do servidor
+D) O servidor final da Surface Web
+R: C
+E: A resposta correta é C porque o ponto de encontro é o nó da rede Tor que liga os caminhos (circuitos) criados separadamente pelo cliente e pelo servidor oculto, mantendo o anonimato de ambos.
+
+P: Qual a função dos servidores de diretório (directory servers) na rede Tor?
+A) Bloquear IPs maliciosos
+B) Armazenar os dados de navegação dos usuários
+C) Fornecer uma lista atualizada de nós Tor para os clientes estabelecerem circuitos
+D) Criptografar as mensagens enviadas na rede Tor
+R: C
+E: A resposta correta é C porque os servidores de diretório mantêm uma lista confiável e atualizada dos nós disponíveis da rede Tor, permitindo que o cliente construa o caminho seguro por meio desses nós.
+
+P: Qual das alternativas representa uma vantagem dos serviços escondidos (hidden services) na rede Tor?
+A) Permitem que servidores tenham IPs públicos fixos
+B) Garantem maior velocidade de navegação
+C) Protegem a identidade e localização dos servidores .onion
+D) Tornam a navegação rastreável para evitar abusos
+R: C
+E: A resposta correta é C porque os serviços escondidos protegem os IPs e a geolocalização dos servidores, garantindo que nem clientes nem atacantes descubram a origem real dos serviços hospedados.
+
+P: Qual das alternativas descreve corretamente o funcionamento da “cebola” no Onion Routing?
+A) Uma rede de proxies simples com criptografia básica
+B) Uma estrutura de camadas onde cada camada representa um nível de segurança removido por um nó intermediário
+C) Um sistema de bloqueio automático por país
+D) Um tipo de antivírus utilizado na Deep Web
+R: B
+E: A resposta correta é B porque o Onion Routing aplica camadas de criptografia sucessivas (como uma cebola) que são descriptografadas por cada nó do circuito, protegendo a identidade e os dados.
+
+P: O que é a Deep Web, segundo os slides analisados?
+A) Parte da internet usada apenas por hackers
+B) Parte da web que contém apenas conteúdo ilegal
+C) Conteúdo da web não indexado por buscadores tradicionais
+D) Toda a web acessada com navegadores como Tor
+R: C
+E: A resposta correta é C porque a Deep Web compreende qualquer conteúdo não acessível por motores de busca comuns, como páginas dinâmicas, protegidas por login ou sem links públicos.
+
+P: O que são Web Crawlers ou Spiders?
+A) Programas que criptografam arquivos confidenciais
+B) Sistemas que coletam dados de redes sociais
+C) Bots que rastreiam e indexam páginas da web para buscadores
+D) Códigos maliciosos utilizados em ataques de phishing
+R: C
+E: A resposta correta é C porque Web Crawlers (ou Spiders) são programas automáticos que visitam sites, coletam conteúdo e constroem a base de dados dos motores de busca.
+
+P: Qual é o papel do “desafogamento otimista” (optimistic unchoke) em redes P2P como BitTorrent (aplicação mencionada em contexto semelhante ao anonimato)?
+A) Aumentar a compressão de dados
+B) Desconectar peers lentos automaticamente
+C) Substituir periodicamente o peer com menor taxa de upload por outro para incentivar a cooperação
+D) Evitar que peers compartilhem arquivos repetidos
+R: C
+E: A resposta correta é C porque o “optimistic unchoke” substitui o peer menos eficiente por um novo peer aleatório, incentivando a cooperação e descobrindo conexões melhores.
+
+P: No funcionamento do Tor, por que o destino final enxerga apenas o Onion Router #3?
+A) Porque os outros nós não participam da criptografia
+B) Porque o circuito termina no primeiro roteador
+C) Porque o roteamento é direto entre origem e destino
+D) Porque o circuito criptografado garante que apenas o último nó se conecte ao destino
+R: D
+E: A resposta correta é D porque no Tor a comunicação com o destino final ocorre apenas através do último nó da cadeia (Onion Router #3), garantindo que o destino nunca conheça o IP de origem.
+
+P: O que torna possível a navegação anônima na rede Tor?
+A) Conexão direta entre cliente e servidor
+B) Uso de um único roteador proxy
+C) Criação de circuitos criptografados através de vários nós
+D) Roteamento estático e IP fixo
+R: C
+E: A resposta correta é C porque a rede Tor utiliza múltiplos nós intermediários e criptografia em camadas, dificultando que qualquer entidade conheça tanto o remetente quanto o destinatário.
+
+P: Em relação à privacidade, por que protocolos como HTTPS e TLS são considerados insuficientes por si só?
+A) Porque são utilizados apenas para e-mails
+B) Porque protegem apenas o conteúdo dos dados, mas não os metadados como IPs
+C) Porque não utilizam criptografia
+D) Porque são facilmente interceptados por roteadores
+R: B
+E: A resposta correta é B porque, apesar de criptografarem o conteúdo da comunicação, protocolos como HTTPS e TLS não escondem os endereços IP de origem e destino, permitindo o rastreamento.
+
+P: Qual das opções descreve corretamente a função de um ponto de encontro na rede Tor para serviços escondidos?
+A) Roteador inicial que define o IP do servidor
+B) Local onde se armazenam as chaves criptográficas
+C) Nó intermediário que conecta os circuitos do cliente e do servidor
+D) Interface gráfica usada para acessar o navegador Tor
+R: C
+E: A resposta correta é C porque o ponto de encontro é o nó onde os circuitos construídos separadamente pelo cliente e pelo servidor se conectam, mantendo o anonimato de ambas as partes.
+
+P: O que é um “link magnético” na rede BitTorrent (associada ao anonimato em certos contextos)?
+A) Link para baixar o Tor Browser
+B) Arquivo de texto criptografado
+C) Link que usa DHT para encontrar os peers e o arquivo torrent sem depender de tracker
+D) Endereço IP protegido com criptografia
+R: C
+E: A resposta correta é C porque o link magnético permite iniciar downloads sem um arquivo .torrent, utilizando DHT (Distributed Hash Table) para localizar os peers, o que favorece descentralização e anonimato.
+
+P: O que caracteriza um “roteamento aleatorizado” usado como técnica de anonimização?
+A) Envia os dados sempre para o mesmo servidor proxy
+B) Utiliza roteadores fixos e previsíveis
+C) Alterna aleatoriamente os caminhos e os roteadores utilizados, dificultando rastreio da origem
+D) Divide os dados em blocos que seguem por caminhos diferentes
+R: C
+E: A resposta correta é C porque esse tipo de roteamento aleatório utiliza múltiplos caminhos e nós para disfarçar a origem e o destino das mensagens.
+
+P: Qual a principal função dos "serviços escondidos" (.onion) na rede Tor?
+A) Permitir downloads automáticos
+B) Armazenar o histórico de navegação do usuário
+C) Proteger a identidade e localização dos servidores
+D) Facilitar a indexação dos sites pelo Google
+R: C
+E: A resposta correta é C porque os serviços escondidos permitem que servidores hospedem conteúdos sem revelar seu IP, protegendo sua localização física e evitando ataques.
+
+P: No processo de criação de um serviço escondido, o que o servidor faz primeiro?
+A) Envia dados diretamente ao cliente
+B) Cria rotas onion até pontos de apresentação
+C) Solicita um IP fixo para o serviço
+D) Publica o conteúdo no navegador padrão
+R: B
+E: A resposta correta é B porque o servidor estabelece rotas criptografadas até pontos de apresentação antes mesmo de ser descoberto pelo cliente, garantindo anonimato.
+
+P: Como o cliente descobre um serviço escondido (.onion) na rede Tor?
+A) Por meio de listas IPs fornecidas por servidores centrais
+B) Usando buscadores tradicionais como Google
+C) Obtendo descritor de serviço e endereço dos pontos de apresentação via diretório Tor
+D) Por meio de broadcast de rede aberta
+R: C
+E: A resposta correta é C porque o cliente acessa um diretório que contém o descritor do serviço (informações criptografadas e rotas de apresentação) para iniciar a conexão.
+
+P: O que acontece quando o servidor aceita se comunicar com o cliente via Tor?
+A) Ele se conecta diretamente ao IP do cliente
+B) Ele encerra o circuito criado
+C) Ele se conecta ao ponto de encontro criado pelo cliente
+D) Ele compartilha todos os metadados com o diretório
+R: C
+E: A resposta correta é C porque, ao aceitar a comunicação, o servidor se conecta ao ponto de encontro estabelecido pelo cliente, sem que um veja o IP do outro.
+
+P: Por que o modelo de “cebola” (Onion) é usado como metáfora na arquitetura Tor?
+A) Porque os dados são coloridos por camadas
+B) Porque há várias etapas de verificação manual
+C) Porque as mensagens são criptografadas em múltiplas camadas, como uma cebola
+D) Porque cada roteador acessa todos os dados de forma transparente
+R: C
+E: A resposta correta é C porque a estrutura de criptografia em camadas faz com que apenas o nó correspondente possa descriptografar sua camada, garantindo anonimato progressivo.
+
+P: O que caracteriza o conteúdo da Deep Web?
+A) Apenas sites ilegais acessados com Tor
+B) Sites indexados por buscadores comuns
+C) Conteúdos que não são indexados por buscadores tradicionais
+D) Todos os sites com domínio .onion
+R: C
+E: A resposta correta é C porque a Deep Web inclui qualquer conteúdo que, por motivos técnicos ou de acesso restrito, não pode ser acessado por mecanismos de busca convencionais.
+
+P: Qual das opções não é uma característica da Deep Web?
+A) Páginas sem links externos
+B) Conteúdos dinâmicos gerados por scripts
+C) Sites protegidos por login
+D) Conteúdo amplamente indexado por crawlers tradicionais
+R: D
+E: A resposta correta é D porque o conteúdo da Deep Web não é amplamente indexado por crawlers tradicionais, justamente por estar oculto ou protegido por autenticação.
+
+P: Qual o objetivo da utilização de "roteadores onion" na rede Tor?
+A) Minimizar o tempo de navegação
+B) Reduzir o tráfego de dados da internet
+C) Garantir anonimato, passando por diversos nós intermediários
+D) Aumentar a largura de banda do usuário final
+R: C
+E: A resposta correta é C porque os roteadores onion estabelecem múltiplas camadas de criptografia e redirecionamento, dificultando a identificação da origem e destino da mensagem.
+
+P: O que acontece no passo 5 do funcionamento do Tor, após a criação do circuito?
+A) O cliente acessa diretamente o destino sem anonimato
+B) O circuito é encerrado e os dados são transmitidos via HTTP
+C) O cliente acessa o destino final por meio do último nó, que vê apenas o tráfego final
+D) Os dados são descriptografados por todos os nós anteriores
+R: C
+E: A resposta correta é C porque, após o estabelecimento do circuito, o cliente se comunica com o destino final apenas por meio do último nó onion, mantendo o anonimato.
+
+P: O que caracteriza o processo de "tuneiamento" no Tor?
+A) A escolha de palavras-chave para acessar serviços escondidos
+B) O envio de pacotes diretamente para o destino
+C) A extensão do circuito com novas chaves simétricas entre cliente e novos roteadores
+D) A reindexação automática de conteúdo da Deep Web
+R: C
+E: A resposta correta é C porque o tuneiamento ocorre quando o cliente estende o circuito criando novas camadas de criptografia entre ele e outros roteadores onion.
+
+P: Qual dessas afirmações está correta sobre os serviços escondidos no Tor?
+A) Eles tornam o IP do cliente visível, mas não do servidor
+B) Eles exigem que o cliente saiba a localização física do servidor
+C) Eles impedem que cliente e servidor conheçam o IP um do outro
+D) Eles exigem um navegador comum, como Google Chrome
+R: C
+E: A resposta correta é C porque tanto o cliente quanto o servidor permanecem anônimos, sendo conectados via pontos intermediários sem acesso direto aos IPs.
+
+P: O que é um “ponto de encontro” no contexto do Tor?
+A) Um servidor público para indexar serviços escondidos
+B) Um link que leva à surface web
+C) Um nó intermediário que conecta o circuito do cliente com o do servidor
+D) Um mecanismo para desviar ataques de DDoS
+R: C
+E: A resposta correta é C porque o ponto de encontro é o local intermediário onde os circuitos criados separadamente pelo cliente e pelo servidor se conectam.
+
+P: O que impede buscadores como o Google de indexarem o conteúdo da Deep Web?
+A) Os sites usam protocolos de segurança como HTTPS
+B) Os sites estão em outros idiomas
+C) A ausência de links acessíveis ou a exigência de autenticação para acesso
+D) O Google não tem interesse em indexar esse conteúdo
+R: C
+E: A resposta correta é C porque conteúdos gerados dinamicamente, protegidos por login ou sem links externos acessíveis não são rastreados pelos mecanismos de busca tradicionais.
+
+P: Por que a rede Tor é considerada resistente à censura e a ataques de negação de serviço (DDoS)?
+A) Porque funciona apenas em sistemas operacionais Linux
+B) Porque utiliza técnicas como DHT e Peer Exchange, descentralizando o controle
+C) Porque depende exclusivamente de servidores fixos
+D) Porque limita a quantidade de conexões simultâneas
+R: B
+E: A resposta correta é B porque, com mecanismos como DHT e PEX, a rede Tor descentraliza os serviços e reduz os pontos únicos de falha, tornando-a mais resiliente.
+
+P: O que são as tecnologias Crowds e Freenet no contexto da privacidade na internet?
+A) Protocolos de login seguro em redes públicas
+B) Navegadores que utilizam inteligência artificial
+C) Técnicas alternativas ao Onion Routing para anonimato
+D) Aplicativos de acesso remoto a redes corporativas
+R: C
+E: A resposta correta é C porque Crowds e Freenet são exemplos de tecnologias alternativas ao Onion Routing que buscam garantir o anonimato e a privacidade na comunicação digital, funcionando como “anonimizadores” ao dificultar a identificação da origem das mensagens.
+
+P: Por que o anonimato pode ser importante em regimes autoritários ou contextos de censura?
+A) Para ocultar a nacionalidade dos usuários
+B) Para garantir o direito à liberdade de expressão e proteger denunciantes
+C) Para impedir a navegação em sites estrangeiros
+D) Para acelerar a conexão com a internet
+R: B
+E: A resposta correta é B porque em regimes autoritários o anonimato permite que cidadãos possam denunciar abusos, se manifestar contra o governo e evitar represálias. Além disso, protege a localização geográfica e a identidade dos usuários, essenciais em contextos de censura ou vigilância.
+
+P: Qual a estrutura típica de uma mensagem no Onion Routing (modelo “cebola”)?
+A) Um texto criptografado com uma única chave pública
+B) Uma mensagem dividida em várias partes sem criptografia
+C) Uma mensagem com múltiplas camadas de criptografia, uma para cada roteador no caminho
+D) Um arquivo XML que redireciona o tráfego automaticamente
+R: C
+E: A resposta correta é C porque no Onion Routing a mensagem é criptografada em camadas — como uma cebola — onde cada camada é decifrada por um roteador específico no caminho até o destino, mantendo o anonimato da origem e do conteúdo.
+
+P: O que é necessário para que dois computadores se comuniquem usando sockets?
+A) Apenas que compartilhem o mesmo sistema operacional
+B) Que estejam conectados à internet obrigatoriamente
+C) Que tenham IPs e portas acessíveis para troca de dados
+D) Que estejam na mesma cidade ou região
+R: C
+E: A resposta correta é C porque a comunicação por sockets depende de um IP e uma porta aberta em cada dispositivo, permitindo a troca de mensagens de forma direta, mesmo sem internet.
+
+P: Qual é a principal diferença entre enviar uma mensagem de texto e um arquivo via socket?
+A) Arquivos são mais leves que mensagens de texto
+B) Arquivos podem ser enviados diretamente, sem fragmentação
+C) Mensagens de texto exigem protocolo adicional de segurança
+D) Arquivos precisam ser fragmentados e reconstruídos na recepção
+R: D
+E: A resposta correta é D porque, diferentemente das mensagens de texto simples, os arquivos devem ser divididos em partes (pacotes) antes de serem enviados e, no destino, essas partes são reagrupadas para formar o arquivo original.
+
+P: O que caracteriza a comunicação ponto a ponto (P2P) em redes?
+A) Os dados passam obrigatoriamente por um servidor central
+B) Todos os dados são criptografados de ponta a ponta
+C) Os dispositivos se comunicam diretamente entre si
+D) Os dados são armazenados na nuvem temporariamente
+R: C
+E: A resposta correta é C porque, em redes P2P, os dispositivos se conectam diretamente, trocando informações sem a necessidade de um servidor central, como em redes tradicionais cliente-servidor.
+
+P: Qual foi o exemplo prático usado em aula para ilustrar a comunicação via socket?
+A) Um sistema bancário com várias contas
+B) Um programa de edição de vídeo colaborativa
+C) Um chat simples em rede local
+D) Um app de rastreamento por GPS
+R: C
+E: A resposta correta é C porque foi demonstrado um chat em rede local como exemplo básico de uso de sockets, ajudando os alunos a visualizarem como ocorre a troca de dados entre dispositivos.
+
+P: O que é comunicação serial, conforme citado em aula?
+A) Quando múltiplos dados são transmitidos ao mesmo tempo em vários canais
+B) Um protocolo de roteamento por camadas
+C) Um tipo de conexão que envia bits de dados um após o outro em uma única linha
+D) Uma conexão que depende exclusivamente de internet
+R: C
+E: A resposta correta é C porque a comunicação serial transmite os dados em sequência, bit a bit, sendo comum em dispositivos como o Arduino, onde os dados fluem por uma única linha de comunicação.
+
+P: Qual é uma característica típica de uma aplicação P2P como o BitTorrent?
+A) Todo tráfego é direcionado para um servidor central para distribuição
+B) Cada participante age simultaneamente como cliente e servidor
+C) Os arquivos são transmitidos apenas de servidores para clientes
+D) Os usuários precisam de uma assinatura paga para enviar arquivos
+R: B
+E: A resposta correta é B porque no modelo P2P, como no BitTorrent, cada nó pode enviar e receber arquivos, funcionando tanto como cliente quanto como servidor, o que distribui a carga da rede.
+
+P: Em que situação os sockets podem ser utilizados sem internet?
+A) Somente se houver conexão com a nuvem
+B) Em redes locais, como entre dois computadores conectados por cabo
+C) Apenas em redes sem fio com roteadores externos
+D) Nunca, pois sockets dependem exclusivamente da internet
+R: B
+E: A resposta correta é B porque sockets funcionam com base na comunicação entre dispositivos pela rede, podendo ser locais, como entre dois computadores conectados diretamente ou pela mesma rede interna (LAN), sem necessidade de internet.
+
+P: Qual conceito foi utilizado para esconder o IP do servidor e do cliente ao mesmo tempo?
+A) Protocolo de Transferência Segura (SFTP)
+B) Onion Routing com serviços escondidos do Tor
+C) Rede de Distribuição de Conteúdo (CDN)
+D) Navegador com modo privado ativado
+R: B
+E: A resposta correta é B porque o Onion Routing, através do Tor e seus serviços escondidos (.onion), permite que tanto cliente quanto servidor permaneçam anônimos, protegendo seus IPs mesmo durante a comunicação.
+
+P: Qual a diferença entre a Deep Web e a Dark Web segundo os materiais?
+A) A Deep Web é acessível por qualquer navegador, a Dark Web não
+B) A Deep Web é pública e a Dark Web é privada
+C) A Deep Web refere-se a conteúdo não indexado; a Dark Web, a conteúdo anônimo e geralmente acessado por Tor
+D) Não há diferença: ambos os termos são sinônimos
+R: C
+E: A resposta correta é C porque a Deep Web inclui qualquer conteúdo que não é indexado por buscadores, como páginas com login, enquanto a Dark Web é um subconjunto da Deep Web acessado por redes como o Tor e com foco em anonimato.
+
+P: Por que o protocolo do Tor usa múltiplos nós e camadas de criptografia?
+A) Para garantir rapidez no tráfego de dados
+B) Para baratear o custo do tráfego para os usuários
+C) Para garantir anonimato, dificultando o rastreio da origem e destino dos dados
+D) Para aumentar o tamanho dos pacotes transmitidos
+R: C
+E: A resposta correta é C porque o Tor foi projetado para anonimato: cada camada de criptografia é removida por um nó diferente, sem que nenhum deles saiba todo o caminho da comunicação, protegendo origem e destino.
+
+P: O que é um socket no contexto de redes de computadores?
+A) Um protocolo para criptografar dados transmitidos
+B) Um endereço IP de um servidor específico
+C) Um ponto de comunicação entre dois dispositivos em rede
+D) Um navegador específico para redes P2P
+R: C
+E: A resposta correta é C porque um socket funciona como um ponto de conexão para permitir a troca de dados entre dois processos através de uma rede.
+
+P: Qual é a principal diferença entre os protocolos TCP e UDP utilizados em sockets?
+A) TCP é mais rápido porque ignora erros
+B) UDP exige conexão antes da troca de dados
+C) TCP garante entrega e ordem dos dados; UDP não
+D) UDP é utilizado exclusivamente em redes locais
+R: C
+E: A resposta correta é C porque o protocolo TCP garante que os dados cheguem corretamente e na ordem certa, enquanto o UDP é mais rápido, mas não confiável.
+
+P: Qual função do socket em Python é usada para associar um socket a um endereço IP e uma porta?
+A) connect()
+B) bind()
+C) send()
+D) listen()
+R: B
+E: A resposta correta é B porque a função bind() associa o socket a um endereço (IP e porta) no lado do servidor.
+
+P: Em uma comunicação cliente-servidor com socket, qual é a ordem correta das funções no lado do servidor?
+A) connect → bind → send → listen
+B) listen → accept → connect → bind
+C) bind → listen → accept → recv
+D) accept → bind → listen → recv
+R: C
+E: A resposta correta é C porque o servidor primeiro associa o socket (bind), escuta conexões (listen), aceita uma conexão (accept) e depois pode receber dados (recv).
+
+P: Qual é a função do accept() em um socket servidor?
+A) Fechar a conexão com o cliente
+B) Encaminhar dados ao navegador
+C) Aceitar uma conexão de um cliente e retornar um novo socket
+D) Iniciar um download
+R: C
+E: A resposta correta é C porque a função accept() aguarda e aceita uma conexão de entrada, retornando um novo socket para comunicação com o cliente conectado.

@@ -1,0 +1,503 @@
+P: Qual é uma das principais vantagens do modelo P2P em relação ao cliente-servidor?
+A) Permite menos controle sobre os dados compartilhados
+B) Requer um servidor dedicado com alta capacidade
+C) Escalabilidade inerente, pois mais clientes geram mais recursos
+D) Uso de menos conexões entre os nós
+R: C
+E: A resposta correta é C porque o modelo P2P se beneficia do aumento de clientes, pois cada cliente também colabora com recursos, melhorando a escalabilidade.
+
+P: O que são sistemas P2P (Peer-to-Peer)?
+A) Sistemas baseados em servidores que distribuem tarefas
+B) Sistemas em que todos os nós têm funções similares e se comunicam diretamente
+C) Sistemas centralizados com múltiplas entradas simultâneas
+D) Redes sem nenhum tipo de estrutura ou organização
+R: B
+E: A resposta correta é B porque os sistemas P2P operam com nós que atuam tanto como clientes quanto como servidores, trocando informações entre si diretamente.
+
+P: O que dificulta a administração de sistemas P2P puros?
+A) Baixa escalabilidade
+B) Necessidade constante de supervisão manual
+C) Entrada e saída frequente de nós e necessidade de localizar recursos dinamicamente
+D) Alto custo com servidores centralizados
+R: C
+E: A resposta correta é C porque, em redes P2P, os nós mudam frequentemente, o que exige mecanismos eficientes para localizar dados e manter o sistema funcional.
+
+P: Qual é o papel de um super nó em redes P2P?
+A) Servir como cliente e servidor ao mesmo tempo
+B) Auxiliar na indexação de conteúdos e conexões de outros nós
+C) Controlar toda a rede como um servidor mestre
+D) Atuar como roteador físico da rede
+R: B
+E: A resposta correta é B porque super nós funcionam como hubs mais robustos dentro de redes P2P, ajudando na organização e localização de recursos.
+
+P: Qual é uma desvantagem do uso de servidores auxiliares em redes P2P?
+A) Redução da escalabilidade
+B) Dificuldade em manter a segurança
+C) Risco de criar pontos de falha
+D) Alta descentralização da rede
+R: C
+E: A resposta correta é C porque servidores auxiliares, embora úteis para localização de recursos, criam pontos centrais que podem ser alvos de falha ou ataques.
+
+P: Em um sistema P2P puramente descentralizado, como ocorre a busca por dados?
+A) Por meio de servidores de indexação
+B) Através de um algoritmo baseado em localização geográfica
+C) Usando uma rede central de metadados
+D) Via conexões aleatórias entre nós até encontrar o dado desejado
+R: D
+E: A resposta correta é D porque em sistemas totalmente descentralizados, como Gnutella original, a busca é feita propagando pedidos até que o dado seja encontrado.
+
+P: Qual das opções abaixo representa corretamente um exemplo de P2P com super nós?
+A) Napster
+B) Skype original
+C) BitTorrent com tracker
+D) Gnutella original
+R: B
+E: A resposta correta é B porque o Skype original utilizava super nós para facilitar a comunicação entre os usuários e a indexação das conexões.
+
+P: Qual tipo de estratégia de busca organiza os dados com base em hash e localização específica?
+A) Busca semiestruturada
+B) Busca aleatória distribuída
+C) Busca estruturada com DHT
+D) Busca manual e direta
+R: C
+E: A resposta correta é C porque a busca estruturada com DHT utiliza funções hash para distribuir os dados de maneira eficiente e previsível na rede.
+
+P: O que é uma rede sobreposta (overlay) em sistemas P2P?
+A) Uma rede que substitui totalmente a internet
+B) Uma camada física adicional conectando os dispositivos
+C) Uma rede lógica criada sobre a rede física para conectar os nós
+D) Um servidor alternativo para garantir redundância
+R: C
+E: A resposta correta é C porque uma rede sobreposta (overlay) é uma estrutura lógica usada para organizar a comunicação entre nós, independentemente da topologia física da rede.
+
+P: Em qual tipo de organização os nós P2P têm as mesmas funções e nenhuma coordenação central?
+A) Organização com super nós
+B) Organização puramente descentralizada
+C) Organização com servidor auxiliar
+D) Organização híbrida
+R: B
+E: A resposta correta é B porque na organização puramente descentralizada, todos os nós têm funções equivalentes e não há nenhum tipo de controle centralizado.
+
+P: Qual dos seguintes é um exemplo de sistema P2P com servidor auxiliar?
+A) BitTorrent com tracker
+B) Gnutella original
+C) Skype original
+D) Chord
+R: A
+E: A resposta correta é A porque o BitTorrent com tracker utiliza um servidor auxiliar para facilitar a localização dos peers antes que eles se comuniquem diretamente.
+
+P: O que torna a administração de redes P2P mais complexa em relação a redes centralizadas?
+A) A baixa disponibilidade de conexão à internet
+B) A lentidão das transferências de dados
+C) A dinâmica de entrada e saída constante de nós
+D) A falta de usuários conectados
+R: C
+E: A resposta correta é C porque os nós entram e saem frequentemente da rede, exigindo mecanismos eficientes de descoberta, localização e consistência de dados.
+
+P: O que diferencia a busca estruturada da busca não estruturada em redes P2P?
+A) Uso de criptografia em ambas
+B) A existência de um servidor fixo para consultas
+C) A organização previsível dos dados em locais definidos por hash
+D) A descentralização da transferência de arquivos
+R: C
+E: A resposta correta é C porque na busca estruturada, como a DHT, os dados são armazenados de forma previsível usando funções de hash, o que permite buscas mais eficientes.
+
+P: O que significa DHT em redes P2P?
+A) Distributed Host Transmission
+B) Digital Host Tracker
+C) Distributed Hash Table
+D) Data Handling Technique
+R: C
+E: A resposta correta é C porque DHT significa Distributed Hash Table, um sistema que distribui dados pela rede usando funções hash para facilitar a busca e recuperação.
+
+P: Na DHT, o que representa a "chave"?
+A) O endereço físico do servidor
+B) O nome do usuário que compartilha os dados
+C) O valor hash gerado a partir do conteúdo do dado
+D) A quantidade de nós ativos na rede
+R: C
+E: A resposta correta é C porque a chave na DHT é obtida por meio de uma função hash aplicada ao dado ou ao seu identificador.
+
+P: Qual operação em uma DHT permite inserir um dado com sua chave correspondente?
+A) Find()
+B) Put()
+C) Save()
+D) Join()
+R: B
+E: A resposta correta é B porque a função Put(chave, valor) é usada para armazenar um valor na tabela de hash distribuída usando a chave gerada por hash.
+
+P: Qual operação em uma DHT permite recuperar um dado com base em sua chave?
+A) Search()
+B) Hash()
+C) Get()
+D) Ping()
+R: C
+E: A resposta correta é C porque a função Get(chave) permite buscar e recuperar o valor armazenado que está associado a essa chave específica.
+
+P: Qual das opções abaixo é um algoritmo usado para rotear em DHTs?
+A) HTTP
+B) FTP
+C) Chord
+D) SSH
+R: C
+E: A resposta correta é C porque Chord é um dos algoritmos de roteamento utilizados em DHTs para localizar nós e dados de forma eficiente.
+
+P: O que acontece na rede P2P quando mais clientes se conectam?
+A) A carga do servidor aumenta exponencialmente
+B) O desempenho da rede diminui drasticamente
+C) A escalabilidade melhora, pois há mais colaboradores
+D) O sistema entra em colapso por excesso de nós
+R: C
+E: A resposta correta é C porque em redes P2P, mais clientes significam mais colaboradores, o que aumenta a escalabilidade e distribui melhor a carga.
+
+P: Qual tipo de nó assume um papel mais importante em algumas redes P2P, auxiliando na indexação e localização de dados?
+A) Nó zumbi
+B) Nó mestre
+C) Super nó
+D) Nó receptor
+R: C
+E: A resposta correta é C porque os super nós atuam como intermediários mais poderosos que os demais, ajudando na organização e busca de conteúdo.
+
+P: Qual é a principal desvantagem da busca não estruturada em redes P2P?
+A) Exige sempre um servidor central
+B) Depende de uma topologia rígida
+C) Pode ser ineficiente por envolver muita comunicação entre nós
+D) Não permite compartilhamento de arquivos
+R: C
+E: A resposta correta é C porque, como os dados estão distribuídos aleatoriamente, a busca não estruturada pode gerar muitas mensagens e sobrecarregar a rede.
+
+P: Em qual cenário a DHT é mais vantajosa em relação à busca tradicional em P2P?
+A) Quando não há necessidade de localizar dados rapidamente
+B) Quando os dados são confidenciais e precisam de criptografia
+C) Quando é necessário localizar rapidamente dados específicos com eficiência
+D) Quando os dados não são acessados com frequência
+R: C
+E: A resposta correta é C porque a DHT permite buscas rápidas e eficientes por dados com base em suas chaves hash, sem depender de broadcast ou flooding.
+
+P: Qual dessas redes é um exemplo de sistema com busca não estruturada e puramente descentralizado?
+A) BitTorrent com tracker
+B) Napster
+C) Skype original
+D) Gnutella original
+R: D
+E: A resposta correta é D porque Gnutella original não possuía servidor auxiliar e distribuía os dados de forma aleatória entre os nós.
+
+P: Como funciona a operação de rotear em uma rede com DHT?
+A) Cria uma nova topologia de rede física
+B) Transfere os dados diretamente ao cliente sem intermediários
+C) Encaminha a mensagem até o nó correto responsável pela chave
+D) Reconfigura o endereço IP do servidor
+R: C
+E: A resposta correta é C porque o roteamento em DHT serve para encaminhar comandos como GET e PUT até o nó responsável pela chave correspondente.
+
+P: Qual papel o servidor auxiliar desempenha em algumas redes P2P?
+A) Executar funções de roteamento e armazenamento completo dos dados
+B) Substituir a rede P2P por completo
+C) Facilitar a descoberta de nós e localização de conteúdo
+D) Controlar centralmente todas as conexões entre os nós
+R: C
+E: A resposta correta é C porque o servidor auxiliar apenas facilita a busca inicial por conteúdo ou IPs, mas a comunicação posterior ocorre diretamente entre os nós.
+
+P: Como os dados são distribuídos em uma busca estruturada com DHT?
+A) Em nós aleatórios sem seguir padrão
+B) Em servidores centrais específicos
+C) Em locais determinados por uma função hash
+D) Em clientes prioritários com maior conexão
+R: C
+E: A resposta correta é C porque, na DHT, os dados ou referências a dados são armazenados em nós baseados no resultado da função hash aplicada à chave.
+
+P: O que representa o "valor" em uma tabela hash distribuída?
+A) O endereço IP do roteador
+B) O tempo de resposta da busca
+C) O dado ou a referência ao dado buscado
+D) A posição da tabela onde o dado está salvo
+R: C
+E: A resposta correta é C porque o valor armazenado em uma DHT corresponde ao dado associado à chave gerada pela função hash.
+
+P: Qual vantagem a DHT oferece em relação à escalabilidade?
+A) Garante menor uso de memória nos nós
+B) Reduz o número de nós necessários na rede
+C) Permite localizar dados em tempo constante ou logarítmico
+D) Impede a entrada e saída dinâmica de nós
+R: C
+E: A resposta correta é C porque os algoritmos de DHT como Chord ou Kademlia permitem localizar dados de forma rápida, mesmo com muitos nós.
+
+P: O que é uma Rede Sobreposta (Overlay) em sistemas P2P?
+A) Uma rede física de cabeamento
+B) Um sistema operacional que gerencia os nós
+C) Uma rede lógica construída sobre a rede física existente
+D) Um protocolo de segurança P2P
+R: C
+E: A resposta correta é C porque a rede sobreposta representa a conexão lógica entre os nós participantes da rede P2P, independente da infraestrutura física.
+
+P: Qual é uma das maiores dificuldades de manter uma rede P2P?
+A) Velocidade limitada pela nuvem
+B) Baixo custo de operação
+C) Entrada e saída constante de nós na rede
+D) Licenciamento de software
+R: C
+E: A resposta correta é C porque o dinamismo dos nós – que entram e saem da rede com frequência – dificulta a consistência, localização de recursos e estabilidade.
+
+P: Qual dessas redes representa um exemplo clássico do uso de super nós?
+A) Bitcoin
+B) Skype original
+C) BitTorrent sem tracker
+D) Napster
+R: B
+E: A resposta correta é B porque o Skype original utilizava super nós para auxiliar na roteação de chamadas e indexação de usuários.
+
+P: Em que tipo de rede P2P os nós possuem responsabilidades totalmente equivalentes, sem servidor auxiliar ou super nós?
+A) Com servidor auxiliar
+B) P2P híbrido
+C) Puramente descentralizado
+D) Com nós mestres
+R: C
+E: A resposta correta é C porque em redes puramente descentralizadas todos os nós desempenham funções semelhantes sem coordenação central.
+
+P: O que significa DHT no contexto de sistemas P2P?
+A) Dados Híbridos Temporários
+B) Distributed Hash Table
+C) Digital Hardware Tracker
+D) Direct Hash Transmission
+R: B
+E: A resposta correta é B porque DHT é a sigla para Distributed Hash Table, uma técnica de indexação distribuída em redes P2P estruturadas.
+
+P: Qual algoritmo NÃO é um exemplo de implementação de DHT?
+A) Chord
+B) Kademlia
+C) BitTorrent
+D) Pastry
+R: C
+E: A resposta correta é C porque BitTorrent é um protocolo P2P, mas não é um algoritmo DHT; os outros (Chord, Kademlia e Pastry) são algoritmos DHT conhecidos.
+
+P: Como funciona o mapeamento em uma DHT?
+A) Conecta portas físicas diretamente
+B) Usa uma IA para prever o local dos dados
+C) Associa uma chave gerada por hash a um valor específico
+D) Cria cópias aleatórias do mesmo dado em vários nós
+R: C
+E: A resposta correta é C porque o funcionamento da DHT envolve associar chaves geradas por funções hash aos valores armazenados, facilitando sua localização.
+
+P: Qual é o papel de um tracker no BitTorrent com servidor auxiliar?
+A) Armazenar todos os dados da rede
+B) Proteger os arquivos com criptografia
+C) Localizar pares (peers) e facilitar a conexão entre eles
+D) Roteador de pacotes de rede
+R: C
+E: A resposta correta é C porque o tracker ajuda os usuários a encontrar outros peers que possuem partes do arquivo desejado, sem armazenar o conteúdo em si.
+
+P: Qual é uma vantagem das redes P2P sobre o modelo cliente-servidor tradicional?
+A) Redução de latência em todos os casos
+B) Maior controle central sobre os dados
+C) Maior tolerância a falhas e escalabilidade
+D) Proibição de colaboração entre clientes
+R: C
+E: A resposta correta é C porque a arquitetura P2P é naturalmente escalável e resiliente, pois não depende de um ponto único de falha como o servidor.
+
+P: Na estrutura de busca estruturada com DHT, o que a operação PUT faz?
+A) Envia o dado diretamente ao usuário
+B) Substitui a chave por uma nova
+C) Armazena o dado na DHT associado à chave hash
+D) Interrompe o roteamento da mensagem
+R: C
+E: A resposta correta é C porque a operação PUT na DHT serve para armazenar um valor (dado) sob uma chave específica, definida por uma função hash.
+
+P: O que é uma rede sobreposta (overlay) em um sistema P2P?
+A) É uma rede física de backup para garantir a conexão entre os nós
+B) É um sistema paralelo usado para testar atualizações do software
+C) É uma estrutura lógica construída sobre a rede física para conectar nós
+D) É o nome dado ao firewall que protege a rede P2P
+R: C
+E: A resposta correta é C porque uma rede sobreposta (overlay) é uma estrutura lógica que conecta nós de forma virtual, independente da infraestrutura física, permitindo o roteamento e localização de dados entre pares no sistema P2P.
+
+P: Qual é uma vantagem clara do modelo P2P em comparação ao modelo cliente-servidor?
+A) Menor número de usuários simultâneos
+B) Menor segurança na transmissão de dados
+C) Eliminação de todos os servidores da rede
+D) Maior escalabilidade com a entrada de novos usuários
+R: D
+E: A resposta correta é D porque o modelo P2P permite que, à medida que mais usuários entram na rede, também aumentam os recursos disponíveis, tornando-o mais escalável que o modelo cliente-servidor.
+
+P: Qual dos itens a seguir representa um gargalo típico no modelo cliente-servidor?
+A) A sobrecarga nos clientes ao gerenciar dados locais
+B) A entrada de novos usuários aumentando a colaboração
+C) O servidor central pode se tornar um ponto de falha
+D) A descentralização da administração
+R: C
+E: A resposta correta é C porque no modelo cliente-servidor, o servidor central pode ficar sobrecarregado com requisições ou mesmo falhar, afetando toda a rede — o que é considerado um gargalo.
+
+P: O que torna a DHT eficiente na localização de dados?
+A) Criptografia automática dos dados na origem
+B) Reutilização de endereços IP para economia de recursos
+C) Uso de hash e roteamento para localizar dados de forma direta
+D) Conexões fixas entre os nós da rede
+R: C
+E: A resposta correta é C porque DHT (Distributed Hash Table) usa funções hash para atribuir localizações específicas aos dados, e permite que os nós façam buscas diretas por chave, tornando a localização mais rápida e eficiente.
+
+P: O que caracteriza um “super nó” em uma rede P2P?
+A) Um nó que funciona como roteador da rede local
+B) Um nó com acesso direto ao servidor de backup
+C) Um nó com papel central na organização e indexação dos dados
+D) Um nó que só se conecta em horários agendados
+R: C
+E: A resposta correta é C porque super nós assumem funções adicionais na rede, como indexação de conteúdos e intermediação entre outros nós, funcionando quase como "mini servidores" dentro da estrutura P2P.
+
+P: Qual exemplo representa uma rede P2P com organização puramente descentralizada e sem servidor auxiliar?
+A) Napster
+B) Gnutella original
+C) Skype original
+D) BitTorrent com tracker
+R: B
+E: A resposta correta é B porque a Gnutella original era um exemplo clássico de rede P2P puramente descentralizada, sem servidor central para indexar os arquivos ou intermediar conexões.
+
+P: Qual característica diferencia o modelo de super nós em redes P2P?
+A) Todos os nós possuem as mesmas funções sem hierarquia
+B) Os nós armazenam dados aleatoriamente
+C) Alguns nós assumem responsabilidades extras, como indexação e conexão direta
+D) Os dados estão sempre em servidores centralizados
+R: C
+E: A resposta correta é C porque o modelo com super nós envolve certos nós com papel mais relevante, auxiliando na organização, como ocorre em KaZaa ou Skype original.
+
+P: No contexto de redes P2P, o BitTorrent pode operar de duas formas. Qual afirmação descreve corretamente essa dualidade?
+A) Opera apenas com super nós
+B) Utiliza servidores fixos para todas as conexões
+C) Pode usar tracker (servidor auxiliar) ou funcionar sem ele (descentralizado)
+D) É sempre uma rede estruturada com DHT
+R: C
+E: A resposta correta é C porque o BitTorrent pode funcionar com servidor tracker (ajudando na localização dos arquivos) ou de forma descentralizada com DHT, como no caso do magnet link.
+
+P: Qual é o papel de uma DHT (Distributed Hash Table) em uma rede P2P estruturada?
+A) Garantir a privacidade das conexões
+B) Substituir a necessidade de conexão direta entre nós
+C) Mapear dados a locais específicos com base em seus hashes
+D) Controlar o tráfego de rede entre servidores centrais
+R: C
+E: A resposta correta é C porque a DHT é uma tabela hash distribuída que permite localizar dados rapidamente através de uma estrutura organizada com chaves baseadas em hash.
+
+P: Qual das seguintes redes representa um modelo P2P com servidor auxiliar?
+A) Gnutella original
+B) Bitcoin
+C) Napster
+D) BitTorrent sem tracker
+R: C
+E: A resposta correta é C porque o Napster utilizava um servidor central para indexar os arquivos, mesmo que a transferência ocorresse diretamente entre os pares (clientes).
+
+P: Qual é uma das principais aplicações da tecnologia P2P mencionada nas aulas?
+A) Redes sociais
+B) Streaming ao vivo
+C) Compartilhamento de arquivos
+D) Edição de documentos online
+R: C
+E: A resposta correta é C porque o compartilhamento de arquivos é uma das principais aplicações da tecnologia P2P, como exemplificado pelo uso do BitTorrent.
+
+P: Qual porcentagem do tráfego de upload na Internet era atribuída ao BitTorrent em 2018, segundo a Sandvine?
+A) 10%
+B) 22%
+C) 30%
+D) 58%
+R: B
+E: A resposta correta é B porque, segundo dados da Sandvine de 2018, o BitTorrent representava 22% de todo o tráfego de upload da internet.
+
+P: O tráfego de download da internet é, majoritariamente, composto por que tipo de conteúdo?
+A) Jogos online
+B) Vídeos
+C) Imagens
+D) Documentos acadêmicos
+R: B
+E: A resposta correta é B porque 58% do tráfego de download da Internet é composto por vídeos, segundo os dados citados na aula.
+
+P: Qual empresa sozinha era responsável por 15% do tráfego de download, de acordo com os dados de 2018?
+A) YouTube
+B) Amazon Prime
+C) Netflix
+D) Hulu
+R: C
+E: A resposta correta é C porque a aula menciona que, segundo a Sandvine, a Netflix sozinha era responsável por 15% do tráfego de download na internet.
+
+P: O que é compartilhado em um arquivo .torrent?
+A) O conteúdo do arquivo completo
+B) O histórico de downloads de um usuário
+C) Um link contendo metadados sobre o arquivo
+D) Vídeos criptografados
+R: C
+E: A resposta correta é C porque o arquivo .torrent contém metadados que referenciam o conteúdo, como divisão de pedaços, verificação de integridade e localização.
+
+P: Qual é uma função importante dos arquivos .torrent para a segurança?
+A) Protegem o endereço IP do usuário
+B) Garantem a exclusividade do download
+C) Verificam a integridade do conteúdo
+D) Criam senhas de acesso
+R: C
+E: A resposta correta é C porque os arquivos .torrent permitem verificar a integridade do conteúdo, impedindo a inserção de malware em torrents legítimos.
+
+P: Como ocorre a busca por arquivos no protocolo BitTorrent?
+A) Através de servidores centralizados
+B) Via buscadores como Google
+C) Integrada no próprio protocolo
+D) Fora do protocolo, por sites ou interfaces dos apps
+R: D
+E: A resposta correta é D porque o protocolo BitTorrent não inclui um sistema de busca interno; essa função é realizada por sites ou interfaces de aplicativos como o qBittorrent.
+
+P: Qual das opções a seguir é um exemplo de software que utiliza o protocolo BitTorrent?
+A) Mozilla Firefox
+B) Zoom
+C) qBittorrent
+D) Outlook
+R: C
+E: A resposta correta é C porque o qBittorrent é um dos vários aplicativos que utilizam o protocolo BitTorrent para compartilhamento de arquivos.
+
+P: Como o BitTorrent decide quais pedaços de arquivos um nó deve solicitar primeiro?
+A) Ordem alfabética
+B) Ordem de criação do arquivo
+C) Pedaços mais raros primeiro
+D) Tamanho menor primeiro
+R: C
+E: A resposta correta é C porque o protocolo BitTorrent prioriza os pedaços mais raros entre os disponíveis, uma técnica conhecida como "rarest first".
+
+P: Qual é o nome da estratégia usada para incentivar a cooperação entre usuários no envio de pedaços?
+A) Broadcast loop
+B) Eye-to-eye
+C) Tit-for-tat
+D) Divide-and-send
+R: C
+E: A resposta correta é C porque a estratégia tit-for-tat (ou "olho por olho") favorece o envio de pedaços para os nós que também cooperam, aumentando a eficiência e justiça da rede.
+
+P: Qual o principal critério para um nó enviar pedaços a outros usuários na rede BitTorrent?
+A) Velocidade da conexão da operadora
+B) Ordem de chegada dos pedidos
+C) Prioridade para nós que enviam dados mais rápido
+D) Localização geográfica dos nós
+R: C
+E: A resposta correta é C porque o BitTorrent usa o critério "tit-for-tat", priorizando os nós que também enviam dados com maior velocidade.
+
+P: O que é o “optimistic unchoke” no protocolo BitTorrent?
+A) Uma técnica de compressão de arquivos
+B) Substituição aleatória de pedaços repetidos
+C) Escolha periódica de um novo nó para testar troca de dados
+D) Modo de criptografar os arquivos .torrent
+R: C
+E: A resposta correta é C porque o "optimistic unchoke" é a substituição periódica do nó com menor desempenho por outro, testando se ele oferece melhor troca de dados.
+
+P: Qual a vantagem da estratégia "mais raros primeiro" usada no BitTorrent?
+A) Reduz o tamanho final do arquivo
+B) Impede usuários de baixarem todo o conteúdo
+C) Garante que os pedaços menos disponíveis circulem mais
+D) Aumenta a velocidade de upload
+R: C
+E: A resposta correta é C porque ao priorizar os pedaços mais raros, o protocolo garante que esses dados não se percam quando poucos nós os possuem, aumentando a disponibilidade do arquivo.
+
+P: O que são "seeders" no contexto do BitTorrent?
+A) Usuários que ainda não começaram o download
+B) Servidores centralizados que armazenam os arquivos
+C) Nós que possuem o arquivo completo e continuam compartilhando
+D) Aplicativos que se conectam à rede BitTorrent
+R: C
+E: A resposta correta é C porque "seeders" são os nós que já possuem o arquivo completo e continuam enviando os pedaços aos demais usuários, colaborando com a rede.
+
+P: O que pode acontecer ao se conectar a muitos nós ao mesmo tempo no BitTorrent?
+A) Aumenta drasticamente a velocidade de download
+B) Reduz a eficiência devido à divisão da banda
+C) Interrompe o download automaticamente
+D) Apaga pedaços duplicados do arquivo
+R: B
+E: A resposta correta é B porque conectar-se a muitos nós divide a banda disponível, podendo diminuir a eficiência do download, mesmo parecendo uma boa estratégia.

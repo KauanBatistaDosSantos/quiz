@@ -1,0 +1,593 @@
+P: Para acionar um LED conectado ao pino 7 ao pressionar um botão no pino 2, qual trecho de código é correto?
+A) digitalWrite(2, HIGH);
+B) if (digitalRead(2) == HIGH) { digitalWrite(7, HIGH); }
+C) if (digitalWrite(2) == HIGH) { digitalWrite(7, LOW); }
+D) digitalRead(7, HIGH);
+R: B
+E: A resposta correta é B porque o botão deve ser lido com digitalRead() e, se estiver pressionado, o LED deve ser acionado com digitalWrite().
+
+P: Qual estrutura correta para ler continuamente o valor de um botão no loop?
+A) while (1) { Serial.begin(9600); }
+B) if (Serial.print == HIGH)
+C) loop() { digitalRead(); }
+D) void loop() { int estado = digitalRead(botao); }
+R: D
+E: A resposta correta é D porque é necessário usar a função digitalRead() dentro do loop() para capturar continuamente o estado do botão.
+
+P: O que acontece se usarmos Serial.read() sem verificar se há dados disponíveis com Serial.available()?
+A) O código trava permanentemente
+B) O Arduino reinicia
+C) Pode haver erro ou leitura de valores inválidos
+D) Nada acontece
+R: C
+E: A resposta correta é C porque ler a porta serial sem verificar se há algo disponível pode resultar em leituras incorretas ou -1, o que não representa um caractere válido.
+
+P: Se Serial.read() retorna um valor igual a 'a', como posso verificar isso no código?
+A) if (Serial.read = 'a')
+B) if (Serial.read() == 'a')
+C) if Serial.read('a') == true
+D) Serial.print('a') == true
+R: B
+E: A resposta correta é B porque para comparar caracteres, usamos Serial.read() dentro de um if e comparamos com 'a' usando ==.
+
+P: Qual estrutura correta para acender um LED via caractere enviado pelo teclado (por ex., 'l')?
+A) if (Serial.print() == 'l')
+B) if (Serial.available() > 0 && Serial.read() == 'l') { digitalWrite(LED, HIGH); }
+C) digitalRead() = 'l';
+D) Serial.begin();
+R: B
+E: A resposta correta é B porque a leitura correta deve verificar se há dados disponíveis com Serial.available() antes de ler com Serial.read().
+
+P: Qual a principal função de um display de 7 segmentos no Arduino?
+A) Controlar motores de passo
+B) Mostrar números de 0 a 9 em formato visual
+C) Receber entradas analógicas
+D) Estabilizar a corrente do circuito
+R: B
+E: A resposta correta é B porque o display de 7 segmentos serve para exibir números (e alguns caracteres) ligando combinações de segmentos de LED.
+
+P: Quantos segmentos individuais há em um display de 7 segmentos comum?
+A) 5
+B) 6
+C) 7
+D) 8
+R: D
+E: A resposta correta é D porque, além dos 7 segmentos de letras (a a g), existe um oitavo ponto (DP - decimal point) que também pode ser controlado.
+
+P: Para acender o número “1” em um display de 7 segmentos, quais segmentos devem estar ligados?
+A) a, b
+B) b, c
+C) c, d
+D) a, d
+R: B
+E: A resposta correta é B porque o número 1 é formado acendendo os segmentos b e c, que ficam à direita.
+
+P: O que é necessário para controlar corretamente cada segmento do display com o Arduino?
+A) Um sensor de temperatura
+B) Um resistor por segmento
+C) Um capacitor ligado ao GND
+D) Um botão conectado ao display
+R: B
+E: A resposta correta é B porque cada segmento é um LED, e portanto requer um resistor para limitar a corrente e evitar queimar o componente.
+
+P: Qual pino do Arduino pode ser usado para acionar um segmento do display?
+A) Apenas pinos analógicos
+B) Qualquer pino digital configurado como OUTPUT
+C) Apenas o pino 13
+D) Apenas pinos PWM
+R: B
+E: A resposta correta é B porque qualquer pino digital configurado como saída (OUTPUT) pode ser usado para controlar um segmento do display.
+
+P: Para formar o número “8” no display, qual a condição correta?
+A) Apenas segmento g ligado
+B) Todos os segmentos desligados
+C) Todos os segmentos ligados
+D) Apenas os segmentos a a f
+R: C
+E: A resposta correta é C porque o número 8 é o único dígito que acende todos os 7 segmentos (a a g) ao mesmo tempo.
+
+P: Se o display não acende nenhum segmento, o que pode estar errado?
+A) O loop está vazio
+B) O botão está pressionado
+C) O resistor está com resistência muito alta ou está faltando
+D) O sensor está invertido
+R: C
+E: A resposta correta é C porque, sem o resistor adequado ou com um valor muito alto, a corrente pode ser insuficiente para acender os LEDs dos segmentos.
+
+P: Qual é a diferença entre display de 7 segmentos com cátodo comum e ânodo comum?
+A) Um é analógico e outro digital
+B) Um liga com LOW, outro com HIGH nos pinos
+C) Um usa mais memória
+D) Não existe diferença
+R: B
+E: A resposta correta é B porque:
+No cátodo comum, os segmentos acendem com nível lógico HIGH.
+No ânodo comum, os segmentos acendem com nível lógico LOW.
+
+P: Ao montar um display 7 segmentos com Arduino, o que acontece se dois segmentos forem ligados no mesmo pino digital?
+A) Eles acendem alternadamente
+B) Só um deles acende
+C) Os dois acendem juntos, mas o controle individual é perdido
+D) O Arduino queima
+R: C
+E: A resposta correta é C porque ambos os segmentos acenderão juntos sempre que o pino for ativado, e não será possível controlá-los separadamente.
+
+P: Qual é o objetivo de usar arrays para controlar um display de 7 segmentos no Arduino?
+A) Reduzir o número de pinos do Arduino
+B) Evitar o uso de resistores
+C) Organizar os padrões dos números de forma eficiente
+D) Evitar a função digitalWrite()
+R: C
+E: A resposta correta é C porque, com arrays, é possível mapear os padrões de acendimento de cada número e tornar o código mais organizado e reutilizável.
+
+P: O que é criptografia no contexto do Arduino?
+A) Um comando de controle de motores
+B) Uma técnica para codificar dados antes de transmitir
+C) Uma função de delay do sistema
+D) Um tipo de display usado para exibir caracteres
+R: B
+E: A resposta correta é B porque criptografia é o processo de esconder ou codificar dados, garantindo que somente quem souber a chave consiga interpretá-los.
+
+P: Qual tipo de criptografia foi usada nas aulas práticas com Arduino?
+A) Hash SHA-256
+B) Cifra de César
+C) AES-128
+D) RSA
+R: B
+E: A resposta correta é B. A Cifra de César é uma criptografia simples onde as letras são deslocadas no alfabeto, sendo ideal para implementações básicas como as feitas no Arduino.
+
+P: Como funciona a Cifra de César usada no Arduino?
+A) Cada letra é substituída por um número binário
+B) Cada caractere é deslocado um número fixo de posições no alfabeto
+C) Cada palavra é revertida
+D) Os caracteres são embaralhados aleatoriamente
+R: B
+E: A resposta correta é B porque a Cifra de César consiste em deslocar cada letra para frente ou para trás no alfabeto segundo uma chave numérica.
+
+P: Se a letra 'A' for criptografada com chave 3 na cifra de César, qual será o resultado?
+A) D
+B) C
+C) F
+D) G
+R: A
+E: A resposta correta é A porque, com chave 3, o caractere ‘A’ é deslocado três posições no alfabeto, resultando em ‘D’.
+
+P: Para descriptografar uma mensagem com cifra de César no Arduino, o que é necessário?
+A) Conhecer o tipo de placa usada
+B) Subtrair o valor da chave de cada letra
+C) Usar o comando delay()
+D) Inserir um resistor de 220Ω
+R: B
+E: A resposta correta é B. A descriptografia inverte a operação: subtrai a chave usada durante a criptografia, restaurando a mensagem original.
+
+P: Qual é a principal limitação da cifra de César?
+A) É incompatível com displays LCD
+B) É difícil de implementar
+C) Pode ser facilmente quebrada por tentativa e erro
+D) Exige muitos sensores
+R: C
+E: A resposta correta é C porque a cifra de César possui um número pequeno de combinações possíveis (geralmente 25 chaves), sendo vulnerável a ataques por força bruta.
+
+P: Qual função no Arduino permite ler o texto digitado no Serial Monitor?
+A) digitalRead()
+B) analogRead()
+C) Serial.readString()
+D) print()
+R: C
+E: A resposta correta é C. A função Serial.readString() lê dados em forma de texto vindos do monitor serial, sendo usada para capturar o que o usuário digitou.
+
+P: Ao criptografar usando Arduino e Serial, como os caracteres são manipulados no código?
+A) São armazenados em sensores
+B) São convertidos em números e somados à chave
+C) São ignorados e substituídos por ‘*’
+D) São multiplicados por dois
+R: B
+E: A resposta correta é B porque o código converte caracteres em códigos numéricos (ASCII) e soma o valor da chave para deslocar a letra.
+
+P: Qual estrutura de repetição pode ser usada para criptografar letra por letra em uma String?
+A) switch-case
+B) if-else
+C) for
+D) goto
+R: C
+E: A resposta correta é C porque a estrutura for permite percorrer a String caractere por caractere, sendo ideal para aplicar a lógica da criptografia.
+
+P: Em uma mensagem criptografada com chave 3, como decodificar no Arduino?
+A) Adicionando 3 ao valor ASCII
+B) Subtraindo 3 do valor ASCII
+C) Multiplicando por 3
+D) Dividindo o código por 3
+R: B
+E: A resposta correta é B porque a descriptografia consiste em reverter o deslocamento, subtraindo a chave aplicada na criptografia.
+
+P: Qual biblioteca foi usada para exibir informações em um display LCD no Arduino?
+A) Servo.h
+B) Adafruit_LiquidCrystal
+C) Stepper.h
+D) LiquidCrystal_I2C
+R: B
+E: A resposta correta é B. A biblioteca Adafruit_LiquidCrystal permite controlar displays LCD, principalmente quando conectados via I2C, facilitando a exibição de textos no Arduino.
+
+P: Qual comando é usado para iniciar o uso do LCD no código com a biblioteca Adafruit?
+A) lcd.begin()
+B) lcd.init()
+C) lcd.start()
+D) lcd.display()
+R: A
+E: A resposta correta é A porque lcd.begin() inicializa o LCD com a quantidade de colunas e linhas informadas (por exemplo, lcd.begin(16, 2) para um display 16x2).
+
+P: O que significa ‘16x2’ ao configurar um display LCD?
+A) 16 pixels por linha e 2 pixels por caractere
+B) 16 colunas e 2 linhas de caracteres
+C) 16 linhas e 2 colunas de dados binários
+D) 16 bytes e 2 bits por caractere
+R: B
+E: A resposta correta é B. Um display 16x2 possui 16 colunas e 2 linhas, ou seja, pode exibir 32 caracteres no total (em duas linhas).
+
+P: Qual pino do Arduino é utilizado para enviar dados a um display LCD com módulo I2C?
+A) Apenas os digitais comuns
+B) RX e TX
+C) Pinos A4 e A5 (SDA e SCL)
+D) Pinos PWM
+R: C
+E: A resposta correta é C porque a comunicação I2C no Arduino Uno é feita via SDA (A4) e SCL (A5), que são os pinos padrão para conexão de dispositivos I2C como displays LCD.
+
+P: O que o comando lcd.print("Oi") faz no Arduino?
+A) Envia um som pelo buzzer
+B) Exibe o texto “Oi” no monitor serial
+C) Mostra o texto “Oi” no display LCD
+D) Grava o texto na EEPROM
+R: C
+E: A resposta correta é C. O comando lcd.print("Oi") exibe o texto diretamente no display LCD, sendo a função principal da biblioteca Adafruit.
+
+P: Para mudar a posição do cursor antes de imprimir algo no LCD, qual comando é usado?
+A) lcd.move()
+B) lcd.select()
+C) lcd.setCursor()
+D) lcd.next()
+R: C
+E: A resposta correta é C porque o comando lcd.setCursor(coluna, linha) posiciona o cursor onde o texto será exibido, por exemplo, lcd.setCursor(0, 1).
+
+P: O que acontece se a quantidade de caracteres ultrapassar a largura da tela do LCD?
+A) O Arduino entra em erro
+B) O texto se move automaticamente para a próxima linha
+C) Os caracteres adicionais não aparecem
+D) O texto vira minúsculo
+R: C
+E: A resposta correta é C. Quando o número de caracteres ultrapassa o limite (ex: 16 em uma linha), os excedentes não são exibidos, pois o LCD não possui rolagem automática.
+
+P: Para apagar o conteúdo do LCD, qual comando deve ser usado?
+A) lcd.clear()
+B) lcd.erase()
+C) lcd.reset()
+D) lcd.stop()
+R: A
+E: A resposta correta é A. O comando lcd.clear() apaga o conteúdo atual do display, limpando todas as linhas.
+
+P: Qual comando é necessário no setup() para inicializar a comunicação serial usada para depuração junto com o LCD?
+A) Serial.clear(9600)
+B) Serial.init(115200)
+C) Serial.begin(9600)
+D) Serial.set(9600)
+R: C
+E: A resposta correta é C. O comando Serial.begin(9600) inicializa a comunicação serial com o monitor para mostrar mensagens, útil ao depurar o funcionamento do LCD.
+
+P: O display LCD I2C exige menos fios que o tradicional porque:
+A) Ele usa conexão Bluetooth
+B) Ele se comunica via infravermelho
+C) Usa apenas dois pinos (SDA e SCL) para se comunicar
+D) É alimentado por bateria
+R: C
+E: A resposta correta é C. O módulo I2C simplifica a conexão com o Arduino, utilizando apenas dois fios (SDA e SCL), ao contrário dos muitos pinos necessários em displays paralelos.
+
+P: Qual estrutura de decisão foi mais utilizada nas aulas com Arduino para definir comportamentos com sensores?
+A) for
+B) while
+C) if/else
+D) switch
+R: C
+E: A resposta correta é C. A estrutura if/else foi amplamente utilizada para verificar condições como distância de sensores, estados de botões ou comparação de valores lógicos.
+
+P: O que significa distancia <= 40 no contexto do sensor ultrassônico?
+A) A distância medida é superior a 40 cm
+B) A variável distância foi dividida por 40
+C) A distância lida é menor ou igual a 40 cm
+D) O sensor parou de funcionar após 40 cm
+R: C
+E: A resposta correta é C. A expressão distancia <= 40 representa uma condição booleana que verifica se o valor da variável distancia é menor ou igual a 40.
+
+P: Qual das alternativas representa uma estrutura de repetição condicional usada para repetir algo enquanto uma condição for verdadeira?
+A) if/else
+B) switch
+C) while
+D) loop
+R: C
+E: A resposta correta é C. A estrutura while repete um bloco de código enquanto uma condição for verdadeira, muito útil em sensores ou leitura de dados até uma parada lógica.
+
+P: A estrutura for é mais adequada quando:
+A) Precisamos verificar uma condição uma única vez
+B) Queremos repetir um código infinitamente
+C) Sabemos o número de vezes que um código deve se repetir
+D) A condição depende de sensores externos
+R: C
+E: A resposta correta é C. O for é ideal quando o número de repetições é conhecido, como acender um LED 10 vezes ou contar de 0 a 9.
+
+P: O que significa a instrução digitalWrite(red, HIGH); em termos de lógica booleana?
+A) Define a variável red como verdadeira
+B) Atribui 1 lógico à saída conectada ao pino red
+C) Compara a variável red com o valor HIGH
+D) Verifica se o LED está aceso
+R: B
+E: A resposta correta é B. O comando digitalWrite(pino, HIGH) envia nível lógico 1 (5V) ao pino, ativando um componente como um LED.
+
+P: O operador && significa:
+A) Ou lógico
+B) Soma
+C) E lógico (and)
+D) Negação
+R: C
+E: A resposta correta é C. O operador && representa a lógica E (and), retornando verdadeiro somente quando ambas as condições forem verdadeiras.
+
+P: Qual destas opções representa um operador de comparação?
+A) =
+B) ==
+C) ++
+D) +=
+R: B
+E: A resposta correta é B. == é o operador que compara igualdade de valores, enquanto = é de atribuição. Usar = em uma comparação é erro comum em lógica.
+
+P: Em qual caso usamos o operador ! em lógica de programação no Arduino?
+A) Para multiplicar
+B) Para inverter uma condição lógica
+C) Para somar duas variáveis
+D) Para definir o fim de um loop
+R: B
+E: A resposta correta é B. O operador ! é usado para negação lógica, transformando true em false e vice-versa. Por exemplo, if (!botao) verifica se o botão não está pressionado.
+
+P: Qual destas expressões retorna true apenas quando ambas as variáveis são true?
+A) a || b
+B) a && b
+C) a == b
+D) !a || b
+R: B
+E: A resposta correta é B. A expressão a && b retorna verdadeiro somente se a e b forem ambas verdadeiras (lógica E).
+
+P: Qual comando é usado para repetir continuamente o programa no Arduino?
+A) loop()
+B) repeat()
+C) forever()
+D) function()
+R: A
+E: A resposta correta é A. A função loop() é executada em repetição infinita no Arduino após a execução do setup(), sendo a base de qualquer programa.
+
+P: Em um programa Arduino, como podemos representar uma lógica que acende o LED apenas quando um botão está pressionado E a distância lida é menor que 20 cm?
+A) if (botao && distancia > 20)
+B) if (botao && distancia < 20)
+C) if (botao || distancia < 20)
+D) if (!botao && distancia < 20)
+R: B
+E: A resposta correta é B. A lógica correta utiliza o operador && (E lógico) para exigir que ambas as condições sejam verdadeiras.
+
+P: Qual é a principal consequência de esquecer um bloco de fechamento {} em uma estrutura condicional if com mais de uma linha?
+A) O código será mais eficiente
+B) Somente a primeira linha será considerada dentro do if
+C) O Arduino vai entender normalmente
+D) A condição se aplica a todas as linhas seguintes
+R: B
+E: A resposta correta é B. No Arduino (e em C++), sem {}, apenas a primeira linha após o if será executada condicionalmente, o que pode causar erros lógicos no programa.
+
+P: O que acontece se colocarmos um if dentro de outro if?
+A) O código trava
+B) O segundo if substitui o primeiro
+C) Criamos uma estrutura de decisão aninhada (nested)
+D) Nada, pois isso não é permitido
+R: C
+E: A resposta correta é C. Isso é chamado de estrutura aninhada, permitindo decisões mais específicas dependendo da combinação de várias condições.
+
+P: Qual comando usamos para interromper um loop ou sair de uma repetição antes do final?
+A) stop
+B) exit
+C) continue
+D) break
+R: D
+E: A resposta correta é D. O break encerra imediatamente o for, while ou switch atual, útil para parar repetições com base em uma condição.
+
+P: Em qual situação devemos utilizar else if?
+A) Quando queremos repetir um bloco até uma condição ser satisfeita
+B) Quando temos várias possibilidades de decisão, exclusivas entre si
+C) Quando queremos inverter a lógica de uma condição
+D) Quando usamos switch
+R: B
+E: A resposta correta é B. O else if é ideal para lidar com múltiplas condições alternativas, cada uma sendo testada em sequência, como faixas de distância ou níveis de intensidade.
+
+P: Qual palavra-chave é usada para declarar uma função no Arduino?
+A) define
+B) call
+C) void
+D) setup
+R: C
+E: A palavra-chave void indica que a função não retorna valor. Toda função personalizada começa com o tipo de retorno.
+
+P: O que significa criar uma função no Arduino?
+A) Declarar variáveis dentro do loop()
+B) Criar um código que se repete automaticamente
+C) Escrever um conjunto de comandos reutilizáveis
+D) Adicionar novos sensores ao Arduino
+R: C
+E: Criar uma função é uma forma de organizar e reutilizar comandos, melhorando a clareza e manutenção do código.
+
+P: Em qual parte do código uma função personalizada deve ser criada?
+A) Dentro do loop()
+B) Dentro do setup()
+C) Antes ou depois do setup() e loop()
+D) Apenas no final do código
+R: C
+E: Podemos declarar funções antes ou depois das principais, desde que estejam declaradas corretamente ou com protótipo.
+
+P: O que acontece se chamarmos uma função que ainda não foi declarada nem prototipada?
+A) Nada acontece
+B) O Arduino executa outra função
+C) O compilador mostra erro
+D) O programa roda mais devagar
+R: C
+E: O compilador exige que todas as funções estejam declaradas ou prototipadas antes do uso.
+
+P: Qual destas opções é um exemplo válido de função personalizada que acende um LED?
+A) void acenderLed() { digitalWrite(13, HIGH); }
+B) acenderLed { pinMode(13, HIGH); }
+C) function acenderLed() = { on(13); }
+D) acenderLed = function() { digitalWrite(13, HIGH); }
+R: A
+E: A opção A segue corretamente a sintaxe do Arduino/C++, começando com void, nome, parênteses e bloco {}.
+
+P: Qual a vantagem de usar funções personalizadas em projetos Arduino mais complexos?
+A) Deixar o código mais longo
+B) Aumentar o consumo de memória
+C) Organizar o código e facilitar a reutilização
+D) Permitir mais delays
+R: C
+E: Funções ajudam a dividir o projeto em partes lógicas, facilitando o teste e a manutenção.
+
+P: O que acontece se uma função personalizada for chamada dentro de si mesma sem controle adequado?
+A) Nada
+B) O código trava por loop infinito
+C) O Arduino reinicia e ignora a função
+D) O compilador remove a função
+R: B
+E: Chamadas recursivas sem condições de parada causam travamentos ou estouro de pilha, pois a função se chama infinitamente.
+
+P: Como passar um valor para dentro de uma função no Arduino?
+A) Usando variáveis globais
+B) Declarando o valor como public
+C) Utilizando parâmetros nos parênteses da função
+D) Definindo dentro do setup()
+R: C
+E: Passar valores via parâmetros torna as funções reutilizáveis com diferentes entradas, como void piscar(int vezes).
+
+P: O que é necessário para uma função retornar um valor?
+A) Usar return e declarar um tipo de retorno (ex: int)
+B) Incluir break no final
+C) Colocar output = true
+D) Criar uma variável global
+R: A
+E: A função deve ter um tipo de retorno (como int, float, etc.) e usar a instrução return valor.
+
+P: Em int somar(int a, int b) { return a + b; }, o que essa função faz?
+A) Retorna a multiplicação de dois números
+B) Retorna o valor de b
+C) Retorna a soma dos parâmetros a e b
+D) Retorna o valor 0
+R: C
+E: A função retorna a soma de dois inteiros passados como argumento, útil para cálculos reutilizáveis.
+
+P: Em que situação pode ocorrer erro ao chamar uma função personalizada?
+A) Quando o nome da função for em português
+B) Quando a função não tem delay()
+C) Quando há conflito de tipos entre parâmetros e argumentos
+D) Quando a função está antes do setup()
+R: C
+E: Se uma função espera int e recebe float, o compilador pode acusar erro ou fazer conversão indesejada.
+
+P: O que ocorre se uma função for definida como int calcula() mas não usar return?
+A) Retorna 0 automaticamente
+B) Retorna null
+C) O compilador gera erro
+D) O valor do loop() é usado por padrão
+R: C
+E: Em funções com tipo de retorno, o uso de return é obrigatório. A ausência causa erro de compilação.
+
+P: Qual é a principal diferença entre void e int ao declarar funções no Arduino?
+A) void retorna qualquer tipo; int só números
+B) int é mais rápido
+C) void não retorna valor; int retorna número inteiro
+D) void só funciona em setup()
+R: C
+E: void indica que a função não devolve nenhum valor, enquanto int exige que um número inteiro seja retornado.
+
+P: Por que pode ser útil dividir o código do loop() em várias funções?
+A) Para rodar múltiplos setup()
+B) Para reduzir a velocidade de execução
+C) Para tornar o código modular e mais fácil de testar
+D) Para aumentar o consumo de energia do Arduino
+R: C
+E: Modificar o loop() em várias funções facilita testes, leitura e depuração, sendo uma prática comum em projetos complexos.
+
+P: Se temos uma função ligarLed(int pino) e a chamamos com ligarLed(7.5), o que pode acontecer?
+A) O código converte automaticamente
+B) O Arduino não aceita pinos flutuantes
+C) Erro de compilação por tipo incompatível
+D) O LED acende normalmente
+R: C
+E: Passar um valor do tipo float para int pode causar erro de compilação ou comportamento inesperado, pois pinos são inteiros.
+
+P: Qual comando é utilizado para aumentar o valor de uma variável em 1 no Arduino?
+A) var + 1;
+B) increment(var);
+C) var++;
+D) var += 0;
+R: C
+E: var++ é uma forma abreviada e padrão de incrementar uma variável em 1 no Arduino/C++.
+
+P: Em um projeto com contador, qual tipo de variável normalmente usamos para contar?
+A) char
+B) int
+C) boolean
+D) float
+R: B
+E: A variável int (inteiro) é a mais apropriada para contar, pois armazena números inteiros positivos e negativos.
+
+P: Qual estrutura condicional usamos para verificar se o sensor foi ativado?
+A) when()
+B) loop()
+C) if()
+D) check()
+R: C
+E: if() é a estrutura condicional que permite testar se uma condição é verdadeira para executar um bloco de código.
+
+P: O que representa digitalRead(pino)?
+A) Ativa um pino digital
+B) Lê o estado (ALTO ou BAIXO) de um pino digital
+C) Escreve valor no pino digital
+D) Lê um valor analógico
+R: B
+E: digitalRead() é usada para ler se um pino digital está recebendo sinal (HIGH ou LOW).
+
+P: Qual é o objetivo de usar um contador com sensor no Arduino?
+A) Armazenar texto
+B) Fazer delay em milissegundos
+C) Medir a quantidade de ativações de um sensor
+D) Reforçar a conexão serial
+R: C
+E: Contadores com sensor são usados para medir quantas vezes um evento ocorre, como a passagem de um objeto.
+
+P: Se um objeto ativa o sensor muitas vezes rapidamente, o que pode ser necessário no código?
+A) Aumentar a tensão da porta
+B) Adicionar delay para evitar contagem múltipla
+C) Usar digitalWrite()
+D) Resetar o Arduino
+R: B
+E: Um pequeno delay() ou lógica antirruído evita contagens duplicadas por oscilações rápidas.
+
+P: O que acontece se não inicializarmos o contador com um valor inicial?
+A) Ele inicia com 1
+B) Inicia com valor aleatório
+C) Começa com o valor 0 automaticamente
+D) Pode conter lixo de memória
+R: D
+E: Variáveis não inicializadas podem conter valores indeterminados, o que prejudica o funcionamento correto do contador.
+
+P: Como podemos visualizar o valor do contador em tempo real no computador?
+A) Pela função visualCount()
+B) Através do Serial Monitor usando Serial.println()
+C) Por LEDs no pino 13
+D) Usando comandos de voz
+R: B
+E: O Serial Monitor exibe dados do Arduino enviados por Serial.println(), ideal para verificar contagens e variáveis.
+
+P: Qual é o propósito de usar Serial.begin(9600); no setup()?
+A) Inicializar o sensor
+B) Começar a contagem
+C) Configurar a comunicação serial com o computador
+D) Ativar o contador
+R: C
+E: Serial.begin(9600); define a velocidade da comunicação serial, necessária para que Serial.print() funcione corretamente.

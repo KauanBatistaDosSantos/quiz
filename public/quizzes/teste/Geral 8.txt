@@ -1,0 +1,479 @@
+P: Qual das frases representa corretamente a diferença entre testes manuais e automatizados, segundo os slides?
+A) Testes manuais são mais rápidos e exigem menos preparação que os automatizados.
+B) Testes automatizados têm custo menor a cada execução, mas exigem investimento inicial maior.
+C) Testes manuais são mais confiáveis em sistemas grandes.
+D) Testes automatizados funcionam melhor apenas em ambientes móveis.
+R: B
+E: A resposta correta é B porque os slides explicam que os testes automatizados têm alto custo de implementação inicial, mas, depois de prontos, podem ser executados rapidamente e com custo praticamente nulo a cada nova rodada.
+
+P: Qual é uma vantagem dos testes automatizados sobre os testes manuais?
+A) Eles podem avaliar questões visuais e de usabilidade com mais precisão.
+B) Eles permitem execução rápida e repetitiva sem desgaste humano.
+C) Eles não precisam ser atualizados quando o sistema muda.
+D) Eles funcionam apenas com sistemas Web.
+R: B
+E: A resposta correta é B porque os testes automatizados não se cansam, executam em alta velocidade e são ideais para testes repetitivos, como os de regressão. No entanto, eles não substituem testes de usabilidade ou percepção visual.
+
+P: Segundo os slides, qual tipo de dado deve ser testado como valor limite em formulários?
+A) Dados desnecessários para o sistema.
+B) Valores médios apenas.
+C) Campos vazios, dados inválidos e dados nos extremos (mínimo/máximo).
+D) Apenas o campo nome completo.
+R: C
+E: A resposta correta é C porque o teste de valores limites inclui entradas como campos em branco, valores fora do permitido, caracteres a mais ou a menos, além de formatos inválidos, onde erros geralmente ocorrem.
+
+P: Qual orientação é dada nos slides para o momento em que uma falha é identificada?
+A) Reescrever o plano de testes imediatamente.
+B) Corrigir o erro diretamente no ambiente de produção.
+C) Detalhar ao máximo, com prints, contexto e informações de ambiente.
+D) Ignorar falhas que não causam travamento.
+R: C
+E: A resposta correta é C porque os slides instruem a relatar as falhas com o máximo de clareza e precisão — incluindo navegador, dispositivo, versão, prints e passo a passo — facilitando a correção e a reprodução do erro.
+
+P: Qual é a principal característica do teste estático, segundo os slides?
+A) Exige execução do sistema com entrada e saída.
+B) Foca no comportamento visual da aplicação.
+C) Analisa o código sem executá-lo, buscando aderência a boas práticas.
+D) Avalia a performance do sistema em tempo real.
+R: C
+E: A resposta correta é C porque o teste estático examina o código-fonte sem rodar o sistema. Seu foco está em detectar problemas de estilo, organização, documentação e falhas potenciais antes da execução.
+
+P: Qual das situações a seguir pode ser detectada por um teste estático?
+A) Lentidão ao carregar imagens em uma página web.
+B) Comportamento inesperado ao enviar um formulário.
+C) Presença de nomes de variáveis inadequados ou falta de tratamento de exceções.
+D) Falhas ao integrar módulos diferentes.
+R: C
+E: A resposta correta é C porque o teste estático verifica aspectos como nomeação de variáveis, presença de comentários, organização do código e até falhas silenciosas como NullPointerException em potencial, sem executar o programa.
+
+P: Qual das opções é uma ferramenta de análise estática mencionada nos slides?
+A) Selenium
+B) JUnit
+C) FindBugs
+D) TestNG
+R: C
+E: A resposta correta é C porque os slides mencionam o FindBugs como exemplo de ferramenta de teste estático. Ela analisa o bytecode do Java para encontrar padrões que podem indicar bugs.
+
+P: Qual é a definição correta de teste dinâmico, conforme os materiais?
+A) Verificação visual da interface feita por designers.
+B) Validação do sistema por meio de simulações sem executar código.
+C) Execução do sistema com entradas reais e validação das saídas geradas.
+D) Comparação entre requisitos e planejamento de projeto.
+R: C
+E: A resposta correta é C porque o teste dinâmico é feito com o sistema em execução. É o método mais tradicional, onde se insere dados, executa a aplicação e se observa se o comportamento e a saída estão corretos.
+
+P: Os testes estáticos e dinâmicos se complementam porque:
+A) Um substitui o outro completamente.
+B) São realizados apenas por testadores especialistas.
+C) Testes estáticos previnem falhas antes da execução, enquanto os dinâmicos confirmam o comportamento do sistema em tempo real.
+D) Ambos testam o mesmo aspecto do sistema.
+R: C
+E: A resposta correta é C porque os testes estáticos ajudam a prevenir erros durante o desenvolvimento, enquanto os dinâmicos validam a execução real do sistema. Usar ambos resulta em maior cobertura e qualidade.
+
+P: Qual tipo de teste é considerado uma caixa branca obrigatoriamente, segundo os slides?
+A) Teste dinâmico
+B) Teste exploratório
+C) Teste estático
+D) Teste de sistema
+R: C
+E: A resposta correta é C porque o teste estático exige acesso ao código-fonte para análise. Por isso, ele é considerado uma técnica obrigatoriamente "caixa branca", pois envolve o entendimento da lógica interna do software.
+
+P: Qual exemplo não se aplica a testes dinâmicos?
+A) Inserir dados em um campo e observar a resposta.
+B) Medir o tempo de execução de uma operação.
+C) Verificar se variáveis estão nomeadas corretamente no código.
+D) Testar se uma funcionalidade retorna o valor correto.
+R: C
+E: A resposta correta é C porque a verificação de nomes de variáveis e organização do código é parte do teste estático. Já as demais opções são características dos testes dinâmicos, que envolvem execução.
+
+P: Qual é uma vantagem clara dos testes automatizados, segundo os slides?
+A) São mais fáceis de executar e exigem menos conhecimento técnico.
+B) São mais adequados para testes visuais e de usabilidade.
+C) Permitem execução rápida e repetitiva sem envolvimento humano constante.
+D) Substituem completamente o trabalho dos testadores manuais.
+R: C
+E: A resposta correta é C porque os testes automatizados são ideais para situações repetitivas, como testes de regressão, pois não se cansam e podem ser executados rapidamente diversas vezes sem intervenção.
+
+P: Qual é uma limitação dos testes manuais, conforme descrito no material?
+A) Só podem ser usados em ambientes Linux.
+B) Não conseguem testar funcionalidades básicas.
+C) São cansativos, repetitivos e lentos para grandes volumes.
+D) Requerem ferramentas pagas para serem executados.
+R: C
+E: A resposta correta é C porque os testes manuais exigem envolvimento humano em cada execução, o que os torna mais lentos e suscetíveis à fadiga, especialmente em testes que precisam ser repetidos com frequência.
+
+P: De acordo com os slides, qual é o custo principal associado aos testes automatizados?
+A) O pagamento mensal para mantê-los funcionando.
+B) O custo de cada execução individual.
+C) O investimento inicial para desenvolver e configurar os testes.
+D) O alto número de testadores necessários.
+R: C
+E: A resposta correta é C porque os testes automatizados têm um custo alto na fase de desenvolvimento, mas, após criados, podem ser executados diversas vezes com custo muito baixo, compensando ao longo do tempo.
+
+P: Qual desvantagem os testes automatizados possuem em relação aos manuais?
+A) Não conseguem verificar valores de retorno em funções.
+B) Não conseguem ser executados em sistemas móveis.
+C) Não avaliam aspectos visuais e de usabilidade com precisão.
+D) São sempre mais lentos que testes manuais.
+R: C
+E: A resposta correta é C porque, conforme os slides, testes automatizados não são ideais para verificar cores, disposição visual, estética ou questões subjetivas de usabilidade — nesses casos, o teste manual é preferido.
+
+P: Quando os testes manuais são preferíveis, segundo os slides?
+A) Em cenários que exigem repetição e padronização de execução.
+B) Para verificar a performance do sistema sob carga.
+C) Quando é necessário avaliar usabilidade, aparência e a experiência do usuário.
+D) Quando se deseja testar a arquitetura interna do código.
+R: C
+E: A resposta correta é C porque o material destaca que testes manuais são importantes quando o objetivo é avaliar a experiência do usuário — algo que depende de julgamento humano e não pode ser totalmente simulado.
+
+P: Qual é uma afirmação verdadeira com base na comparação feita nos slides?
+A) Testes automatizados exploram além do cenário de teste, enquanto os manuais não.
+B) Testes manuais não exigem tecnologia e podem ser feitos em qualquer ambiente.
+C) Testes manuais são ideais para regressão, enquanto os automatizados são para testes únicos.
+D) Apenas testes automatizados podem ser feitos por especialistas.
+R: B
+E: A resposta correta é B porque os slides indicam que testes manuais têm baixo custo de implementação, não exigem ferramentas específicas e podem ser executados com base em observação e documentação.
+
+P: Em relação a paralelismo e simulação de ambientes complexos, o que diferencia os testes automatizados?
+A) Eles são piores, pois não conseguem simular ambientes.
+B) Eles não funcionam em sistemas grandes.
+C) Eles permitem simulações de situações impossíveis de reproduzir manualmente.
+D) Eles são mais indicados apenas para testes visuais.
+R: C
+E: A resposta correta é C porque os testes automatizados podem simular grande volume de usuários simultâneos, ambientes paralelos e cenários complexos que seriam impraticáveis de testar manualmente.
+
+P: Em que momento os testes de unidade devem ser inseridos no processo de desenvolvimento?
+A) Somente após o sistema estar 100% finalizado.
+B) Durante o levantamento de requisitos.
+C) Após a definição da arquitetura, conforme os componentes forem sendo desenvolvidos.
+D) Quando o sistema já estiver em fase de testes Beta.
+R: C
+E: A resposta correta é C porque os testes de unidade devem ocorrer logo após a codificação de cada componente. Eles são aplicados conforme as partes do sistema ficam prontas e antes da integração.
+
+P: Quais testes são normalmente realizados após a codificação estar concluída, segundo os slides?
+A) Testes de unidade e integração.
+B) Testes estáticos e de segurança.
+C) Testes de sistema e de aceitação.
+D) Testes manuais e de arquitetura.
+R: C
+E: A resposta correta é C porque os testes de sistema e aceitação são feitos quando o sistema está completo e pronto para ser validado como um todo — tanto pela equipe técnica quanto por usuários ou clientes.
+
+P: Quando são realizados os testes Alfa e Beta, de acordo com os materiais?
+A) Antes do planejamento do sistema.
+B) Durante a fase de prototipagem.
+C) Após os testes de sistema e aceitação, para detecção de falhas em uso real.
+D) Junto com os testes de unidade, para validar regras de negócio.
+R: C
+E: A resposta correta é C porque os testes Alfa e Beta ocorrem após os demais testes. O Alfa é realizado por grupos controlados e o Beta por usuários reais, ambos com foco em identificar falhas ainda não detectadas.
+
+P: Em que momento os cenários de teste de sistema e de aceitação devem ser criados?
+A) Durante os testes Beta.
+B) No início da codificação, junto com os testes de unidade.
+C) Após o sistema estar 100% pronto e entregue ao cliente.
+D) Antes da execução desses testes, mas após definição de arquitetura e requisitos.
+R: D
+E: A resposta correta é D porque os slides indicam que os cenários devem ser preparados após a especificação e arquitetura, mas antes da execução dos testes. Isso permite alinhar os testes com os objetivos funcionais do sistema.
+
+P: Qual é o papel da equipe de testes no processo de desenvolvimento?
+A) Corrigir código-fonte quando necessário.
+B) Planejar, especificar e executar os testes com base nos requisitos definidos.
+C) Supervisionar os programadores e refatorar o código.
+D) Fazer o marketing do sistema para os clientes.
+R: B
+E: A resposta correta é B porque a equipe de testes deve atuar de forma estratégica e técnica, planejando e conduzindo os testes com base na documentação e nos objetivos do sistema. Ela não deve codificar nem atuar em áreas externas ao processo de teste.
+
+P: Qual é a importância de inserir os testes ao longo do desenvolvimento, e não apenas ao final?
+A) Isso reduz a carga de trabalho dos programadores.
+B) Isso permite que os clientes recebam o sistema mais bonito.
+C) Isso ajuda a detectar falhas o quanto antes, reduzindo custos e retrabalho.
+D) Isso permite que o sistema funcione em qualquer navegador.
+R: C
+E: A resposta correta é C porque quanto mais cedo as falhas são detectadas no processo de desenvolvimento, menor é o custo para corrigi-las. Testes distribuídos por todo o ciclo ajudam a evitar acúmulo de erros ao final do projeto.
+
+P: Segundo o ciclo apresentado nos slides, qual é a sequência correta para inserção dos testes no processo de desenvolvimento?
+A) Testes Alfa → Requisitos → Testes de Sistema → Testes de Unidade
+B) Especificação → Requisitos → Codificação → Testes de Unidade → Integração → Sistema → Aceitação → Alfa/Beta
+C) Requisitos → Testes de Sistema → Codificação → Testes de Aceitação
+D) Testes Estáticos → Planejamento → Entrega
+R: B
+E: A resposta correta é B porque os slides apresentam uma linha de tempo onde os testes são inseridos gradualmente após cada fase: após codificação, vêm os testes de unidade, depois integração, depois sistema, aceitação e finalmente os testes Alfa e Beta.
+
+P: De acordo com os slides, quem não deve estar envolvido na criação dos cenários de teste de sistema?
+A) Testador especialista.
+B) Usuários experientes.
+C) Desenvolvedor que está codificando o sistema.
+D) Gerente de projeto.
+R: C
+E: A resposta correta é C porque os slides recomendam que a pessoa que cria os cenários de teste não seja a mesma que desenvolve o sistema, para evitar vieses e garantir uma visão crítica e independente do processo de validação.
+
+P: Qual é a base essencial para a criação de cenários de testes, segundo os materiais?
+A) A opinião do programador.
+B) O gosto pessoal do testador.
+C) A documentação de requisitos e especificação do sistema.
+D) A interface visual do sistema.
+R: C
+E: A resposta correta é C porque os slides indicam que “o que não está especificado, não será validado”, ou seja, os testes devem ser fundamentados na documentação oficial para garantir que os requisitos do sistema estão sendo realmente testados.
+
+P: Por que é importante fazer uma boa seleção de cenários de teste?
+A) Para economizar espaço de armazenamento.
+B) Porque nem todos os testes são automatizáveis.
+C) Porque o tempo para testes é limitado e nem tudo pode ser testado.
+D) Para evitar que o cliente perceba falhas.
+R: C
+E: A resposta correta é C porque o tempo de teste é sempre limitado e o número de cenários possíveis é infinito. Por isso, é necessário priorizar os testes com base na relevância, risco e criticidade das funcionalidades.
+
+P: O que é considerado uma boa prática técnica na execução de testes, segundo os slides?
+A) Executar apenas os testes descritos, sem variações.
+B) Ignorar falhas pequenas para focar nas mais graves.
+C) Explorar além dos cenários planejados quando necessário.
+D) Utilizar somente ferramentas gratuitas.
+R: C
+E: A resposta correta é C porque os slides orientam que, durante a execução, o testador não deve agir de forma robótica, e sim explorar o sistema com pensamento crítico, além de detalhar ao máximo as falhas encontradas.
+
+P: Qual detalhe deve estar presente ao relatar uma falha detectada em teste?
+A) Apenas a descrição do erro.
+B) Nome do testador.
+C) Contexto completo da falha: navegador, versão, dispositivo, passo a passo e evidências.
+D) Comentários pessoais sobre o sistema.
+R: C
+E: A resposta correta é C porque os slides ressaltam que quanto mais completo o relato da falha, mais fácil será para a equipe de desenvolvimento compreender e corrigir o erro. Isso inclui prints, ambiente de teste e como reproduzir o problema.
+
+P: Qual atitude o testador deve adotar quando uma falha for corrigida?
+A) Assumir que está tudo certo e não testar de novo.
+B) Criar um novo cenário de teste.
+C) Executar novamente o teste (regressão) para verificar se a correção não afetou outras áreas.
+D) Informar diretamente ao cliente.
+R: C
+E: A resposta correta é C porque, após a correção de uma falha, é necessário realizar teste de regressão para garantir que outras funcionalidades não tenham sido impactadas e que a correção foi realmente efetiva.
+
+P: Quais critérios devem ser considerados ao escolher os cenários de teste a serem incluídos no plano?
+A) Popularidade da funcionalidade nas redes sociais.
+B) Facilidade de execução.
+C) Tempo disponível, maturidade do testador e relevância da funcionalidade.
+D) Preferência do desenvolvedor.
+R: C
+E: A resposta correta é C porque os slides sugerem que o planejamento dos testes deve considerar o tempo disponível, o nível de experiência dos testadores e a criticidade das funcionalidades a serem validadas.
+
+P: Qual é uma boa prática não técnica na elaboração dos testes, segundo os slides?
+A) Criar os testes após a entrega do sistema ao cliente.
+B) Permitir que o mesmo programador desenvolva e teste seu próprio código.
+C) Especificar os testes de preferência por um testador especializado e independente da equipe de desenvolvimento.
+D) Executar apenas testes aleatórios.
+R: C
+E: A resposta correta é C porque os slides reforçam que o ideal é que os testes sejam elaborados por alguém fora da equipe de desenvolvimento, com conhecimento técnico e visão crítica, garantindo mais imparcialidade e efetividade.
+
+P: O que significa a expressão dos slides: “o que não está especificado, não será validado”?
+A) O sistema deve ser entregue mesmo que incompleto.
+B) Só o que for descrito nos requisitos poderá ser testado corretamente.
+C) O desenvolvedor decide o que será testado.
+D) O testador pode criar os testes conforme desejar.
+R: B
+E: A resposta correta é B porque os testes devem ser baseados na documentação oficial do sistema. Sem especificação adequada, não há como garantir que os testes estejam validando os objetivos corretos.
+
+P: Por que os testadores devem ser pessimistas, segundo os slides?
+A) Para criticar os programadores.
+B) Para sugerir o cancelamento de projetos ruins.
+C) Para encontrar falhas que um otimista poderia ignorar.
+D) Para frustrar a equipe e evitar prazos apertados.
+R: C
+E: A resposta correta é C porque a visão pessimista ajuda o testador a desconfiar até mesmo de funções aparentemente simples e a prever falhas escondidas. Isso é essencial para a eficácia dos testes.
+
+P: O que fazer ao identificar uma falha durante a execução dos testes, conforme orientação técnica dos slides?
+A) Anotar a falha de forma genérica para ganhar tempo.
+B) Reportar a falha de forma completa e detalhada.
+C) Corrigir a falha imediatamente no código.
+D) Ignorar se for uma falha visual.
+R: B
+E: A resposta correta é B porque é fundamental que o testador registre ambiente, passos para reprodução, prints e contexto da falha, o que facilita sua correção pela equipe técnica.
+
+P: O que o testador deve fazer após uma falha ter sido corrigida?
+A) Deixar para lá, pois já foi consertado.
+B) Reescrever o cenário de teste.
+C) Realizar um novo plano de testes.
+D) Retestar (teste de regressão) para garantir que o erro foi realmente corrigido e não afetou outros pontos.
+R: D
+E: A resposta correta é D porque o reteste é essencial para garantir que a correção foi bem-sucedida e que não houve efeitos colaterais em outras partes do sistema.
+
+P: De acordo com os slides, qual é a melhor maneira de relatar um erro visual no sistema?
+A) Dizer que "a tela está feia".
+B) Descrever que o erro é estético e não importa.
+C) Detalhar o comportamento da tela, citar o navegador, dispositivo e adicionar prints.
+D) Solicitar que o programador veja pessoalmente.
+R: C
+E: A resposta correta é C porque os slides orientam a fazer relatos ricos em detalhes: o que ocorreu, onde ocorreu, em qual navegador, qual dispositivo, qual a versão e se possível com printscreen.
+
+P: O que os slides dizem sobre testar valores limites?
+A) Não é necessário se os campos tiverem validação no front-end.
+B) A maioria dos erros acontece nos valores intermediários.
+C) Grande parte dos erros ocorre em valores extremos ou inválidos, e esses devem ser testados.
+D) Apenas programadores devem se preocupar com isso.
+R: C
+E: A resposta correta é C porque testar campos com valores mínimos, máximos, inválidos e ausentes ajuda a revelar falhas comuns — especialmente em formulários e cálculos.
+
+P: Segundo os slides, o que o testador deve considerar ao reportar uma falha em um item de produto?
+A) Verificar se aquela falha se aplica a outros itens da mesma categoria, cor ou tipo.
+B) Substituir o item por outro e seguir testando.
+C) Testar apenas aquele item e encerrar o cenário.
+D) Pedir para o programador investigar sozinho.
+R: A
+E: A resposta correta é A porque os slides recomendam identificar padrões, ou seja, verificar se a falha afeta também outros produtos semelhantes — o que pode indicar um erro mais profundo e sistêmico.
+
+P: Qual é uma recomendação dos slides sobre não agir como um robô ao testar?
+A) O testador deve decorar todos os caminhos possíveis.
+B) O testador deve ignorar erros triviais.
+C) O testador deve seguir sempre o mesmo plano, sem desviar.
+D) O testador pode explorar além do planejado e testar com pensamento crítico.
+R: D
+E: A resposta correta é D porque a execução dos testes não deve ser mecânica. O testador deve usar o raciocínio e explorar possibilidades não previstas, aumentando as chances de detectar falhas.
+
+P: Por que o testador deve “pensar como um usuário pensaria”, segundo os slides?
+A) Para identificar problemas de interface e comportamento que poderiam passar despercebidos por alguém técnico.
+B) Para aprender mais sobre desenvolvimento de software.
+C) Para substituir a área de atendimento ao cliente.
+D) Para acelerar o processo de validação.
+R: A
+E: A resposta correta é A porque o testador precisa se colocar no lugar do usuário final, o que permite antecipar comportamentos inesperados e identificar problemas de usabilidade, navegação e compreensão.
+
+P: O que os slides indicam sobre o uso de ferramentas para registro e gestão de falhas?
+A) Devem ser evitadas, pois dificultam o trabalho.
+B) São desnecessárias quando se usa planilha.
+C) Podem ser utilizadas em vez da planilha, desde que permitam organização e rastreamento.
+D) Só funcionam com testes automatizados.
+R: C
+E: A resposta correta é C porque ferramentas como Jira, Bugzilla, Proj4me, Trac, entre outras, podem substituir a planilha e ajudam a organizar melhor os relatos, acompanhamento de falhas e histórico de correções.
+
+P: Qual dos seguintes itens deve ser testado com atenção especial em formulários, segundo os slides?
+A) Navegação lateral do menu.
+B) Número de cliques até o envio.
+C) Campos em branco, e-mails inválidos, limites de caracteres e mensagens de erro.
+D) Performance da aplicação.
+R: C
+E: A resposta correta é C porque formulários são áreas críticas onde ocorrem muitos erros. Os testes devem verificar campos obrigatórios, validação de dados, comportamento com valores fora do esperado e se as mensagens de erro são coerentes.
+
+P: Qual dos itens abaixo é um mito sobre o teste de software, segundo os slides?
+A) Testes ajudam a identificar falhas antes que o sistema seja entregue.
+B) Testes são uma etapa essencial no processo de desenvolvimento.
+C) Testando encontraremos 100% dos defeitos do sistema.
+D) Testes contribuem para a qualidade percebida do sistema.
+R: C
+E: A resposta correta é C porque é falso acreditar que testes garantem detecção de todos os defeitos. Os testes reduzem o risco de falhas, mas não cobrem todos os cenários possíveis devido à infinidade de entradas.
+
+P: Por que é incorreto afirmar que o teste de software é um custo extra para o projeto?
+A) Porque ele não exige nenhuma ferramenta.
+B) Porque testes são feitos apenas uma vez.
+C) Porque os testes evitam falhas graves e reduzem retrabalho e custos futuros.
+D) Porque os testes são pagos separadamente pelo cliente.
+R: C
+E: A resposta correta é C porque os testes devem ser vistos como investimento, não como custo. Eles ajudam a evitar prejuízos maiores com falhas em produção e contribuem para a entrega de um software mais confiável.
+
+P: Qual dos itens a seguir representa um equívoco comum sobre quem pode testar?
+A) Qualquer pessoa com perfil técnico pode ser treinada para testar bem.
+B) Apenas especialistas podem planejar testes complexos.
+C) Qualquer pessoa é capaz de testar bem, é só seguir o plano de testes.
+D) Testes podem ser automatizados para aumentar a eficiência.
+R: C
+E: A resposta correta é C porque, embora qualquer pessoa possa executar testes simples, a criação e a análise crítica dos testes exige conhecimento específico, visão técnica e perfil adequado, o que nem todos têm naturalmente.
+
+P: Por que é incorreto afirmar que programadores não precisam testar?
+A) Porque os programadores já têm outras funções e devem ser poupados.
+B) Porque eles podem deixar isso para o cliente.
+C) Porque testar é parte do processo de desenvolvimento e ajuda a encontrar erros locais antes da integração.
+D) Porque os testes só são válidos se feitos por uma equipe externa.
+R: C
+E: A resposta correta é C porque os programadores devem realizar testes de unidade e integração durante o desenvolvimento, evitando que falhas básicas avancem para outras etapas e afetem o restante do sistema.
+
+P: Qual é o equívoco sobre o momento certo de testar frequentemente citado como mito?
+A) Devemos testar desde o início do projeto.
+B) Só podemos testar quando o sistema estiver 100% pronto.
+C) Testes devem acompanhar todas as fases do desenvolvimento.
+D) Testes de unidade devem ser feitos após codificação.
+R: B
+E: A resposta correta é B porque os testes devem ser inseridos ao longo de todo o processo de desenvolvimento, não apenas ao final. Adiar os testes aumenta o risco de acúmulo de falhas e custos mais altos de correção.
+
+P: Qual é uma das certificações reconhecidas internacionalmente na área de teste de software, mencionada nos slides?
+A) CBJP – Certified Java Programmer
+B) PMP – Project Management Professional
+C) CTFL – Certified Tester Foundation Level
+D) CEH – Certified Ethical Hacker
+R: C
+E: A resposta correta é C porque os slides citam a CTFL, emitida pelo ISTQB/BSTQB, como uma certificação fundamental para quem deseja reconhecimento formal como testador de software.
+
+P: Qual das alternativas melhor descreve a situação do mercado de testes de software, segundo os slides?
+A) Saturado e sem espaço para novos profissionais.
+B) Altamente valorizado, mas acessível apenas para quem tem mestrado.
+C) Poucos testadores especialistas e muito espaço para quem se destaca.
+D) Com muitas vagas, porém com baixa exigência técnica.
+R: C
+E: A resposta correta é C porque os slides apontam que há poucos profissionais realmente especializados, o que torna a área uma grande oportunidade para quem busca se destacar com conhecimento técnico e perfil adequado.
+
+P: Qual diferencial é mais valorizado em um testador, conforme os materiais?
+A) Ser extrovertido e comunicativo.
+B) Ter habilidade em vendas e atendimento.
+C) Ser detalhista, criterioso e ter pensamento crítico.
+D) Saber criar interfaces modernas.
+R: C
+E: A resposta correta é C porque o testador precisa ter atenção aos detalhes, visão crítica, foco na qualidade e paciência — características destacadas nos slides como essenciais para quem deseja crescer na área.
+
+P: De acordo com o material, por que a certificação pode ser importante para um testador?
+A) Porque substitui a experiência prática.
+B) Porque permite atuar em outras áreas como desenvolvimento.
+C) Porque comprova conhecimento técnico e ajuda a abrir oportunidades profissionais.
+D) Porque elimina a necessidade de planejar testes.
+R: C
+E: A resposta correta é C porque certificações como a CTFL ou CBTS ajudam a validar as competências técnicas do profissional e a abrir portas no mercado, especialmente em empresas que valorizam qualidade formal.
+
+P: Como os slides descrevem a valorização de um profissional no mercado?
+A) Pela aparência e comunicação.
+B) Pela quantidade de certificados acumulados.
+C) Pelo tamanho do problema que resolve e pela sua raridade no mercado.
+D) Pela capacidade de seguir ordens sem questionar.
+R: C
+E: A resposta correta é C porque os slides afirmam que profissionais são valorizados de acordo com os problemas que conseguem resolver e quão raro é o seu perfil, especialmente na área de testes, onde bons profissionais são escassos.
+
+P: O que representa corretamente a verificação em testes de software?
+A) Avaliação do sistema em execução por usuários finais.
+B) Confirmação de que o sistema atende às expectativas e necessidades do cliente.
+C) Inspeção e análise técnica de documentos, código e artefatos, sem execução.
+D) Comparação entre ferramentas de automação de testes.
+R: C
+E: A resposta correta é C porque verificação refere-se a atividades como revisões, inspeções e análises estáticas que confirmam se os produtos de trabalho estão corretos, de acordo com os requisitos, sem necessidade de executar o sistema.
+
+P: Em que momento ocorre a validação no processo de testes?
+A) Antes do planejamento do projeto.
+B) Durante o levantamento de requisitos.
+C) Após a execução dos testes, para confirmar se o sistema atende ao propósito do cliente.
+D) Durante a refatoração do código.
+R: C
+E: A resposta correta é C porque validação ocorre com o sistema em execução e verifica se ele atende ao uso real esperado pelo cliente, geralmente por meio de testes de aceitação ou testes finais antes da entrega.
+
+P: O que caracteriza um teste exploratório?
+A) Teste feito com base em requisitos fixos, seguindo um plano pré-aprovado.
+B) Execução livre, sem plano pré-definido, onde o testador aprende e testa ao mesmo tempo.
+C) Teste de performance aplicado em tempo real com usuários.
+D) Verificação automatizada com ferramentas de varredura.
+R: B
+E: A resposta correta é B porque o teste exploratório é feito sem script definido, permitindo que o testador explore o sistema com base em sua intuição e experiência, descobrindo falhas que o plano tradicional pode não cobrir.
+
+P: Quando o teste exploratório é mais indicado?
+A) Quando há pouco tempo para testar e o sistema ainda está pouco documentado.
+B) Quando se deseja medir a velocidade de resposta do sistema.
+C) Quando o cliente está testando a interface.
+D) Quando o sistema já está em produção e livre de falhas.
+R: A
+E: A resposta correta é A porque o teste exploratório é útil em situações onde não há tempo para planejar testes detalhados ou onde a documentação é escassa, permitindo obter cobertura significativa de forma rápida e criativa.
+
+P: Qual é a diferença entre teste de regressão e teste de revalidação?
+A) Regressão testa funcionalidades novas; revalidação testa o banco de dados.
+B) Regressão testa se o sistema aceita novos usuários; revalidação testa design.
+C) Regressão verifica se funcionalidades antigas continuam funcionando; revalidação confirma que o erro corrigido foi de fato resolvido.
+D) Não há diferença; são sinônimos.
+R: C
+E: A resposta correta é C porque o teste de revalidação confirma que a falha corrigida foi solucionada, enquanto o teste de regressão verifica se essa correção não impactou outras partes do sistema.
+
+P: Quando o teste de regressão deve ser executado?
+A) Apenas na versão final do sistema.
+B) Sempre que o sistema for recompilado, mesmo sem mudanças de código.
+C) Após qualquer modificação no sistema, como correções, melhorias ou atualizações.
+D) Nunca, se o sistema passou no teste de unidade.
+R: C
+E: A resposta correta é C porque qualquer alteração — seja uma nova funcionalidade, correção ou ajuste — pode afetar funcionalidades já existentes, exigindo regressão para garantir que nada foi quebrado.

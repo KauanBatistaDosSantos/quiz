@@ -1,0 +1,504 @@
+P: Qual seria um bom lugar no código para zerar o contador?
+A) Dentro do setup()
+B) Em um botão reset
+C) Usar contador = 0; em uma condição específica
+D) Todas as anteriores
+R: D
+E: O contador pode ser zerado no início do código, por botão ou por lógica, dependendo do propósito do projeto.
+
+P: Qual problema pode ocorrer se o sensor ativar enquanto o Arduino ainda está executando o código do loop()?
+A) Nada acontece
+B) A contagem pode ser perdida
+C) O sensor queima
+D) O Arduino trava
+R: B
+E: Eventos muito rápidos podem ser ignorados se não houver controle adequado, como interrupções ou debounce.
+
+P: Qual comando usaria para mostrar o valor da variável contador na porta serial?
+A) Serial.output(contador);
+B) Serial.display(contador);
+C) Serial.println(contador);
+D) ShowSerial(contador);
+R: C
+E: Serial.println() envia o conteúdo da variável para o Serial Monitor e quebra a linha após o valor.
+
+P: Como garantir que o contador só incremente uma vez por ativação do sensor?
+A) Utilizando apenas digitalRead()
+B) Com uma variável de estado anterior e lógica de borda de subida
+C) Com digitalWrite()
+D) Usando delay fixo
+R: B
+E: Para evitar contagens múltiplas, comparamos o estado atual e o anterior do sensor e só incrementamos quando ocorre a transição.
+
+P: Por que pode ser arriscado depender apenas do delay() para evitar múltiplas contagens?
+A) Porque delay() desliga sensores
+B) Porque impede o uso de Serial.print()
+C) Porque congela o código, impedindo respostas rápidas
+D) Porque consome energia demais
+R: C
+E: delay() interrompe a execução do código, podendo fazer com que eventos rápidos sejam perdidos. Soluções melhores incluem lógica de tempo com millis() ou interrupções.
+
+P: Se quisermos que o contador reinicie automaticamente após atingir 10 ativações, qual comando podemos usar?
+A) if (contador == 10) contador = 0;
+B) while (contador < 10)
+C) contador == 10; reset();
+D) contador.stop();
+R: A
+E: A lógica condicional if (contador == 10) contador = 0; reinicia o contador quando ele atinge o valor desejado.
+
+P: O que é o Arduino e qual foi seu objetivo original de criação?
+A) Um tipo de processador industrial
+B) Um microcontrolador voltado a profissionais de engenharia
+C) Uma plataforma de prototipagem eletrônica de código aberto
+D) Um software de simulação de sensores
+R: C
+E: A resposta correta é C porque o Arduino é uma plataforma de prototipagem eletrônica open-source criada para facilitar o uso de eletrônica e programação em projetos interativos, inicialmente voltado para artistas, designers e iniciantes.
+
+P: O que são Sistemas Ciber-Físicos (CPS)?
+A) Softwares de modelagem digital
+B) Sistemas que integram computação e processos físicos
+C) Equipamentos de automação sem controle computacional
+D) Máquinas que operam unicamente por sensores
+R: B
+E: A resposta correta é B porque os CPS integram processos computacionais com processos físicos por meio de sensores e atuadores, permitindo controle inteligente e em tempo real.
+
+P: Onde os sistemas embarcados são comumente aplicados?
+A) Apenas em robótica industrial
+B) Em qualquer sistema que envolva sensores e microcontroladores, como carros, eletrodomésticos e sistemas médicos
+C) Somente em laboratórios científicos
+D) Apenas em smartphones e computadores
+R: B
+E: A resposta correta é B porque sistemas embarcados estão presentes em diversos equipamentos do dia a dia, como veículos, aparelhos médicos, máquinas industriais e eletrônicos domésticos, sendo integrados a sensores e atuadores.
+
+P: Quem criou o Arduino e por quê?
+A) Um grupo de engenheiros da Intel para criar um novo chip
+B) Uma equipe de designers italianos para baratear projetos eletrônicos
+C) A NASA, para uso em satélites
+D) Um laboratório japonês para robôs domésticos
+R: B
+E: A resposta correta é B porque o Arduino foi criado na Itália por Massimo Banzi e colegas para tornar a prototipagem eletrônica mais acessível a pessoas sem formação técnica avançada, como artistas e estudantes.
+
+P: O que é o Arduino?
+A) Um sistema operacional para placas embarcadas
+B) Uma linguagem de programação para controle de robôs
+C) Uma plataforma de prototipagem eletrônica de código aberto
+D) Um software para simular circuitos no computador
+R: C
+E: A resposta correta é C porque o Arduino é uma plataforma de prototipagem que combina hardware (placas) e software (IDE), sendo livre e voltada para facilitar a criação de projetos eletrônicos interativos.
+
+P: Qual foi o objetivo inicial da criação do Arduino?
+A) Criar um substituto para microcontroladores comerciais
+B) Tornar a prototipagem acessível para artistas, estudantes e iniciantes
+C) Desenvolver um sistema embarcado para uso militar
+D) Concorrer com o Raspberry Pi no ensino técnico
+R: B
+E: O Arduino foi criado para democratizar o acesso à eletrônica e à programação, especialmente entre pessoas sem formação técnica, como artistas e designers.
+
+P: Em que país o Arduino foi desenvolvido?
+A) Alemanha
+B) Estados Unidos
+C) Japão
+D) Itália
+R: D
+E: A resposta correta é D porque o Arduino foi criado na cidade de Ivrea, na Itália, por Massimo Banzi e sua equipe.
+
+P: O que são Sistemas Ciber-Físicos (CPS)?
+A) Sistemas que controlam somente elementos virtuais
+B) Equipamentos analógicos que operam sem software
+C) Sistemas que integram software e hardware para interagir com o mundo físico
+D) Plataformas para jogos digitais com simulação de física
+R: C
+E: Sistemas Ciber-Físicos integram elementos computacionais (software) com componentes físicos (motores, sensores), permitindo ações automáticas e inteligentes em tempo real.
+
+P: Qual das opções a seguir é um exemplo de Sistema Ciber-Físico?
+A) Um editor de texto
+B) Um micro-ondas com controle automático de tempo e temperatura
+C) Um arquivo em PDF
+D) Um pendrive
+R: B
+E: A resposta correta é B porque o micro-ondas detecta condições físicas e reage com lógica computacional, um comportamento típico de CPS.
+
+P: Qual das opções abaixo NÃO é uma aplicação comum de sistemas embarcados?
+A) Controle de temperatura em geladeiras
+B) Leitor de código de barras em supermercados
+C) Impressão de documentos em nuvem
+D) Sistema de freios ABS em automóveis
+R: C
+E: Impressão em nuvem envolve sistemas de rede e servidores, mas não é considerada uma aplicação típica de sistemas embarcados, que atuam diretamente em dispositivos físicos.
+
+P: O que define um sistema embarcado?
+A) Um computador independente com sistema operacional multitarefa
+B) Um sistema de controle dedicado, embutido em um dispositivo físico
+C) Um aplicativo de celular com acesso à internet
+D) Uma linguagem de programação para jogos
+R: B
+E: A resposta correta é B porque sistemas embarcados são circuitos eletrônicos com software dedicado que realizam tarefas específicas dentro de dispositivos maiores.
+
+P: Em quais áreas os sistemas embarcados são amplamente utilizados?
+A) Apenas em dispositivos militares
+B) Apenas em celulares e computadores
+C) Em áreas como automóveis, medicina, eletrodomésticos e automação industrial
+D) Exclusivamente em laboratórios acadêmicos
+R: C
+E: Os sistemas embarcados estão presentes em praticamente todas as áreas tecnológicas modernas, desde sensores em carros até aparelhos hospitalares.
+
+P: Qual é a função principal de um display de 7 segmentos em um projeto com Arduino?
+A) Medir temperatura
+B) Controlar motores
+C) Exibir números e caracteres simples
+D) Enviar sinais de rádio
+R: C
+E: O display de 7 segmentos é usado principalmente para mostrar números e letras simples, funcionando como uma pequena tela digital.
+
+P: Quantos LEDs estão presentes em um display de 7 segmentos tradicional (sem ponto decimal)?
+A) 6
+B) 7
+C) 8
+D) 10
+R: B
+E: Um display tradicional tem 7 LEDs dispostos em forma de “8”, cada um representando um segmento controlável individualmente.
+
+P: Qual a diferença entre um display de 7 segmentos de cátodo comum e um de ânodo comum?
+A) O cátodo comum tem segmentos que piscam; o ânodo não.
+B) O cátodo comum acende os LEDs com nível alto; o ânodo com nível baixo.
+C) O cátodo comum compartilha o terminal positivo; o ânodo compartilha o negativo.
+D) O cátodo comum compartilha o terminal negativo; o ânodo compartilha o positivo.
+R: D
+E: A resposta correta é D: o cátodo comum tem todos os cátodos (terminais negativos) ligados juntos, enquanto o ânodo comum une os terminais positivos.
+
+P: Se você deseja exibir o número “4” em um display de 7 segmentos, quais segmentos devem ser ativados?
+A) a, b, c, f, g
+B) b, c, f, g
+C) a, c, d, e, g
+D) b, c, e, g
+R: B
+E: O número 4 é exibido ativando os segmentos b, c, f e g — formando as bordas verticais da direita e o meio.
+
+P: Em projetos mais complexos com vários dígitos, é comum usar displays multiplexados. O que isso significa?
+A) Vários displays acesos simultaneamente, cada um com um Arduino próprio
+B) Um único display mostra vários caracteres ao mesmo tempo
+C) Vários displays são acionados rapidamente um por vez, criando a ilusão de simultaneidade
+D) Displays que funcionam apenas com circuitos analógicos
+R: C
+E: A multiplexação permite controlar vários displays com poucos pinos, ativando um dígito por vez rapidamente, de forma que pareçam todos acesos simultaneamente ao olho humano.
+
+P: Qual comando no Arduino é usado para acender um segmento de um display de 7 segmentos quando conectado a uma porta digital?
+A) analogWrite(pino, HIGH);
+B) digitalWrite(pino, HIGH);
+C) segmentWrite(pino, ON);
+D) displayWrite(7);
+R: B
+E: Para acender qualquer LED ou segmento, usa-se o comando digitalWrite(pino, HIGH) — ou LOW, dependendo do tipo de display.
+
+P: Por que é importante usar resistores ao ligar os pinos do Arduino aos segmentos do display?
+A) Para impedir que o display aqueça
+B) Para acelerar a resposta dos LEDs
+C) Para limitar a corrente e proteger os LEDs e o Arduino
+D) Para permitir que o display funcione com Bluetooth
+R: C
+E: Os resistores limitam a corrente elétrica nos LEDs, evitando sobrecarga que pode queimar o display ou danificar a porta do Arduino.
+
+P: Qual é o conceito básico de criptografia aplicado nos exemplos com Arduino apresentados em aula?
+A) Substituição de sensores por senhas
+B) Reorganização de displays de 7 segmentos
+C) Substituição de caracteres por outros com base em seu código ASCII
+D) Compressão de dados com comandos binários
+R: C
+E: A lógica de criptografia usada nas aulas foi a substituição de caracteres, baseada no valor ASCII de cada letra (por exemplo, somar ou subtrair um valor).
+
+P: Qual função em C/C++ é normalmente usada para manipular strings (cadeias de texto) em projetos de criptografia com Arduino?
+A) readString()
+B) parseInt()
+C) Serial.begin()
+D) strcpy(), strcat(), strlen()
+R: D
+E: Funções como strcpy(), strcat(), strlen() são comuns para copiar, concatenar e medir strings, essenciais em manipulação de mensagens criptografadas.
+
+P: Na lógica explicada em aula, o que aconteceria com a letra ‘A’ (ASCII 65) ao ser criptografada somando 3 unidades?
+A) ‘C’
+B) ‘B’
+C) ‘D’
+D) ‘E’
+R: C
+E: Se somarmos 3 ao valor ASCII de ‘A’ (65), obtemos 68, que corresponde à letra ‘D’.
+
+P: Qual estrutura de controle é frequentemente usada para percorrer uma string e criptografar caractere por caractere?
+A) if/else
+B) while
+C) for
+D) switch
+R: C
+E: O laço for permite percorrer cada caractere de uma string por índice, ideal para aplicar a lógica de criptografia.
+
+P: O que o termo “descriptografia” significa no contexto dos códigos usados nas aulas?
+A) Deletar os dados salvos na EEPROM
+B) Converter números para letras
+C) Inverter o processo da criptografia, retornando à mensagem original
+D) Ler dados de sensores e convertê-los em texto
+R: C
+E: Descriptografar é fazer o processo reverso da criptografia, subtraindo (em vez de somar) o valor que foi adicionado ao texto original.
+
+P: Em um código de exemplo, foi usada uma função personalizada chamada criptografar(). Qual era o objetivo de criar uma função separada?
+A) Para ativar sensores automaticamente
+B) Para modularizar o código e reutilizar a lógica de criptografia
+C) Para garantir comunicação serial entre placas
+D) Para evitar delays
+R: B
+E: Usar funções separadas permite organizar o código, tornar a criptografia reutilizável e facilita a manutenção e testes.
+
+P: Qual é a vantagem de aplicar criptografia simples em projetos Arduino que trocam mensagens entre dispositivos?
+A) Aumenta o tempo de resposta
+B) Permite usar sensores analógicos
+C) Protege dados contra interceptações básicas
+D) Reduz o consumo de energia
+R: C
+E: Embora básica, essa criptografia protege os dados contra leituras diretas, útil em projetos que envolvem comunicação serial entre placas.
+
+P: Qual é o principal objetivo de usar a biblioteca Adafruit em projetos com LCD no Arduino?
+A) Substituir o uso de sensores analógicos
+B) Facilitar o controle e escrita em displays LCD
+C) Ativar comunicação Bluetooth
+D) Reduzir o número de variáveis globais
+R: B
+E: A biblioteca Adafruit_LiquidCrystal torna mais simples comandos como print(), setCursor(), clear() e outros para exibir informações em LCD.
+
+P: Antes de usar a biblioteca Adafruit com LCD, o que é necessário incluir no código?
+A) #include <Serial.h>
+B) #include <Adafruit_LiquidCrystal.h>
+C) #include <LiquidCrystal_I2C.h>
+D) #include <Wire.h> apenas
+R: B
+E: A linha #include <Adafruit_LiquidCrystal.h> importa a biblioteca adequada. É comum também ver a biblioteca Wire.h para comunicação I2C, mas a específica para o LCD Adafruit é essa.
+
+P: Qual é o método usado para posicionar o cursor no LCD antes de imprimir algo?
+A) lcd.moveCursor()
+B) lcd.setCursor(col, row)
+C) lcd.pointTo(x, y)
+D) lcd.cursorAt()
+R: B
+E: O método correto é lcd.setCursor(coluna, linha), começando em (0, 0) no canto superior esquerdo.
+
+P: Em projetos com LCD, o que a função lcd.begin(16, 2) normalmente indica?
+A) Define que o display tem 16 linhas e 2 colunas
+B) Inicia o display e define que ele tem 16 colunas e 2 linhas
+C) Limpa o conteúdo do display
+D) Conecta o display à porta COM 16
+R: B
+E: A função lcd.begin(16, 2) inicializa o display com 16 colunas e 2 linhas. Essa é a dimensão mais comum de LCDs usados em projetos básicos.
+
+P: Após escrever lcd.print("Olá Mundo"), o que acontece no display LCD?
+A) O display reinicia
+B) A frase "Olá Mundo" aparece na posição atual do cursor
+C) A mensagem aparece invertida
+D) Nenhum efeito ocorre sem lcd.write()
+R: B
+E: O método print() exibe o texto na posição onde o cursor estiver. Para controlar onde isso acontece, usa-se lcd.setCursor() antes.
+
+P: Qual dessas boas práticas foi destacada nas aulas ao trabalhar com LCD e mensagens variáveis?
+A) Nunca usar lcd.clear() para evitar travamentos
+B) Evitar mudar o cursor de posição
+C) Usar lcd.clear() ou sobrescrever o texto para evitar mensagens sobrepostas
+D) Usar delays grandes para que o texto seja visível
+R: C
+E: Quando o conteúdo do display muda frequentemente (como mensagens com sensores), é importante limpar o display antes de escrever novamente ou escrever espaços para apagar resíduos de textos anteriores.
+
+P: Se você quiser exibir a distância captada por um sensor ultrassônico em tempo real em um LCD, qual seria a sequência correta de passos?
+A) Ler a distância → lcd.print() diretamente
+B) lcd.clear() → lcd.setCursor() → lcd.print() com a distância
+C) lcd.begin() → lcd.delay() → mostrar a distância
+D) Definir o pino do LCD como OUTPUT
+R: B
+E: Para atualizar dados em tempo real, é recomendável usar lcd.clear(), mover o cursor com setCursor(), e só então lcd.print() o valor.
+
+P: O que acontece se não usarmos else após um if no Arduino?
+A) O programa trava
+B) A próxima condição será ignorada
+C) O código funcionará normalmente, apenas não terá comportamento alternativo
+D) O Arduino entra em loop infinito
+R: C
+E: O else é opcional. Se não for utilizado, o código só executará o que está dentro do if quando a condição for verdadeira. Se for falsa, ele apenas pula para o próximo bloco de código.
+
+P: Qual a vantagem de usar estruturas else if em vez de múltiplos if independentes?
+A) Ocupa mais memória
+B) Deixa o código mais lento
+C) Evita que condições desnecessárias sejam testadas após uma já ser satisfeita
+D) Permite múltiplas ações simultâneas
+R: C
+E: Quando usamos else if, assim que uma condição é verdadeira, as demais são ignoradas, o que torna o código mais eficiente.
+
+P: Qual função pode ser usada para converter um número inteiro para string no Arduino?
+A) convert()
+B) str()
+C) String()
+D) toText()
+R: C
+E: No Arduino, o construtor String() pode ser usado para converter números inteiros ou valores numéricos em uma string de texto, por exemplo: String(valor).
+
+P: Em qual situação o operador && deve ser utilizado?
+A) Para comparar dois números
+B) Para verificar se pelo menos uma condição é verdadeira
+C) Para executar uma ação apenas se duas condições forem verdadeiras ao mesmo tempo
+D) Para negar uma condição
+R: C
+E: O operador && (E lógico) exige que ambas as condições comparadas sejam verdadeiras para que o bloco de código seja executado.
+
+P: O que o comando return faz dentro de uma função personalizada no Arduino?
+A) Interrompe o loop principal
+B) Finaliza a execução do programa
+C) Devolve um valor e encerra a função
+D) Reinicia o código do Arduino
+R: C
+E: return encerra uma função e opcionalmente retorna um valor. É essencial quando funções são usadas para cálculos ou verificações que precisam entregar um resultado.
+
+P: Ao usar if (x = 5) em vez de if (x == 5), o que pode acontecer?
+A) O código funciona normalmente
+B) A comparação é correta, pois = e == são equivalentes
+C) O valor 5 será atribuído à variável x, e a condição sempre será verdadeira
+D) Um erro de compilação será gerado
+R: C
+E: = é o operador de atribuição, não de comparação. Esse erro é comum: ele atribui o valor 5 a x, e como 5 é um valor “verdadeiro”, o if será sempre executado.
+
+P: Por que é considerado má prática usar delay() excessivamente no Arduino?
+A) Porque reduz a legibilidade do código
+B) Porque pode queimar o microcontrolador
+C) Porque impede que outras tarefas sejam executadas durante a pausa
+D) Porque altera o consumo de memória RAM
+R: C
+E: O delay() trava a execução do programa pelo tempo determinado, impedindo que outras leituras de sensores ou funções sejam realizadas nesse período. Prefere-se usar técnicas com millis() em projetos mais complexos.
+
+P: Qual a principal vantagem de criar funções personalizadas no Arduino?
+A) Aumentar o tamanho do código
+B) Reduzir a performance do microcontrolador
+C) Tornar o código mais organizado, reutilizável e fácil de manter
+D) Eliminar o uso de variáveis globais
+R: C
+E: Funções personalizadas ajudam a modularizar o código, facilitam o reuso e tornam o programa mais compreensível e organizado.
+
+P: Qual a estrutura básica para criar uma função personalizada no Arduino?
+A) loop() { }
+B) função nome() { }
+C) tipo nome() { }
+D) begin nome() { }
+R: C
+E: Uma função é declarada com um tipo de retorno (como void, int etc.), seguido do nome e dos parênteses:
+Exemplo: void piscarLED() { /* código */ }.
+
+P: O que significa o uso de void na declaração de uma função?
+A) Que a função está vazia
+B) Que a função será executada apenas uma vez
+C) Que a função não retorna nenhum valor
+D) Que a função será ignorada pelo compilador
+R: C
+E: void indica que a função não devolverá nenhum valor. Muito comum em funções que apenas realizam ações, como acender LEDs ou imprimir textos.
+
+P: Como passamos informações para uma função no Arduino?
+A) Usando define()
+B) Usando variáveis globais
+C) Através de parâmetros entre parênteses
+D) Declarando a função dentro do setup()
+R: C
+E: Parâmetros são declarados dentro dos parênteses da função. Exemplo: void piscarLED(int tempo).
+
+P: Uma função personalizada pode chamar outra função dentro de si?
+A) Não, isso causa erro
+B) Sim, desde que não sejam funções do sistema
+C) Sim, inclusive o loop() pode ser chamado
+D) Sim, inclusive outras funções personalizadas
+R: D
+E: Funções podem ser chamadas dentro de outras funções, inclusive funções que você mesmo criou. Isso é uma prática comum e poderosa.
+
+P: O que pode acontecer se você criar duas funções com o mesmo nome, mas parâmetros diferentes?
+A) O código funciona normalmente
+B) O compilador acusa erro, pois o Arduino não suporta sobrecarga de funções
+C) A função com menos parâmetros é ignorada
+D) Ambas as funções são executadas ao mesmo tempo
+R: B
+E: A linguagem usada no Arduino (C/C++) não permite sobrecarga de funções da forma como linguagens modernas permitem, especialmente sem configuração especial. Isso gera conflito e erro de compilação.
+
+P: Qual dessas opções é um bom exemplo de função personalizada para piscar um LED com tempo variável?
+A) void piscarLED(int tempo) { digitalWrite(13, HIGH); delay(tempo); digitalWrite(13, LOW); delay(tempo); }
+B) piscarLED() { on(); wait(); off(); wait(); }
+C) int tempo { piscar(); }
+D) loop() piscarLED();
+R: A
+E: O código A define corretamente a função com parâmetro e executa a lógica de piscar o LED, usando digitalWrite() e delay() com valor ajustável.
+
+P: Qual é a lógica mais comum para implementar um contador com sensor ultrassônico no Arduino?
+A) Somar 1 sempre que o LED estiver aceso
+B) Subtrair 1 ao detectar objetos
+C) Incrementar o contador quando um objeto entra em uma determinada distância
+D) Repetir a função loop() várias vezes
+R: C
+E: A lógica mais comum envolve monitorar a distância de objetos e, ao detectar entrada dentro de um limite (ex: 30 cm), incrementar o contador.
+
+P: Para evitar contagens múltiplas acidentais com o mesmo objeto parado, o que deve ser adicionado ao código?
+A) Um delay(1000) após cada contagem
+B) Um LED que apague após a leitura
+C) Uma condição para verificar a variação da distância ou uma flag de controle
+D) Nada, isso não pode ser evitado
+R: C
+E: O ideal é criar um controle que detecte apenas a transição (por exemplo, objeto que entra e sai), usando flags ou lógica condicional, evitando contagens repetidas.
+
+P: Como podemos imprimir a contagem na porta serial?
+A) Serial.show(contagem)
+B) Serial.begin(contagem)
+C) Serial.print("Contagem: "); Serial.println(contagem);
+D) Serial.start(contagem)
+R: C
+E: O comando Serial.print() seguido de Serial.println() imprime texto e valores de variáveis na tela do monitor serial.
+
+P: Qual variável seria mais apropriada para armazenar a quantidade de vezes que o sensor detectou movimento?
+A) bool
+B) float
+C) int
+D) char
+R: C
+E: Um contador deve usar int, que permite armazenar valores inteiros crescentes de forma simples.
+
+P: O que faz a função pulseIn(echo, HIGH) no contexto de um sensor ultrassônico?
+A) Conta quantas vezes o sensor foi acionado
+B) Retorna a distância em centímetros
+C) Mede o tempo que o sinal leva para voltar após ser refletido por um objeto
+D) Pisca um LED quando um som é emitido
+R: C
+E: Essa função mede a duração do sinal refletido em microsegundos, essencial para calcular a distância com base na velocidade do som.
+
+P: O que deve ser feito no código para que a contagem seja exibida somente quando mudar?
+A) Adicionar if (contagem > 0)
+B) Comparar com uma variável de contagem anterior e só imprimir se for diferente
+C) Usar delay(100)
+D) Remover o Serial.begin()
+R: B
+E: Para exibir apenas quando houver mudança, compara-se a contagem atual com a anterior, evitando repetições desnecessárias na tela.
+
+P: Em qual função o contador deve ser zerado, se quisermos que ele recomece a cada reinício do Arduino?
+A) loop()
+B) void piscar()
+C) setup()
+D) serialMonitor()
+R: C
+E: A função setup() é executada uma única vez quando o Arduino reinicia. Ideal para inicializações como contador = 0;.
+
+P: Em um sistema real de contagem de pessoas usando Arduino e sensor ultrassônico, o que pode afetar negativamente a precisão?
+A) Colocar o sensor perto da porta
+B) A velocidade do Arduino
+C) Objetos parados dentro da área de leitura
+D) Utilizar Serial.println()
+R: C
+E: Objetos parados podem gerar leituras contínuas e falsos positivos se o código não tratar a lógica de entrada e saída corretamente.
+
+P: O que caracteriza um sistema distribuído?
+A) Um único computador realizando várias tarefas simultâneas
+B) Um conjunto de computadores independentes cooperando para um objetivo comum
+C) Um servidor central controlando todos os clientes conectados
+D) Um único banco de dados acessado remotamente
+R: B
+E: A resposta correta é B porque sistemas distribuídos envolvem múltiplos computadores que colaboram entre si, cada um executando partes de uma tarefa ou compartilhando recursos.
+
+P: Qual dos modelos abaixo sofre com maior risco de gargalo no servidor?
+A) P2P com super nós
+B) P2P sem tracker
+C) Cliente-servidor
+D) P2P com DHT
+R: C
+E: A resposta correta é C porque, no modelo cliente-servidor, há um único ponto de controle que concentra todas as requisições, criando gargalos em performance.
