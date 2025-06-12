@@ -1,0 +1,799 @@
+P: Qual protocolo é tradicionalmente usado para transferir arquivos entre cliente e servidor?
+A) HTTP
+B) FTP
+C) MIME
+D) DHT
+R: B
+E: A resposta correta é B porque o FTP (File Transfer Protocol) é o protocolo clássico de transferência de arquivos em sistemas cliente-servidor. HTTP é usado para navegação web, MIME para anexos de e-mail, e DHT é associado a redes P2P.
+
+P: O que representa o protocolo MIME?
+A) Um método de encriptação de mensagens
+B) Um protocolo de streaming de vídeo
+C) Um padrão para envio de anexos em e-mails
+D) Um sistema operacional embarcado
+R: C
+E: A resposta correta é C porque o MIME (Multipurpose Internet Mail Extensions) permite que e-mails contenham anexos, como imagens e documentos. Não tem relação com streaming ou sistemas operacionais.
+
+P: Qual é o principal papel do protocolo HTTP no contexto de compartilhamento de arquivos?
+A) Acesso a arquivos diretamente via web
+B) Sincronização entre múltiplos dispositivos
+C) Criptografia de arquivos em trânsito
+D) Compressão de arquivos para download
+R: A
+E: A resposta correta é A porque o HTTP é usado para transferir arquivos via navegação web, permitindo downloads diretos de sites. Ele não realiza compressão, criptografia ou sincronização por si só.
+
+P: O que caracteriza o compartilhamento em nuvem como Dropbox e Google Drive?
+A) Uso de P2P descentralizado
+B) Envio de arquivos por Bluetooth
+C) Armazenamento remoto via servidores centralizados
+D) Exclusiva compatibilidade com Linux
+R: C
+E: A resposta correta é C porque serviços como Dropbox e GDrive armazenam arquivos em servidores na nuvem, permitindo acesso remoto. Eles não usam Bluetooth nem exigem um sistema operacional específico.
+
+P: Qual é um dos problemas do modelo tradicional cliente-servidor quando muitos downloads ocorrem simultaneamente?
+A) Criação de cópias ilegais de arquivos
+B) Falta de segurança nos dados
+C) Sobrecarga do servidor
+D) Conflito de endereços IP
+R: C
+E: A resposta correta é C porque quando muitos usuários tentam acessar um servidor ao mesmo tempo, ele pode ficar sobrecarregado, resultando em lentidão ou falhas. Isso não tem relação direta com IP ou segurança.
+
+P: Qual é uma vantagem do compartilhamento P2P em relação ao modelo tradicional cliente-servidor?
+A) Reduz a colaboração entre usuários
+B) Diminui a necessidade de largura de banda
+C) Evita gargalos ao distribuir o tráfego entre os pares
+D) Exige servidores mais potentes
+R: C
+E: A resposta correta é C porque o modelo P2P distribui a carga entre os usuários da rede, evitando a sobrecarga de um servidor central. Isso aumenta a escalabilidade e a eficiência do compartilhamento.
+
+P: Qual aplicação popular usa a tecnologia P2P para compartilhamento de arquivos?
+A) Netflix
+B) GDrive
+C) BitTorrent
+D) Telegram
+R: C
+E: A resposta correta é C porque o BitTorrent é uma das aplicações mais conhecidas que usam o modelo P2P para distribuir arquivos. Netflix, por outro lado, usa o modelo cliente-servidor.
+
+P: O que é um “.torrent”?
+A) Um programa para baixar arquivos
+B) Um protocolo de segurança
+C) Um arquivo com metadados para iniciar o download via BitTorrent
+D) Um tipo de vírus camuflado
+R: C
+E: A resposta correta é C porque o arquivo .torrent contém informações sobre o conteúdo a ser baixado, incluindo os hashes dos pedaços e o endereço do tracker. Ele não é um executável nem contém dados do arquivo em si.
+
+P: Qual é o objetivo de usar hashes no arquivo .torrent?
+A) Compressão de dados
+B) Ocultação do endereço IP
+C) Verificação de integridade dos pedaços recebidos
+D) Aumentar a velocidade de download
+R: C
+E: A resposta correta é C porque os hashes permitem confirmar se cada pedaço do arquivo foi recebido corretamente, prevenindo inserção de conteúdo malicioso ou corrompido.
+
+P: O que é o “swarm” no contexto do BitTorrent?
+A) O nome de um protocolo de segurança
+B) Um grupo de computadores atacando o tracker
+C) O conjunto de todos os nós compartilhando um mesmo arquivo
+D) O nome do programa oficial do BitTorrent
+R: C
+E: A resposta correta é C porque o “swarm” é o grupo de todos os peers (semeadores e leechers) que estão participando do compartilhamento de um determinado conteúdo via BitTorrent.
+
+P: Qual é a função de um tracker no BitTorrent?
+A) Armazenar os arquivos completos
+B) Organizar os arquivos por tipo
+C) Manter a lista de nós conectados e interessados no conteúdo
+D) Criptografar a conexão entre peers
+R: C
+E: A resposta correta é C porque o tracker coordena os peers conectados ao swarm, mantendo a lista de quem está compartilhando o conteúdo. Ele não armazena os arquivos diretamente.
+
+P: Quem são os “seeders” em uma rede BitTorrent?
+A) Usuários que baixaram o conteúdo parcialmente
+B) Servidores que distribuem propaganda
+C) Nós que possuem o arquivo completo e continuam enviando para outros
+D) Sistemas automáticos de monitoramento
+R: C
+E: A resposta correta é C porque os seeders são usuários que já possuem o arquivo completo e continuam compartilhando, garantindo a disponibilidade para os outros.
+
+P: O que são os “leechers” no BitTorrent?
+A) Usuários que deletaram o conteúdo após baixar
+B) Usuários que estão enviando dados sem receber nada
+C) Nós que ainda não possuem o arquivo completo
+D) Servidores que hospedam arquivos grandes
+R: C
+E: A resposta correta é C porque os leechers são participantes que ainda estão baixando partes do arquivo e podem também enviar pedaços que já possuem a outros peers.
+
+P: Qual característica dos links .torrent permite evitar a distribuição de conteúdo malicioso?
+A) Criptografia automática
+B) Integração com servidores de e-mail
+C) Verificação de integridade via hash
+D) Exclusividade de acesso por senha
+R: C
+E: A resposta correta é C porque os arquivos .torrent contêm hashes de cada pedaço, permitindo validar se o conteúdo recebido corresponde ao original, prevenindo alterações ou inserções indevidas.
+
+P: Por que a busca por arquivos BitTorrent não é parte do protocolo oficial?
+A) Porque ela depende de comunicação criptografada
+B) Porque é feita por meio de sites ou interfaces externas ao protocolo
+C) Porque os arquivos estão sempre ocultos
+D) Porque cada nó precisa realizar a busca manualmente
+R: B
+E: A resposta correta é B porque o protocolo BitTorrent não define como os usuários encontram arquivos, deixando essa função a cargo de sites especializados ou mecanismos implementados nos aplicativos.
+
+P: Como funciona a criação da rede overlay em BitTorrent?
+A) É uma estrutura fixa usada em todos os arquivos
+B) Cada arquivo compartilhado cria sua própria rede temporária
+C) É gerada pelos provedores de internet
+D) Funciona somente com uso de VPN
+R: B
+E: A resposta correta é B porque em BitTorrent, cada arquivo compartilhado gera uma rede overlay específica — o “swarm” — com os peers interessados naquele arquivo. Essa rede é independente de outras.
+
+P: Por que um mesmo link .torrent pode ser usado por diferentes usuários?
+A) Porque ele muda a cada acesso
+B) Porque contém o arquivo completo
+C) Porque sempre se refere ao mesmo conteúdo e permite verificação
+D) Porque é gerado automaticamente pelos peers
+R: C
+E: A resposta correta é C porque o link .torrent contém os metadados do arquivo original e seus hashes, permitindo que todos baixem exatamente o mesmo conteúdo e validem sua integridade.
+
+P: O que significa a política de “mais raros primeiro” no BitTorrent?
+A) Baixar os arquivos com menor número de seeds
+B) Priorizar pedaços menos disponíveis na rede
+C) Rejeitar arquivos populares
+D) Remover pedaços duplicados
+R: B
+E: A resposta correta é B porque BitTorrent dá prioridade a pedaços menos disponíveis na rede. Isso ajuda a manter a diversidade dos pedaços circulando, garantindo que todos tenham acesso ao arquivo completo mesmo com poucos seeders.
+
+P: Qual é o objetivo da política “tit-for-tat” no BitTorrent?
+A) Penalizar usuários que fazem muitos uploads
+B) Otimizar os downloads para os mais rápidos
+C) Compartilhar apenas com quem paga
+D) Reduzir a duplicação de pedaços
+R: B
+E: A resposta correta é B porque “tit-for-tat” (olho por olho) dá preferência a peers que estão enviando pedaços com maior velocidade. Isso incentiva a cooperação e melhora o desempenho da rede.
+
+P: O que é “optimistic unchoke” no BitTorrent?
+A) Técnica que bloqueia peers inativos
+B) Recurso que permite baixar arquivos com VPN
+C) Mecanismo que testa novos peers para possíveis trocas rápidas
+D) Função usada para pausar e retomar downloads
+R: C
+E: A resposta correta é C porque o “optimistic unchoke” permite que o cliente BitTorrent troque temporariamente um peer por outro aleatório, testando novas conexões que podem ter melhor desempenho.
+
+P: O que pode acontecer se o cliente BitTorrent se conectar a muitos peers simultaneamente?
+A) Aumenta a velocidade indefinidamente
+B) Reduz a eficiência, dividindo a banda
+C) Impede o download de arquivos grandes
+D) Envia todos os pedaços repetidamente
+R: B
+E: A resposta correta é B porque se o cliente se conecta a muitos peers, sua banda é dividida entre todos, o que pode diminuir a eficiência geral da transferência.
+
+P: O que acontece se o tracker de um arquivo .torrent ficar offline?
+A) O arquivo se apaga automaticamente
+B) A transferência acelera
+C) Não é possível encontrar novos peers usando o tracker
+D) Os arquivos continuam sendo hospedados nos servidores
+R: C
+E: A resposta correta é C porque o tracker serve para coordenar a conexão entre os peers. Se ele estiver offline, os peers não conseguem mais novos contatos por esse meio, embora possam usar DHT ou PEX como alternativa.
+
+P: Qual tecnologia permite o BitTorrent funcionar mesmo sem um tracker ativo?
+A) VPN
+B) Proxy reverso
+C) DHT (Distributed Hash Table)
+D) HTML5
+R: C
+E: A resposta correta é C porque o DHT permite que os próprios nós da rede façam o papel de tracker, mantendo o sistema funcionando mesmo que o tracker central não esteja disponível.
+
+P: O que representa um link magnético no BitTorrent?
+A) Um ímã que ativa o download
+B) Um link com o conteúdo real do arquivo
+C) Um endereço que obtém informações via DHT antes do download começar
+D) Um código secreto para arquivos criptografados
+R: C
+E: A resposta correta é C porque o link magnético não contém o arquivo .torrent, mas sim informações para que o cliente use DHT para encontrar peers e baixar o conteúdo diretamente.
+
+P: Qual é a função do Peer Exchange (PEX) no BitTorrent?
+A) Trocar os pedaços de arquivos entre peers
+B) Trocar listas de usuários conhecidos entre os peers
+C) Compartilhar o tracker com outros usuários
+D) Proteger a rede contra vírus
+R: B
+E: A resposta correta é B porque o PEX permite que os peers troquem informações sobre outros usuários ativos na rede, aumentando a disponibilidade e velocidade ao encontrar novos contatos.
+
+P: Por que a combinação de DHT, PEX e links magnéticos aumenta a robustez do BitTorrent?
+A) Permite esconder o conteúdo dos arquivos
+B) Elimina a necessidade de servidores centrais
+C) Reduz o tamanho dos arquivos .torrent
+D) Exige menos memória RAM
+R: B
+E: A resposta correta é B porque esses mecanismos descentralizam a rede BitTorrent, permitindo que ela funcione mesmo sem trackers e resistindo a censura ou ataques de negação de serviço.
+
+P: É possível anonimato completo usando BitTorrent comum?
+A) Sim, todos os peers são ocultos
+B) Não, os IPs dos peers são visíveis
+C) Sim, se o conteúdo for criptografado
+D) Não, porque a rede é fechada
+R: B
+E: A resposta correta é B porque, na rede BitTorrent tradicional, todos os peers conseguem ver o IP uns dos outros, o que inviabiliza o anonimato completo sem o uso de ferramentas adicionais.
+
+P: Qual técnica pode ser usada para monitorar usuários em uma rede BitTorrent?
+A) Criação de arquivos corrompidos
+B) Substituição de peers por robôs
+C) Anunciar que possui o conteúdo e coletar os IPs de quem tenta baixar
+D) Usar conexão direta com seeders
+R: C
+E: A resposta correta é C porque basta um usuário malicioso se conectar ao swarm como se tivesse o arquivo, para então registrar os IPs de quem tenta fazer o download.
+
+P: Por que o anonimato pode ser importante na internet?
+A) Para impedir o uso de antivírus
+B) Para manter a privacidade e permitir denúncias ou protestos
+C) Para acelerar a navegação
+D) Para evitar atualizações de sistema
+R: B
+E: A resposta correta é B porque o anonimato pode proteger usuários em situações sensíveis, como denúncias, manifestações contra regimes autoritários e privacidade em geral.
+
+P: Qual informação pode ser usada para mapear um usuário a partir do BitTorrent?
+A) O nome do arquivo
+B) O número de peers conectados
+C) O endereço IP, associado à conta pela operadora
+D) O tempo de download
+R: C
+E: A resposta correta é C porque o endereço IP identifica a máquina na rede, e operadoras de internet podem mapear esse IP ao cliente que o estava utilizando naquele momento.
+
+P: Qual é uma das razões para desejar anonimato na internet?
+A) Para evitar receber mensagens de texto
+B) Para impedir que páginas sejam carregadas
+C) Para proteger sua identidade em contextos sensíveis
+D) Para desabilitar o roteador Wi-Fi
+R: C
+E: A resposta correta é C porque o anonimato pode proteger usuários que desejam se manifestar, denunciar irregularidades ou navegar sem que sua geolocalização e identidade sejam rastreadas.
+
+P: O que são Sistemas Ciber-Físicos (CPS)?
+A) Programas que simulam sistemas operacionais
+B) Integrações entre computação, comunicação e processos físicos
+C) Aplicativos para controlar redes sociais
+D) Plataformas de jogos eletrônicos
+R: B
+E: A resposta correta é B porque os CPS envolvem a integração de componentes computacionais, de rede e físicos, permitindo o controle e monitoramento de processos do mundo real, como fábricas automatizadas.
+
+P: Qual é uma semelhança entre sistemas ciber-físicos e a Internet das Coisas (IoT)?
+A) Ambos são usados exclusivamente em celulares
+B) Ambos se baseiam em sensores e comunicação entre dispositivos
+C) Ambos funcionam sem rede
+D) Ambos dispensam componentes físicos
+R: B
+E: A resposta correta é B porque tanto os CPS quanto a IoT utilizam sensores, atuadores e elementos computacionais para realizar controle e monitoramento via rede.
+
+P: O que compõe um sistema ciber-físico?
+A) Apenas sensores e cabos
+B) Somente softwares locais
+C) Elementos computacionais, físicos e processos integrados
+D) Componentes gráficos e jogos digitais
+R: C
+E: A resposta correta é C porque sistemas ciber-físicos combinam hardware (como sensores), lógica computacional (softwares) e processos físicos (como uma esteira de produção).
+
+P: Como um sistema ciber-físico pode ser descrito de forma mais simples?
+A) Um software online para redes sociais
+B) Um jogo interativo com múltiplos finais
+C) Um sistema embarcado conectado à internet
+D) Um processador gráfico com inteligência artificial
+R: C
+E: A resposta correta é C porque os CPS podem ser vistos como sistemas embarcados com conexão em rede, permitindo controle e coleta de dados remotos.
+
+P: O que é um sistema embarcado?
+A) Um software instalado em notebooks
+B) Um microprocessador dedicado a uma tarefa específica
+C) Um programa que simula dispositivos
+D) Um código de backup em nuvem
+R: B
+E: A resposta correta é B porque sistemas embarcados são computadores em miniatura embutidos em dispositivos, como controles remotos, que executam tarefas específicas.
+
+P: Qual é um exemplo simples de sistema embarcado?
+A) Um aplicativo de edição de fotos
+B) Um controle remoto de televisão
+C) Um navegador de internet
+D) Um terminal de caixa eletrônico
+R: B
+E: A resposta correta é B porque o controle remoto contém processador, memória e software dedicados exclusivamente à função de controlar a TV, representando um sistema embarcado.
+
+P: O que é firmware em sistemas embarcados?
+A) Uma versão leve de software antivírus
+B) O código instalado diretamente no hardware
+C) Um software temporário na nuvem
+D) Uma interface gráfica para usuários
+R: B
+E: A resposta correta é B porque firmware é o software gravado diretamente no hardware de dispositivos eletrônicos, controlando suas funções básicas.
+
+P: Em quais áreas os sistemas embarcados têm sido aplicados com impacto?
+A) Somente em computadores de mesa
+B) Apenas em aplicativos bancários
+C) Em eletrodomésticos, comunicação, entretenimento e mais
+D) Exclusivamente em jogos eletrônicos
+R: C
+E: A resposta correta é C porque sistemas embarcados estão presentes em diversos dispositivos, como micro-ondas, celulares e sistemas de entretenimento, melhorando e automatizando tarefas do dia a dia.
+
+P: O que é Arduino?
+A) Um novo sistema operacional móvel
+B) Uma plataforma de hardware para prototipagem eletrônica
+C) Um navegador para sistemas embarcados
+D) Um padrão de rede para sensores
+R: B
+E: A resposta correta é B porque o Arduino é uma plataforma de hardware open source com microcontrolador integrado, ideal para desenvolver e testar projetos eletrônicos de forma acessível.
+
+P: Qual é a principal vantagem do Arduino para iniciantes?
+A) É exclusivo para especialistas
+B) Tem interface gráfica avançada
+C) É fácil de programar e possui muitos tutoriais disponíveis
+D) Usa linguagem de programação exclusiva e complexa
+R: C
+E: A resposta correta é C porque o Arduino é conhecido pela simplicidade de uso, grande comunidade de suporte e vasta quantidade de materiais educativos disponíveis na internet.
+
+P: O que o IDE Arduino permite?
+A) Comprar peças eletrônicas diretamente
+B) Enviar comandos de voz para o Arduino
+C) Programar e embarcar código diretamente em microcontroladores
+D) Conectar o Arduino à TV digital
+R: C
+E: A resposta correta é C porque o IDE Arduino (Ambiente de Desenvolvimento Integrado) é usado para escrever, compilar e carregar códigos nos dispositivos Arduino por meio de conexão USB.
+
+P: Qual das alternativas é uma vantagem do IDE Arduino?
+A) Suporte apenas para profissionais
+B) Baixa compatibilidade com tutoriais online
+C) Software gratuito e fácil de aprender
+D) Exige programação em Assembly
+R: C
+E: A resposta correta é C porque o IDE é gratuito, tem interface amigável, e há uma extensa comunidade com exemplos, projetos prontos e fóruns de suporte disponíveis online.
+
+P: Qual é o nome do programa exemplo que pisca um LED no Arduino?
+A) Blink
+B) LightTest
+C) PulseIn
+D) Flasher
+R: A
+E: A resposta correta é A porque o exemplo “Blink” no IDE Arduino mostra como ligar e desligar um LED em intervalos regulares, sendo o primeiro programa usado por iniciantes para testar a placa.
+
+P: Qual era o objetivo da criação do Arduino em 2005?
+A) Substituir os smartphones
+B) Criar uma tecnologia militar
+C) Criar um dispositivo acessível e fácil de usar para estudantes e amadores
+D) Desenvolver uma plataforma para grandes empresas
+R: C
+E: A resposta correta é C porque o Arduino foi criado por pesquisadores na Itália para democratizar a eletrônica, oferecendo uma alternativa barata e simples para aprendizado e prototipagem.
+
+P: Qual das plataformas abaixo surgiu com a mesma filosofia do Arduino, porém com maior capacidade de processamento?
+A) JavaFX
+B) ESP32
+C) Visual Studio
+D) HTTP2
+R: B
+E: A resposta correta é B porque o ESP32 é uma plataforma de prototipagem de hardware, como o Arduino, mas com recursos mais avançados, incluindo Wi-Fi e Bluetooth integrados.
+
+P: O Teensy 4.0 é conhecido por:
+A) Ser um editor de texto para placas Arduino
+B) Substituir o IDE tradicional
+C) Oferecer alto poder de processamento mantendo a facilidade de prototipação
+D) Rodar exclusivamente em sistemas Linux
+R: C
+E: A resposta correta é C porque o Teensy 4.0, como o ESP32, segue a mesma lógica de prototipagem do Arduino, mas com uma CPU poderosa, permitindo projetos mais exigentes.
+
+P: Qual é uma característica de sistemas distribuídos?
+A) Operam em um único computador isolado
+B) São sistemas que funcionam apenas com cabos físicos
+C) Envolvem múltiplas máquinas colaborando entre si
+D) Precisam sempre de uma conexão com servidor central
+R: C
+E: A resposta correta é C porque sistemas distribuídos envolvem vários computadores que colaboram para processar e armazenar informações, como ocorre na nuvem e em redes P2P.
+
+P: Como se caracteriza a computação em nuvem?
+A) Uso de máquinas locais com software embarcado
+B) Acesso direto aos dados via Bluetooth
+C) Várias máquinas alocadas sob demanda para tarefas específicas
+D) Compartilhamento físico de hardware por cabo coaxial
+R: C
+E: A resposta correta é C porque a computação em nuvem usa múltiplos servidores que podem ser escalados sob demanda, permitindo distribuição de carga e elasticidade.
+
+P: O modelo cliente-servidor sofre com qual limitação?
+A) Falta de memória RAM nos clientes
+B) Gargalo de conexões e sobrecarga no servidor central
+C) Dificuldade de acesso remoto
+D) Incompatibilidade com redes Wi-Fi
+R: B
+E: A resposta correta é B porque o servidor central pode ficar sobrecarregado se muitos clientes acessarem simultaneamente, limitando a escalabilidade do sistema.
+
+P: Em redes P2P, a escalabilidade é considerada:
+A) Limitada pela capacidade do roteador
+B) Inexistente sem um datacenter
+C) Natural, pois cada novo cliente também contribui com recursos
+D) Dependente da qualidade do sistema operacional
+R: C
+E: A resposta correta é C porque no modelo peer-to-peer, os próprios clientes compartilham recursos entre si, o que torna o sistema mais escalável conforme novos nós entram na rede.
+
+P: O que são “nós” em uma rede P2P?
+A) Usuários que apenas visualizam dados
+B) Elementos da rede que exercem funções passivas
+C) Dispositivos que compartilham recursos diretamente entre si
+D) Portas de entrada de servidores web
+R: C
+E: A resposta correta é C porque em redes P2P, cada nó é um computador participante que pode enviar e receber dados de outros nós, sem depender de servidores centrais.
+
+P: O que caracteriza uma rede overlay (sobreposta)?
+A) Substituição da rede física
+B) Conexão direta por satélite
+C) Uma rede lógica construída sobre a infraestrutura da internet física
+D) Rede criptografada ponto a ponto
+R: C
+E: A resposta correta é C porque uma rede overlay é uma estrutura lógica que conecta nós da aplicação (como no BitTorrent) em cima da internet, sem mudar sua infraestrutura.
+
+P: O que é uma rede P2P puramente descentralizada?
+A) Uma rede sem nenhum tipo de conexão entre os pares
+B) Uma rede onde todos os nós exercem as mesmas funções, sem um coordenador central
+C) Uma rede obrigatoriamente privada
+D) Uma rede controlada por blockchain
+R: B
+E: A resposta correta é B porque nesse modelo todos os nós são iguais em função, sem nenhum servidor ou nó privilegiado, tornando a coordenação mais difícil, porém mais resistente a falhas.
+
+P: Qual das opções abaixo é um exemplo de rede P2P com super nós?
+A) Tor
+B) Skype original
+C) Dropbox
+D) Telegram
+R: B
+E: A resposta correta é B porque o Skype original usava super nós que assumiam funções mais importantes, como manter listas de outros nós e encaminhar chamadas.
+
+P: Em uma rede com servidor auxiliar, qual é o papel desse servidor?
+A) Fazer todo o processamento sozinho
+B) Controlar os peers remotamente
+C) Ajudar na busca de conteúdo e localização de outros nós
+D) Substituir a rede P2P por um banco de dados
+R: C
+E: A resposta correta é C porque o servidor auxiliar facilita a comunicação entre os nós ao ajudar na descoberta de peers, mas não interfere na troca direta de dados.
+
+P: O que diferencia uma busca estruturada de uma não estruturada em P2P?
+A) A velocidade de conexão entre nós
+B) A existência ou não de um antivírus instalado
+C) A organização lógica dos dados na rede
+D) A localização geográfica dos participantes
+R: C
+E: A resposta correta é C porque em buscas estruturadas os dados estão organizados com base em uma topologia definida (como DHT), enquanto buscas não estruturadas ocorrem aleatoriamente.
+
+P: Como funciona uma DHT (Distributed Hash Table)?
+A) Atribui endereços IP manualmente
+B) Associa chaves a valores em nós distribuídos da rede
+C) Usa uma nuvem de dados para backups locais
+D) Se conecta a bancos de dados SQL externos
+R: B
+E: A resposta correta é B porque a DHT funciona como uma tabela hash, mas distribuída entre vários nós, permitindo localizar dados de forma eficiente com base em suas chaves.
+
+P: Qual das opções abaixo é um exemplo de algoritmo usado em DHTs?
+A) RSA
+B) HTTP
+C) Chord
+D) HTML
+R: C
+E: A resposta correta é C porque algoritmos como Chord, Kademlia e Pastry são usados para rotear dados dentro de uma DHT, permitindo localizar um nó ou dado de forma eficiente.
+
+P: Qual é a principal função do Onion Routing?
+A) Realizar backup automático na nuvem
+B) Reduzir o consumo de energia em redes P2P
+C) Proteger a origem e o destino dos dados transmitidos
+D) Otimizar o uso da largura de banda
+R: C
+E: A resposta correta é C porque o Onion Routing embaralha os dados através de múltiplos nós intermediários e os cifra em camadas, dificultando a identificação da origem e do destino das mensagens.
+
+P: Qual é a função do Tor (The Onion Router)?
+A) Proteger os dispositivos contra vírus
+B) Garantir navegação anônima e criptografada por meio de múltiplos nós
+C) Compartilhar arquivos em nuvem
+D) Aumentar a velocidade de conexão com a internet
+R: B
+E: A resposta correta é B porque o Tor implementa o Onion Routing, criando circuitos criptografados por vários nós intermediários, protegendo a identidade e localização dos usuários.
+
+P: O que acontece no primeiro passo do funcionamento do Tor?
+A) O cliente envia os dados diretamente ao destino
+B) O cliente Tor obtém a lista de nós disponíveis em um servidor de diretórios
+C) O Tor solicita permissão à operadora para criptografar os dados
+D) O navegador Tor ativa o VPN automaticamente
+R: B
+E: A resposta correta é B porque o funcionamento do Tor começa com a obtenção da lista de nós voluntários que compõem a rede, o que permite montar o circuito de navegação anônima.
+
+P: O que é estabelecido entre o cliente e o Onion Router #1 no segundo passo do Tor?
+A) Um endereço IP fixo
+B) Um protocolo de download via FTP
+C) Uma chave simétrica de sessão
+D) Um canal aberto com o destino final
+R: C
+E: A resposta correta é C porque o cliente estabelece uma chave simétrica com o primeiro nó (Onion Router #1), iniciando o túnel criptografado que será estendido por outros nós.
+
+P: Ao final do processo de roteamento onion (cebola), o destino final vê:
+A) O IP do cliente original
+B) O IP de todos os roteadores anteriores
+C) Apenas o IP do último Onion Router
+D) Um nome de usuário e senha do cliente
+R: C
+E: A resposta correta é C porque o circuito do Tor é projetado de modo que o destino final veja apenas o último nó (saída), sem ter acesso ao IP ou identidade original do cliente.
+
+P: Qual é o papel do formato em “camadas” das mensagens no Tor?
+A) Aumentar o tamanho dos pacotes para dificultar o rastreamento
+B) Compactar os dados para transmissões mais rápidas
+C) Impedir que qualquer nó intermediário veja todo o conteúdo e o caminho completo
+D) Permitir downloads em paralelo
+R: C
+E: A resposta correta é C porque as mensagens são criptografadas em múltiplas camadas (como uma cebola), de forma que cada nó conhece apenas o anterior e o seguinte, protegendo a privacidade da origem e do destino.
+
+P: O que são os serviços escondidos (hidden services) no Tor?
+A) Sites hospedados na Surface Web com bloqueio de IP
+B) Serviços web que ocultam a geolocalização dos servidores
+C) VPNs que funcionam somente no navegador Tor
+D) Códigos maliciosos que detectam rastreamento
+R: B
+E: A resposta correta é B porque os serviços escondidos do Tor (com domínios .onion) são acessíveis somente pela rede Tor e ocultam o IP e localização do servidor, protegendo-o contra ataques e rastreamento.
+
+P: Qual é o objetivo do “ponto de encontro” na arquitetura do Tor para serviços escondidos?
+A) Estabelecer a comunicação direta entre cliente e servidor sem revelar seus IPs
+B) Divulgar publicamente o conteúdo do site .onion
+C) Criar uma conexão via protocolo HTTP comum
+D) Enviar dados a um proxy
+R: A
+E: A resposta correta é A porque no mecanismo de serviços escondidos, cliente e servidor estabelecem circuitos Onion até um ponto intermediário (de encontro), onde suas conexões são unidas sem revelarem identidade.
+
+P: Qual é a consequência da arquitetura de serviços escondidos do Tor?
+A) Todos os usuários são identificados
+B) Os dados são armazenados por tempo ilimitado
+C) Cliente e servidor não conhecem os IPs um do outro
+D) A comunicação exige autenticação obrigatória
+R: C
+E: A resposta correta é C porque os dois lados estabelecem circuitos Onion distintos até um ponto comum, o que impede o conhecimento mútuo de IPs ou localização física.
+
+P: O que é a Deep Web?
+A) Parte da internet indexada por buscadores
+B) Parte da internet onde só é possível acessar por Wi-Fi
+C) Conteúdo online que não é indexado por motores de busca tradicionais
+D) Internet usada exclusivamente por empresas de tecnologia
+R: C
+E: A resposta correta é C porque a Deep Web engloba todo conteúdo da internet que não está acessível por mecanismos de busca como Google ou Bing, incluindo bancos de dados, páginas privadas e redes anônimas.
+
+P: Qual é a relação entre Tor e Deep Web?
+A) Tor é um buscador para páginas comuns
+B) Tor é um protocolo de segurança de e-mails
+C) Tor permite acesso a partes da Deep Web, como sites .onion
+D) Tor é usado para compactar arquivos da Deep Web
+R: C
+E: A resposta correta é C porque o navegador Tor permite acesso a domínios .onion que fazem parte da Deep Web, pois não são indexados pelos motores de busca tradicionais e exigem acesso via rede Onion.
+
+P: O que é Web Crawling?
+A) Técnica de criptografia baseada em IP
+B) Processo de compactação de sites
+C) Indexação automática de páginas web por programas
+D) Monitoramento de redes sociais
+R: C
+E: A resposta correta é C porque o Web Crawling é o processo automatizado de visitar páginas, extrair informações e armazená-las em bancos de dados de buscadores como Google.
+
+P: Qual o nome do programa automatizado que realiza o Web Crawling?
+A) Crawler ou Spider
+B) Extractor Layer
+C) HTML Converter
+D) Onion Redirector
+R: A
+E: A resposta correta é A porque spiders (ou crawlers) são programas usados por motores de busca para visitar páginas, seguir links e indexar o conteúdo automaticamente.
+
+P: Qual conteúdo pode fazer parte da Deep Web?
+A) Sites populares como Wikipedia
+B) Páginas que exigem login, como intranets e serviços bancários
+C) Resultados de busca do Google
+D) Aplicativos móveis com atualizações automáticas
+R: B
+E: A resposta correta é B porque páginas que exigem autenticação, formulários ou links não acessíveis publicamente (como sistemas internos e dados privados) fazem parte da Deep Web.
+
+P: Qual tipo de conteúdo não é indexado por buscadores tradicionais, mesmo estando disponível na internet?
+A) Sites hospedados no GitHub
+B) Páginas HTML com links visíveis
+C) Páginas dinâmicas geradas via JavaScript ou sem links externos
+D) Perfis públicos de redes sociais
+R: C
+E: A resposta correta é C porque páginas dinâmicas ou sem links visíveis não são encontradas por crawlers, ficando fora da indexação dos buscadores — ou seja, na Deep Web.
+
+P: A Deep Web é:
+A) Exclusivamente ilegal
+B) Parte oculta da internet composta por conteúdos privados e protegidos
+C) Parte da Surface Web usada para sites comuns
+D) Uma ferramenta para acelerar downloads
+R: B
+E: A resposta correta é B porque a Deep Web inclui áreas privadas e seguras da internet, como bancos de dados acadêmicos, emails e servidores internos — não sendo sinônimo de conteúdo ilegal.
+
+P: O que a função put(chave, valor) faz em uma tabela hash tradicional?
+A) Remove um valor da tabela
+B) Cria uma nova chave aleatória
+C) Insere um valor associado a uma chave
+D) Retorna todos os valores armazenados
+R: C
+E: A resposta correta é C porque a função put(chave, valor) adiciona um novo par de chave e valor à tabela hash, permitindo recuperá-lo posteriormente usando a chave.
+
+P: O que a função get(chave) faz em uma tabela hash?
+A) Atualiza o valor da chave
+B) Recupera o valor associado a uma chave específica
+C) Remove a chave da memória
+D) Cria um identificador aleatório
+R: B
+E: A resposta correta é B porque get(chave) busca na tabela hash e retorna o valor correspondente à chave informada, sendo uma das operações básicas desse tipo de estrutura.
+
+P: Qual é a função principal de uma DHT (Tabela Hash Distribuída)?
+A) Indexar páginas da Deep Web
+B) Reduzir o tamanho de pacotes de rede
+C) Distribuir armazenamento de dados por vários nós da rede
+D) Eliminar a necessidade de criptografia
+R: C
+E: A resposta correta é C porque a DHT permite armazenar e localizar informações entre nós distribuídos, funcionando como uma tabela hash cujos pares chave/valor são espalhados pela rede.
+
+P: O que acontece quando usamos a função buscar(chave) em uma DHT?
+A) Recebemos o IP do nó que armazena o valor associado à chave
+B) O sistema retorna todos os pares chave/valor
+C) A rede é reiniciada automaticamente
+D) Um algoritmo aleatório gera uma nova chave
+R: A
+E: A resposta correta é A porque em uma DHT, a busca por uma chave retorna o nó responsável por ela (geralmente com base em hashing), permitindo o acesso ao valor associado.
+
+P: Qual é o papel do algoritmo Chord na DHT?
+A) Fazer a criptografia dos dados
+B) Gerar novas chaves para o sistema
+C) Determinar o nó responsável por armazenar uma chave
+D) Proteger a rede contra vírus
+R: C
+E: A resposta correta é C porque o Chord é um algoritmo usado para roteamento eficiente em uma DHT, determinando em qual nó uma determinada chave deve ser armazenada ou buscada.
+
+P: O que diferencia Gnutella original de Napster no contexto P2P?
+A) Gnutella é baseada em supernós; Napster é descentralizada
+B) Gnutella é puramente descentralizada; Napster depende de servidor auxiliar
+C) Napster é baseada em blockchain; Gnutella em HTTP
+D) Ambas são estruturadas com tabelas hash
+R: B
+E: A resposta correta é B porque a Gnutella original operava de forma completamente descentralizada, enquanto o Napster usava um servidor auxiliar para indexar conteúdo e localizar usuários.
+
+P: O que caracteriza uma rede P2P com supernós?
+A) Um nó central armazena todos os arquivos
+B) Todos os nós têm as mesmas funções
+C) Alguns nós têm funções privilegiadas, como indexar e repassar dados
+D) É uma rede fechada com acesso restrito
+R: C
+E: A resposta correta é C porque supernós exercem papéis centrais em uma rede P2P, como indexação e encaminhamento, mas ainda permitem comunicação descentralizada entre os demais nós.
+
+P: Como podemos resumir uma rede P2P puramente descentralizada?
+A) Usa somente internet cabeada
+B) Funciona com controle rígido por um servidor
+C) Todos os nós têm responsabilidade igual e não há coordenação central
+D) Todos os dados são criptografados obrigatoriamente
+R: C
+E: A resposta correta é C porque nesse modelo cada participante realiza tarefas equivalentes, sem a presença de um servidor ou nó especial coordenador.
+
+P: Qual das alternativas melhor representa uma busca não estruturada?
+A) Hash de chave fixo por topologia
+B) Dados organizados conforme IP
+C) Dados distribuídos aleatoriamente entre os nós
+D) Pesquisa por banco de dados SQL externo
+R: C
+E: A resposta correta é C porque na busca não estruturada, os dados não seguem uma topologia definida e são espalhados sem organização explícita, o que dificulta a eficiência da busca.
+
+P: Em um sistema P2P estruturado com DHT, qual a vantagem da estrutura de hash?
+A) Reduz o tamanho dos arquivos
+B) Organiza os dados de forma eficiente e previsível
+C) Elimina a necessidade de software intermediário
+D) Dispensa qualquer forma de comunicação entre os nós
+R: B
+E: A resposta correta é B porque a estrutura de hash da DHT permite localizar dados rapidamente e de maneira organizada, distribuindo chaves de forma uniforme pela rede.
+
+P: Qual o comportamento de uma rede P2P diante da entrada e saída frequente de nós?
+A) A rede é destruída se um nó sair
+B) A rede automaticamente bloqueia novos participantes
+C) A rede precisa localizar e redistribuir recursos constantemente
+D) A rede ignora qualquer alteração
+R: C
+E: A resposta correta é C porque em redes P2P há constante reconfiguração para localizar novos nós e redistribuir arquivos, o que exige mecanismos para manter consistência e conectividade.
+
+P: Em qual situação o uso de DHT torna a rede P2P mais resistente?
+A) Quando os usuários acessam apenas por celular
+B) Quando há censura ou derrubada de servidores
+C) Quando o conteúdo é muito grande
+D) Quando todos os peers estão no mesmo país
+R: B
+E: A resposta correta é B porque a DHT descentraliza o papel dos trackers, permitindo que a rede continue operando mesmo se servidores forem derrubados por censura ou ataques.
+
+P: Qual é uma vantagem de utilizar redes como BitTorrent sem tracker?
+A) Aumentar a centralização do tráfego
+B) Reduzir a segurança e privacidade
+C) Tornar a rede mais resistente a falhas e censura
+D) Impedir a conexão entre peers
+R: C
+E: A resposta correta é C porque eliminar a dependência de um tracker central aumenta a robustez da rede contra falhas técnicas e tentativas de bloqueio.
+
+P: Como o peer exchange (PEX) contribui com a estabilidade da rede?
+A) Gerando hashes de autenticação
+B) Permite que peers compartilhem listas de outros peers
+C) Criptografando os dados antes da transmissão
+D) Substituindo o arquivo .torrent
+R: B
+E: A resposta correta é B porque o PEX permite que nós compartilhem entre si a lista de peers conectados, ajudando na descoberta de novos contatos sem depender de servidores centrais.
+
+P: O que é necessário para que uma rede P2P consiga resistir a ataques de negação de serviço (DoS)?
+A) Infraestrutura física redundante
+B) Exclusão de usuários novos
+C) Arquitetura descentralizada com mecanismos como DHT, PEX e links magnéticos
+D) Acesso somente por VPN
+R: C
+E: A resposta correta é C porque redes com estruturas descentralizadas e troca direta entre peers reduzem os pontos únicos de falha, dificultando ataques que visam derrubar servidores centrais.
+
+P: Qual das alternativas abaixo representa um termo associado ao protocolo BitTorrent?
+A) Proxy reverso
+B) Seeder
+C) IP público fixo
+D) Streamer
+R: B
+E: A resposta correta é B porque "seeder" é o nome dado ao participante que já possui o arquivo completo e o compartilha com os outros na rede BitTorrent.
+
+P: O que é um arquivo .torrent?
+A) Um tipo de vírus disfarçado de vídeo
+B) Um arquivo contendo o conteúdo completo a ser baixado
+C) Um arquivo com metadados que indicam como e onde baixar os dados reais de um conteúdo
+D) Um programa executável usado para abrir filmes da internet
+R: C
+E: A resposta correta é C porque o .torrent contém apenas as informações de como localizar, validar e baixar os pedaços do conteúdo a partir de múltiplos peers, e não o conteúdo em si.
+
+P: Qual das opções abaixo NÃO é uma nomenclatura usada no contexto de redes P2P baseadas em BitTorrent?
+A) Tracker
+B) Swarm
+C) Bridge
+D) Leecher
+R: C
+E: A resposta correta é C porque "Bridge" é um termo de redes em geral, mas não faz parte das nomenclaturas tradicionais associadas ao BitTorrent, ao contrário das outras opções listadas.
+
+P: O que diferencia o Gnutella original do BitTorrent em relação à descentralização?
+A) BitTorrent é mais descentralizado do que Gnutella
+B) Gnutella usava servidores fixos para rastreamento
+C) Gnutella era completamente descentralizado, enquanto BitTorrent dependia de trackers (originalmente)
+D) Ambos são idênticos em termos de arquitetura
+R: C
+E: A resposta correta é C porque a Gnutella original funcionava sem servidor central algum, enquanto o BitTorrent, em sua versão inicial, dependia de trackers para localizar os peers.
+
+P: Qual das frases abaixo é VERDADEIRA sobre o protocolo Onion Routing (Tor)?
+A) É usado exclusivamente para acessar conteúdo ilegal
+B) Garante total anonimato em qualquer situação
+C) Utiliza múltiplos nós para criptografar e redirecionar o tráfego
+D) Substitui a internet tradicional por completo
+R: C
+E: A resposta correta é C porque o Onion Routing funciona ao redirecionar o tráfego do usuário por uma sequência de nós, cada um removendo uma camada de criptografia, o que torna difícil rastrear a origem.
+
+P: Assinale a alternativa que representa corretamente o termo “Swarm” no BitTorrent.
+A) Um ataque hacker coordenado
+B) A lista de arquivos abertos em um cliente torrent
+C) O conjunto de todos os peers que possuem pedaços de um mesmo arquivo
+D) A técnica de compactar arquivos grandes em pequenos pacotes
+R: C
+E: A resposta correta é C porque o “Swarm” é o nome dado ao grupo de usuários que estão compartilhando (semeando ou baixando) partes de um mesmo conteúdo no BitTorrent.
+
+P: Qual é a finalidade do “optimistic unchoke” no BitTorrent?
+A) Evitar vírus no tráfego da rede
+B) Permitir que o cliente experimente enviar dados a peers novos ou lentos para testar a reciprocidade
+C) Identificar peers inativos e desconectá-los
+D) Aumentar a prioridade dos peers com maior largura de banda
+R: B
+E: A resposta correta é B porque o “optimistic unchoke” seleciona aleatoriamente um peer para o qual será enviado dados, testando se essa troca pode trazer benefícios futuros, mesmo que ele não esteja entre os melhores atualmente.
+
+P: No contexto do BitTorrent, o que é um “Leecher”?
+A) Um peer que baixa e compartilha ao mesmo tempo
+B) Um peer que já concluiu o download e não compartilha
+C) Um peer que apenas transmite dados para os outros
+D) Um peer que tenta explorar falhas no sistema
+R: A
+E: A resposta correta é A porque o “leecher” é um peer que ainda está baixando o conteúdo, mas normalmente também compartilha os pedaços que já possui, promovendo o tráfego colaborativo.
+
+P: Por que o uso de DHT (Distributed Hash Table) elimina a dependência de trackers?
+A) Porque os arquivos são baixados diretamente dos sites
+B) Porque os peers se tornam responsáveis pela indexação das chaves de localização dos dados
+C) Porque a DHT bloqueia qualquer conexão suspeita
+D) Porque o conteúdo fica armazenado em cache
+R: B
+E: A resposta correta é B porque a DHT permite que os próprios peers armazenem e consultem pares chave-valor distribuídos, dispensando um servidor central de rastreamento (tracker).
+
+P: Qual vantagem do Peer Exchange (PEX) em uma rede BitTorrent com DHT ativa?
+A) Torna a criptografia mais forte
+B) Otimiza a compressão de arquivos
+C) Melhora a descoberta de novos peers além da DHT, ampliando a conectividade
+D) Substitui a necessidade de um cliente torrent
+R: C
+E: A resposta correta é C porque o PEX complementa a DHT compartilhando diretamente com os peers a lista de outros nós ativos, facilitando e acelerando novas conexões.
