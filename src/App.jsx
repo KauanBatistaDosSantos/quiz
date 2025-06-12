@@ -66,22 +66,29 @@ const blocks = text.split(/\n(?=P(?:MA|SC|MP)?: )/);
     const lines = block.trim().split('\n');
     const firstLine = lines[0];
     let type = null;
-    let question = '';
+    let questionLines = [];
 
     if (firstLine.startsWith("PMA:")) {
       type = "multi-assert";
-      question = firstLine.replace("PMA:", "").trim();
+      questionLines.push(firstLine.replace("PMA:", "").trim());
     } else if (firstLine.startsWith("PSC:") || firstLine.startsWith("P:")) {
       type = "single-choice";
-      question = firstLine.replace(/^(PSC|P):/, "").trim();
+      questionLines.push(firstLine.replace(/^(PSC|P):/, "").trim());
     } else if (firstLine.startsWith("PMP:")) {
       type = "match-pairs";
-      question = firstLine.replace("PMP:", "").trim();
+      questionLines.push(firstLine.replace("PMP:", "").trim());
     } else {
-      return null; // ignorar blocos mal formatados
+      return null;
     }
 
-    const linesWithoutHeader = lines.slice(1);
+    let i = 1;
+    while (i < lines.length && !/^[A-Z]\)|^\d+\)|^R[A-Z]:|^R:/.test(lines[i])) {
+      questionLines.push(lines[i]); // preserva espaços
+      i++;
+    }
+
+    const linesWithoutHeader = lines.slice(i);
+    const question = questionLines.join('\n').trim();
 
     if (type === "multi-assert") {
       const assertions = [];
