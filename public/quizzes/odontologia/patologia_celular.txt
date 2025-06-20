@@ -134,7 +134,7 @@ D) Na mucosa gástrica por infecção bacteriana
 R: A
 E: A resposta correta é A. O conteúdo exemplifica que, em fumantes, o epitélio cilíndrico ciliado das vias respiratórias pode ser substituído por epitélio estratificado pavimentoso, o que caracteriza metaplasia escamosa. As demais opções não são descritas nesse contexto.
 
-P: Qual é uma consequência prejudicial da metaplasia escamosa nas vias aéreas?
+: Qual é uma consequência prejudicial da metaplasia escamosa nas vias aéreas?
 A) Aumento da capacidade de secreção de muco
 B) Formação de tecido ósseo ectópico
 C) Perda de mecanismos de proteção como cílios e muco
@@ -381,3 +381,291 @@ C) Absorção
 D) Produção de colesterol
 R: C
 E: A resposta correta é C. A perda de microvilos, como citado no conteúdo, ocorre na lesão reversível e prejudica a capacidade de absorção da célula, especialmente em tecidos como o epitélio intestinal e renal. A e D são irrelevantes aqui; B não depende diretamente de microvilos.
+
+P: A lesão celular é considerada irreversível quando:
+A) A bomba de sódio ainda funciona, mas a célula está hipofuncional
+B) A célula apresenta vacúolos de gordura no citoplasma
+C) Há perda da integridade das membranas e função mitocondrial
+D) O núcleo aumenta discretamente de tamanho
+R: C
+E: A resposta correta é C. A lesão torna-se irreversível quando há dano grave e irreparável à membrana plasmática, às mitocôndrias e ao núcleo, o que leva à morte celular, como descrito no conteúdo. As alternativas A e D não são marcadores de irreversibilidade, e B está relacionada a lesão reversível.
+
+P: Qual evento nuclear marca a morte celular irreversível?
+A) Fragmentação do DNA com formação de corpos apoptóticos
+B) Migração do núcleo para a periferia
+C) Perda de cromatina heterogênea
+D) Desorganização do citoesqueleto
+R: A
+E: A resposta correta é A. A fragmentação do DNA e formação de corpos apoptóticos ou fragmentação nuclear por cariorrexe são características morfológicas marcantes da morte celular, sejam por necrose ou apoptose. As demais opções não descrevem eventos nucleares irreversíveis.
+
+P: A picnose é definida como:
+A) Formação de corpos apoptóticos
+B) Fragmentação do núcleo em pedaços
+C) Encolhimento e condensação do núcleo
+D) Lise total do núcleo
+R: C
+E: A resposta correta é C. O conteúdo define picnose como a condensação da cromatina e retração do núcleo, sendo uma das etapas do processo de morte celular. Já a fragmentação em pedaços corresponde à cariorrexe, e a lise total à cariólise.
+
+P: O que é a cariorrexe?
+A) Condensação da cromatina
+B) Ruptura da membrana nuclear com liberação do DNA
+C) Fragmentação do núcleo picnótico
+D) Desorganização do retículo endoplasmático
+R: C
+E: A resposta correta é C. A cariorrexe é a fragmentação do núcleo após a picnose, indicando que a célula está em fase final de morte. A alternativa A refere-se à picnose. B não é a descrição morfológica usada, e D é uma alteração citoplasmática, não nuclear.
+
+P: A cariólise é caracterizada por:
+A) Núcleo retraído com cromatina condensada
+B) Núcleo fragmentado em pedaços irregulares
+C) Dissolução do núcleo com perda de basofilia
+D) Formação de nucléolos adicionais
+R: C
+E: A resposta correta é C. A cariólise representa a fase final da destruição nuclear, com dissolução do DNA e perda da coloração basofílica ao microscópio, como destacado no conteúdo. As demais alternativas confundem diferentes etapas do processo.
+
+P: A necrose de coagulação ocorre frequentemente em:
+A) Encéfalo
+B) Glândulas salivares
+C) Miocárdio após isquemia
+D) Pulmões com tuberculose
+R: C
+E: A resposta correta é C. O conteúdo afirma que a necrose de coagulação é o tipo mais comum e geralmente ocorre em órgãos sólidos com isquemia, como o miocárdio após infarto. A necrose liquefativa (A) e caseosa (D) ocorrem em contextos diferentes.
+
+P: A principal característica morfológica da necrose de coagulação é:
+A) Preservação do arcabouço tecidual
+B) Formação de pus
+C) Destruição total dos contornos celulares
+D) Presença de corpúsculos apoptóticos
+R: A
+E: A resposta correta é A. Na necrose de coagulação, as células perdem seus núcleos, mas a arquitetura tecidual permanece preservada por algum tempo, dando aparência de células fantasmas. As outras alternativas descrevem necrose liquefativa (B e C) ou apoptose (D).
+
+P: A necrose liquefativa ocorre principalmente:
+A) Após infarto renal
+B) Em áreas com pouca irrigação
+C) No sistema nervoso central após hipóxia
+D) Em tecido muscular esquelético hipertrofiado
+R: C
+E: A resposta correta é C. O conteúdo deixa claro que a necrose liquefativa é típica do sistema nervoso central após hipóxia severa, resultando na digestão completa do tecido, sem preservação da arquitetura. A e B estão mais associadas à coagulação.
+
+P: O aspecto morfológico da necrose liquefativa é:
+A) Tecido amolecido, purulento, rico em enzimas lisossômicas
+B) Tecido fibroso, branco e retraído
+C) Formação de granulomas duros
+D) Preservação dos contornos celulares
+R: A
+E: A resposta correta é A. Na necrose liquefativa, ocorre digestão enzimática das células, formando uma massa líquida purulenta, especialmente rica em enzimas lisossômicas, como descrito no material. As demais opções não correspondem a essa necrose.
+
+P: A necrose caseosa é típica de:
+A) Lesões isquêmicas cardíacas
+B) Inflamações agudas purulentas
+C) Infecções tuberculosas
+D) Degeneração gordurosa do fígado
+R: C
+E: A resposta correta é C. A necrose caseosa tem como exemplo clássico as infecções por tuberculose, onde o tecido apresenta aspecto macroscópico de massa branca, amorfa e granular, semelhante a queijo, como descrito no PDF.
+
+P: A aparência microscópica da necrose caseosa é:
+A) Células bem definidas com núcleos retraídos
+B) Estrutura tecidual preservada e organizada
+C) Material eosinofílico amorfo com perda da arquitetura celular
+D) Vacúolos lipídicos separados por septos fibrosos
+R: C
+E: A resposta correta é C. O texto descreve a necrose caseosa como composta por material eosinofílico amorfo e granuloso, com perda completa da estrutura celular, típica de granulomas tuberculosos. A e B são incorretas, D se refere à esteatose.
+
+P: O que diferencia necrose de apoptose em relação ao processo inflamatório?
+A) A necrose ativa células T CD8+
+B) A apoptose é sempre acompanhada de pus
+C) A necrose induz inflamação devido à ruptura celular
+D) A apoptose causa lise da matriz extracelular
+R: C
+E: A resposta correta é C. O conteúdo destaca que a necrose induz inflamação porque há liberação do conteúdo celular para o meio extracelular, ao contrário da apoptose, que é um processo ordenado, sem extravasamento. As demais alternativas são incorretas.
+
+P: A apoptose é um tipo de morte celular que se caracteriza por:
+A) Fragmentação desordenada da membrana plasmática
+B) Liberação do conteúdo celular no espaço extracelular
+C) Morte celular programada com ativação de enzimas específicas
+D) Formação de edema intracelular irreversível
+R: C
+E: A resposta correta é C. A apoptose é descrita no conteúdo como uma forma de morte celular programada, que envolve ativação ordenada de enzimas (caspases), sem ruptura da membrana plasmática, o que a diferencia da necrose. A, B e D são características da necrose, não da apoptose.
+
+P: A principal enzima responsável por conduzir a apoptose é:
+A) Elastase
+B) DNA polimerase
+C) Caspase
+D) Telomerase
+R: C
+E: A resposta correta é C. Conforme explicado no PDF, as caspases são proteases específicas que iniciam e executam a apoptose, fragmentando proteínas celulares essenciais, incluindo o citoesqueleto e enzimas nucleares. A, B e D não têm função nesse processo.
+
+P: Qual característica morfológica é típica da apoptose?
+A) Formação de blebs, condensação nuclear e corpos apoptóticos
+B) Edema citoplasmático com vacuolização
+C) Lise da célula com liberação enzimática
+D) Perda completa da arquitetura tecidual
+R: A
+E: A resposta correta é A. O conteúdo descreve a apoptose como um processo com condensação da cromatina (picnose), formação de blebs e fragmentação em corpos apoptóticos, que são fagocitados. B e C são comuns na necrose; D ocorre em necrose liquefativa.
+
+P: Qual das opções abaixo representa uma função fisiológica da apoptose?
+A) Formação de pus em infecções bacterianas
+B) Remodelamento tecidual durante o desenvolvimento embrionário
+C) Hiperplasia compensatória em resposta a trauma
+D) Reparo celular após radiação
+R: B
+E: A resposta correta é B. O texto exemplifica a apoptose fisiológica como parte do desenvolvimento embrionário, como na eliminação do tecido interdigital. A está ligada à necrose, C à regeneração e D à resposta ao dano, não à morte celular.
+
+P: Na apoptose, os fragmentos celulares são eliminados por:
+A) Necrose secundária
+B) Ativação de neutrófilos
+C) Fagocitose sem resposta inflamatória
+D) Autólise espontânea
+R: C
+E: A resposta correta é C. Os corpos apoptóticos, resultantes da apoptose, são fagocitados por células vizinhas ou macrófagos, sem causar inflamação, como enfatizado no conteúdo. As outras opções contradizem a natureza silenciosa da apoptose.
+
+P: A via intrínseca da apoptose é iniciada por:
+A) Receptores de membrana ativados por ligantes externos
+B) Abertura de poros mitocondriais e liberação de citocromo c
+C) Ativação de macrófagos inflamatórios
+D) Despolarização do retículo endoplasmático
+R: B
+E: A resposta correta é B. A via mitocondrial (intrínseca) da apoptose é acionada por estímulos internos, como lesão celular grave, levando à liberação do citocromo c pela mitocôndria, como descrito no PDF. A corresponde à via extrínseca, e C e D são irrelevantes aqui.
+
+P: Na via extrínseca da apoptose, a ativação se dá por meio de:
+A) Ligação de citocromo c a canais de cálcio
+B) Caspase-9 ativada por DNA danificado
+C) Ligação de ligantes como FasL a receptores de morte (Fas)
+D) Inibição da mitose por p53
+R: C
+E: A resposta correta é C. A via extrínseca é acionada quando ligantes como FasL se ligam aos receptores de morte (como Fas ou TNF-R), levando à ativação de caspases iniciadoras (ex: caspase-8). A, B e D não fazem parte desse mecanismo.
+
+P: Em células normais, a ativação da apoptose por dano ao DNA depende de:
+A) Estímulo hormonal agudo
+B) Redução da síntese de proteínas
+C) Ativação da proteína p53
+D) Liberação de peróxido de hidrogênio
+R: C
+E: A resposta correta é C. A p53 é uma proteína chave no controle do ciclo celular e indutora da apoptose em caso de dano irreparável ao DNA, como descrito no PDF. A, B e D não são mecanismos centrais de apoptose.
+
+P: A apoptose é importante em qual processo patológico citado no conteúdo?
+A) Atrofia do útero pós-menopausa
+B) Formação de edema pulmonar
+C) Degeneração gordurosa do fígado
+D) Aumento da produção de mucina
+R: A
+E: A resposta correta é A. O texto menciona que a atrofia fisiológica do útero após a menopausa é associada à apoptose de células musculares lisas, o que reduz o volume do órgão. As outras alternativas não envolvem apoptose diretamente.
+
+P: Qual a diferença entre apoptose e necrose, de acordo com o conteúdo?
+A) A necrose é ordenada e não causa inflamação
+B) A apoptose provoca ruptura da membrana celular
+C) A apoptose é programada e silenciosa, sem inflamação
+D) Ambas liberam enzimas digestivas no tecido
+R: C
+E: A resposta correta é C. A apoptose é um processo ordenado, programado, sem liberação de conteúdo celular, e não induz inflamação, ao contrário da necrose, que é desorganizada e inflamatória. A, B e D são falsas ou contraditórias.
+
+P: Durante a apoptose, o que ocorre com o DNA celular?
+A) É replicado para uso em células vizinhas
+B) Sofre degradação ordenada por nucleases ativadas por caspases
+C) É totalmente preservado para reciclagem
+D) É liberado no espaço extracelular causando inflamação
+R: B
+E: A resposta correta é B. O conteúdo informa que a apoptose envolve ativação de endonucleases, que fragmentam o DNA de maneira organizada, diferente da liberação descontrolada que ocorre na necrose. A, C e D não são compatíveis com o processo apoptótico.
+
+P: Quando a apoptose está inibida ou falha, uma consequência possível é:
+A) Necrose imediata
+B) Proliferação celular desorganizada, como em câncer
+C) Parada respiratória
+D) Formação de granulomas inflamatórios
+R: B
+E: A resposta correta é B. O PDF enfatiza que a falha nos mecanismos de apoptose pode permitir a sobrevivência de células com mutações, contribuindo para carcinogênese. As outras opções não refletem essa consequência direta.
+
+P: A autofagia é um processo celular caracterizado por:
+A) Morte celular com formação de corpos apoptóticos
+B) Degradação de componentes celulares por fagocitose extracelular
+C) Digestão de organelas e proteínas intracelulares via lisossomos
+D) Acúmulo de substâncias não degradáveis no citoplasma
+R: C
+E: A resposta correta é C. O conteúdo define autofagia como um processo onde a célula degrada seus próprios componentes danificados, usando lisossomos. Esse processo pode ser fisiológico ou adaptativo, diferente de apoptose ou necrose.
+
+P: Durante a autofagia, a célula forma estruturas chamadas:
+A) Corpúsculos de inclusão
+B) Autofagossomos
+C) Microvilos
+D) Corpos apoptóticos
+R: B
+E: A resposta correta é B. O conteúdo explica que a célula envolve organelas danificadas em membranas, formando autofagossomos, que se fundem aos lisossomos para digestão. As outras opções não correspondem à estrutura envolvida nesse processo.
+
+P: A autofagia pode ser observada como uma resposta celular em situações de:
+A) Hiperidrose crônica
+B) Infarto agudo do miocárdio
+C) Restrição de nutrientes ou estresse metabólico
+D) Hiperatividade hormonal
+R: C
+E: A resposta correta é C. O texto indica que a autofagia aumenta em condições de estresse, como deficiência de nutrientes, pois permite a reciclagem de componentes celulares, mantendo a viabilidade celular. B está ligada à necrose, A e D não são discutidas no contexto.
+
+P: A senescência celular é definida como:
+A) Morte programada celular
+B) Incapacidade da célula de sintetizar proteínas
+C) Estado de perda permanente da capacidade de replicação
+D) Fragmentação irreversível da membrana plasmática
+R: C
+E: A resposta correta é C. O conteúdo descreve a senescência como uma resposta adaptativa ao dano, na qual a célula entra em um estado de parada definitiva do ciclo celular, mesmo que ainda esteja metabolicamente ativa. Não envolve morte imediata.
+
+P: Qual proteína está diretamente envolvida na indução da senescência celular após dano ao DNA?
+A) Elastina
+B) Caspase-3
+C) p53
+D) Actina
+R: C
+E: A resposta correta é C. A p53, citada várias vezes no PDF, é responsável por induzir a parada do ciclo celular ou a apoptose, dependendo da gravidade do dano ao DNA, sendo essencial na senescência celular. As outras proteínas não têm esse papel regulador.
+
+P: O estresse oxidativo é causado principalmente por:
+A) Deficiência de ATP
+B) Excesso de proteínas estruturais
+C) Acúmulo de espécies reativas de oxigênio (ERO)
+D) Hiperventilação celular
+R: C
+E: A resposta correta é C. O conteúdo define estresse oxidativo como o desequilíbrio entre a produção de espécies reativas de oxigênio (ERO) e a capacidade da célula de neutralizá-las, levando a dano celular. As demais opções não explicam o fenômeno.
+
+P: As espécies reativas de oxigênio podem causar lesão celular por:
+A) Inibição das bombas iônicas
+B) Aumento da replicação do DNA
+C) Danos às membranas, proteínas e DNA
+D) Formação de vacúolos de glicogênio
+R: C
+E: A resposta correta é C. O conteúdo deixa claro que as ERO causam oxidação de lipídios, modificação de proteínas e danos ao DNA, sendo um importante mecanismo de lesão celular em múltiplas patologias. A, B e D não são descritas nesse contexto.
+
+P: Um exemplo de lesão tecidual induzida por estresse oxidativo é:
+A) Esteatose hepática
+B) Aterosclerose
+C) Hipertrofia muscular
+D) Metaplasia escamosa
+R: B
+E: A resposta correta é B. A aterosclerose é citada no material como condição em que ocorre oxidação de lipoproteínas LDL, mediada por ERO, o que contribui para formação de placas ateromatosas. As demais opções não têm relação direta com estresse oxidativo.
+
+P: A lesão por isquemia e reperfusão ocorre quando:
+A) Um tecido recebe oxigenação excessiva por tempo prolongado
+B) Há inflamação após necrose gordurosa
+C) O fluxo sanguíneo retorna ao tecido isquêmico e agrava o dano
+D) A necrose liquefativa progride para caseosa
+R: C
+E: A resposta correta é C. O PDF destaca que a reperfusão após isquemia pode causar mais lesão, devido à produção exacerbada de radicais livres, ativação de inflamação e lesão mitocondrial. A, B e D não representam esse fenômeno.
+
+P: O mecanismo molecular predominante na lesão por isquemia-reperfusão envolve:
+A) Liberação de histamina pelos mastócitos
+B) Ativação de proteínas de choque térmico
+C) Formação de radicais livres durante a reoxigenação
+D) Formação de corpos apoptóticos
+R: C
+E: A resposta correta é C. O conteúdo explica que a lesão de reperfusão ocorre por formação de radicais livres no momento em que o oxigênio retorna ao tecido isquêmico, levando a mais dano celular. A, B e D são incorretas ou fora de contexto.
+
+P: O efeito Warburg consiste em:
+A) Mecanismo de inflamação crônica mediada por interleucinas
+B) Produção de ATP mitocondrial em repouso celular
+C) Geração de energia via glicólise aeróbica, mesmo na presença de oxigênio
+D) Interrupção da apoptose por mutações na p53
+R: C
+E: A resposta correta é C. O efeito Warburg é um fenômeno observado em células tumorais, que produzem energia por glicólise mesmo com oxigênio disponível, conforme destacado no PDF. Isso favorece crescimento rápido, mesmo em ambiente normóxico.
+
+P: O efeito Warburg está associado a:
+A) Estímulo imunológico agudo
+B) Ativação de autofagia
+C) Proliferação celular neoplásica
+D) Calcificação metastática
+R: C
+E: A resposta correta é C. O conteúdo relaciona o efeito Warburg ao metabolismo alterado de células tumorais, que preferem glicólise rápida para sustentar divisão celular acelerada, mesmo quando poderiam usar a fosforilação oxidativa.
