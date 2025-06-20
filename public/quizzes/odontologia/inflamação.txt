@@ -1,0 +1,383 @@
+P: O que caracteriza a homeostasia celular em condições normais?
+A) Estabilidade do meio extracelular por meio de ajuste hormonal
+B) Equilíbrio do meio intracelular mantido por múltiplos mecanismos de autorregulação
+C) Ausência de agressões ambientais no tecido conjuntivo
+D) Proliferação celular controlada pelas mitocôndrias
+R: B
+E: A resposta correta é B porque o texto afirma que o meio intracelular (IC) permanece em relativo equilíbrio mesmo com mudanças constantes no ambiente externo, graças à capacidade de autorregulação da célula, o que é a essência da homeostasia. A alternativa A confunde meio extracelular com intracelular. As opções C e D não refletem a definição nem os mecanismos descritos.
+
+P: Frente a um estímulo patológico leve e de curta duração, a célula:
+A) Sofre morte celular imediata
+B) Retorna à normalidade após uma lesão irreversível
+C) Pode se adaptar ou sofrer lesão reversível
+D) Entra diretamente em apoptose
+R: C
+E: A resposta correta é C porque o conteúdo deixa claro que estímulos de baixa intensidade e curta duração podem levar a lesões reversíveis, com retorno à normalidade se o estímulo for removido. A morte celular ocorre quando há lesão irreversível, o que é excluído pelas opções A, B e D.
+
+P: Qual situação pode levar diretamente à morte celular sem passar por etapas de adaptação?
+A) Estímulo leve e intermitente
+B) Falta de oxigênio por alguns minutos em neurônios
+C) Hipervitaminose leve em epitélio bucal
+D) Alterações hormonais transitórias
+R: B
+E: A resposta correta é B porque, segundo o PDF, neurônios são altamente sensíveis à falta de oxigênio e, mesmo por poucos minutos, o estímulo pode ser tão intenso que a célula vai diretamente para a morte celular, sem passar por adaptação ou lesão reversível. As demais situações envolvem estímulos moderados ou recuperáveis.
+
+P: O que determina se um estímulo será fisiológico ou patológico?
+A) Apenas o tempo de exposição ao estímulo
+B) A presença ou não de inflamação
+C) A intensidade, duração, tipo de célula e variações individuais
+D) A quantidade de células atingidas simultaneamente
+R: C
+E: A resposta correta é C, pois o texto destaca que a resposta ao estímulo depende da intensidade, duração, tipo de célula e condição do indivíduo, além do polimorfismo genético. A alternativa A está incompleta. B e D não são determinantes isolados.
+
+P: A hiperplasia requer, como condição essencial, que as células:
+A) Sejam permanentes e incapazes de divisão
+B) Estejam em constante morte e regeneração
+C) Tenham capacidade mitótica, como células lábeis ou estáveis
+D) Sejam exclusivamente musculares
+R: C
+E: A resposta correta é C porque a hiperplasia exige que as células tenham capacidade de se dividir, como as lábeis (ciclo constante) e estáveis (entram em mitose quando necessário). As permanentes (A) não realizam hiperplasia. B e D não se aplicam corretamente ao conceito.
+
+P: A hiperplasia pode ser fisiológica em todas as seguintes situações, exceto:
+A) Glândula mamária durante a gravidez
+B) Regeneração hepática após hepatectomia
+C) Proliferação do epitélio em resposta a mordedura crônica
+D) Hiperplasia da próstata por distúrbio hormonal
+R: D
+E: A resposta correta é D, pois essa é um exemplo de hiperplasia patológica, causada por distúrbios hormonais. As demais são exemplos de hiperplasia fisiológica, como a regeneração hepática (compensatória) e estímulos hormonais normais.
+
+P: O que distingue a hipertrofia da hiperplasia?
+A) A hipertrofia envolve aumento no número de células
+B) A hipertrofia ocorre apenas em tecidos epiteliais
+C) A hipertrofia envolve aumento do volume celular sem proliferação
+D) Ambas ocorrem apenas juntas
+R: C
+E: A resposta correta é C porque, segundo o texto, hipertrofia é o aumento do volume celular por crescimento de organelas e proteínas, sem aumento no número de células. A alternativa A descreve a hiperplasia. B e D estão incorretas.
+
+P: Qual das condições abaixo é um exemplo de hipertrofia fisiológica?
+A) Hipertrofia cardíaca por hipertensão arterial
+B) Crescimento do útero durante a gravidez
+C) Hiperplasia do epitélio após trauma
+D) Degeneração gordurosa hepática
+R: B
+E: A resposta correta é B porque o útero durante a gravidez sofre hipertrofia do músculo liso, sendo esse um exemplo fisiológico. A opção A é patológica, C refere-se à hiperplasia, e D não está relacionado com hipertrofia.
+
+P: A atrofia celular pode ser revertida quando:
+A) A célula sofre necrose
+B) Há perda total de inervação
+C) A causa é suspensa antes de causar danos irreversíveis
+D) Envolve tecido cerebral em Alzheimer
+R: C
+E: A resposta correta é C porque o texto afirma que a atrofia é reversível se o estímulo for removido antes de causar dano permanente. Já o tecido cerebral, como na opção D, pode sofrer atrofia irreversível. A e B levam à morte ou perda funcional completa.
+
+P: Em relação à atrofia, qual afirmação é correta?
+A) Sempre representa morte celular
+B) A função da célula atrofia é totalmente abolida
+C) Ocorre por redução da síntese e aumento da degradação de proteínas
+D) É exclusiva de tecidos musculares
+R: C
+E: A resposta correta é C, porque a diminuição da síntese de proteínas e aumento da degradação, incluindo autofagia, são mecanismos centrais da atrofia celular, conforme descrito. A e B estão erradas (a célula continua viva com função reduzida), e D restringe demais.
+
+P: Qual condição pode levar à atrofia generalizada?
+A) Mordedura crônica do lábio
+B) Estímulo hormonal fisiológico
+C) Envelhecimento sistêmico
+D) Mordida cruzada unilateral
+R: C
+E: A resposta correta é C, pois o texto diz que atrofia pode ser generalizada, especialmente relacionada ao envelhecimento. A e D são exemplos locais. B está relacionada a hiperplasia.
+
+P: A atrofia bucal observada em anemias, hipovitaminose A e candidose pode se manifestar como:
+A) Epitélio espessado e esbranquiçado
+B) Epitélio mais fino com perda de cristas epiteliais
+C) Formação de papilomas múltiplos
+D) Inflamação purulenta com edema severo
+R: B
+E: A resposta correta é B, pois o conteúdo explica que a atrofia do epitélio bucal se manifesta por afinamento e perda das cristas epiteliais, deixando a coloração do tecido conjuntivo (vermelha) mais evidente. A opção A está ligada à hiperplasia e hiperqueratose. C e D não são mencionadas nesse contexto.
+
+P: A hipoplasia é caracterizada por:
+A) Redução reversível do número de células maduras
+B) Crescimento anormal de um órgão por estímulo hormonal
+C) Desenvolvimento incompleto de um tecido ou órgão
+D) Redução do volume celular por desuso
+R: C
+E: A resposta correta é C. A hipoplasia é definida no texto como um distúrbio do desenvolvimento em que o órgão ou tecido não atinge seu tamanho ou forma normais. Ela não é uma resposta adaptativa, como nas alternativas A ou D, e não está relacionada ao crescimento por estímulo hormonal (B).
+
+P: A hipoplasia é considerada:
+A) Um processo adaptativo reversível
+B) Um distúrbio de desenvolvimento irreversível
+C) Uma inflamação aguda localizada
+D) Um tipo de apoptose patológica
+R: B
+E: A resposta correta é B. O PDF afirma que a hipoplasia é um distúrbio do desenvolvimento, e não é um processo adaptativo. Além disso, é irreversível, pois a formação do órgão ou tecido está comprometida desde o início. A e D não têm relação com esse conceito.
+
+P: Um exemplo de hipoplasia citado no material é:
+A) Atrofia de músculos por imobilização
+B) Hiperplasia fibrosa inflamatória
+C) Micrognatia mandibular
+D) Aumento de cristas epiteliais na mucosa bucal
+R: C
+E: A resposta correta é C. A micrognatia mandibular é mencionada como exemplo de hipoplasia, ou seja, crescimento incompleto da mandíbula. A alternativa A refere-se à atrofia, B à hiperplasia patológica e D à acantose.
+
+P: O processo adaptativo em que um tipo celular maduro é substituído por outro tipo maduro é chamado:
+A) Hipoplasia
+B) Metaplasia
+C) Apoptose
+D) Regeneração
+R: B
+E: A resposta correta é B. A metaplasia é definida no texto como a substituição de um tipo celular diferenciado por outro também diferenciado, como forma de proteção frente a estímulos nocivos persistentes. Essa adaptação é reversível, mas pode predispor à malignidade.
+
+P: Um exemplo de metaplasia escamosa citado no conteúdo ocorre:
+A) No epitélio respiratório de fumantes
+B) No útero durante a gravidez
+C) No fígado de alcoólatras
+D) Na mucosa gástrica por infecção bacteriana
+R: A
+E: A resposta correta é A. O conteúdo exemplifica que, em fumantes, o epitélio cilíndrico ciliado das vias respiratórias pode ser substituído por epitélio estratificado pavimentoso, o que caracteriza metaplasia escamosa. As demais opções não são descritas nesse contexto.
+
+P: Qual é uma consequência prejudicial da metaplasia escamosa nas vias aéreas?
+A) Aumento da capacidade de secreção de muco
+B) Formação de tecido ósseo ectópico
+C) Perda de mecanismos de proteção como cílios e muco
+D) Hipersecreção de enzimas lisossômicas
+R: C
+E: A resposta correta é C. A metaplasia escamosa substitui células especializadas, como as ciliadas e secretoras de muco, por células menos funcionais, o que compromete a defesa do tecido contra partículas inaladas e microrganismos. Isso é descrito claramente no texto como uma das desvantagens da metaplasia.
+
+P: Qual vitamina é essencial para a diferenciação epitelial normal e está associada à prevenção de metaplasias?
+A) Vitamina C
+B) Vitamina K
+C) Vitamina A
+D) Vitamina D
+R: C
+E: A resposta correta é C. O texto destaca que a vitamina A é essencial para a diferenciação epitelial normal, e sua deficiência pode favorecer o surgimento de metaplasias escamosas. As demais vitaminas não são mencionadas nesse contexto.
+
+P: Em relação aos acúmulos intracelulares, é correto afirmar que:
+A) Ocorrem apenas no núcleo e causam necrose imediata
+B) São sempre patológicos e irreversíveis
+C) Podem ocorrer no citoplasma, núcleo ou organelas
+D) São sempre causados por fatores infecciosos
+R: C
+E: A resposta correta é C. Segundo o conteúdo, os acúmulos intracelulares podem ocorrer em diferentes compartimentos, como o citoplasma, o núcleo ou organelas como os lisossomos. Eles não são sempre patológicos nem necessariamente irreversíveis.
+
+P: Qual diferença o conteúdo estabelece entre acúmulo e infiltração?
+A) Infiltração é extracelular, enquanto acúmulo é intracelular
+B) Acúmulo se refere a proteínas, infiltração a lipídios
+C) Acúmulo ocorre apenas em inflamações crônicas
+D) Infiltração é reversível, o acúmulo não
+R: A
+E: A resposta correta é A. O material explica que o acúmulo intracelular é chamado de degeneração, enquanto o acúmulo extracelular (no interstício) é denominado infiltração. As demais alternativas não refletem o conteúdo.
+
+P: Entre as causas de acúmulo intracelular, podemos incluir:
+A) Síntese aumentada de proteínas mitocondriais
+B) Defeito genético no metabolismo ou transporte celular
+C) Apoptose espontânea e aguda
+D) Inibição da transcrição de DNA nuclear
+R: B
+E: A resposta correta é B. O texto detalha que os acúmulos podem ocorrer por defeitos adquiridos ou genéticos no metabolismo, transporte, acondicionamento ou secreção de substâncias, levando à sobrecarga intracelular. A alternativa A está fora do contexto; C e D não são causas diretas desse processo.
+
+P: O acúmulo intracelular de substâncias pode ser reversível quando:
+A) A célula atinge sua capacidade máxima de autofagia
+B) A sobrecarga é controlada ou interrompida
+C) O núcleo é eliminado por apoptose
+D) A célula se torna permanentemente anucleada
+R: B
+E: A resposta correta é B, pois o conteúdo afirma que, em vários casos, se a sobrecarga for interrompida, o acúmulo intracelular pode ser revertido. Esse é o caso em condições não genéticas, como esteatose leve. As demais opções são incorretas ou irrelevantes ao processo.
+
+P: Um exemplo de pigmento exógeno que pode se acumular de forma permanente nas células é:
+A) Hemoglobina
+B) Colágeno
+C) Carbono
+D) Ácido lático
+R: C
+E: A resposta correta é C. O pigmento de carbono, quando inalado, pode ser fagocitado por macrófagos nos pulmões e permanecer indefinidamente nas células, pois a maquinaria enzimática não é capaz de degradá-lo, como descrito no PDF. Os outros não são pigmentos acumuláveis nesse contexto.
+
+P: A esteatose é caracterizada por:
+A) Acúmulo de triglicerídeos no espaço extracelular
+B) Infiltração de colesterol nos núcleos celulares
+C) Acúmulo anormal de triglicerídeos no interior das células parenquimatosas
+D) Presença de glicogênio nas mitocôndrias
+R: C
+E: A resposta correta é C. O conteúdo descreve esteatose como acúmulo anormal de triglicerídeos no interior das células parenquimatosas, especialmente nos hepatócitos. A alternativa A confunde localização. B e D não são descrições aplicáveis ao conceito.
+
+P: Qual órgão é mais frequentemente afetado pela esteatose?
+A) Rim
+B) Fígado
+C) Pâncreas
+D) Tireoide
+R: B
+E: A resposta correta é B. O PDF afirma que o fígado é o órgão mais acometido, pois está diretamente envolvido no metabolismo lipídico, sendo o principal local de transformação e transporte de triglicerídeos.
+
+P: Dentre as causas listadas para a esteatose, podemos incluir:
+A) Hiperparatireoidismo e trauma agudo
+B) Diabetes tipo II, álcool, desnutrição proteica
+C) Hipocalcemia e envenenamento por chumbo
+D) Hiperidrose e hipotireoidismo
+R: B
+E: A resposta correta é B. O texto menciona álcool, diabetes tipo II, desnutrição proteica, inanição e anóxia como causas de esteatose hepática. As outras alternativas não têm base no conteúdo.
+
+P: A esteatose é considerada:
+A) Um processo degenerativo irreversível em todos os casos
+B) Um processo inflamatório exclusivamente crônico
+C) Reversível, dependendo da causa e intensidade
+D) Um tipo de calcificação patológica
+R: C
+E: A resposta correta é C. O material afirma que a esteatose pode ser inócua ou causar disfunção celular, e é reversível se a causa for controlada. As opções A, B e D são incorretas dentro do contexto.
+
+P: O acúmulo de triglicerídeos nos hepatócitos decorre principalmente de:
+A) Deficiência de vitamina K
+B) Excesso de água intracelular
+C) Incapacidade de sintetizar lipoproteínas por falta de apoproteínas
+D) Ativação dos ribossomos no RER
+R: C
+E: A resposta correta é C. O texto explica que, para os triglicerídeos serem exportados, precisam ser combinados com apoproteínas, formando lipoproteínas. A deficiência proteica, como na desnutrição, compromete esse processo e leva ao acúmulo de triglicerídeos no hepatócito.
+
+P: Qual das seguintes características macroscópicas é típica de um fígado com esteatose avançada?
+A) Coloração roxa e consistência endurecida
+B) Amarelado, mole e com superfície gordurosa
+C) Acastanhado com nodulações externas
+D) Pálido e com calcificações visíveis
+R: B
+E: A resposta correta é B. O fígado afetado por esteatose apresenta-se amarelado, aumentado de volume, mole ao toque e com aspecto gorduroso, segundo o texto. As demais características não são compatíveis com esse tipo de lesão.
+
+P: O consumo excessivo de álcool leva à esteatose hepática por:
+A) Inibição direta das enzimas lisossômicas
+B) Aumento de NAD+ e redução de acetil CoA
+C) Produção excessiva de acetil CoA e radicais livres
+D) Estimulação da apoptose dos hepatócitos
+R: C
+E: A resposta correta é C. O conteúdo descreve que o álcool é convertido em acetaldeído, depois em acetil CoA, com geração de radicais livres. Isso leva à inibição do ciclo de Krebs, acúmulo de triglicerídeos e danos nos microtúbulos, culminando em esteatose.
+
+P: O que caracteriza a esteatose microvesicular?
+A) Um grande vacúolo lipídico único no citoplasma
+B) Infiltração de cálcio em múltiplas células
+C) Presença de vários vacúolos lipídicos pequenos nos hepatócitos
+D) Formação de cristais de colesterol no citoplasma
+R: C
+E: A resposta correta é C. O texto distingue esteatose microvesicular como tendo múltiplos pequenos vacúolos lipídicos no citoplasma dos hepatócitos, enquanto a macrovesicular apresenta um único vacúolo grande.
+
+P: O acúmulo intracelular de colesterol pode estar presente em todas as seguintes situações, exceto:
+A) Aterosclerose
+B) Xantoma
+C) Cálculo renal
+D) Granulomas inflamatórios
+R: C
+E: A resposta correta é C. Cálculo renal não está relacionado ao acúmulo intracelular de colesterol. O conteúdo destaca aterosclerose, xantomas e lesões inflamatórias crônicas como locais onde macrófagos espumosos com colesterol se acumulam.
+
+P: O que caracteriza um macrófago espumoso?
+A) Presença de lipofuscina em lisossomos
+B) Acúmulo de colesterol em seu interior, com aparência pálida e vacuolada
+C) Núcleo picnótico e citoplasma acidófilo
+D) Incapacidade de realizar fagocitose
+R: B
+E: A resposta correta é B. O PDF descreve que os macrófagos espumosos são células que fagocitam colesterol extracelular, apresentando citoplasma vacuolado e coloração pálida. Eles aparecem na aterosclerose, xantomas e granulomas inflamatórios.
+
+P: O xantoma cutâneo pode ser identificado histologicamente por:
+A) Aumento de fibras colágenas
+B) Células epiteliais escamosas em mitose
+C) Agregados de macrófagos espumosos no tecido conjuntivo subepitelial
+D) Presença de pus e neutrófilos degenerados
+R: C
+E: A resposta correta é C. O texto afirma que, no xantoma cutâneo e bucal, observa-se histologicamente macrófagos espumosos aglomerados no tecido conjuntivo subjacente ao epitélio. A e B não fazem parte da lesão, e D descreve um abscesso, não um xantoma.
+
+P: Em granulomas inflamatórios como os periapicais, o colesterol acumulado tem origem principalmente de:
+A) Lipídios alimentares
+B) Bile hepática
+C) Membranas de células destruídas no processo inflamatório
+D) Secreção das glândulas salivares
+R: C
+E: A resposta correta é C. O conteúdo afirma que, em lesões como granulomas e cistos odontogênicos inflamatórios, o colesterol acumulado vem das membranas celulares destruídas durante o processo inflamatório. As demais opções não são citadas como fontes.
+
+P: A tumefação celular é caracterizada primariamente por:
+A) Acúmulo de proteínas nos ribossomos
+B) Aumento da síntese de DNA nuclear
+C) Entrada excessiva de sódio e água no citoplasma
+D) Acúmulo de cálcio na mitocôndria
+R: C
+E: A resposta correta é C. A tumefação celular ocorre por falência das bombas iônicas de membrana, especialmente a Na+/K+-ATPase, resultando em entrada de sódio e água na célula, conforme descrito claramente no conteúdo. As demais alternativas não condizem com o mecanismo.
+
+P: A lesão celular é considerada reversível quando:
+A) Envolve perda da integridade nuclear
+B) Os danos ao DNA são irreparáveis
+C) A membrana celular e as organelas permanecem estruturalmente intactas
+D) Há liberação de enzimas lisossômicas no citoplasma
+R: C
+E: A resposta correta é C. De acordo com o texto, a lesão reversível ocorre quando a célula mantém a integridade estrutural das membranas e organelas, mesmo com alterações funcionais. Os processos descritos nas demais alternativas indicam lesão irreversível.
+
+P: Em nível microscópico, a tumefação celular pode ser observada como:
+A) Citoplasma hipercromático com núcleo retraído
+B) Citoplasma mais claro, granular e com vacúolos
+C) Inclusões de lipofuscina nos núcleos
+D) Núcleo aumentado com cariopicnose
+R: B
+E: A resposta correta é B. O conteúdo indica que, sob microscopia óptica, a tumefação celular aparece como citoplasma claro, granular e com vacúolos citoplasmáticos, decorrentes da distensão de organelas. As outras alterações referem-se a necrose ou apoptose.
+
+P: O termo degeneração hidrópica refere-se a:
+A) Infiltração de cálcio no núcleo
+B) Formação de vacúolos de gordura no citoplasma
+C) Inchaço pronunciado das organelas e formação de vacúolos
+D) Produção de água por mitocôndrias alteradas
+R: C
+E: A resposta correta é C. A degeneração hidrópica é uma forma mais grave de tumefação, com inchaço importante de organelas (como retículo endoplasmático e mitocôndrias), levando à formação de vacúolos claros no citoplasma. Não há produção ativa de água (D) e A e B referem-se a outros processos.
+
+P: A reversibilidade da lesão celular depende principalmente de:
+A) Estímulo hormonal fisiológico
+B) Duração e intensidade da agressão
+C) Proliferação mitótica imediata
+D) Hipocromia nuclear
+R: B
+E: A resposta correta é B. O conteúdo deixa claro que a lesão reversível ou irreversível depende da duração e intensidade do estímulo lesivo, bem como da capacidade da célula em reparar os danos. A e C não são determinantes diretos da reversibilidade. D não é mencionado como critério.
+
+P: As primeiras alterações visíveis na tumefação celular ocorrem em qual estrutura?
+A) Núcleo
+B) Mitocôndria
+C) Retículo endoplasmático rugoso
+D) Membrana plasmática
+R: C
+E: A resposta correta é C. O texto aponta que as primeiras alterações ultraestruturais na lesão reversível ocorrem no retículo endoplasmático rugoso, que se distende e forma vacúolos. A mitocôndria é afetada em estágios mais avançados.
+
+P: Qual das seguintes alterações não é típica da lesão celular reversível?
+A) Formação de blebs na membrana plasmática
+B) Tumefação mitocondrial moderada
+C) Fragmentação do núcleo
+D) Perda de microvilos
+R: C
+E: A resposta correta é C. A fragmentação do núcleo (cariorrexe) é uma alteração irreversível, associada à necrose ou apoptose. Já as alterações como blebs, perda de microvilos e inchaço mitocondrial são reversíveis, conforme descrito no conteúdo.
+
+P: A função das mitocôndrias é afetada na lesão reversível principalmente por:
+A) Aumento da produção de ATP
+B) Falência da membrana nuclear
+C) Distensão da matriz mitocondrial
+D) Bloqueio completo do DNA mitocondrial
+R: C
+E: A resposta correta é C. O texto mostra que uma das alterações visíveis nas mitocôndrias durante a lesão reversível é a distensão da matriz mitocondrial, que prejudica temporariamente a fosforilação oxidativa. A e D são incorretas e B não é relevante à função mitocondrial.
+
+P: Qual organela se torna vacuolizada durante a degeneração hidrópica?
+A) Ribossomo
+B) Retículo endoplasmático rugoso
+C) Lisossomo
+D) Complexo de Golgi
+R: B
+E: A resposta correta é B. A degeneração hidrópica envolve distensão e vacuolização do retículo endoplasmático rugoso, como parte do processo de inchaço e disfunção reversível. As demais organelas não apresentam essa característica típica na fase reversível.
+
+P: O rompimento das membranas lisossômicas é indicativo de:
+A) Lesão reversível com regeneração
+B) Início da proliferação celular
+C) Lesão irreversível e autólise enzimática
+D) Aumento da transcrição gênica
+R: C
+E: A resposta correta é C. O PDF deixa claro que a ruptura das membranas dos lisossomos libera enzimas hidrolíticas no citoplasma, promovendo digestão da célula, o que caracteriza lesão irreversível, diferentemente da fase reversível, onde os lisossomos permanecem intactos.
+
+P: Qual a função da bomba de sódio (Na+/K+-ATPase) na manutenção da homeostase celular?
+A) Controlar o número de mitoses
+B) Garantir a síntese de proteínas no núcleo
+C) Regular o volume celular evitando o inchaço
+D) Estimular o ciclo de Krebs
+R: C
+E: A resposta correta é C. A bomba Na+/K+-ATPase é responsável por manter o equilíbrio iônico e o volume celular, impedindo a entrada excessiva de água. A sua falência leva à tumefação celular. As demais alternativas não têm relação com essa bomba.
+
+P: A perda de microvilos observada na lesão reversível compromete qual função celular?
+A) Reprodução
+B) Adesão intercelular
+C) Absorção
+D) Produção de colesterol
+R: C
+E: A resposta correta é C. A perda de microvilos, como citado no conteúdo, ocorre na lesão reversível e prejudica a capacidade de absorção da célula, especialmente em tecidos como o epitélio intestinal e renal. A e D são irrelevantes aqui; B não depende diretamente de microvilos.
