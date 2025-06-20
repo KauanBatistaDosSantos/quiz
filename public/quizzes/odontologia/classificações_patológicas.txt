@@ -1,0 +1,322 @@
+P: Qual é a principal função do cálcio e do fósforo no organismo em condições normais?
+A) Manutenção da pressão osmótica
+B) Estabilização do pH sanguíneo
+C) Calcificação óssea
+D) Digestão de lipídios
+R: C
+E: A resposta correta é C) Calcificação óssea porque, de acordo com o texto, cálcio e fósforo são absorvidos na forma ionizada e circulam no sangue justamente para permitir a calcificação dos ossos, sua principal função fisiológica. As outras alternativas não correspondem ao papel principal desses íons.
+
+P: Qual estrutura regula os níveis de cálcio e fósforo no sangue em resposta à sua diminuição?
+A) Glândula hipófise
+B) Glândulas paratireoides
+C) Glândulas suprarrenais
+D) Pâncreas
+R: B
+E: A resposta correta é B) Glândulas paratireoides, pois o material afirma que o paratormônio, hormônio produzido por essas glândulas, é ativado quando os níveis de cálcio caem na circulação, regulando seu retorno ao sangue.
+
+P: Qual das alternativas abaixo melhor caracteriza a calcificação distrófica?
+A) Deposição de cálcio em tecidos normais devido à hipercalcemia
+B) Deposição de cálcio em tecidos necrosados ou danificados
+C) Acúmulo de cálcio em ossos por deficiência de fósforo
+D) Calcificação causada por distúrbios da vitamina D
+R: B
+E: A resposta correta é B) Deposição de cálcio em tecidos necrosados ou danificados, como diz o texto: "calcificação distrófica ocorre em um tecido degenerado ou necrosado", e é focal e independente da concentração sérica de cálcio. A alternativa A define calcificação metastática, e as demais não condizem com o conceito.
+
+P: Em relação à calcificação distrófica, é correto afirmar que:
+A) Ocorre apenas em tecidos saudáveis
+B) Depende exclusivamente de altos níveis de cálcio no sangue
+C) Pode ocorrer em necroses do tipo caseosa, de coagulação e ateromas
+D) Não provoca disfunção dos órgãos afetados
+R: C
+E: A resposta correta é C, pois o texto menciona claramente que a calcificação distrófica pode ocorrer em diversos tipos de necroses (caseosa, de coagulação), ateromas e valvulopatias cardíacas. Ao contrário do que dizem A, B e D, esse tipo de calcificação ocorre em tecidos danificados, não depende da hipercalcemia e pode causar disfunção do órgão afetado.
+
+P: Qual das características abaixo é exclusiva da calcificação metastática?
+A) Associada a tecidos necrosados
+B) Associada à hipercalcemia
+C) Causa disfunção orgânica importante
+D) Ocorre apenas no coração e vasos
+R: B
+E: A resposta correta é B) Associada à hipercalcemia, pois a calcificação metastática resulta de uma hipersecreção de paratormônio ou outras causas que aumentam os níveis de cálcio no sangue. Já a distrófica ocorre independentemente da concentração de cálcio. A alternativa A descreve a distrófica, e C e D estão incorretas conforme o texto.
+
+P: Qual dos tecidos abaixo é mais propenso a sofrer calcificação metastática?
+A) Coração
+B) Fígado
+C) Mucosa gástrica
+D) Glândula tireoide
+R: C
+E: A resposta correta é C) Mucosa gástrica, pois o texto especifica que os tecidos mais comumente afetados pela calcificação metastática são aqueles que secretam substâncias ácidas ou são mais alcalinos, como mucosa gástrica, pulmões, rins e veias pulmonares.
+
+P: Sobre a calcificação metastática, marque a alternativa incorreta:
+A) Está associada à destruição do tecido ósseo
+B) É sempre acompanhada de sinais clínicos importantes
+C) Pode ser causada por distúrbios da vitamina D
+D) Pode ocorrer em pacientes com insuficiência renal
+R: B
+E: A resposta correta é B, pois é a única incorreta. O texto afirma que a calcificação metastática geralmente não causa disfunção do órgão e não possui significado clínico importante. As demais alternativas estão corretas de acordo com os mecanismos etiológicos apresentados.
+
+P: Qual hormônio está diretamente envolvido na elevação dos níveis de cálcio no sangue, favorecendo a calcificação metastática?
+A) Insulina
+B) Calcitonina
+C) Paratormônio
+D) Aldosterona
+R: C
+E: A resposta correta é C) Paratormônio, pois ele é liberado pelas paratireoides em resposta à queda dos níveis de cálcio no plasma, ativando osteoclastos e promovendo a liberação de cálcio dos ossos, o que pode causar hipercalcemia e contribuir para a calcificação metastática.
+
+P: Quais das alterações microscópicas são observadas tanto nas calcificações distróficas quanto metastáticas?
+A) Presença de lipídios intracelulares
+B) Material eosinofílico e basofílico
+C) Corpúsculos de inclusão virais
+D) Necrose fibrinoide
+R: B
+E: A resposta correta é B, pois o texto menciona que as calcificações distróficas mostram focos irregulares de calcificação, com aspectos basofílicos ou eosinofílicos, enquanto a metastática também envolve materiais basofílicos nos tecidos afetados. As outras opções não se referem a calcificações.
+
+P: Qual é uma causa comum de hipercalcemia que leva à calcificação metastática?
+A) Hipotireoidismo
+B) Hipoatividade adrenal
+C) Hiperparatireoidismo
+D) Hipovitaminose D
+R: C
+E: A resposta correta é C) Hiperparatireoidismo, pois, conforme o texto, esse distúrbio hormonal leva à remoção constante de cálcio dos ossos pelos osteoclastos, elevando os níveis plasmáticos de cálcio e contribuindo para a calcificação metastática. Hipotireoidismo e hipovitaminose D causariam o oposto.
+
+P: Qual das alternativas a seguir define corretamente colelitíase?
+A) Calcificação dos canais pancreáticos
+B) Formação de cálculos nos rins
+C) Presença de cálculos na vesícula biliar
+D) Endurecimento das artérias hepáticas
+R: C
+E: A resposta correta é C) Presença de cálculos na vesícula biliar, como indicado claramente no texto, onde colelitíase é definida como a formação de cálculos (pedras) na vesícula biliar. As outras alternativas descrevem outras patologias que não têm relação com a colelitíase.
+
+P: Em relação à composição dos cálculos biliares, é correto afirmar que:
+A) Todos são formados exclusivamente por bilirrubina
+B) Cálculos pigmentados são ricos em colesterol
+C) Cálculos de colesterol resultam de bile saturada de colesterol
+D) Não existe diferença de composição entre os tipos de cálculo
+R: C
+E: A resposta correta é C, pois o conteúdo deixa claro que os cálculos de colesterol são formados por bile saturada com colesterol. Já os cálculos pigmentados contêm bilirrubina não conjugada, refutando as opções A e B. A D está incorreta pois há, sim, diferença de composição.
+
+P: Quais são os fatores de risco associados aos cálculos de colesterol na colelitíase?
+A) Hemólise crônica e infecções
+B) Obesidade, idade avançada e hormônio feminino
+C) Doenças inflamatórias intestinais e hipertensão
+D) Hipovitaminose D e dislipidemia
+R: B
+E: A resposta correta é B. O texto especifica que os cálculos de colesterol estão associados à bile saturada com colesterol, sendo os fatores de risco: idade avançada, hormônio feminino (uso de contraceptivos), obesidade e hereditariedade. A alternativa A refere-se aos cálculos pigmentados.
+
+P: Onde a epidemiologia dos cálculos de colesterol é mais significativa?
+A) Países em desenvolvimento
+B) Zonas tropicais úmidas
+C) Regiões de clima frio
+D) Países ocidentais
+R: D
+E: A resposta correta é D) Países ocidentais, pois a maior incidência de cálculos de colesterol ocorre nesses locais, segundo o conteúdo. Já os cálculos pigmentados são mais comuns nos países em desenvolvimento, o que invalida A.
+
+P: Qual a composição principal dos cálculos pigmentados da vesícula?
+A) Bile saturada de colesterol
+B) Bile saturada de bilirrubina não conjugada
+C) Fosfato de cálcio
+D) Ácido úrico
+R: B
+E: A resposta correta é B. O texto afirma claramente que os cálculos pigmentados são formados por bile saturada de bilirrubina não conjugada, em contraste com os de colesterol. As outras opções representam componentes de cálculos renais ou são irrelevantes nesse contexto.
+
+P: Qual das opções abaixo corresponde corretamente a um fator de risco dos cálculos pigmentados?
+A) Uso de anticoncepcionais
+B) Hereditariedade
+C) Hemólise crônica
+D) Hipotiroidismo
+R: C
+E: A resposta correta é C) Hemólise crônica, que leva ao aumento da bilirrubina no sangue e contribui para a formação de cálculos pigmentados. A opção A está relacionada aos cálculos de colesterol. B também se aplica ao colesterol, e D não é mencionado no texto.
+
+P: Em que grupo geográfico há maior prevalência dos cálculos pigmentados?
+A) Países escandinavos
+B) Países em desenvolvimento
+C) Países industrializados
+D) América do Norte
+R: B
+E: A resposta correta é B) Países em desenvolvimento, como aponta o conteúdo, destacando que os cálculos pigmentados são mais frequentes nesses locais, provavelmente devido à maior prevalência de infecções, doenças gastrointestinais e hemólise crônica.
+
+P: Sobre os quadros clínicos da colelitíase, é correto afirmar que:
+A) A maioria dos pacientes apresenta sintomas intensos desde o início
+B) 80% dos casos são sintomáticos e causam cólicas constantes
+C) A maioria dos casos é assintomática, mas pode apresentar cólica biliar se sintomática
+D) Sempre há necessidade de cirurgia imediata
+R: C
+E: A resposta correta é C. Segundo o texto, cerca de 80% dos casos são assintomáticos, mas quando há sintomas, eles incluem cólica biliar, colecistite e obstrução dos ductos. As alternativas A e B estão erradas quanto à frequência dos sintomas, e D não é afirmada.
+
+P: Qual das condições abaixo não está entre as manifestações clínicas possíveis da colelitíase sintomática?
+A) Cólica biliar
+B) Colecistite
+C) Obstrução dos ductos biliares
+D) Hipoglicemia
+R: D
+E: A resposta correta é D) Hipoglicemia, que não é citada no conteúdo como manifestação da colelitíase. As opções A, B e C são sintomas associados aos casos em que a doença se torna sintomática.
+
+P: Qual complicação grave pode estar associada à colelitíase sintomática, segundo o texto?
+A) Câncer (CA) de vesícula
+B) Pancreatite autoimune
+C) Cirrose hepática
+D) Doença de Crohn
+R: A
+E: A resposta correta é A) Câncer (CA) de vesícula, pois o texto afirma que há risco de carcinoma (CA) nos casos de colelitíase sintomática. As outras doenças não são mencionadas como complicações da colelitíase no material.
+
+Se desejar, posso continuar com o terceiro bloco de questões, agora baseado na seção de urolitíase (cálculos renais). Confirmar?
+Ótimo! Agora seguem 10 questões de múltipla escolha baseadas na seção sobre urolitíase (pedra nos rins), como abordado no PDF. Elas cobrem etiologia, características clínicas, tipos de cálculo e prevalência.
+
+P: Qual é a definição correta de urolitíase?
+A) Formação de cálculos na vesícula biliar
+B) Presença de cristais no sangue
+C) Formação de cálculos nos rins
+D) Calcificação dos músculos esqueléticos
+R: C
+E: A resposta correta é C) Formação de cálculos nos rins, como descrito no texto, onde a urolitíase é explicitamente definida como cálculo renal. As alternativas A e D são outras patologias e B não está relacionada ao conteúdo.
+
+P: Qual fator não está listado como causa ou predisposição para a urolitíase?
+A) Infecção urinária
+B) Volume urinário alterado
+C) Hemólise crônica
+D) pH urinário alterado
+R: C
+E: A resposta correta é C) Hemólise crônica, que está relacionada à colelitíase pigmentada, não à urolitíase. Os fatores citados no texto para os cálculos renais incluem: predisposição genética, pH urinário alterado, volume urinário alterado, infecção urinária e doenças hereditárias.
+
+P: Qual dos grupos apresenta maior incidência de urolitíase, segundo o texto?
+A) Mulheres com menopausa
+B) Homens em geral
+C) Crianças com infecção urinária
+D) Idosos com hipertensão
+R: B
+E: A resposta correta é B) Homens em geral, como diz o texto: “características clínicas: principalmente em homens”. As outras opções não são citadas como tendo maior prevalência.
+
+P: Sobre os sintomas da urolitíase, é correto afirmar que:
+A) Todos os casos são sintomáticos com febre e vômito
+B) É sempre silenciosa, não causando desconforto
+C) Pode ser assintomática ou causar cólicas e hematúria
+D) É uma infecção exclusivamente urinária com sintomas vagos
+R: C
+E: A resposta correta é C, pois o material afirma que a urolitíase pode ser assintomática, mas, quando sintomática, pode causar cólicas renais, hematúria (sangue na urina) e infecção. A opção A é incorreta por generalizar os sintomas, e B e D são falsas.
+
+P: Qual é o tipo mais comum de cálculo renal, de acordo com o material?
+A) Ácido úrico
+B) Fosfato triplo
+C) Oxalato de cálcio
+D) Cistina
+R: C
+E: A resposta correta é C) Oxalato de cálcio, que representa 70% dos casos, segundo o texto. As outras opções são tipos possíveis, mas menos frequentes.
+
+P: A presença de hematúria em um paciente com dor lombar intensa sugere:
+A) Insuficiência cardíaca
+B) Câncer gástrico
+C) Urolitíase sintomática
+D) Hipotensão arterial
+R: C
+E: A resposta correta é C) Urolitíase sintomática, pois, conforme o conteúdo, um dos sinais clínicos é a hematúria (sangue na urina) associada à cólica renal, geralmente uma dor lombar forte. As demais condições não têm essa associação direta com os sintomas citados.
+
+P: Qual fator contribui diretamente para a formação de cálculos renais por acidificação da urina?
+A) Dieta hipercalórica
+B) pH urinário ácido
+C) Hemoglobina elevada
+D) Hipocalcemia
+R: B
+E: A resposta correta é B) pH urinário ácido, pois o texto menciona pH urinário alterado (ácido) como uma das causas de urolitíase. Esse ambiente favorece a precipitação de certos sais, como ácido úrico. As outras opções não aparecem como causas diretas no material.
+
+P: Sobre a associação entre infecção urinária e urolitíase, assinale a alternativa correta:
+A) A infecção destrói cálculos já formados
+B) Infecções urinárias são fator de risco para formação de cálculos
+C) A infecção ocorre apenas após a formação dos cálculos
+D) Não há relação entre infecção urinária e urolitíase
+R: B
+E: A resposta correta é B, já que o texto lista infecção urinária como um dos fatores predisponentes para a formação de cálculos renais. Ela altera o pH e favorece a cristalização de substâncias na urina.
+
+P: Qual das alternativas não representa um tipo de cálculo renal listado no texto?
+A) Cistina
+B) Fosfato triplo
+C) Carbonato de sódio
+D) Ácido úrico
+R: C
+E: A resposta correta é C) Carbonato de sódio, pois não está presente no conteúdo como tipo de cálculo. Os tipos citados são: oxalato de cálcio, fosfato triplo, ácido úrico e cistina.
+
+P: Considerando os tipos de cálculos renais, qual alternativa corresponde a um distúrbio hereditário?
+A) Fosfato triplo
+B) Ácido úrico
+C) Cistina
+D) Colesterol
+R: C
+E: A resposta correta é C) Cistina, pois está associada a doenças hereditárias, como citado no texto. Esse tipo de cálculo ocorre em indivíduos com distúrbios do metabolismo da cistina, um aminoácido. As demais não têm origem hereditária predominante no conteúdo abordado.
+
+P: O que é sialolitíase, de acordo com o material?
+A) Presença de cálculos nos seios paranasais
+B) Formação de cálculos nos ductos das glândulas salivares
+C) Obstrução dos ductos pancreáticos
+D) Infecção bacteriana da glândula parótida
+R: B
+E: A resposta correta é B) Formação de cálculos nos ductos das glândulas salivares, conforme descrito no material: "sialolitíase: cálculo salivar – ocorre no interior do ducto da glândula salivar". As demais alternativas não correspondem à definição dada.
+
+P: A sialolitíase ocorre com maior frequência em qual estrutura?
+A) Ducto de Stensen, na parótida
+B) Ducto de Wharton, na sublingual
+C) Ducto pancreático principal
+D) Ducto de Wirsung
+R: B
+E: A resposta correta é B) Ducto de Wharton, na sublingual, como o material especifica claramente: "geralmente é no ducto de Wharton na glândula sublingual". A alternativa A cita a parótida (onde também pode ocorrer, mas não é a mais comum). As opções C e D são referentes ao pâncreas.
+
+P: Em qual das alternativas está a descrição incorreta sobre a sialolitíase?
+A) Pode causar obstrução do fluxo salivar
+B) Ocorre frequentemente na glândula sublingual
+C) Está associada a acúmulo de cálcio e fósforo
+D) Afeta principalmente a mucosa gástrica
+R: D
+E: A resposta correta é D). A sialolitíase não afeta a mucosa gástrica, que é um local citado no texto como alvo de calcificações metastáticas, não cálculos salivares. As demais afirmativas estão corretas com base no conteúdo apresentado.
+
+P: A sialolitíase pode ser considerada um tipo de:
+A) Calcificação metastática
+B) Calcificação distrófica
+C) Cálculo por cristalização em ambiente glandular
+D) Inflamação aguda autoimune
+R: C
+E: A resposta correta é C). Embora o texto não defina explicitamente o mecanismo fisiopatológico, ele caracteriza a sialolitíase como cálculo salivar, que ocorre por precipitação de substâncias minerais (como sais de cálcio) nos ductos glandulares. A e B são tipos de calcificação tecidual anormal, não cálculos. D não é abordado.
+
+P: Qual alternativa descreve corretamente o ducto mais afetado pela sialolitíase?
+A) Ducto de Stensen – glândula parótida
+B) Ducto de Wirsung – pâncreas
+C) Ducto de Wharton – glândula sublingual
+D) Ducto cístico – vesícula biliar
+R: C
+E: A resposta correta é C) Ducto de Wharton – glândula sublingual, conforme especificado diretamente no texto. As demais opções correspondem a órgãos ou regiões não relacionados diretamente com a formação de cálculos salivares.
+
+P: A presença de um cálculo no ducto salivar pode resultar em:
+A) Aumento da secreção salivar
+B) Diminuição da pressão arterial
+C) Obstrução e possível inflamação glandular
+D) Aumento da glicemia
+R: C
+E: A resposta correta é C). Apesar de o material não detalhar sintomas, obstrução do ducto salivar é uma consequência lógica e fisiopatológica da presença de um cálculo. Isso pode levar a inchaço, dor e inflamação na glândula afetada. As outras opções não têm relação com o tema.
+
+P: De acordo com o texto, os cálculos salivares ocorrem:
+A) Em glândulas de secreção apócrina
+B) No interior do ducto da glândula salivar
+C) Apenas em crianças com refluxo
+D) Exclusivamente por infecções bacterianas
+R: B
+E: A resposta correta é B), pois o texto afirma literalmente que “a sialolitíase ocorre no interior do ducto da glândula salivar”. A alternativa A está incorreta, pois glândulas salivares não são apócrinas. C e D também não estão mencionadas nem inferidas.
+
+P: A sialolitíase tem etiologia diretamente relacionada a:
+A) Fatores hormonais femininos
+B) Metabolismo de colesterol
+C) Acúmulo mineral nos ductos salivares
+D) Necrose tecidual localizada
+R: C
+E: A resposta correta é C). A formação de cálculos salivares ocorre devido à precipitação de minerais (principalmente cálcio) no interior dos ductos. As opções A e B dizem respeito à colelitíase, e D à calcificação distrófica, sem relação com a sialolitíase.
+
+P: Sialolitíase compartilha semelhança fisiopatológica com qual das condições abaixo?
+A) Aterosclerose
+B) Colelitíase
+C) Calcificação metastática
+D) Necrose liquefativa
+R: B
+E: A resposta correta é B) Colelitíase, pois ambas envolvem formação de cálculos por cristalização de substâncias (bile ou saliva) dentro de ductos glandulares. Aterosclerose é acúmulo lipídico em artérias; calcificação metastática é deposição de cálcio em tecidos por hipercalcemia; e necrose liquefativa é destruição tecidual por enzimas.
+
+P: Qual das alternativas melhor diferencia a sialolitíase das calcificações distróficas e metastáticas?
+A) Sialolitíase é uma resposta inflamatória direta à necrose
+B) Sialolitíase é causada por destruição óssea
+C) Sialolitíase envolve precipitação de sais em ductos, não em tecidos degenerados
+D) Sialolitíase ocorre apenas em resposta a hipercalcemia
+R: C
+E: A resposta correta é C). A sialolitíase não ocorre em tecidos danificados ou necrosados (como a distrófica), nem por hipercalcemia sistêmica (como a metastática). Ela resulta da formação de cálculos nos ductos salivares, por precipitação de sais — mecanismo diferente das calcificações patológicas.

@@ -3,5 +3,6 @@
   "Teste e Validação de Software": ["teste/Teste e Validação 1.txt", "teste/Abordagem de Teste 2.txt", "teste/Planejamento de Testes 3.txt", "teste/Casos de Teste 4.txt", "teste/Níveis de Teste 5.txt", "teste/Teste de Frontend 6.txt", "teste/Geral 7.txt", "teste/Geral 8.txt"],
   "Power BI": ["power bi/Power BI.txt"],
   "Programação Mobile": ["programacao mobile/codigo_bebidas.txt", "programacao mobile/codigo_textoencriptografado.txt", "programacao mobile/codigo_cronometro.txt", "programacao mobile/codigo_sorteador.txt", "programacao mobile/mobile.txt", "programacao mobile/mobile2.txt", "programacao mobile/mobile3.txt"],
-  "Tecnologia": ["tecnologia/tópicos_especiais_em_tecnologia_1.txt", "tecnologia/tópicos_especiais_em_tecnologia_2.txt", "tecnologia/tópicos_especiais_em_tecnologia_3.txt", "tecnologia/tópicos_especiais_em_tecnologia_4.txt", "tecnologia/tópicos_especiais_em_tecnologia_5.txt", "tecnologia/tópicos_especiais_em_tecnologia_6.txt", "tecnologia/tópicos_especiais_em_tecnologia_7.txt"]
+  "Tecnologia": ["tecnologia/tópicos_especiais_em_tecnologia_1.txt", "tecnologia/tópicos_especiais_em_tecnologia_2.txt", "tecnologia/tópicos_especiais_em_tecnologia_3.txt", "tecnologia/tópicos_especiais_em_tecnologia_4.txt", "tecnologia/tópicos_especiais_em_tecnologia_5.txt", "tecnologia/tópicos_especiais_em_tecnologia_6.txt", "tecnologia/tópicos_especiais_em_tecnologia_7.txt"],
+  "Odontologia": ["odontologia/classificações_patológicas.txt"]
 }
