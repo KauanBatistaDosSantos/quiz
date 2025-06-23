@@ -1,0 +1,319 @@
+P: O que caracteriza uma radiação ionizante?
+A) Capacidade de aquecer tecidos diretamente
+B) Emissão de partículas visíveis a olho nu
+C) Capacidade de provocar ionizações e excitações nas moléculas
+D) Capacidade de atravessar qualquer material sem interação
+R: C
+E: A resposta correta é C porque radiações ionizantes são definidas pela sua capacidade de remover elétrons de átomos (ionização) ou promover elétrons a camadas mais externas (excitação), alterando a estrutura molecular. Esse processo é essencial para que ocorram reações fotoquímicas e radioquímicas no organismo. As outras alternativas não refletem corretamente essa definição conforme o material.
+
+P: Qual é o primeiro estágio para o surgimento de uma lesão por radiação?
+A) Perda celular imediata
+B) Formação de cicatriz dérmica
+C) Absorção de energia pelas moléculas
+D) Mutação genética espontânea
+R: C
+E: A resposta correta é C porque, conforme o documento, o primeiro estágio da radiolesão é o estágio físico, no qual ocorre a absorção de energia da radiação, resultando em ionizações ou excitações. Essa etapa é necessária para o desenvolvimento dos efeitos biológicos posteriores. As demais alternativas descrevem consequências tardias ou incorretas.
+
+P: O mecanismo indireto de lesão celular por radiação ocorre principalmente através de:
+A) Ejeção direta de elétrons do DNA
+B) Formação de radicais livres pela hidrólise da água
+C) Aquecimento dos tecidos
+D) Alteração da mitose diretamente pelos fótons
+R: B
+E: A resposta correta é B porque o mecanismo indireto, que representa cerca de 70% dos efeitos, envolve a radiólise da água, formando radicais livres altamente reativos que danificam estruturas como DNA, proteínas e lipídeos. Esse é o mecanismo predominante da lesão celular por radiação ionizante. A alternativa A corresponde ao mecanismo direto; C e D não estão descritas como mecanismos relevantes no texto.
+
+P: Em qual situação ocorre a absorção fotoelétrica nos tecidos?
+A) Quando um fóton atravessa o átomo sem interação
+B) Quando um fóton colide e perde parte da energia cinética
+C) Quando o fóton colide com um átomo e ejeta um elétron
+D) Quando o fóton altera sua trajetória sem perder energia
+R: C
+E: A resposta correta é C porque a absorção fotoelétrica se dá quando o fóton colide com um átomo, transfere toda sua energia a um elétron, que é então ejetado (tornando-se um fotoelétron). Isso é um tipo de interação fundamental com tecidos. A alternativa B descreve o espalhamento Compton, e a D descreve espalhamento não modificado.
+
+P: O que caracteriza o espalhamento Compton?
+A) Ejeção de dois elétrons simultaneamente
+B) O fóton colide e é absorvido completamente
+C) O fóton colide, cede parte da energia a um elétron e muda de trajetória
+D) A energia do fóton é convertida em calor no tecido
+R: C
+E: A resposta correta é C porque no espalhamento Compton, o fóton cede parte da energia para ejetar um elétron e depois segue em nova trajetória com energia reduzida. Isso contribui para a degradação da qualidade da imagem e para a exposição do operador. A alternativa B refere-se à absorção fotoelétrica; A e D não são descritas no documento.
+
+P: Qual unidade mede a quantidade de radiação absorvida por um tecido?
+A) Röntgen
+B) Sievert
+C) Gray
+D) Coulomb
+R: C
+E: A resposta correta é C porque o Gray (Gy) é a unidade de absorção de radiação, correspondendo à absorção de 1 joule de energia por kg de tecido. O documento também menciona o rad, unidade antiga em que 100 rad = 1 Gy. Röntgen e Coulomb/kg são usados para exposição no ar, e Sievert mede o efeito biológico (não a absorção).
+
+P: A unidade que avalia os efeitos biológicos da radiação nos tecidos é o:
+A) Gray
+B) Rem ou Sievert
+C) Coulomb
+D) Joule
+R: B
+E: A resposta correta é B porque o Sievert (Sv) é usado para expressar a capacidade de determinada radiação provocar danos biológicos, levando em conta o tipo de radiação e o tecido atingido. Essa é a unidade usada em radioproteção. Gray mede absorção, Coulomb mede exposição, e joule é unidade de energia sem uso direto nesse contexto.
+
+P: Qual das alternativas corresponde corretamente à sequência da manifestação de efeitos da radiação ionizante?
+A) Exposição → Efeito biológico → Absorção
+B) Efeito biológico → Absorção → Exposição
+C) Exposição → Absorção → Efeito biológico
+D) Absorção → Exposição → Efeito biológico
+R: C
+E: A resposta correta é C porque a sequência correta é Exposição → Absorção → Efeito biológico, conforme detalhado no PDF. Primeiro, o corpo é exposto à radiação; depois, essa energia é absorvida pelas moléculas, desencadeando os efeitos diretos ou indiretos que culminam nos danos celulares e genéticos. As demais opções estão em ordem incorreta.
+
+P: Segundo a Lei de Bergonié e Tribondeau, quais células são mais sensíveis à radiação?
+A) As mais diferenciadas e inativas
+B) As menos vascularizadas
+C) As que apresentam maior atividade mitótica e pouca diferenciação
+D) As do tecido nervoso
+R: C
+E: A resposta correta é C porque, conforme a Lei de Bergonié e Tribondeau, a radiossensibilidade é diretamente proporcional à atividade mitótica e inversamente proporcional ao grau de diferenciação celular. Isso significa que células jovens, indiferenciadas e em constante divisão são mais suscetíveis aos efeitos das radiações ionizantes.
+
+P: Qual das células abaixo é considerada mais radiossensível?
+A) Células musculares
+B) Células endoteliais
+C) Células do tecido nervoso
+D) Células do tecido ósseo
+R: B
+E: A resposta correta é B porque, segundo a ordem decrescente de radiossensibilidade apresentada no documento, células endoteliais vêm logo após as epiteliais e são mais sensíveis do que células do tecido nervoso, ósseo ou muscular. A radiossensibilidade está associada à atividade mitótica e ao grau de diferenciação, que é maior em tecidos como o muscular e o nervoso, tornando-os mais resistentes.
+
+P: Qual fator, além da mitose e diferenciação celular, influencia a radiossensibilidade dos tecidos?
+A) Espessura da membrana plasmática
+B) Metabolismo celular e vascularização
+C) Presença de proteínas estruturais
+D) Concentração de cálcio intracelular
+R: B
+E: A resposta correta é B porque o texto destaca que o metabolismo celular e a vascularização são fatores diretamente proporcionais à radiossensibilidade. Tecidos com metabolismo mais elevado e boa irrigação tendem a ser mais afetados pela radiação. As demais opções não são mencionadas no conteúdo como determinantes.
+
+P: Qual alteração morfológica pode ser observada no núcleo celular após exposição à radiação?
+A) Vacuolização citoplasmática
+B) Picnose
+C) Aumento de microvilosidades
+D) Inclusões lipídicas
+R: B
+E: A resposta correta é B porque a picnose, que é a condensação da cromatina nuclear, é um dos sinais morfológicos diretos de lesão nuclear induzida pela radiação, conforme o documento. A alternativa A é citoplasmática, e as outras não estão listadas entre os efeitos morfológicos descritos no material.
+
+P: Uma das consequências fisiológicas da radiação celular é:
+A) Aumento de proteínas de choque térmico
+B) Aceleração da síntese proteica
+C) Acúmulo de produtos intermediários do metabolismo, como o glicogênio
+D) Inibição das reações fotoquímicas naturais
+R: C
+E: A resposta correta é C porque a exposição à radiação provoca alterações metabólicas, com acúmulo de substâncias como o glicogênio e ausência de outros produtos normais, conforme descrito no conteúdo. Isso demonstra uma falha nos processos celulares, sendo uma das alterações fisiológicas induzidas.
+
+P: O que a sigla DMPS significa, conforme o texto?
+A) Dose Média Permitida de Segurança
+B) Dose Máxima de Proteção Semanal
+C) Dose Máxima Permitida por Semana
+D) Dose Máxima Permissível
+R: D
+E: A resposta correta é D porque DMPS significa Dose Máxima Permissível, que é o limite de exposição à radiação considerado seguro para os profissionais e pacientes. No material, ela é citada como 5 R por ano ou 0,1 R por semana, com taxa de exposição de 2,2 mR/h. As demais siglas são inventadas ou incorretas.
+
+P: Em relação ao ritmo de aplicação da radiação, qual das afirmações é verdadeira?
+A) Doses crônicas são mais letais que doses agudas
+B) Doses agudas são distribuídas lentamente para evitar efeitos
+C) Doses crônicas não causam lesões celulares
+D) Doses agudas são aplicadas em curto tempo e podem ser fatais
+R: D
+E: A resposta correta é D porque o texto explica que exposições agudas envolvem grandes doses aplicadas em curto intervalo de tempo, o que pode causar efeitos fatais. Já as crônicas são doses pequenas, administradas ao longo do tempo, e não costumam ser letais de forma imediata.
+
+P: Por que a radiação alfa é mais nociva que os raios-x, mesmo com a mesma energia?
+A) Porque viaja mais longe
+B) Porque é mais penetrante
+C) Porque tem maior capacidade de ionização
+D) Porque não sofre espalhamento
+R: C
+E: A resposta correta é C porque o texto afirma que a radiação alfa é 10 vezes mais nociva que a radiação x com a mesma energia, devido à sua alta capacidade de ionização. Ela causa mais dano no local onde é depositada, embora sua penetração seja limitada. A nocividade está relacionada ao RBE (equivalente biológico de radiação).
+
+P: O que significa a inespecificidade dos efeitos somáticos da radiação?
+A) Que todos os efeitos aparecem de forma uniforme
+B) Que os efeitos somáticos são exclusivos da radiação
+C) Que os efeitos podem ser causados também por outros agentes, além da radiação
+D) Que os efeitos surgem apenas em tecidos específicos
+R: C
+E: A resposta correta é C porque o termo “inespecificidade”, conforme o documento, refere-se ao fato de que os efeitos somáticos, como leucemia ou queimaduras, podem ser provocados por outros fatores além da radiação, dificultando a sua caracterização como efeito exclusivo da exposição. Isso torna o diagnóstico mais complexo.
+
+P: Qual é a relação entre a dose de radiação e o período de latência dos efeitos?
+A) Doses maiores aumentam o período de latência
+B) Doses menores eliminam o período de latência
+C) Doses maiores reduzem o período de latência
+D) O período de latência é sempre o mesmo, independentemente da dose
+R: C
+E: A resposta correta é C porque o documento afirma que quanto maior a dose de radiação, menor será o período de latência, ou seja, os efeitos aparecem mais rapidamente. Doses pequenas e fracionadas tendem a ter períodos de latência mais longos. Isso tem implicações importantes na detecção e no monitoramento clínico.
+
+P: O que caracteriza uma exposição aguda grave à radiação?
+A) Baixa dose acumulada por muitos anos
+B) Pequena dose aplicada a uma área restrita
+C) Exposição em massa ao corpo todo, como em explosões atômicas
+D) Contato ocupacional repetido com fontes naturais de radiação
+R: C
+E: A resposta correta é C porque a exposição aguda grave, segundo o texto, é aquela em que o corpo inteiro é submetido a uma grande dose de radiação em curto tempo, como em acidentes nucleares. Isso pode resultar em síndromes hematopoiética, gastrointestinal ou do sistema nervoso central, dependendo da intensidade.
+
+P: Qual efeito é típico da exposição aguda frustra à radiação?
+A) Infertilidade irreversível
+B) Mutações genéticas transmitidas à prole
+C) Radiodermite e eritema em áreas irradiadas
+D) Desenvolvimento de catarata congênita
+R: C
+E: A resposta correta é C porque a exposição aguda frustra, descrita no material, ocorre geralmente durante tratamentos radioterápicos localizados e pode causar radiodermite (queimaduras) e eritema. Esses efeitos são mais visíveis em pessoas sensíveis e não atingem o corpo todo como na forma grave.
+
+P: Por que o osso irradiado tem menor capacidade de reparação após altas doses?
+A) Porque a radiação destrói o colágeno
+B) Porque o tecido ósseo é mais radiossensível
+C) Porque há redução da atividade dos osteoblastos e da vascularização
+D) Porque os condroblastos substituem os osteócitos
+R: C
+E: A resposta correta é C porque, de acordo com o texto, a radiação em altas doses reduz a atividade dos osteoblastos e altera os vasos sanguíneos, tornando o osso menos irrigado e mais propenso a infecções e necrose (osteorradionecrose). Por isso, cirurgias devem ser evitadas nos anos seguintes à radioterapia.
+
+P: Qual é a conduta preventiva indicada para pacientes que receberão altas doses de radioterapia na região óssea?
+A) Administração de antibióticos por 6 meses
+B) Retirada de todos os dentes hígidos antes do início da terapia
+C) Implantação de próteses metálicas preventivas
+D) Realização de extrações dentárias 1 ano após a radioterapia
+R: B
+E: A resposta correta é B porque o material recomenda que todos os dentes hígidos sejam extraídos antes da radioterapia, para evitar complicações como cáries induzidas pela radiação, necrose pulpar, lesões periapicais e osteorradionecrose. Além disso, procedimentos cirúrgicos devem ser postergados por 4 a 5 anos após o tratamento.
+
+P: Qual é uma possível consequência da radiação nos testículos e ovários?
+A) Neoplasias endócrinas
+B) Hipotrofia muscular
+C) Esterilidade
+D) Hipervascularização
+R: C
+E: A resposta correta é C porque o texto destaca que a radiação afeta diretamente as gônadas, como testículos e ovários, podendo provocar esterilidade. Isso se deve ao dano nas células germinativas, que são altamente radiossensíveis, mesmo em baixas doses.
+
+P: A radiação sobre o cristalino pode provocar qual alteração?
+A) Glaucoma
+B) Catarata
+C) Uveíte
+D) Presbiopia
+R: B
+E: A resposta correta é B porque, conforme o material, um dos efeitos da radiação em estruturas oculares é a formação de cataratas, uma opacificação progressiva do cristalino que compromete a visão. É um efeito somático localizado decorrente da exposição de altas doses na região da cabeça/face.
+
+P: Qual é uma característica da exposição crônica à radiação?
+A) Grandes doses em curto período
+B) Restrição exclusivamente a ambientes hospitalares
+C) Pequenas doses distribuídas ao longo do tempo
+D) Capacidade de causar efeitos imediatos e fatais
+R: C
+E: A resposta correta é C porque a exposição crônica é definida no texto como aquela em que pequenas doses são aplicadas por longos períodos, como ocorre em profissionais da área de saúde ou devido à exposição ambiental. Ao contrário das exposições agudas, os efeitos dessas exposições não são imediatos nem geralmente fatais no curto prazo.
+
+P: Qual é a principal causa de radiodermite em profissionais de odontologia?
+A) Uso de equipamentos com radiação beta
+B) Realização de cirurgias em campo irradiado
+C) Manutenção do filme radiográfico na boca do paciente com as mãos do profissional
+D) Exposição a radiação solar durante o atendimento
+R: C
+E: A resposta correta é C porque, conforme o texto, a manutenção do filme na cavidade oral pelo próprio profissional, prática antiga e incorreta, era uma fonte comum de radiação direta nas mãos, levando à radiodermite ocupacional. Essa forma de exposição crônica apresenta um período de latência longo e manifestações progressivas.
+
+P: Qual é a principal característica da radiodermite grau I?
+A) Ulceração da pele com necrose profunda
+B) Destruição da derme com fibrose
+C) Eritema semelhante à queimadura solar, reversível
+D) Presença de bolhas e perda de anexos cutâneos
+R: C
+E: A resposta correta é C porque o grau I de radiodermite se caracteriza por um eritema semelhante a uma queimadura solar, que é reversível. É o grau mais leve, e não há destruição significativa da epiderme ou derme. As outras opções descrevem graus mais avançados ou efeitos não mencionados nesse contexto.
+
+P: O que diferencia a radiodermite grau III das demais?
+A) A reversibilidade total do processo inflamatório
+B) O comprometimento apenas da epiderme
+C) A formação de cicatriz retrátil e fibrosa por lesão dérmica
+D) O surgimento exclusivo de bolhas sem vermelhidão
+R: C
+E: A resposta correta é C porque o grau III envolve lesão profunda da pele atingindo a derme, resultando em cicatriz retrátil e fibrosa, conforme descrito no material. Esse é o grau mais severo entre os três, com potencial de causar comprometimento funcional e estético permanente.
+
+P: Qual é uma manifestação tardia da radiodermite profissional?
+A) Formação de crostas e prurido leve
+B) Ulceração da cutícula e atrofia da pele, podendo evoluir para malignização
+C) Regeneração espontânea das unhas
+D) Formação de placas psoriáticas
+R: B
+E: A resposta correta é B porque a radiodermite profissional, que ocorre após várias doses cumulativas, leva a atrofia da pele, unhas quebradiças, ulceração da cutícula e pode progredir para malignização com risco de amputações ou até morte. É um efeito crônico grave da exposição ocupacional repetida.
+
+P: Qual é uma possível consequência genética da exposição à radiação ionizante?
+A) Hiperatividade do sistema nervoso autônomo
+B) Mutação cromossômica com translocação entre cromossomos não homólogos
+C) Fortalecimento da expressão gênica de proteínas protetoras
+D) Hipertrofia de estruturas mitocondriais
+R: B
+E: A resposta correta é B porque o texto destaca que a radiação pode causar mutações cromossômicas, como a translocação entre cromossomos não homólogos, em que um fragmento de um cromossomo é inserido em outro par, interferindo gravemente na estabilidade genômica e podendo resultar em doenças hereditárias ou câncer.
+
+P: O que caracteriza uma mutação gênica induzida por radiação?
+A) Alteração na sequência de aminoácidos de proteínas
+B) Formação de radicais livres no citoplasma
+C) Acúmulo de cálcio mitocondrial
+D) Aumento do número de centríolos na célula
+R: A
+E: A resposta correta é A porque uma mutação gênica, como explicada no texto, envolve alterações estruturais no DNA, que levam à produção de proteínas defeituosas ou não funcionais. Essas mutações podem ter efeitos celulares profundos e ser transmitidas às gerações seguintes, especialmente se ocorrerem em células germinativas.
+
+P: Por que os efeitos genéticos da radiação são considerados cumulativos?
+A) Porque são eliminados com facilidade pelos mecanismos celulares
+B) Porque se somam ao longo do tempo, independentemente da frequência de exposição
+C) Porque não dependem do tipo de célula atingida
+D) Porque se restringem ao período fetal
+R: B
+E: A resposta correta é B porque o documento afirma claramente que os efeitos genéticos são cumulativos, ou seja, aumentam conforme as exposições se repetem, mesmo que as doses sejam pequenas ou espaçadas. Isso ocorre porque o DNA danificado pode não ser totalmente reparado, acumulando alterações ao longo do tempo.
+
+P: Por que as ações mutagênicas das radiações são consideradas cumulativas?
+A) Porque desaparecem após certo número de exposições
+B) Porque aumentam proporcionalmente à intensidade do campo magnético
+C) Porque se somam com o tempo, independente do ritmo de aplicação
+D) Porque dependem exclusivamente da idade do paciente
+R: C
+E: A resposta correta é C porque o texto conclui que os efeitos mutagênicos das radiações são cumulativos, independentemente do ritmo de aplicação. Isso significa que mesmo exposições pequenas, se repetidas, podem aumentar o risco de mutações genéticas. As alterações no DNA podem se acumular, tornando-se significativas ao longo do tempo.
+
+P: Existe uma dose mínima de radiação considerada completamente segura para evitar efeitos genéticos?
+A) Sim, até 1 Gray não há risco
+B) Sim, desde que a exposição seja esporádica
+C) Não, mesmo doses muito pequenas podem induzir alterações genéticas
+D) Sim, desde que não haja absorção direta
+R: C
+E: A resposta correta é C porque o documento afirma que não há um limiar abaixo do qual a radiação seja ineficaz como fator de alterações genéticas. Isso quer dizer que qualquer dose, mesmo mínima, pode provocar mutações, principalmente se a exposição for contínua ou envolver células germinativas ou embriões.
+
+P: O que ocorre com a frequência de mutações genéticas quando a dose de radiação aumenta?
+A) Diminui, devido ao bloqueio dos mecanismos celulares
+B) Permanece estável após certo ponto
+C) Cresce de forma linear com o aumento da dose
+D) Oscila dependendo da idade do indivíduo
+R: C
+E: A resposta correta é C porque o material afirma que a frequência de mutações genéticas induzidas pela radiação cresce linearmente com a dose. Isso significa que quanto maior a exposição, maior será a probabilidade de ocorrerem mutações, tornando o controle da dose algo crítico para a segurança biológica.
+
+P: Qual é a maior preocupação com o uso de radiação na odontologia, segundo o texto?
+A) Efeitos na esmaltação dentária
+B) Causas de necrose pulpar
+C) Risco de osteorradionecrose em adultos
+D) Proteção contra efeitos genéticos
+R: D
+E: A resposta correta é D porque o documento conclui que, na odontologia, a maior preocupação está relacionada à proteção do aspecto genético, já que efeitos somáticos são raros com as doses normalmente utilizadas. Isso implica em cuidados especiais, principalmente em pacientes jovens ou gestantes.
+
+P: Quais são as principais consequências da exposição do embrião à radiação ionizante?
+A) Aumento do crescimento e da angiogênese
+B) Formação de estruturas esqueléticas duplicadas
+C) Alterações no desenvolvimento, mutações somáticas e genéticas, e risco de leucemia
+D) Aumento da tolerância imunológica fetal
+R: C
+E: A resposta correta é C porque o material informa que a radiação durante a gestação pode causar alterações do desenvolvimento, mutações somáticas e genéticas, lesões no SNC, e neoplasias pós-natais, como leucemia. O embrião é extremamente sensível aos efeitos da radiação, o que exige atenção máxima em radiologia odontológica durante a gestação.
+
+P: Por que os embriões e fetos são especialmente vulneráveis à radiação?
+A) Porque possuem maior massa corpórea para absorção
+B) Porque têm menor capacidade de regeneração celular
+C) Porque estão em intensa atividade mitótica e diferenciação tecidual
+D) Porque sua temperatura interna favorece reações químicas
+R: C
+E: A resposta correta é C porque, conforme os princípios da Lei de Bergonié e Tribondeau já citados no texto, células com alta atividade mitótica e baixo grau de diferenciação, como as do embrião e do feto, são extremamente sensíveis à radiação. Isso os torna muito suscetíveis a malformações e mutações.
+
+P: Qual das alternativas representa um efeito pós-natal associado à exposição à radiação durante a gestação?
+A) Displasia folicular
+B) Leucemia
+C) Hipotermia neonatal
+D) Aumento da densidade óssea
+R: B
+E: A resposta correta é B porque o texto afirma que uma das consequências da radiação durante a gestação é o desenvolvimento de neoplasias pós-natais, como a leucemia. Essas alterações podem surgir mesmo após o nascimento, mostrando o impacto duradouro da exposição durante o período fetal.
+
+P: Qual conclusão pode ser tirada sobre o uso da radiação ionizante em saúde, segundo o documento?
+A) Os riscos sempre superam os benefícios
+B) A radiação deve ser evitada em qualquer situação clínica
+C) Os benefícios justificam os riscos, desde que se minimizem as doses e se obtenha o diagnóstico necessário
+D) Não é necessário controle desde que a exposição seja inferior a 10 Gy
+R: C
+E: A resposta correta é C porque, logo na introdução e na conclusão, o documento deixa claro que os benefícios do uso das radiações ionizantes justificam os riscos, desde que a dose seja a mínima possível para atingir o objetivo diagnóstico. O controle rigoroso e a proteção radiológica são princípios fundamentais para garantir a segurança do paciente e do profissional.
